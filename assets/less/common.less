@@ -1,0 +1,156 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+*{margin: 0; padding: 0;}
+body,html,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,p{font-family: 'Noto Sans CJK KR DemiLight',  cursive,sans-serif; margin:0; padding:0;}
+li{
+  list-style: none;
+}
+h2{
+  font-size: 18px;
+  color:@fontcolor;
+}
+p{
+  color:@fontcolor;
+}
+
+
+.wrap{
+  width:1920px;
+}
+header{
+  .top{
+    position:relative;
+    width:1920px;
+    height:107px;
+    background-color: @header;
+    background-image: none;
+    img{
+      float: left;
+      margin-top: 21.972px;
+      margin-left: 50px;
+    }
+    span{
+      float: right;
+      margin-top: 43.078px;
+      margin-right: 48.58px;
+      color: #6479ba;
+   }
+  }
+  .headline{
+    position: relative;
+    height:5px;
+    background-image: url(../images/gradation01.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  .menubar{
+    position:relative;
+    background-color: #fff;
+    height:165px;
+    div{
+      display: inline-block;
+      width: 206px;
+      height: 46px;
+      text-align: center;
+      font-size: 22px;
+      position:relative;
+      top:35%;
+      left:25%;
+      margin-left:14px;
+      span{
+        line-height: 46px;
+      }
+    }
+    div:nth-child(1){
+      border: 2px @mainred solid;
+      color: @mainred;
+    }
+    div:nth-child(2){
+      border: 2px @mainorange solid;
+      color: @mainorange;
+    }
+    div:nth-child(3){
+      border: 2px @maingreen solid;
+      color: @maingreen;
+    }
+    div:nth-child(4){
+      border: 2px @mainviolet solid;
+      color: @mainviolet;
+    }
+  }
+}
+.contents{
+  .pic{
+    position:relative;
+    width: 1920px;
+    height: 403px;
+    border: 1px #000 solid;
+    background-color: rgba(200, 0, 0, .1);
+    span{
+      position: absolute;
+      top:233px;
+      left:100px;
+      width: 514px;
+      height: 100px;
+      color:@header;
+      display: block;
+    }
+  }
+}
+.headline{
+  position: relative;
+  height:5px;
+  background-image: url(../images/gradation01.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.bottom{
+  height: 230px;
+  background-color: @header;
+  .lang{
+    float:left;
+    padding-top:50px;
+    margin-left: 100px;
+    div{
+      width:222px;
+      height:44px;
+      border:1px #939597 solid;
+      color: #939597;
+      padding:0 20px 0 10px;
+      background-image: url(../images/g_arrow.png);
+      background-position: right 10px center;
+      background-repeat: no-repeat;
+      line-height: 44px;
+      margin-bottom:5px;
+    }
+  }
+  .notice{
+    float:right;
+    padding-right:100px;
+    padding-top:50px;
+    div{display: inline-block;}
+  }
+  .traveling{
+    color: #939597;
+    margin-right: 50px;
+    span{
+      display: block;
+    }
+    span:nth-child(1){
+      font-weight: bold;
+    }
+  }
+  .touch{
+    color: #939597;
+    span{
+      display: block;
+    }
+    span:nth-child(1){
+      font-weight: bold;
+    }
+  }
+}
