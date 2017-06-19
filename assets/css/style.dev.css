@@ -321,16 +321,50 @@ header .menubar div:nth-child(4) {
   margin-top: 8px;
   font-size: 18px;
 }
-/* line 105, assets\less\style.less */
-.index .contents .searchlist .date {
+/* line 106, assets\less\style.less */
+.index .contents .searchlist .datelist {
   border: 2px #fff solid;
   width: 210px;
-  height: 186px;
+  height: 198px;
   color: #fff;
   position: relative;
-  top: -12px;
 }
-/* line 113, assets\less\style.less */
+/* line 112, assets\less\style.less */
+.index .contents .searchlist .datelist table {
+  margin: 0 auto;
+  width: 180px;
+  height: 160px;
+}
+/* line 118, assets\less\style.less */
+.index .contents .searchlist .datelist caption span {
+  display: block;
+  margin: 7px auto 5px ;
+}
+/* line 122, assets\less\style.less */
+.index .contents .searchlist .datelist caption li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 5px 0 0;
+  position: absolute;
+}
+/* line 129, assets\less\style.less */
+.index .contents .searchlist .datelist caption li:nth-child(1) {
+  left: 10px;
+  top: 4px;
+  background-image: url(../images/w_arrowL.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 136, assets\less\style.less */
+.index .contents .searchlist .datelist caption li:last-child {
+  right: 10px;
+  top: 4px;
+  background-image: url(../images/w_arrowR.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 147, assets\less\style.less */
 .index .contents .searchlist .guestlist {
   border: 2px #fff solid;
   width: 210px;
@@ -339,13 +373,13 @@ header .menubar div:nth-child(4) {
   position: relative;
   top: -39px;
 }
-/* line 120, assets\less\style.less */
+/* line 154, assets\less\style.less */
 .index .contents .searchlist .guestlist span {
   display: block;
   font-size: 18px;
   margin: 7px 0 0 15px;
 }
-/* line 126, assets\less\style.less */
+/* line 160, assets\less\style.less */
 .index .contents .searchlist .typelist {
   border: 2px #fff solid;
   width: 210px;
@@ -354,17 +388,17 @@ header .menubar div:nth-child(4) {
   position: relative;
   top: -77px;
 }
-/* line 133, assets\less\style.less */
+/* line 167, assets\less\style.less */
 .index .contents .searchlist .typelist span {
   display: block;
   font-size: 18px;
   margin: 6px 0 0 15px;
 }
-/* line 139, assets\less\style.less */
+/* line 173, assets\less\style.less */
 .index .contents .searchlist .searchboxlist {
   width: 136px;
 }
-/* line 145, assets\less\style.less */
+/* line 179, assets\less\style.less */
 .index .empty {
   position: relative;
   background-color: #fff;
@@ -650,103 +684,28 @@ header .menubar div:nth-child(4) {
   background-position: 5px center;
   padding: 0 5px 0 25px;
 }
-/* line 2, assets\less\guesthouse_details.less */
-.guesthouse_details .wrap {
-  width: 1920px;
-}
-/* line 6, assets\less\guesthouse_details.less */
-.guesthouse_details header .top {
-  position: relative;
-  width: 1920px;
-  height: 107px;
-  background-color: #f9f7f7;
-}
-/* line 11, assets\less\guesthouse_details.less */
-.guesthouse_details header .top img {
-  float: left;
-  margin-top: 21.972px;
-  margin-left: 50px;
-}
-/* line 16, assets\less\guesthouse_details.less */
-.guesthouse_details header .top span {
-  float: right;
-  margin-top: 43.078px;
-  margin-right: 48.58px;
-  color: #6479ba;
-}
-/* line 23, assets\less\guesthouse_details.less */
-.guesthouse_details header .headline {
-  position: relative;
-  height: 5px;
-  background-image: url(../images/gradation01.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-/* line 30, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar {
-  position: relative;
-  background-color: #fff;
-  height: 165px;
-}
-/* line 34, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div {
-  display: inline-block;
-  width: 206px;
-  height: 46px;
-  text-align: center;
-  font-size: 22px;
-  position: relative;
-  top: 35%;
-  left: 25%;
-  margin-left: 14px;
-}
-/* line 44, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div span {
-  line-height: 46px;
-}
-/* line 48, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div:nth-child(1) {
-  border: 2px #ef5050 solid;
-  color: #ef5050;
-}
-/* line 52, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div:nth-child(2) {
-  border: 2px #f5b250 solid;
-  color: #f5b250;
-}
-/* line 56, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div:nth-child(3) {
-  border: 2px #79c266 solid;
-  color: #79c266;
-}
-/* line 60, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div:nth-child(4) {
-  border: 2px #a764a8 solid;
-  color: #a764a8;
-}
-/* line 67, assets\less\guesthouse_details.less */
+/* line 4, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap {
-  border: 1px #f00 solid;
   width: 1720px;
   margin: 0 auto;
   padding: 100px 0;
 }
-/* line 72, assets\less\guesthouse_details.less */
+/* line 8, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox {
   position: relative;
-  background-color: rgba(200, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   width: 554px;
   height: 1140px;
   float: right;
   margin-right: 100px;
 }
-/* line 79, assets\less\guesthouse_details.less */
+/* line 15, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .text {
   margin-top: 75px;
   position: absolute;
   left: 110px;
 }
-/* line 83, assets\less\guesthouse_details.less */
+/* line 19, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .text div {
   width: 290px;
   height: 50px;
@@ -761,15 +720,15 @@ header .menubar div:nth-child(4) {
   background-position: right 10px center;
   margin-bottom: 313px;
 }
-/* line 96, assets\less\guesthouse_details.less */
+/* line 32, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .text div:last-child {
   margin-bottom: 0;
 }
-/* line 101, assets\less\guesthouse_details.less */
+/* line 37, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .textlist {
   margin-top: 130px;
 }
-/* line 103, assets\less\guesthouse_details.less */
+/* line 39, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .textlist li {
   position: relative;
   width: 330px;
@@ -778,89 +737,63 @@ header .menubar div:nth-child(4) {
   background-color: #fff;
   margin: 0 auto 83px;
 }
-/* line 110, assets\less\guesthouse_details.less */
+/* line 46, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .textlist li:last-child {
   height: 113px;
   margin-bottom: 0;
 }
-/* line 113, assets\less\guesthouse_details.less */
+/* line 49, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .textlist li:last-child span {
   display: block;
   font-size: 16px;
   color: #838384;
   margin: 10px 10px 10px 20px;
 }
-/* line 121, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .year {
-  text-align: center;
-  border: 1px #f00 solid;
-  width: 290px;
-  font-size: 20px;
-  padding: 0 20px;
-  margin-top: 10px;
-}
-/* line 128, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .year span {
-  position: relative;
-  margin: 0 auto;
+/* line 57, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist {
   color: #838384;
+  position: relative;
 }
-/* line 133, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .year li {
-  border: 1px #f00 solid;
+/* line 60, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist table {
+  margin: 0 auto;
+  width: 250px;
+  height: 220px;
+}
+/* line 66, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist caption span {
+  display: block;
+  margin: 20px auto 5px ;
+}
+/* line 70, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist caption li {
   width: 20px;
   height: 20px;
   display: inline-block;
-  margin: 10px 0 0;
+  margin: 18px 0 0;
   position: absolute;
+  border: none;
 }
-/* line 141, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .year li:nth-child(1) {
+/* line 78, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist caption li:nth-child(1) {
   left: 10px;
   top: 4px;
   background-image: url(../images/g_smallarrowL.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 148, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .year li:last-child {
+/* line 85, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist caption li:last-child {
   right: 10px;
   top: 4px;
   background-image: url(../images/g_smallarrowR.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 157, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .week {
-  width: 280px;
-  margin: 10px auto;
-  border: 1px #f00 solid;
-}
-/* line 161, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .week span {
-  margin-left: 17px;
-  color: #838384;
-}
-/* line 166, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .date01 {
-  border: 1px #f00 solid;
-  width: 280px;
-  margin: 0 auto;
-  color: #838384;
-}
-/* line 171, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .date01 span {
-  margin-left: 20px;
-  margin-right: 7px;
-}
-/* line 174, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .date01 span:nth-child(1) {
-  margin-left: 65px;
-}
-/* line 180, assets\less\guesthouse_details.less */
+/* line 98, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .bookbutton {
   color: #fff;
-  background-color: #f4a8cf;
+  background-color: #838384;
   border-radius: 15px;
   text-align: center;
   line-height: 65px;
@@ -869,95 +802,89 @@ header .menubar div:nth-child(4) {
   font-size: 20px;
   margin: 40px auto 0;
 }
-/* line 192, assets\less\guesthouse_details.less */
+/* line 110, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .house {
   position: relative;
   width: 967px;
   height: 500px;
-  border: 1px #0f0 solid;
 }
-/* line 198, assets\less\guesthouse_details.less */
+/* line 115, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .house .housepic img {
   display: block;
   margin: 0 auto;
 }
-/* line 204, assets\less\guesthouse_details.less */
+/* line 121, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .house .arrow span {
   width: 98px;
   height: 500px;
 }
-/* line 207, assets\less\guesthouse_details.less */
+/* line 124, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .house .arrow span:nth-child(1) {
   background-image: url(../images/g_arrowL.png);
   background-repeat: no-repeat;
   background-position: left 0px center;
   float: left;
 }
-/* line 213, assets\less\guesthouse_details.less */
+/* line 130, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .house .arrow span:nth-child(2) {
   background-image: url(../images/g_arrowR.png);
   background-repeat: no-repeat;
   background-position: right 0px center;
   float: right;
 }
-/* line 221, assets\less\guesthouse_details.less */
+/* line 138, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details {
-  border: 1px #0f0 solid;
   width: 967px;
   padding: 100px 0 0;
 }
-/* line 225, assets\less\guesthouse_details.less */
+/* line 141, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .explanation {
-  border: 1px #000 solid;
   padding-bottom: 60px;
 }
-/* line 228, assets\less\guesthouse_details.less */
+/* line 143, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .explanation p {
   font-size: 16px;
 }
-/* line 230, assets\less\guesthouse_details.less */
+/* line 145, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional {
   position: relative;
   height: 460px;
 }
-/* line 233, assets\less\guesthouse_details.less */
+/* line 148, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional h2 {
   background-image: url(../images/check.png);
   background-repeat: no-repeat;
   padding-left: 27.5px;
 }
-/* line 238, assets\less\guesthouse_details.less */
+/* line 153, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional p {
   padding-left: 27.5px;
 }
-/* line 241, assets\less\guesthouse_details.less */
+/* line 156, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional .addlist01 {
   float: left;
-  border: 1px #f0f solid;
 }
-/* line 244, assets\less\guesthouse_details.less */
+/* line 158, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional .addlist01 li {
   margin-top: 40px;
 }
-/* line 248, assets\less\guesthouse_details.less */
+/* line 162, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional .addlist02 {
   float: right;
-  border: 1px #f0f solid;
 }
-/* line 251, assets\less\guesthouse_details.less */
+/* line 164, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional .addlist02 li {
   margin-top: 40px;
 }
-/* line 256, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review {
+/* line 169, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments {
   position: relative;
-  border: 1px #f0f solid;
   width: 967px;
   height: 730px;
   padding-top: 100px;
 }
-/* line 262, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewname01 {
+/* line 174, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewname01 {
   width: 190px;
   height: 45px;
   border: 1px #838384 solid;
@@ -968,8 +895,8 @@ header .menubar div:nth-child(4) {
   position: absolute;
   color: #838384;
 }
-/* line 273, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewname02 {
+/* line 185, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewname02 {
   width: 190px;
   height: 45px;
   border: 1px #838384 solid;
@@ -981,27 +908,27 @@ header .menubar div:nth-child(4) {
   z-index: -1;
   color: #838384;
 }
-/* line 285, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox {
+/* line 197, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox {
   border: 1px #838384 solid;
   background-color: #fff;
   width: 967px;
   height: 685px;
   margin-top: 45px;
 }
-/* line 291, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li {
+/* line 203, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li {
   position: relative;
   padding: 50px 100px;
 }
-/* line 295, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li:nth-child(1) {
+/* line 206, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li:nth-child(1) {
   background-image: url(../images/reviewline.png);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
-/* line 302, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li:nth-child(2) .button div {
+/* line 213, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li:nth-child(2) .button div {
   border-radius: 15px;
   width: 125px;
   height: 35px;
@@ -1014,32 +941,32 @@ header .menubar div:nth-child(4) {
   background-color: #838384;
   color: #fff;
 }
-/* line 317, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li img {
+/* line 228, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li img {
   position: absolute;
 }
-/* line 320, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li .write {
+/* line 231, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li .write {
   margin-left: 168px;
 }
-/* line 322, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li .write span {
+/* line 233, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li .write span {
   color: #838384;
 }
-/* line 324, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li:last-child {
+/* line 235, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li:last-child {
   padding: 0;
   padding-bottom: 50px;
 }
-/* line 327, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li:last-child .textbox {
+/* line 238, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbox {
   width: 765px;
   height: 163px;
   border: 1px #838384 solid;
   margin: 0 auto;
 }
-/* line 333, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li:last-child .textbutton {
+/* line 244, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbutton {
   border-radius: 15px;
   width: 125px;
   height: 35px;
@@ -1050,70 +977,1384 @@ header .menubar div:nth-child(4) {
   background-color: #838384;
   color: #fff;
 }
-/* line 354, assets\less\guesthouse_details.less */
-.guesthouse_details .headline {
+/* line 260, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries {
   position: relative;
-  height: 5px;
-  background-image: url(../images/gradation01.png);
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 265, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  color: #838384;
+  z-index: -1;
+}
+/* line 276, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  color: #838384;
+  background-color: #fff;
+}
+/* line 288, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 294, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 297, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center bottom;
 }
-/* line 361, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom {
-  height: 230px;
-  background-color: #f9f7f7;
+/* line 304, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
 }
-/* line 364, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .lang {
-  float: left;
-  padding-top: 50px;
-  margin-left: 100px;
+/* line 319, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li img {
+  position: absolute;
 }
-/* line 368, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .lang div {
-  width: 222px;
-  height: 44px;
-  border: 1px #939597 solid;
-  color: #939597;
-  padding: 0 20px 0 10px;
-  background-image: url(../images/g_arrow.png);
-  background-position: right 10px center;
-  background-repeat: no-repeat;
-  line-height: 44px;
-  margin-bottom: 5px;
+/* line 322, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li .answeruser {
+  margin-left: 150px;
 }
-/* line 381, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .notice {
+/* line 323, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite {
+  margin-left: 168px;
+}
+/* line 325, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite span {
+  color: #838384;
+}
+/* line 327, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer {
+  margin-left: 318px;
+}
+/* line 329, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer span {
+  color: #838384;
+}
+/* line 331, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 334, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 340, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
   float: right;
-  padding-right: 100px;
-  padding-top: 50px;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
 }
-/* line 385, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .notice div {
+/* line 4, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap {
+  width: 1720px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+/* line 8, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 554px;
+  height: 1140px;
+  float: right;
+  margin-right: 100px;
+}
+/* line 15, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .text {
+  margin-top: 75px;
+  position: absolute;
+  left: 110px;
+}
+/* line 19, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .text div {
+  width: 290px;
+  height: 50px;
+  border: 2px #838384 solid;
+  line-height: 50px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #838384;
+  padding: 0 20px;
+  background-image: url(../images/g_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  margin-bottom: 313px;
+}
+/* line 32, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .text div:last-child {
+  margin-bottom: 0;
+}
+/* line 37, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist {
+  margin-top: 130px;
+}
+/* line 39, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist li {
+  position: relative;
+  width: 330px;
+  height: 280px;
+  border: 2px #838384 solid;
+  background-color: #fff;
+  margin: 0 auto 83px;
+}
+/* line 46, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist li:last-child {
+  height: 113px;
+  margin-bottom: 0;
+}
+/* line 49, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist li:last-child span {
+  display: block;
+  font-size: 16px;
+  color: #838384;
+  margin: 10px 10px 10px 20px;
+}
+/* line 57, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist {
+  color: #838384;
+  position: relative;
+}
+/* line 60, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist table {
+  margin: 0 auto;
+  width: 250px;
+  height: 220px;
+}
+/* line 66, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist caption span {
+  display: block;
+  margin: 20px auto 5px ;
+}
+/* line 70, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist caption li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 18px 0 0;
+  position: absolute;
+  border: none;
+}
+/* line 78, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist caption li:nth-child(1) {
+  left: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowL.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 85, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist caption li:last-child {
+  right: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowR.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 98, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .bookbutton {
+  color: #fff;
+  background-color: #838384;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 65px;
+  width: 250px;
+  height: 65px;
+  font-size: 20px;
+  margin: 40px auto 0;
+}
+/* line 110, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .house {
+  position: relative;
+  width: 967px;
+  height: 500px;
+}
+/* line 115, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .house .housepic img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 121, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .house .arrow span {
+  width: 98px;
+  height: 500px;
+}
+/* line 124, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .house .arrow span:nth-child(1) {
+  background-image: url(../images/g_arrowL.png);
+  background-repeat: no-repeat;
+  background-position: left 0px center;
+  float: left;
+}
+/* line 130, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .house .arrow span:nth-child(2) {
+  background-image: url(../images/g_arrowR.png);
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+  float: right;
+}
+/* line 138, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details {
+  width: 967px;
+  padding: 100px 0 0;
+}
+/* line 141, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .explanation {
+  padding-bottom: 60px;
+}
+/* line 143, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .explanation p {
+  font-size: 16px;
+}
+/* line 145, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional {
+  position: relative;
+  height: 460px;
+}
+/* line 148, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional h2 {
+  background-image: url(../images/check.png);
+  background-repeat: no-repeat;
+  padding-left: 27.5px;
+}
+/* line 153, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional p {
+  padding-left: 27.5px;
+}
+/* line 156, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional .addlist01 {
+  float: left;
+}
+/* line 158, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional .addlist01 li {
+  margin-top: 40px;
+}
+/* line 162, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional .addlist02 {
+  float: right;
+}
+/* line 164, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional .addlist02 li {
+  margin-top: 40px;
+}
+/* line 169, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 174, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  color: #838384;
+}
+/* line 185, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  z-index: -1;
+  color: #838384;
+}
+/* line 197, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 203, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 206, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 213, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 228, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li img {
+  position: absolute;
+}
+/* line 231, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li .write {
+  margin-left: 168px;
+}
+/* line 233, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li .write span {
+  color: #838384;
+}
+/* line 235, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 238, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 244, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 260, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 265, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  color: #838384;
+  z-index: -1;
+}
+/* line 276, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  color: #838384;
+  background-color: #fff;
+}
+/* line 288, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 294, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 297, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 304, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 319, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li img {
+  position: absolute;
+}
+/* line 322, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li .answeruser {
+  margin-left: 150px;
+}
+/* line 323, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite {
+  margin-left: 168px;
+}
+/* line 325, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite span {
+  color: #838384;
+}
+/* line 327, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer {
+  margin-left: 318px;
+}
+/* line 329, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer span {
+  color: #838384;
+}
+/* line 331, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 334, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 340, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 4, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap {
+  width: 1720px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+/* line 8, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 554px;
+  height: 1140px;
+  float: right;
+  margin-right: 100px;
+}
+/* line 15, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .text {
+  margin-top: 75px;
+  position: absolute;
+  left: 110px;
+}
+/* line 19, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .text div {
+  width: 290px;
+  height: 50px;
+  border: 2px #838384 solid;
+  line-height: 50px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #838384;
+  padding: 0 20px;
+  background-image: url(../images/g_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  margin-bottom: 313px;
+}
+/* line 32, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .text div:last-child {
+  margin-bottom: 0;
+}
+/* line 37, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist {
+  margin-top: 130px;
+}
+/* line 39, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist li {
+  position: relative;
+  width: 330px;
+  height: 280px;
+  border: 2px #838384 solid;
+  background-color: #fff;
+  margin: 0 auto 83px;
+}
+/* line 46, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist li:last-child {
+  height: 113px;
+  margin-bottom: 0;
+}
+/* line 49, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist li:last-child span {
+  display: block;
+  font-size: 16px;
+  color: #838384;
+  margin: 10px 10px 10px 20px;
+}
+/* line 57, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist {
+  color: #838384;
+  position: relative;
+}
+/* line 60, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist table {
+  margin: 0 auto;
+  width: 250px;
+  height: 220px;
+}
+/* line 66, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist caption span {
+  display: block;
+  margin: 20px auto 5px ;
+}
+/* line 70, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist caption li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 18px 0 0;
+  position: absolute;
+  border: none;
+}
+/* line 78, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist caption li:nth-child(1) {
+  left: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowL.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 85, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist caption li:last-child {
+  right: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowR.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 98, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .bookbutton {
+  color: #fff;
+  background-color: #838384;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 65px;
+  width: 250px;
+  height: 65px;
+  font-size: 20px;
+  margin: 40px auto 0;
+}
+/* line 110, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .house {
+  position: relative;
+  width: 967px;
+  height: 500px;
+}
+/* line 115, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .house .housepic img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 121, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .house .arrow span {
+  width: 98px;
+  height: 500px;
+}
+/* line 124, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .house .arrow span:nth-child(1) {
+  background-image: url(../images/g_arrowL.png);
+  background-repeat: no-repeat;
+  background-position: left 0px center;
+  float: left;
+}
+/* line 130, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .house .arrow span:nth-child(2) {
+  background-image: url(../images/g_arrowR.png);
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+  float: right;
+}
+/* line 138, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details {
+  width: 967px;
+  padding: 100px 0 0;
+}
+/* line 141, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .explanation {
+  padding-bottom: 60px;
+}
+/* line 143, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .explanation p {
+  font-size: 16px;
+}
+/* line 145, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional {
+  position: relative;
+  height: 460px;
+}
+/* line 148, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional h2 {
+  background-image: url(../images/check.png);
+  background-repeat: no-repeat;
+  padding-left: 27.5px;
+}
+/* line 153, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional p {
+  padding-left: 27.5px;
+}
+/* line 156, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional .addlist01 {
+  float: left;
+}
+/* line 158, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional .addlist01 li {
+  margin-top: 40px;
+}
+/* line 162, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional .addlist02 {
+  float: right;
+}
+/* line 164, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional .addlist02 li {
+  margin-top: 40px;
+}
+/* line 169, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 174, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  color: #838384;
+}
+/* line 185, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  z-index: -1;
+  color: #838384;
+}
+/* line 197, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 203, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 206, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 213, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 228, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li img {
+  position: absolute;
+}
+/* line 231, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li .write {
+  margin-left: 168px;
+}
+/* line 233, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li .write span {
+  color: #838384;
+}
+/* line 235, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 238, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 244, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 260, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 265, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  color: #838384;
+  z-index: -1;
+}
+/* line 276, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  color: #838384;
+  background-color: #fff;
+}
+/* line 288, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 294, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 297, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 304, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 319, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li img {
+  position: absolute;
+}
+/* line 322, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li .answeruser {
+  margin-left: 150px;
+}
+/* line 323, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite {
+  margin-left: 168px;
+}
+/* line 325, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite span {
+  color: #838384;
+}
+/* line 327, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer {
+  margin-left: 318px;
+}
+/* line 329, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer span {
+  color: #838384;
+}
+/* line 331, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 334, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 340, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 4, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap {
+  width: 1720px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+/* line 8, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 554px;
+  height: 1140px;
+  float: right;
+  margin-right: 100px;
+}
+/* line 15, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .text {
+  margin-top: 75px;
+  position: absolute;
+  left: 110px;
+}
+/* line 19, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .text div {
+  width: 290px;
+  height: 50px;
+  border: 2px #838384 solid;
+  line-height: 50px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #838384;
+  padding: 0 20px;
+  background-image: url(../images/g_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  margin-bottom: 313px;
+}
+/* line 32, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .text div:last-child {
+  margin-bottom: 0;
+}
+/* line 37, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist {
+  margin-top: 130px;
+}
+/* line 39, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist li {
+  position: relative;
+  width: 330px;
+  height: 280px;
+  border: 2px #838384 solid;
+  background-color: #fff;
+  margin: 0 auto 83px;
+}
+/* line 46, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist li:last-child {
+  height: 113px;
+  margin-bottom: 0;
+}
+/* line 49, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist li:last-child span {
+  display: block;
+  font-size: 16px;
+  color: #838384;
+  margin: 10px 10px 10px 20px;
+}
+/* line 57, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist {
+  color: #838384;
+  position: relative;
+}
+/* line 60, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist table {
+  margin: 0 auto;
+  width: 250px;
+  height: 220px;
+}
+/* line 66, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist caption span {
+  display: block;
+  margin: 20px auto 5px ;
+}
+/* line 70, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist caption li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 18px 0 0;
+  position: absolute;
+  border: none;
+}
+/* line 78, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist caption li:nth-child(1) {
+  left: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowL.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 85, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist caption li:last-child {
+  right: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowR.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 98, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .bookbutton {
+  color: #fff;
+  background-color: #838384;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 65px;
+  width: 250px;
+  height: 65px;
+  font-size: 20px;
+  margin: 40px auto 0;
+}
+/* line 110, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .house {
+  position: relative;
+  width: 967px;
+  height: 500px;
+}
+/* line 115, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .house .housepic img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 121, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .house .arrow span {
+  width: 98px;
+  height: 500px;
+}
+/* line 124, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .house .arrow span:nth-child(1) {
+  background-image: url(../images/g_arrowL.png);
+  background-repeat: no-repeat;
+  background-position: left 0px center;
+  float: left;
+}
+/* line 130, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .house .arrow span:nth-child(2) {
+  background-image: url(../images/g_arrowR.png);
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+  float: right;
+}
+/* line 138, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details {
+  width: 967px;
+  padding: 100px 0 0;
+}
+/* line 141, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .explanation {
+  padding-bottom: 60px;
+}
+/* line 143, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .explanation p {
+  font-size: 16px;
+}
+/* line 145, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional {
+  position: relative;
+  height: 460px;
+}
+/* line 148, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional h2 {
+  background-image: url(../images/check.png);
+  background-repeat: no-repeat;
+  padding-left: 27.5px;
+}
+/* line 153, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional p {
+  padding-left: 27.5px;
+}
+/* line 156, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional .addlist01 {
+  float: left;
+}
+/* line 158, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional .addlist01 li {
+  margin-top: 40px;
+}
+/* line 162, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional .addlist02 {
+  float: right;
+}
+/* line 164, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional .addlist02 li {
+  margin-top: 40px;
+}
+/* line 169, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 174, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  color: #838384;
+}
+/* line 185, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  z-index: -1;
+  color: #838384;
+}
+/* line 197, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 203, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 206, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 213, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 228, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li img {
+  position: absolute;
+}
+/* line 231, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li .write {
+  margin-left: 168px;
+}
+/* line 233, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li .write span {
+  color: #838384;
+}
+/* line 235, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 238, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 244, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 260, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 265, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  color: #838384;
+  z-index: -1;
+}
+/* line 276, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  color: #838384;
+  background-color: #fff;
+}
+/* line 288, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 294, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 297, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 304, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 319, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li img {
+  position: absolute;
+}
+/* line 322, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li .answeruser {
+  margin-left: 150px;
+}
+/* line 323, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite {
+  margin-left: 168px;
+}
+/* line 325, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite span {
+  color: #838384;
+}
+/* line 327, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer {
+  margin-left: 318px;
+}
+/* line 329, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer span {
+  color: #838384;
+}
+/* line 331, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 334, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 340, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 3, assets\less\orderpage.less */
+.orderpage .contents .order {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1093px;
+  height: 760px;
+  border-bottom: 1px #bbbdc0 solid;
+  text-align: center;
+}
+/* line 10, assets\less\orderpage.less */
+.orderpage .contents .order .ordername {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 50px;
+}
+/* line 16, assets\less\orderpage.less */
+.orderpage .contents .order ul {
+  width: 1093px;
+  border: 1px #f00 solid;
+  border-bottom: 1px #bbbdc0 solid;
+  font-size: 20px;
+  height: 75px;
+}
+/* line 21, assets\less\orderpage.less */
+.orderpage .contents .order ul li {
+  border: 1px #f00 solid;
   display: inline-block;
 }
-/* line 387, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .traveling {
-  color: #939597;
-  margin-right: 50px;
+/* line 24, assets\less\orderpage.less */
+.orderpage .contents .order ul li:nth-child(1) {
+  text-align: left;
 }
-/* line 390, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .traveling span {
-  display: block;
+/* line 25, assets\less\orderpage.less */
+.orderpage .contents .order ul li:last-child {
+  text-align: right;
 }
-/* line 393, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .traveling span:nth-child(1) {
-  font-weight: bold;
+/* line 30, assets\less\orderpage.less */
+.orderpage .contents .payment {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1093px;
+  height: 1160px;
+  text-align: center;
 }
-/* line 397, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .touch {
-  color: #939597;
-}
-/* line 399, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .touch span {
-  display: block;
-}
-/* line 402, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .touch span:nth-child(1) {
+/* line 36, assets\less\orderpage.less */
+.orderpage .contents .payment span {
+  font-size: 30px;
   font-weight: bold;
 }

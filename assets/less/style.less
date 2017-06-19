@@ -102,14 +102,48 @@
         font-size: 18px;
       }
     }
-    .date{
+
+    .datelist{
       border:2px #fff solid;
       width:210px;
-      height:186px;
+      height:198px;
       color:#fff;
       position:relative;
-      top:-12px;
+      table{
+        margin:0 auto;
+        width:180px;
+        height:160px;
+      }
+      caption{
+        span{
+          display: block;
+          margin:7px auto 5px ;
+        }
+        li{
+          width:20px;
+          height:20px;
+          display: inline-block;
+          margin:5px 0 0;
+          position:absolute;
+
+          &:nth-child(1){
+            left:10px;
+            top:4px;
+            background-image: url(../images/w_arrowL.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          &:last-child{
+            right:10px;
+            top:4px;
+            background-image: url(../images/w_arrowR.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
     }
+
     .guestlist{
       border:2px #fff solid;
       width:210px;

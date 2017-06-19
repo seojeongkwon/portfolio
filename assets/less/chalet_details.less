@@ -1,0 +1,360 @@
+.chalet_details{
+
+.contents{
+  .detailswrap{
+    width:1720px;
+    margin:0 auto;
+    padding: 100px 0;
+    .bookbox{
+      position:relative;
+      background-color: rgba(0,0,0,.1);
+      width: 554px;
+      height: 1140px;
+      float:right;
+      margin-right:100px;
+      .text{
+        margin-top: 75px;
+        position:absolute;
+        left:110px;
+        div{
+          width: 290px;
+          height: 50px;
+          border:2px @fontcolor solid;
+          line-height: 50px;
+          background-color: #fff;
+          font-size: 18px;
+          color:@fontcolor;
+          padding:0 20px;
+          background-image: url(../images/g_arrow.png);
+          background-repeat: no-repeat;
+          background-position: right 10px center;
+          margin-bottom:313px;
+          &:last-child{
+            margin-bottom:0;
+          }
+        }
+      }
+      .textlist{
+        margin-top:130px;
+        li{
+          position: relative;
+          width: 330px;
+          height: 280px;
+          border:2px @fontcolor solid;
+          background-color: #fff;
+          margin: 0 auto 83px;
+          &:last-child{
+            height:113px;
+            margin-bottom:0;
+            span{
+              display: block;
+              font-size: 16px;
+              color:@fontcolor;
+              margin:10px 10px 10px 20px;
+            }
+          }
+        }
+        .datelist{
+          color:@fontcolor;
+          position:relative;
+          table{
+            margin:0 auto;
+            width:250px;
+            height:220px;
+          }
+          caption{
+            span{
+              display: block;
+              margin:20px auto 5px ;
+            }
+            li{
+              width:20px;
+              height:20px;
+              display: inline-block;
+              margin:18px 0 0;
+              position:absolute;
+              border:none;
+
+              &:nth-child(1){
+                left:10px;
+                top:4px;
+                background-image: url(../images/g_smallarrowL.png);
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+              &:last-child{
+                right:10px;
+                top:4px;
+                background-image: url(../images/g_smallarrowR.png);
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            }
+          }
+        }
+
+
+      }
+      .bookbutton{
+        color:#fff;
+        background-color: @fontcolor;
+        border-radius: 15px;
+        text-align: center;
+        line-height: 65px;
+        width: 250px;
+        height: 65px;
+        font-size: 20px;
+        margin: 40px auto 0;
+      }
+    }
+    .house{
+      position:relative;
+      width:967px;
+      height:500px;
+      .housepic{
+        img{
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .arrow{
+        span{
+          width:98px;
+          height:500px;}
+        span:nth-child(1){
+          background-image: url(../images/g_arrowL.png);
+          background-repeat: no-repeat;
+          background-position:left 0px center;
+          float:left;
+        }
+        span:nth-child(2){
+          background-image: url(../images/g_arrowR.png);
+          background-repeat: no-repeat;
+          background-position:right 0px center;
+          float:right;
+        }
+      }
+    }
+    .details{
+      width:967px;
+      padding:100px 0 0;
+      .explanation{
+        padding-bottom:60px;
+        p{font-size: 16px;}
+      }
+      .additional{
+        position:relative;
+        height:460px;
+        h2{
+          background-image: url(../images/check.png);
+          background-repeat: no-repeat;
+          padding-left: 27.5px;
+        }
+        p{
+          padding-left:27.5px;
+        }
+        .addlist01{
+          float:left;
+          li{
+            margin-top:40px;
+          }
+        }
+        .addlist02{
+          float:right;
+          li{
+            margin-top:40px;
+          }
+        }
+      }
+      .comments{
+        position:relative;
+        width:967px;
+        height:730px;
+        padding-top:100px;
+        .reviewname01{
+          width:190px;
+          height:45px;
+          border:1px @fontcolor solid;
+          border-bottom: none;
+          line-height: 45px;
+          text-align: center;
+          background-color: #fff;
+          position:absolute;
+          color:@fontcolor;
+        }
+        .reviewname02{
+          width:190px;
+          height:45px;
+          border:1px @fontcolor solid;
+          background-color: #eaeaea;
+          line-height: 45px;
+          text-align: center;
+          position:absolute;
+          left:200px;
+          z-index: -1;
+          color:@fontcolor;
+        }
+        .reviewbox{
+          border:1px @fontcolor solid;
+          background-color: #fff;
+          width:967px;
+          height:685px;
+          margin-top:45px;
+          li{
+            position:relative;
+            padding:50px 100px;
+            &:nth-child(1){
+              background-image: url(../images/reviewline.png);
+              background-repeat: no-repeat;
+              background-position: center bottom;
+            }
+            &:nth-child(2){
+              .button{
+                div{
+                  border-radius: 15px;
+                  width: 125px;
+                  height: 35px;
+                  text-align: center;
+                  line-height: 35px;
+                  display: inline-block;
+                  position:relative;
+                  top:20px;
+                  left:507px;
+                  background-color: @fontcolor;
+                  color:#fff;
+                }
+              }
+            }
+            img{
+              position:absolute;
+            }
+            .write{
+              margin-left:168px;
+              span{color:@fontcolor;}
+            }
+            &:last-child{
+              padding:0;
+              padding-bottom:50px;
+              .textbox{
+                width: 765px;
+                height: 163px;
+                border:1px @fontcolor solid;
+                margin:0 auto;
+              }
+              .textbutton{
+                border-radius: 15px;
+                width: 125px;
+                height: 35px;
+                text-align: center;
+                line-height: 35px;
+                float:right;
+                margin: 25px 100px 0 0;
+                background-color: @fontcolor;
+                color:#fff;
+              }
+            }
+          }
+        }
+      }
+
+      .inqueries{
+        position:relative;
+        width:967px;
+        height:730px;
+        padding-top:100px;
+        .inqname01{
+          width:190px;
+          height:45px;
+          border:1px @fontcolor solid;
+          background-color: #eaeaea;
+          line-height: 45px;
+          text-align: center;
+          position:absolute;
+          color:@fontcolor;
+          z-index: -1;
+        }
+        .inqname02{
+          width:190px;
+          height:45px;
+          border:1px @fontcolor solid;
+          border-bottom: none;
+          line-height: 45px;
+          text-align: center;
+          position:absolute;
+          left:200px;
+          color:@fontcolor;
+          background-color: #fff;
+        }
+        .inqbox{
+          border:1px @fontcolor solid;
+          background-color: #fff;
+          width:967px;
+          height:685px;
+          margin-top:45px;
+          li{
+            position:relative;
+            padding:50px 100px;
+            &:nth-child(1){
+              background-image: url(../images/reviewline.png);
+              background-repeat: no-repeat;
+              background-position: center bottom;
+            }
+            &:nth-child(2){
+              .button{
+                div{
+                  border-radius: 15px;
+                  width: 125px;
+                  height: 35px;
+                  text-align: center;
+                  line-height: 35px;
+                  display: inline-block;
+                  position:relative;
+                  top:20px;
+                  left:507px;
+                  background-color: @fontcolor;
+                  color:#fff;
+                }
+              }
+            }
+            img{
+              position:absolute;
+            }
+            .answeruser{ margin-left:150px;}
+            .inqwrite{
+              margin-left:168px;
+              span{color:@fontcolor;}
+            }
+            .inqanswer{
+              margin-left:318px;
+              span{color:@fontcolor;}
+            }
+            &:last-child{
+              padding:0;
+              padding-bottom:50px;
+              .textbox{
+                width: 765px;
+                height: 163px;
+                border:1px @fontcolor solid;
+                margin:0 auto;
+              }
+              .textbutton{
+                border-radius: 15px;
+                width: 125px;
+                height: 35px;
+                text-align: center;
+                line-height: 35px;
+                float:right;
+                margin: 25px 100px 0 0;
+                background-color: @fontcolor;
+                color:#fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+ }
+
+}
