@@ -2313,7 +2313,7 @@ header .menubar div:nth-child(4) {
   margin: 0 auto;
   padding: 50px 0;
   width: 1093px;
-  height: 760px;
+  height: 750px;
   border-bottom: 1px #bbbdc0 solid;
   text-align: center;
 }
@@ -2327,34 +2327,143 @@ header .menubar div:nth-child(4) {
 /* line 16, assets\less\orderpage.less */
 .orderpage .contents .order ul {
   width: 1093px;
-  border: 1px #f00 solid;
   border-bottom: 1px #bbbdc0 solid;
   font-size: 20px;
   height: 75px;
 }
-/* line 21, assets\less\orderpage.less */
-.orderpage .contents .order ul li {
-  border: 1px #f00 solid;
+/* line 22, assets\less\orderpage.less */
+.orderpage .contents .order ul:before {
+  content: "";
   display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
 }
-/* line 24, assets\less\orderpage.less */
+/* line 29, assets\less\orderpage.less */
+.orderpage .contents .order ul li {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 5px;
+  width: 49%;
+}
+/* line 35, assets\less\orderpage.less */
 .orderpage .contents .order ul li:nth-child(1) {
   text-align: left;
 }
-/* line 25, assets\less\orderpage.less */
+/* line 36, assets\less\orderpage.less */
 .orderpage .contents .order ul li:last-child {
   text-align: right;
 }
-/* line 30, assets\less\orderpage.less */
+/* line 40, assets\less\orderpage.less */
+.orderpage .contents .order .product li {
+  width: 32.5%;
+}
+/* line 40, assets\less\orderpage.less */
+.orderpage .contents .order .product li:nth-child(2) {
+  text-align: left;
+}
+/* line 42, assets\less\orderpage.less */
+.orderpage .contents .order .textbox {
+  position: relative;
+  width: 1075px;
+  height: 222px;
+  margin: 100px auto 0;
+  text-align: right;
+}
+/* line 48, assets\less\orderpage.less */
+.orderpage .contents .order .textbox .textarea {
+  border: 1px #848485 solid;
+  width: 1055px;
+  height: 192px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+  text-align: left;
+  color: #848485;
+}
+/* line 60, assets\less\orderpage.less */
 .orderpage .contents .payment {
   margin: 0 auto;
   padding: 50px 0;
   width: 1093px;
-  height: 1160px;
+  height: 830px;
   text-align: center;
 }
-/* line 36, assets\less\orderpage.less */
-.orderpage .contents .payment span {
+/* line 66, assets\less\orderpage.less */
+.orderpage .contents .payment .payname {
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 50px;
+  display: block;
+}
+/* line 72, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext01 {
+  width: 750px;
+  border: 1px #f00 solid;
+  margin: 0 auto 100px;
+}
+/* line 77, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 {
+  width: 750px;
+  border: 1px #f00 solid;
+  margin: 0 auto;
+}
+/* line 81, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .textlist02 {
+  border: 1px #f00 solid;
+  margin-left: 375px;
+}
+/* line 84, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .textlist02 li {
+  border: 1px #f00 solid;
+  width: 48%;
+  text-align: left;
+  margin-bottom: 5px;
+}
+/* line 92, assets\less\orderpage.less */
+.orderpage .contents .payment .payopt {
+  float: left;
+  border: 1px #f00 solid;
+}
+/* line 93, assets\less\orderpage.less */
+.orderpage .contents .payment label {
+  font-size: 18px;
+  display: block;
+}
+/* line 99, assets\less\orderpage.less */
+.orderpage .contents .payment input {
+  border-radius: 15px;
+  padding-left: 10px;
+  width: 330px;
+  height: 40px;
+}
+/* line 105, assets\less\orderpage.less */
+.orderpage .contents .payment .star {
+  color: #f00;
+}
+/* line 106, assets\less\orderpage.less */
+.orderpage .contents .payment .textlist01 {
+  border: 1px #f00 solid;
+}
+/* line 108, assets\less\orderpage.less */
+.orderpage .contents .payment .textlist01 li {
+  display: inline-block;
+  border: 1px #f00 solid;
+  width: 48%;
+  text-align: left;
+  margin-bottom: 5px;
+}
+/* line 117, assets\less\orderpage.less */
+.orderpage .contents .payment .orderbutton {
+  background-color: #ef5050;
+  border: 1px #ef5050 solid;
+  border-radius: 15px;
+  width: 168px;
+  height: 52px;
+  margin: 50px auto 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 52px;
+  text-align: center;
 }

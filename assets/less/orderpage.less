@@ -4,7 +4,7 @@
       margin:0 auto;
       padding:50px 0;
       width: 1093px;
-      height: 760px;
+      height: 750px;
       border-bottom: 1px #bbbdc0 solid;
       text-align: center;
       .ordername{
@@ -14,26 +14,120 @@
         margin-bottom: 50px;
       }
       ul{
-        width:1093px; border:1px #f00 solid;
+        width:1093px;
+        //border:1px #f00 solid;
         border-bottom: 1px #bbbdc0 solid;
         font-size: 20px;
         height:75px;
-        li{
-          border:1px #f00 solid;
+        &:before{ //비포로 선을 세로로 그어놓고 그 기준으로 버티칼얼라인 바탐.
+          content: "";
           display: inline-block;
+          height: 100%;
+           //border: 1px #f00 solid;
+          vertical-align: bottom;
+        }
+        li{
+          //border:1px #f00 solid;
+          display: inline-block;
+          vertical-align: bottom;
+          margin-bottom:5px;
+          width:49%;
           &:nth-child(1){text-align: left;}
           &:last-child{text-align: right;}
         }
+        }
+        .product{
+          li{width:32.5%; &:nth-child(2){text-align: left;}}
       }
-
+      .textbox{
+        position: relative;
+        width: 1075px;
+        height: 222px;
+        margin: 100px auto 0;
+        text-align: right;
+        .textarea{
+          border:1px #848485 solid;
+          width:1055px;
+          height:192px;
+          padding: 0 10px;
+          margin-bottom: 10px;
+          overflow-y: scroll;
+          text-align: left;
+          color:#848485;
+        }
+      }
     }
     .payment{
       margin:0 auto;
       padding:50px 0;
       width: 1093px;
-      height: 1160px;
+      height: 830px;
       text-align: center;
-      span{font-size: 30px; font-weight: bold;}
+      .payname{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        display: block;
+      }
+      .paytext01{
+        width:750px;
+        border:1px #f00 solid;
+        margin:0 auto 100px;
+      }
+      .paytext02{
+        width:750px;
+        border:1px #f00 solid;
+        margin:0 auto;
+        .textlist02{
+          border:1px #f00 solid;
+          margin-left:375px;
+          li{
+            border:1px #f00 solid;
+            width:48%;
+            text-align: left;
+            margin-bottom:5px;
+          }
+        }
+      }
+      .payopt{float:left; border:1px #f00 solid;}
+      label{
+        font-size: 18px;
+        display: block;
+        //display: inline-block;
+        //width:150px;
+      }
+      input{
+        border-radius: 15px;
+        padding-left:10px;
+        width: 330px;
+        height: 40px;
+      }
+      .star{color:#f00;}
+      .textlist01{
+        border:1px #f00 solid;
+        li{
+          display: inline-block;
+          border:1px #f00 solid;
+          width:48%;
+          text-align: left;
+          margin-bottom:5px;
+        }
+      }
+
+      .orderbutton{
+         background-color: @mainred;
+        border:1px @mainred solid;
+        border-radius: 15px;
+        width: 168px;
+        height: 52px;
+        margin: 50px auto 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        color:#fff;
+        font-weight: bold;
+        line-height: 52px;
+        text-align: center;
+      }
     }
   }
 }
