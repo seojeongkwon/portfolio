@@ -9,169 +9,152 @@
   .searchbar{
     text-align: center;
     padding-top: 416.5px;
-    .barbox{
-      width: 180px;
-      height: 42px;
-      border: 2px #fff solid;
-      color:#fff;
-      font-size: 18px;
-      display: inline-block;
-      padding:0 20px 0 10px; //글씨가 못넘어오게 패딩주고 거기에 백그라운드 이미지
-      background-image: url(../images/w_arrow01.png);
-      background-position: right 10px center;
-      background-repeat: no-repeat;
-      text-align: left;
-      line-height: 42px;
+    div{
+      strong{
+        //부모는 위드값이 있고 strong에는 없기때문에 패딩을 줘도 안늘어남
+          padding:0 10px 0 45px;
+          display: block;
+          font-size: 18px;
+          height:42px;
+          line-height:42px;
+          color:#fff;
+          font-weight: normal;
+          text-align: left;
+          span{
+            background-image: url(../images/w_arrow01.png);
+            background-repeat: no-repeat;
+            background-position: right 0 center;
+            display: block;
+
+          }
+      }
+      strong + ul{
+          border:1px #fff solid;
+          margin-top:2px;
+          position:absolute;
+          width:100%;
+          text-align: left;
+          display: none;
+          li{
+            height:42px;
+            line-height:42px;
+            padding: 0 20px;
+            color:#fff;
+            &:hover{
+              background-color:rgba(255,0,0,0.1);
+            }
+          }
+      }
+      select{position: absolute; top:400px;}
     }
-    .searchbox{
-      width: 136px;
-      height: 42px;
-      border: 2px #fff solid;
-      color:#fff;
-      font-size: 18px;
+    .locationbox{
       display: inline-block;
-      line-height: 42px;
-      padding-right: 5px;
-    }
-    .location{
-      background-image: url(../images/008-location.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      vertical-align: middle;
-      width:17px;
-      height:26px;
-      display: inline-block;
-      margin-right: 10px;
-    }
-    .date{
-      background-image: url(../images/006-calendar.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      vertical-align: middle;
-      width:24px;
-      height:24px;
-      display: inline-block;
-      margin-right: 10px;
-    }
-    .guest{
-      background-image: url(../images/007-users.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      vertical-align: middle;
-      width:25px;
-      height:21px;
-      display: inline-block;
-      margin-right: 10px;
-    }
-    .house{
-      background-image: url(../images/005-house.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      vertical-align: middle;
-      width:23px;
-      height:22px;
-      display: inline-block;
-      margin-right: 10px;
-    }
-    .search{//140 44
-      background-image: url(../images/004-search.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      vertical-align: middle;
-      width:20px;
-      height:20px;
-      display: inline-block;
-      margin-right: 10px;
-    }
-  }
-  .searchlist{
-    position:relative;
-    left:344px;
-    top:2px;
-  //  border:1px #f0f solid;
-    div{display: inline-block;}
-    .locationlist{
-      border:2px #fff solid;
-      width: 195px;
-      height: 220px;
-      padding-left:15px;
-      color:#fff;
-      span{
-        display: block;
-        margin-top:8px;
-        font-size: 18px;
+      width:180px;
+      border:1px #fff solid;
+      height:42px;
+      position:relative;
+      strong{
+        background-image: url(../images/008-location.png);
+        background-repeat: no-repeat;
+        background-position: left 10px center;
+        background-size: 12%;
       }
     }
-
-    .datelist{
-      border:2px #fff solid;
-      width:210px;
-      height:198px;
+    .table{
       color:#fff;
+      border:1px #fff solid;
+      display: none;
+    }
+    .datebox{
+      display: inline-block;
+      width:180px;
+      border:1px #fff solid;
+      height:42px;
       position:relative;
       table{
         margin:0 auto;
-        width:180px;
-        height:160px;
-      }
-      caption{
-        span{
-          display: block;
-          margin:7px auto 5px ;
-        }
         li{
-          width:20px;
-          height:20px;
-          display: inline-block;
-          margin:5px 0 0;
-          position:absolute;
-
           &:nth-child(1){
-            left:10px;
-            top:4px;
+            float:left;
+            border:1px #fff solid;
+            margin-top:10px;
+            width: 20px;
+            height: 20px;
             background-image: url(../images/w_arrowL.png);
             background-repeat: no-repeat;
             background-position: center;
           }
-          &:last-child{
-            right:10px;
-            top:4px;
+          &:nth-child(2){
+            float:right;
+            border:1px #fff solid;
+            margin-top:10px;
+            width: 20px;
+            height: 20px;
             background-image: url(../images/w_arrowR.png);
             background-repeat: no-repeat;
             background-position: center;
           }
         }
+        .date{
+          display: block;
+          margin-top:5px;
+        }
+      }
+      .checkin{
+        background-image: url(../images/006-calendar.png);
+        background-repeat: no-repeat;
+        background-position: left 10px center;
+        background-size: 15%;
+      }
+      .checkout{
+        background-image: url(../images/006-calendar.png);
+        background-repeat: no-repeat;
+        background-position: left 10px center;
+        background-size: 15%;
       }
     }
 
-    .guestlist{
-      border:2px #fff solid;
-      width:210px;
-      height:180px;
-      color:#fff;
+    .guestbox{
+      display: inline-block;
+      width:180px;
+      border:1px #fff solid;
+      height:42px;
       position:relative;
-      top:-39px;
-      span{
-        display: block;
-        font-size: 18px;
-        margin:7px 0 0 15px;
+      strong{
+        background-image: url(../images/007-users.png);
+        background-repeat: no-repeat;
+        background-position: left 10px center;
+        background-size: 15%;
       }
     }
-    .typelist{
-      border:2px #fff solid;
-      width:210px;
-      height:145px;
-      color:#fff;
+    .typebox{
+      display: inline-block;
+      width:180px;
+      border:1px #fff solid;
+      height:42px;
       position:relative;
-      top:-77px;
-      span{
-        display: block;
-        font-size: 18px;
-        margin:6px 0 0 15px;
+      strong{
+        background-image: url(../images/005-house.png);
+        background-repeat: no-repeat;
+        background-position: left 10px center;
+        background-size: 15%;
       }
     }
-    .searchboxlist{
-      width:136px;
+    .searchbox{
+      width: 100px;
+      height: 42px;
+      border:1px #fff solid;
+      display: inline-block;
+      vertical-align: bottom;
+      padding:0 20px;
+      background-image: url(../images/004-search.png);
+      background-repeat: no-repeat;
+      background-position: left 10px center;
+      background-size: 15%;
+      text-transform: uppercase;
+      color:#fff;
+      line-height: 42px;
+      text-align: center;
     }
   }
 

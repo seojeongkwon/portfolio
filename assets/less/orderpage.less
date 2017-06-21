@@ -15,7 +15,6 @@
       }
       ul{
         width:1093px;
-        //border:1px #f00 solid;
         border-bottom: 1px #bbbdc0 solid;
         font-size: 20px;
         height:75px;
@@ -27,7 +26,6 @@
           vertical-align: bottom;
         }
         li{
-          //border:1px #f00 solid;
           display: inline-block;
           vertical-align: bottom;
           margin-bottom:5px;
@@ -71,25 +69,8 @@
       }
       .paytext01{
         width:750px;
-        border:1px #f00 solid;
         margin:0 auto 100px;
       }
-      .paytext02{
-        width:750px;
-        border:1px #f00 solid;
-        margin:0 auto;
-        .textlist02{
-          border:1px #f00 solid;
-          margin-left:375px;
-          li{
-            border:1px #f00 solid;
-            width:48%;
-            text-align: left;
-            margin-bottom:5px;
-          }
-        }
-      }
-      .payopt{float:left; border:1px #f00 solid;}
       label{
         font-size: 18px;
         display: block;
@@ -104,16 +85,76 @@
       }
       .star{color:#f00;}
       .textlist01{
-        border:1px #f00 solid;
         li{
           display: inline-block;
-          border:1px #f00 solid;
           width:48%;
           text-align: left;
           margin-bottom:5px;
         }
       }
-
+      .paytext02{
+        width:750px;
+        margin:0 auto;
+        .payopt{
+          float:left;
+          //margin-left: 83px;
+          margin-left: 10px;
+          //margin-top:40px;
+          span{
+            display: block;
+            font-size: 18px;
+            text-align: left;
+          }
+          .creditopt{
+            border:1px #848485 solid;
+            width: 169px;
+            height: 40px;
+            color:@fontcolor;
+            line-height: 40px;
+            background-image: url(../images/g_arrow.png);
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding:0 20px;
+            text-align: left;
+          }
+          .creditlist{
+            width: 189px;
+            height: 100px;
+            border: 1px #848485 solid;
+            text-align: left;
+            padding-left:20px;
+            margin-bottom: 10px;
+            li{
+              margin:5px 0;
+              color:@fontcolor;
+            }
+          }
+        }
+        .textlist02{
+          margin-left:375px;
+          li{
+            width:100%;
+            text-align: left;
+            margin-bottom:5px;
+            &:nth-child(2){
+              input{
+              width:42px;
+              display: inline-block;
+              padding:0 15px;
+              }
+            }
+            .mm{
+              width:25px;
+              margin-right:10px;
+              padding:0 20px;
+            }
+            .yyyy{
+              width:35px;
+              padding:0 40px;
+            }
+         }
+       }
+      }
       .orderbutton{
          background-color: @mainred;
         border:1px @mainred solid;

@@ -82,6 +82,182 @@ header{
       color: @mainviolet;
     }
   }
+  .searchbarbox{
+    width:100%;
+    height:120px;
+    border:1px #f0f solid;
+    background-color: #fff;
+    .searchbar{
+      text-align: center;
+      margin-top:36px;
+      .barbox{
+        width: 180px;
+        height: 42px;
+        border: 2px @mainred solid;
+        color:@mainred;
+        font-size: 18px;
+        display: inline-block;
+        padding:0 20px 0 10px; //글씨가 못넘어오게 패딩주고 거기에 백그라운드 이미지
+        background-image: url(../images/w_arrow01.png);
+        background-position: right 10px center;
+        background-repeat: no-repeat;
+        text-align: left;
+        line-height: 42px;
+      }
+      .searchbox{
+        width: 136px;
+        height: 42px;
+        border: 2px @mainred solid;
+        color:@mainred;
+        font-size: 18px;
+        display: inline-block;
+        line-height: 42px;
+        padding-right: 5px;
+      }
+      .location{
+        background-image: url(../images/008-location.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        width:17px;
+        height:26px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .date{
+        background-image: url(../images/006-calendar.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        width:24px;
+        height:24px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .guest{
+        background-image: url(../images/007-users.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        width:25px;
+        height:21px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .house{
+        background-image: url(../images/005-house.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        width:23px;
+        height:22px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .search{//140 44
+        background-image: url(../images/004-search.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        width:20px;
+        height:20px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+    .searchlist{
+      position:relative;
+      left:344px;
+      top:2px;
+      div{display: inline-block;}
+      .locationlist{
+        background-color: #fff;
+        border:2px @mainred solid;
+        width: 195px;
+        height: 220px;
+        padding-left:15px;
+        color:@mainred;
+        vertical-align: top;
+        span{
+          display: block;
+          margin-top:8px;
+          font-size: 18px;
+        }
+      }
+
+      .datelist{
+        background-color: #fff;
+        border:2px @mainred solid;
+        width:210px;
+        height:198px;
+        color:@mainred;
+        vertical-align: top;
+        table{
+          margin:0 auto;
+          width:180px;
+          height:160px;
+        }
+        caption{
+          span{
+            display: block;
+            margin:7px auto 5px ;
+          }
+          li{
+            width:20px;
+            height:20px;
+            display: inline-block;
+            margin:5px 0 0;
+            position:absolute;
+
+            &:nth-child(1){
+              left:10px;
+              top:4px;
+              background-image: url(../images/w_arrowL.png);
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+            &:last-child{
+              right:10px;
+              top:4px;
+              background-image: url(../images/w_arrowR.png);
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+        }
+      }
+
+      .guestlist{
+        background-color: #fff;
+        border:2px @mainred solid;
+        width:210px;
+        height:180px;
+        color:@mainred;
+        vertical-align: top;
+        span{
+          display: block;
+          font-size: 18px;
+          margin:7px 0 0 15px;
+        }
+      }
+      .typelist{
+        background-color: #fff;
+        border:2px @mainred solid;
+        width:210px;
+        height:145px;
+        color:@mainred;
+        vertical-align: top;
+        span{
+          display: block;
+          font-size: 18px;
+          margin:6px 0 0 15px;
+        }
+      }
+      .searchboxlist{
+        width:136px;
+      }
+    }
+  }
 }
 .contents{
   .pic{
