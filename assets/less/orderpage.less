@@ -53,6 +53,10 @@
           text-align: left;
           color:#848485;
         }
+        span{
+          display: block;
+          text-align: right;
+        }
       }
     }
     .payment{
@@ -156,7 +160,7 @@
        }
       }
       .orderbutton{
-         background-color: @mainred;
+        background-color: @mainred;
         border:1px @mainred solid;
         border-radius: 15px;
         width: 168px;
@@ -168,6 +172,74 @@
         font-weight: bold;
         line-height: 52px;
         text-align: center;
+      }
+    }
+    .orderpop{
+      position:absolute;
+      width:900px;
+      height:870px;
+      border:1px #f00 solid;
+      left:26%;
+      top:30%;
+      background-color:rgba(255, 255, 255, .7);
+      z-index: 1;
+      display:none;
+      .inner{
+        width:800px;
+        height:770px;
+        background-color: #f2f1f0;
+        margin:50px;
+        position: relative;
+        strong{
+          font-size: 18px;
+          display: block;
+          padding:50px 0;
+          text-align: center;
+        }
+        .innerwrite{
+          width:600px;
+          margin: 0 auto;
+        }
+        .orderlist01{
+          padding: 50px 0;
+          border-bottom: 1px @fontcolor solid;
+          ul{border-bottom: 1px @fontcolor solid;}
+          li{
+            display: inline-block;
+            width:49%;
+            line-height: 50px;
+            &:nth-child(2){
+              text-align: right;}
+          }
+        }
+        .orderlist02{
+          margin-top: 50px;
+          ul{border-bottom: 1px @fontcolor solid;}
+          li{
+            display: inline-block;
+            width:49%;
+            line-height: 50px;
+            &:nth-child(2){
+              text-align: right;
+              border-bottom: none;
+            }
+          }
+        }
+
+        .donebutton{
+          background-color: @mainred;
+          border:1px @mainred solid;
+          border-radius: 15px;
+          width: 168px;
+          height: 52px;
+          margin: 50px auto 0;
+          text-transform: uppercase;
+          font-size: 18px;
+          color:#fff;
+          font-weight: bold;
+          line-height: 52px;
+          text-align: center;
+        }
       }
     }
   }
