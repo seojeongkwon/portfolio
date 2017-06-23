@@ -1,0 +1,247 @@
+.orderpage{
+  .contents{
+    .order{
+      margin:0 auto;
+      padding:50px 0;
+      width: 1093px;
+      height: 750px;
+      border-bottom: 1px #bbbdc0 solid;
+      text-align: center;
+      .ordername{
+        font-size: 30px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 50px;
+      }
+      ul{
+        width:1093px;
+        border-bottom: 1px #bbbdc0 solid;
+        font-size: 20px;
+        height:75px;
+        &:before{ //비포로 선을 세로로 그어놓고 그 기준으로 버티칼얼라인 바탐.
+          content: "";
+          display: inline-block;
+          height: 100%;
+           //border: 1px #f00 solid;
+          vertical-align: bottom;
+        }
+        li{
+          display: inline-block;
+          vertical-align: bottom;
+          margin-bottom:5px;
+          outline: 1px #000 solid;
+          width:49%;
+          &:nth-child(1){text-align: left;}
+          &:last-child{text-align: right;}
+        }
+        }
+        .product{
+          li{width:32.5%; &:nth-child(2){text-align: left;}}
+      }
+      .textbox{
+        position: relative;
+        width: 1075px;
+        height: 222px;
+        margin: 100px auto 0;
+        text-align: right;
+        .textarea{
+          border:1px #848485 solid;
+          width:1055px;
+          height:192px;
+          padding: 0 10px;
+          margin-bottom: 10px;
+          overflow-y: scroll;
+          text-align: left;
+          color:#848485;
+        }
+        span{
+          display: block;
+          text-align: right;
+        }
+      }
+    }
+    .payment{
+      margin:0 auto;
+      padding:50px 0;
+      width: 1093px;
+      height: 830px;
+      text-align: center;
+      .payname{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        display: block;
+      }
+      .paytext01{
+        width:750px;
+        margin:0 auto 100px;
+      }
+      label{
+        font-size: 18px;
+        display: block;
+        //display: inline-block;
+        //width:150px;
+      }
+      input{
+        border-radius: 15px;
+        padding-left:10px;
+        width: 330px;
+        height: 40px;
+      }
+      .star{color:#f00;}
+      .textlist01{
+        li{
+          display: inline-block;
+          width:48%;
+          text-align: left;
+          margin-bottom:5px;
+        }
+      }
+      .paytext02{
+        width:750px;
+        margin:0 auto;
+        .payopt{
+          float:left;
+          //margin-left: 83px;
+          margin-left: 10px;
+          //margin-top:40px;
+          span{
+            display: block;
+            font-size: 18px;
+            text-align: left;
+          }
+          .creditopt{
+            border:1px #848485 solid;
+            width: 169px;
+            height: 40px;
+            color:@fontcolor;
+            line-height: 40px;
+            background-image: url(../images/g_arrow.png);
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding:0 20px;
+            text-align: left;
+          }
+          .creditlist{
+            width: 189px;
+            height: 100px;
+            border: 1px #848485 solid;
+            text-align: left;
+            padding-left:20px;
+            margin-bottom: 10px;
+            li{
+              margin:5px 0;
+              color:@fontcolor;
+            }
+          }
+        }
+        .textlist02{
+          margin-left:375px;
+          li{
+            width:100%;
+            text-align: left;
+            margin-bottom:5px;
+            &:nth-child(2){
+              input{
+              width:42px;
+              display: inline-block;
+              padding:0 15px;
+              }
+            }
+            .mm{
+              width:25px;
+              margin-right:10px;
+              padding:0 20px;
+            }
+            .yyyy{
+              width:35px;
+              padding:0 40px;
+            }
+         }
+       }
+      }
+      .orderbutton{
+        background-color: @mainred;
+        border:1px @mainred solid;
+        border-radius: 15px;
+        width: 168px;
+        height: 52px;
+        margin: 50px auto 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        color:#fff;
+        font-weight: bold;
+        line-height: 52px;
+        text-align: center;
+      }
+    }
+    .orderpop{
+      position:absolute;
+      width:900px;
+      height:870px;
+      border:1px #f00 solid;
+      left:26%;
+      top:30%;
+      background-color:rgba(255, 255, 255, .7);
+      z-index: 1;
+      display:none;
+      .inner{
+        width:800px;
+        height:770px;
+        background-color: #f2f1f0;
+        margin:50px;
+        position: relative;
+        strong{
+          font-size: 18px;
+          display: block;
+          padding:50px 0;
+          text-align: center;
+        }
+        .innerwrite{
+          width:600px;
+          margin: 0 auto;
+        }
+        .orderlist01{
+          padding: 50px 0;
+          border-bottom: 1px @fontcolor solid;
+          ul{border-bottom: 1px @fontcolor solid;}
+          li{
+            display: inline-block;
+            width:49%;
+            line-height: 50px;
+            &:nth-child(2){
+              text-align: right;}
+          }
+        }
+        .orderlist02{
+          margin-top: 50px;
+          ul{border-bottom: 1px @fontcolor solid;}
+          li{
+            display: inline-block;
+            width:49%;
+            line-height: 50px;
+            &:nth-child(2){
+              text-align: right;
+              border-bottom: none;
+            }
+          }
+        }
+
+        .donebutton{
+          background-color: @mainred;
+          border:1px @mainred solid;
+          border-radius: 15px;
+          width: 168px;
+          height: 52px;
+          margin: 50px auto 0;
+          text-transform: uppercase;
+          font-size: 18px;
+          color:#fff;
+          font-weight: bold;
+          line-height: 52px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

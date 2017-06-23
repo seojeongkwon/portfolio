@@ -4,8 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="wow.min.js"></script>
 <link rel="stylesheet" href="assets/css/style.css">
   <title>Document</title>
+  <script>
+  $(function(){
+
+
+  $('.locationbox').click(function(){
+
+    $(this).children('ul').toggle()
+
+/*    var idx;
+
+    $(this).find('li').click(function(){
+
+        idx = $(this).index()
+        var opt = $(this).text();
+        $(this).parent('ul').prev('strong').text(opt);
+
+    })
+
+
+    $(this).find('select').change(function(){
+      $('this').find('option').eq(idx).val();
+
+    })*/
+
+
+  })
+  $('.datebox').click(function(){
+
+    $(this).children('.table').toggle()
+  })
+
+  $('.guestbox').click(function(){
+
+    $(this).children('ul').toggle()
+  })
+  $('.typebox').click(function(){
+
+    $(this).children('ul').toggle()
+  })
+
+
+})
+  </script>
 </head>
 <body class="index">
   <div class="wrap">
@@ -21,42 +66,269 @@
           <div><span>Lake cabin</span></div>
           <div><span>Chalet</span></div>
         </div>
+
+        <div class="loginpop">
+          <div class="inner">
+            <strong>log in</strong>
+            <div class="idpassword">
+              <small>*입력하신 정보가 없습니다.</small>
+               <span class="logintxt"><label for="">id</label><input type="text" /></span>
+               <span class="logintxt"><label class="passwordlabel" for="">password</label><input type="text" /></span>
+               <button class="loginbutton">login</button>
+
+              <div class="findlist">
+                  <span>패스워드를 잊어버렸습니까? <a>password find</a></span>
+                  <span>회원이 아닙니까? <a>sign up</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="passwordpop">
+          <div class="inner">
+            <strong>passwrod find</strong>
+            <div class="passwordfind">
+              <span>가입 시 입력한 이메일을 입력해주세요.</span>
+              <div class="email">
+                 <span><label for="">e-mail address</label><input type="text" /></span>
+               <button class="sendbutton">send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="signuppop">
+          <div class="inner">
+            <strong>sign up</strong>
+            <div class="textbox">
+              <div class="textarea">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas
+                  semper erat et justo porta auctor nec lobortis elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+                  m. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                  eaque ipsa quae ab illo inventore veritatis  et quasi architecto beLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proid
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas
+                  semper erat et justo porta auctor nec lobortis elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+                  m. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                  eaque ipsa quae ab illo inventore veritatis  et quasi architecto beLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas semper erat et justo porta auctor nec lobortis elit. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proid
+              </div>
+              <span><input type="checkbox" />Agree</span>
+            </div>
+            <div class="selftext">
+              <span><label for="">name</label><input type="text" /></span>
+              <span><label for="">first name</label><input type="text" /></span>
+              <span><label for="">e-mail address</label><input type="text" /></span>
+              <span><label for="">password</label><input type="text" /></span>
+              <span><label for="">date of birth</label><input class="dd" placeholder="DD" type="text" /><input class="mm" placeholder="MM" type="text" /><input class="yyyy" placeholder="YYYY" type="text" /></span>
+            </div>
+            <button class="joinbutton">join</button>
+          </div>
+        </div>
+
     </header>
     <div class="contents">
-      <div class="searchbar">
-        <div class="barbox"><span><i class="location"></i>location</span></div>
-        <div class="barbox"><span><i class="date"></i>check in</span></div>
-        <div class="barbox"><span><i class="date"></i>check out</span></div>
-        <div class="barbox"><span><i class="guest"></i>guest</span></div>
-        <div class="barbox"><span><i class="house"></i>type</span></div>
-        <div class="searchbox"><span><i class="search"></i>search</span></div>
+
+     <div class="searchbar">
+      <div class="locationbox">
+        <strong><span>location</span></strong>
+        <ul>
+          <li>Africa</li>
+          <li>Asia</li>
+          <li>Australia</li>
+          <li>Europe</li>
+          <li>North America</li>
+          <li>South America</li>
+        </ul>
+
+        <select name="" id="">
+          <option value="ion1">Africa</option>
+          <option value="ion2">Asia</option>
+          <option value="ion3">Australia</option>
+          <option value="ion4">Europe</option>
+          <option value="ion4">North America</option>
+          <option value="ion4">South America</option>
+        </select>
       </div>
-      <div class="searchlist">
-        <div class="locationlist">
-          <span>Africa</span>
-          <span>Asia</span>
-          <span>Australia</span>
-          <span>Europe</span>
-          <span>North America</span>
-          <span>South America</span>
+      <div class="datebox">
+        <strong class="checkin"><span>check in</span></strong>
+        <div class="table">
+        <table>
+          <caption>
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+            <span class="date">2017 / 05</span>
+          </caption>
+          <tr>
+            <th>Su</th>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
         </div>
-        <div class="dateinlist date"></div>
-        <div class="dateoutlist date"></div>
-        <div class="guestlist">
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
-        </div>
-        <div class="typelist">
-          <span>guest house</span>
-          <span>countryside</span>
-          <span>lake cabin</span>
-          <span>chalet</span>
-        </div>
-        <div class="searchboxlist"></div>
       </div>
+      <div class="datebox">
+        <strong class="checkout"><span>check out</span></strong>
+        <div class="table">
+        <table>
+          <caption>
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+            <span class="date">2017 / 06</span>
+          </caption>
+          <tr>
+            <th>Su</th>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td></td>
+          </tr>
+        </table>
+        </div>
+      </div>
+      <div class="guestbox">
+        <strong><span>guest</span></strong>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+        </ul>
+
+        <select name="" id="">
+          <option value="ion1">1</option>
+          <option value="ion2">2</option>
+          <option value="ion3">3</option>
+          <option value="ion4">4</option>
+          <option value="ion4">5</option>
+          <option value="ion4">6</option>
+        </select>
+      </div>
+      <div class="typebox">
+        <strong><span>type</span></strong>
+        <ul>
+          <li>Guest house</li>
+          <li>Countryside</li>
+          <li>Lake cabin</li>
+          <li>Chalet</li>
+        </ul>
+
+        <select name="" id="">
+          <option value="ion1">Guest house</option>
+          <option value="ion2">Countryside</option>
+          <option value="ion3">Lake cabin</option>
+          <option value="ion4">Chalet</option>
+        </select>
+      </div>
+      <div class="searchbox">search</div>
+     </div>
+
     </div>
     <footer>
       <div class="empty">

@@ -42,11 +42,17 @@ h2 {
 p {
   color: #838384;
 }
-/* line 21, assets\less\common.less */
+/* line 19, assets\less\common.less */
+button {
+  font-family: 'Noto Sans CJK KR DemiLight', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* line 22, assets\less\common.less */
 .wrap {
   width: 1920px;
 }
-/* line 25, assets\less\common.less */
+/* line 26, assets\less\common.less */
 header .top {
   position: relative;
   width: 1920px;
@@ -54,20 +60,20 @@ header .top {
   background-color: #f9f7f7;
   background-image: none;
 }
-/* line 31, assets\less\common.less */
+/* line 32, assets\less\common.less */
 header .top img {
   float: left;
   margin-top: 21.972px;
   margin-left: 50px;
 }
-/* line 36, assets\less\common.less */
+/* line 37, assets\less\common.less */
 header .top span {
   float: right;
   margin-top: 43.078px;
   margin-right: 48.58px;
   color: #6479ba;
 }
-/* line 43, assets\less\common.less */
+/* line 44, assets\less\common.less */
 header .headline {
   position: relative;
   height: 5px;
@@ -75,13 +81,13 @@ header .headline {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-/* line 50, assets\less\common.less */
+/* line 51, assets\less\common.less */
 header .menubar {
   position: relative;
   background-color: #fff;
   height: 165px;
 }
-/* line 54, assets\less\common.less */
+/* line 55, assets\less\common.less */
 header .menubar div {
   display: inline-block;
   width: 206px;
@@ -93,40 +99,467 @@ header .menubar div {
   left: 25%;
   margin-left: 14px;
 }
-/* line 64, assets\less\common.less */
+/* line 65, assets\less\common.less */
 header .menubar div span {
   line-height: 46px;
 }
-/* line 68, assets\less\common.less */
+/* line 69, assets\less\common.less */
 header .menubar div:nth-child(1) {
   border: 2px #ef5050 solid;
   color: #ef5050;
 }
-/* line 72, assets\less\common.less */
+/* line 73, assets\less\common.less */
 header .menubar div:nth-child(2) {
   border: 2px #f5b250 solid;
   color: #f5b250;
 }
-/* line 76, assets\less\common.less */
+/* line 77, assets\less\common.less */
 header .menubar div:nth-child(3) {
   border: 2px #79c266 solid;
   color: #79c266;
 }
-/* line 80, assets\less\common.less */
+/* line 81, assets\less\common.less */
 header .menubar div:nth-child(4) {
   border: 2px #a764a8 solid;
   color: #a764a8;
 }
-/* line 87, assets\less\common.less */
+/* line 86, assets\less\common.less */
+header .loginpop {
+  position: absolute;
+  width: 826px;
+  height: 518px;
+  left: 489px;
+  top: 35%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  display: none;
+}
+/* line 95, assets\less\common.less */
+header .loginpop .inner {
+  width: 726px;
+  height: 418px;
+  background-color: #f2f1f0;
+  margin: 50px;
+}
+/* line 100, assets\less\common.less */
+header .loginpop .inner strong {
+  font-size: 30px;
+  display: block;
+  padding: 50px 0 0;
+  text-align: center;
+}
+/* line 106, assets\less\common.less */
+header .loginpop .inner .idpassword {
+  width: 626px;
+  margin: 0 auto;
+}
+/* line 109, assets\less\common.less */
+header .loginpop .inner .idpassword small {
+  color: #f00;
+  display: block;
+  margin-top: 50px;
+  font-size: 14px;
+}
+/* line 115, assets\less\common.less */
+header .loginpop .inner .idpassword .logintxt {
+  display: block;
+  float: left;
+}
+/* line 118, assets\less\common.less */
+header .loginpop .inner .idpassword .logintxt label {
+  font-size: 18px;
+  display: inline-block;
+  width: 150px;
+}
+/* line 123, assets\less\common.less */
+header .loginpop .inner .idpassword .logintxt input {
+  width: 237px;
+  height: 25px;
+  border-radius: 15px;
+}
+/* line 129, assets\less\common.less */
+header .loginpop .inner .idpassword .loginbutton {
+  background-color: #ef5050;
+  border: 1px #ef5050 solid;
+  border-radius: 15px;
+  width: 167px;
+  height: 52px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 52px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 7px;
+}
+/* line 146, assets\less\common.less */
+header .loginpop .inner .findlist {
+  margin-top: 50px;
+}
+/* line 148, assets\less\common.less */
+header .loginpop .inner .findlist span {
+  font-size: 16px;
+  display: block;
+}
+/* line 152, assets\less\common.less */
+header .loginpop .inner .findlist a {
+  font-size: 13px;
+  color: #4c60ab;
+}
+/* line 159, assets\less\common.less */
+header .passwordpop {
+  position: absolute;
+  width: 815px;
+  height: 380px;
+  left: 515px;
+  top: 35%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  display: none;
+}
+/* line 168, assets\less\common.less */
+header .passwordpop .inner {
+  width: 715px;
+  height: 280px;
+  background-color: #f2f1f0;
+  margin: 50px;
+}
+/* line 173, assets\less\common.less */
+header .passwordpop .inner strong {
+  font-size: 30px;
+  display: block;
+  padding: 50px 0 0;
+  text-align: center;
+}
+/* line 179, assets\less\common.less */
+header .passwordpop .inner .passwordfind {
+  width: 615px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+/* line 183, assets\less\common.less */
+header .passwordpop .inner .passwordfind > span {
+  display: block;
+  margin-top: 50px;
+  font-size: 16px;
+}
+/* line 189, assets\less\common.less */
+header .passwordpop .inner .passwordfind .email label {
+  font-size: 18px;
+  display: inline-block;
+  width: 150px;
+}
+/* line 194, assets\less\common.less */
+header .passwordpop .inner .passwordfind .email input {
+  width: 237px;
+  height: 25px;
+  border-radius: 15px;
+}
+/* line 200, assets\less\common.less */
+header .passwordpop .inner .passwordfind .sendbutton {
+  background-color: #ef5050;
+  border: 1px #ef5050 solid;
+  border-radius: 15px;
+  width: 167px;
+  height: 52px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 52px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 50px;
+}
+/* line 218, assets\less\common.less */
+header .signuppop {
+  position: absolute;
+  width: 997px;
+  height: 934px;
+  left: 515px;
+  top: 27%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+/* line 227, assets\less\common.less */
+header .signuppop .inner {
+  width: 897px;
+  height: 834px;
+  background-color: #f2f1f0;
+  margin: 50px;
+}
+/* line 232, assets\less\common.less */
+header .signuppop .inner strong {
+  font-size: 30px;
+  display: block;
+  padding: 50px 0 0;
+  text-align: center;
+}
+/* line 238, assets\less\common.less */
+header .signuppop .inner .textbox {
+  position: relative;
+  width: 794px;
+  height: 185px;
+  margin: 50px 0 0 40px;
+}
+/* line 243, assets\less\common.less */
+header .signuppop .inner .textbox .textarea {
+  border: 1px #848485 solid;
+  width: 792px;
+  height: 183px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+  text-align: left;
+  color: #848485;
+}
+/* line 253, assets\less\common.less */
+header .signuppop .inner .textbox span {
+  display: block;
+  text-align: right;
+}
+/* line 258, assets\less\common.less */
+header .signuppop .inner .selftext {
+  margin: 75px auto 0;
+  width: 797px;
+}
+/* line 262, assets\less\common.less */
+header .signuppop .inner .selftext span {
+  border: 1px #f00 solid;
+  display: inline-block;
+  margin-right: 40px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+/* line 269, assets\less\common.less */
+header .signuppop .inner .selftext span label {
+  font-size: 18px;
+  display: block;
+}
+/* line 274, assets\less\common.less */
+header .signuppop .inner .selftext span input {
+  width: 340px;
+  height: 41px;
+  border-radius: 15px;
+}
+/* line 279, assets\less\common.less */
+header .signuppop .inner .selftext span .dd {
+  width: 63px;
+  padding: 0 10px;
+}
+/* line 283, assets\less\common.less */
+header .signuppop .inner .selftext span .mm {
+  width: 63px;
+  padding: 0 10px;
+}
+/* line 287, assets\less\common.less */
+header .signuppop .inner .selftext span .yyyy {
+  width: 108px;
+  padding: 0 10px;
+}
+/* line 294, assets\less\common.less */
+header .signuppop .inner .joinbutton {
+  background-color: #ef5050;
+  border: 1px #ef5050 solid;
+  border-radius: 15px;
+  width: 167px;
+  height: 52px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 52px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  left: 43%;
+  margin-top: 50px;
+}
+/* line 316, assets\less\common.less */
+.contents .pic .searchmenu {
+  border: 1px #f0f solid;
+}
+/* line 318, assets\less\common.less */
+.contents .pic .searchmenu .searchbar {
+  text-align: center;
+  padding-top: 39px;
+}
+/* line 322, assets\less\common.less */
+.contents .pic .searchmenu .searchbar div strong {
+  padding: 0 10px 0 45px;
+  display: block;
+  font-size: 18px;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  font-weight: normal;
+  text-align: left;
+}
+/* line 332, assets\less\common.less */
+.contents .pic .searchmenu .searchbar div strong span {
+  background-image: url(../images/w_arrow01.png);
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  display: block;
+}
+/* line 340, assets\less\common.less */
+.contents .pic .searchmenu .searchbar div strong + ul {
+  border: 1px #fff solid;
+  margin-top: 2px;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  display: none;
+}
+/* line 347, assets\less\common.less */
+.contents .pic .searchmenu .searchbar div strong + ul li {
+  height: 42px;
+  line-height: 42px;
+  padding: 0 20px;
+  color: #fff;
+}
+/* line 352, assets\less\common.less */
+.contents .pic .searchmenu .searchbar div strong + ul li:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+/* line 357, assets\less\common.less */
+.contents .pic .searchmenu .searchbar div select {
+  position: absolute;
+  top: 400px;
+}
+/* line 359, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .locationbox {
+  display: inline-block;
+  width: 180px;
+  border: 1px #fff solid;
+  height: 42px;
+  position: relative;
+}
+/* line 365, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .locationbox strong {
+  background-image: url(../images/008-location.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 12%;
+}
+/* line 372, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .table {
+  color: #fff;
+  border: 1px #fff solid;
+  display: none;
+}
+/* line 377, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .datebox {
+  display: inline-block;
+  width: 180px;
+  border: 1px #fff solid;
+  height: 42px;
+  position: relative;
+}
+/* line 383, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .datebox table {
+  margin: 0 auto;
+}
+/* line 386, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .datebox table li:nth-child(1) {
+  float: left;
+  border: 1px #fff solid;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/w_arrowL.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 396, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .datebox table li:nth-child(2) {
+  float: right;
+  border: 1px #fff solid;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/w_arrowR.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 407, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .datebox table .date {
+  display: block;
+  margin-top: 5px;
+}
+/* line 412, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .datebox .checkin {
+  background-image: url(../images/006-calendar.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 15%;
+}
+/* line 418, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .datebox .checkout {
+  background-image: url(../images/006-calendar.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 15%;
+}
+/* line 426, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .guestbox {
+  display: inline-block;
+  width: 180px;
+  border: 1px #fff solid;
+  height: 42px;
+  position: relative;
+}
+/* line 432, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .guestbox strong {
+  background-image: url(../images/007-users.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 15%;
+}
+/* line 439, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .typebox {
+  display: inline-block;
+  width: 180px;
+  border: 1px #fff solid;
+  height: 42px;
+  position: relative;
+}
+/* line 445, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .typebox strong {
+  background-image: url(../images/005-house.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 15%;
+}
+/* line 452, assets\less\common.less */
+.contents .pic .searchmenu .searchbar .searchbox {
+  width: 100px;
+  height: 42px;
+  border: 1px #fff solid;
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 0 20px;
+  background-image: url(../images/004-search.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 15%;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+}
+/* line 471, assets\less\common.less */
 .contents .pic {
   position: relative;
   width: 1920px;
   height: 403px;
   border: 1px #000 solid;
-  background-color: rgba(200, 0, 0, 0.1);
+  background-color: #7f332f;
 }
-/* line 93, assets\less\common.less */
-.contents .pic span {
+/* line 477, assets\less\common.less */
+.contents .pic .write {
   position: absolute;
   top: 233px;
   left: 100px;
@@ -135,7 +568,7 @@ header .menubar div:nth-child(4) {
   color: #f9f7f7;
   display: block;
 }
-/* line 104, assets\less\common.less */
+/* line 488, assets\less\common.less */
 .headline {
   position: relative;
   height: 5px;
@@ -143,18 +576,18 @@ header .menubar div:nth-child(4) {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-/* line 111, assets\less\common.less */
+/* line 495, assets\less\common.less */
 .bottom {
   height: 230px;
   background-color: #f9f7f7;
 }
-/* line 114, assets\less\common.less */
+/* line 498, assets\less\common.less */
 .bottom .lang {
   float: left;
   padding-top: 50px;
   margin-left: 100px;
 }
-/* line 118, assets\less\common.less */
+/* line 502, assets\less\common.less */
 .bottom .lang div {
   width: 222px;
   height: 44px;
@@ -167,38 +600,38 @@ header .menubar div:nth-child(4) {
   line-height: 44px;
   margin-bottom: 5px;
 }
-/* line 131, assets\less\common.less */
+/* line 515, assets\less\common.less */
 .bottom .notice {
   float: right;
   padding-right: 100px;
   padding-top: 50px;
 }
-/* line 135, assets\less\common.less */
+/* line 519, assets\less\common.less */
 .bottom .notice div {
   display: inline-block;
 }
-/* line 137, assets\less\common.less */
+/* line 521, assets\less\common.less */
 .bottom .traveling {
   color: #939597;
   margin-right: 50px;
 }
-/* line 140, assets\less\common.less */
+/* line 524, assets\less\common.less */
 .bottom .traveling span {
   display: block;
 }
-/* line 143, assets\less\common.less */
+/* line 527, assets\less\common.less */
 .bottom .traveling span:nth-child(1) {
   font-weight: bold;
 }
-/* line 147, assets\less\common.less */
+/* line 531, assets\less\common.less */
 .bottom .touch {
   color: #939597;
 }
-/* line 149, assets\less\common.less */
+/* line 533, assets\less\common.less */
 .bottom .touch span {
   display: block;
 }
-/* line 152, assets\less\common.less */
+/* line 536, assets\less\common.less */
 .bottom .touch span:nth-child(1) {
   font-weight: bold;
 }
@@ -216,155 +649,171 @@ header .menubar div:nth-child(4) {
   text-align: center;
   padding-top: 416.5px;
 }
-/* line 12, assets\less\style.less */
-.index .contents .searchbar .barbox {
-  width: 180px;
-  height: 42px;
-  border: 2px #fff solid;
-  color: #fff;
+/* line 13, assets\less\style.less */
+.index .contents .searchbar div strong {
+  padding: 0 10px 0 45px;
+  display: block;
   font-size: 18px;
-  display: inline-block;
-  padding: 0 20px 0 10px;
-  background-image: url(../images/w_arrow01.png);
-  background-position: right 10px center;
-  background-repeat: no-repeat;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  font-weight: normal;
   text-align: left;
-  line-height: 42px;
 }
-/* line 26, assets\less\style.less */
-.index .contents .searchbar .searchbox {
-  width: 136px;
+/* line 23, assets\less\style.less */
+.index .contents .searchbar div strong span {
+  background-image: url(../images/w_arrow01.png);
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  display: block;
+}
+/* line 31, assets\less\style.less */
+.index .contents .searchbar div strong + ul {
+  border: 1px #fff solid;
+  margin-top: 2px;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  display: none;
+}
+/* line 38, assets\less\style.less */
+.index .contents .searchbar div strong + ul li {
   height: 42px;
-  border: 2px #fff solid;
-  color: #fff;
-  font-size: 18px;
-  display: inline-block;
   line-height: 42px;
-  padding-right: 5px;
+  padding: 0 20px;
+  color: #fff;
 }
-/* line 36, assets\less\style.less */
-.index .contents .searchbar .location {
-  background-image: url(../images/008-location.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  vertical-align: middle;
-  width: 17px;
-  height: 26px;
-  display: inline-block;
-  margin-right: 10px;
+/* line 43, assets\less\style.less */
+.index .contents .searchbar div strong + ul li:hover {
+  background-color: rgba(255, 0, 0, 0.1);
 }
-/* line 46, assets\less\style.less */
-.index .contents .searchbar .date {
-  background-image: url(../images/006-calendar.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  vertical-align: middle;
-  width: 24px;
-  height: 24px;
+/* line 48, assets\less\style.less */
+.index .contents .searchbar div select {
+  position: absolute;
+  top: 400px;
+}
+/* line 50, assets\less\style.less */
+.index .contents .searchbar .locationbox {
   display: inline-block;
-  margin-right: 10px;
+  width: 180px;
+  border: 1px #fff solid;
+  height: 42px;
+  position: relative;
 }
 /* line 56, assets\less\style.less */
-.index .contents .searchbar .guest {
-  background-image: url(../images/007-users.png);
+.index .contents .searchbar .locationbox strong {
+  background-image: url(../images/008-location.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  vertical-align: middle;
-  width: 25px;
-  height: 21px;
-  display: inline-block;
-  margin-right: 10px;
+  background-position: left 10px center;
+  background-size: 12%;
 }
-/* line 66, assets\less\style.less */
-.index .contents .searchbar .house {
-  background-image: url(../images/005-house.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  vertical-align: middle;
-  width: 23px;
-  height: 22px;
-  display: inline-block;
-  margin-right: 10px;
+/* line 63, assets\less\style.less */
+.index .contents .searchbar .table {
+  color: #fff;
+  border: 1px #fff solid;
+  display: none;
 }
-/* line 76, assets\less\style.less */
-.index .contents .searchbar .search {
-  background-image: url(../images/004-search.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  vertical-align: middle;
+/* line 68, assets\less\style.less */
+.index .contents .searchbar .datebox {
+  display: inline-block;
+  width: 180px;
+  border: 1px #fff solid;
+  height: 42px;
+  position: relative;
+}
+/* line 74, assets\less\style.less */
+.index .contents .searchbar .datebox table {
+  margin: 0 auto;
+}
+/* line 77, assets\less\style.less */
+.index .contents .searchbar .datebox table li:nth-child(1) {
+  float: left;
+  border: 1px #fff solid;
+  margin-top: 10px;
   width: 20px;
   height: 20px;
-  display: inline-block;
-  margin-right: 10px;
+  background-image: url(../images/w_arrowL.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /* line 87, assets\less\style.less */
-.index .contents .searchlist {
-  position: relative;
-  left: 344px;
-  top: 2px;
+.index .contents .searchbar .datebox table li:nth-child(2) {
+  float: right;
+  border: 1px #fff solid;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/w_arrowR.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-/* line 92, assets\less\style.less */
-.index .contents .searchlist div {
+/* line 98, assets\less\style.less */
+.index .contents .searchbar .datebox table .date {
+  display: block;
+  margin-top: 5px;
+}
+/* line 103, assets\less\style.less */
+.index .contents .searchbar .datebox .checkin {
+  background-image: url(../images/006-calendar.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 15%;
+}
+/* line 109, assets\less\style.less */
+.index .contents .searchbar .datebox .checkout {
+  background-image: url(../images/006-calendar.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 15%;
+}
+/* line 117, assets\less\style.less */
+.index .contents .searchbar .guestbox {
   display: inline-block;
-}
-/* line 93, assets\less\style.less */
-.index .contents .searchlist .locationlist {
-  border: 2px #fff solid;
-  width: 195px;
-  height: 220px;
-  padding-left: 15px;
-  color: #fff;
-}
-/* line 99, assets\less\style.less */
-.index .contents .searchlist .locationlist span {
-  display: block;
-  margin-top: 8px;
-  font-size: 18px;
-}
-/* line 105, assets\less\style.less */
-.index .contents .searchlist .date {
-  border: 2px #fff solid;
-  width: 210px;
-  height: 186px;
-  color: #fff;
+  width: 180px;
+  border: 1px #fff solid;
+  height: 42px;
   position: relative;
-  top: -12px;
 }
-/* line 113, assets\less\style.less */
-.index .contents .searchlist .guestlist {
-  border: 2px #fff solid;
-  width: 210px;
-  height: 180px;
-  color: #fff;
+/* line 123, assets\less\style.less */
+.index .contents .searchbar .guestbox strong {
+  background-image: url(../images/007-users.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 15%;
+}
+/* line 130, assets\less\style.less */
+.index .contents .searchbar .typebox {
+  display: inline-block;
+  width: 180px;
+  border: 1px #fff solid;
+  height: 42px;
   position: relative;
-  top: -39px;
 }
-/* line 120, assets\less\style.less */
-.index .contents .searchlist .guestlist span {
-  display: block;
-  font-size: 18px;
-  margin: 7px 0 0 15px;
+/* line 136, assets\less\style.less */
+.index .contents .searchbar .typebox strong {
+  background-image: url(../images/005-house.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 15%;
 }
-/* line 126, assets\less\style.less */
-.index .contents .searchlist .typelist {
-  border: 2px #fff solid;
-  width: 210px;
-  height: 145px;
+/* line 143, assets\less\style.less */
+.index .contents .searchbar .searchbox {
+  width: 100px;
+  height: 42px;
+  border: 1px #fff solid;
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 0 20px;
+  background-image: url(../images/004-search.png);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 15%;
+  text-transform: uppercase;
   color: #fff;
-  position: relative;
-  top: -77px;
+  line-height: 42px;
+  text-align: center;
 }
-/* line 133, assets\less\style.less */
-.index .contents .searchlist .typelist span {
-  display: block;
-  font-size: 18px;
-  margin: 6px 0 0 15px;
-}
-/* line 139, assets\less\style.less */
-.index .contents .searchlist .searchboxlist {
-  width: 136px;
-}
-/* line 145, assets\less\style.less */
+/* line 162, assets\less\style.less */
 .index .empty {
   position: relative;
   background-color: #fff;
@@ -650,103 +1099,28 @@ header .menubar div:nth-child(4) {
   background-position: 5px center;
   padding: 0 5px 0 25px;
 }
-/* line 2, assets\less\guesthouse_details.less */
-.guesthouse_details .wrap {
-  width: 1920px;
-}
-/* line 6, assets\less\guesthouse_details.less */
-.guesthouse_details header .top {
-  position: relative;
-  width: 1920px;
-  height: 107px;
-  background-color: #f9f7f7;
-}
-/* line 11, assets\less\guesthouse_details.less */
-.guesthouse_details header .top img {
-  float: left;
-  margin-top: 21.972px;
-  margin-left: 50px;
-}
-/* line 16, assets\less\guesthouse_details.less */
-.guesthouse_details header .top span {
-  float: right;
-  margin-top: 43.078px;
-  margin-right: 48.58px;
-  color: #6479ba;
-}
-/* line 23, assets\less\guesthouse_details.less */
-.guesthouse_details header .headline {
-  position: relative;
-  height: 5px;
-  background-image: url(../images/gradation01.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-/* line 30, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar {
-  position: relative;
-  background-color: #fff;
-  height: 165px;
-}
-/* line 34, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div {
-  display: inline-block;
-  width: 206px;
-  height: 46px;
-  text-align: center;
-  font-size: 22px;
-  position: relative;
-  top: 35%;
-  left: 25%;
-  margin-left: 14px;
-}
-/* line 44, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div span {
-  line-height: 46px;
-}
-/* line 48, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div:nth-child(1) {
-  border: 2px #ef5050 solid;
-  color: #ef5050;
-}
-/* line 52, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div:nth-child(2) {
-  border: 2px #f5b250 solid;
-  color: #f5b250;
-}
-/* line 56, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div:nth-child(3) {
-  border: 2px #79c266 solid;
-  color: #79c266;
-}
-/* line 60, assets\less\guesthouse_details.less */
-.guesthouse_details header .menubar div:nth-child(4) {
-  border: 2px #a764a8 solid;
-  color: #a764a8;
-}
-/* line 67, assets\less\guesthouse_details.less */
+/* line 4, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap {
-  border: 1px #f00 solid;
   width: 1720px;
   margin: 0 auto;
   padding: 100px 0;
 }
-/* line 72, assets\less\guesthouse_details.less */
+/* line 8, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox {
   position: relative;
-  background-color: rgba(200, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   width: 554px;
   height: 1140px;
   float: right;
   margin-right: 100px;
 }
-/* line 79, assets\less\guesthouse_details.less */
+/* line 15, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .text {
   margin-top: 75px;
   position: absolute;
   left: 110px;
 }
-/* line 83, assets\less\guesthouse_details.less */
+/* line 19, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .text div {
   width: 290px;
   height: 50px;
@@ -761,15 +1135,15 @@ header .menubar div:nth-child(4) {
   background-position: right 10px center;
   margin-bottom: 313px;
 }
-/* line 96, assets\less\guesthouse_details.less */
+/* line 32, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .text div:last-child {
   margin-bottom: 0;
 }
-/* line 101, assets\less\guesthouse_details.less */
+/* line 37, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .textlist {
   margin-top: 130px;
 }
-/* line 103, assets\less\guesthouse_details.less */
+/* line 39, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .textlist li {
   position: relative;
   width: 330px;
@@ -778,89 +1152,63 @@ header .menubar div:nth-child(4) {
   background-color: #fff;
   margin: 0 auto 83px;
 }
-/* line 110, assets\less\guesthouse_details.less */
+/* line 46, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .textlist li:last-child {
   height: 113px;
   margin-bottom: 0;
 }
-/* line 113, assets\less\guesthouse_details.less */
+/* line 49, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .textlist li:last-child span {
   display: block;
   font-size: 16px;
   color: #838384;
   margin: 10px 10px 10px 20px;
 }
-/* line 121, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .year {
-  text-align: center;
-  border: 1px #f00 solid;
-  width: 290px;
-  font-size: 20px;
-  padding: 0 20px;
-  margin-top: 10px;
-}
-/* line 128, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .year span {
-  position: relative;
-  margin: 0 auto;
+/* line 57, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist {
   color: #838384;
+  position: relative;
 }
-/* line 133, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .year li {
-  border: 1px #f00 solid;
+/* line 60, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist table {
+  margin: 0 auto;
+  width: 250px;
+  height: 220px;
+}
+/* line 66, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist caption span {
+  display: block;
+  margin: 20px auto 5px ;
+}
+/* line 70, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist caption li {
   width: 20px;
   height: 20px;
   display: inline-block;
-  margin: 10px 0 0;
+  margin: 18px 0 0;
   position: absolute;
+  border: none;
 }
-/* line 141, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .year li:nth-child(1) {
+/* line 78, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist caption li:nth-child(1) {
   left: 10px;
   top: 4px;
   background-image: url(../images/g_smallarrowL.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 148, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .year li:last-child {
+/* line 85, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .bookbox .textlist .datelist caption li:last-child {
   right: 10px;
   top: 4px;
   background-image: url(../images/g_smallarrowR.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 157, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .week {
-  width: 280px;
-  margin: 10px auto;
-  border: 1px #f00 solid;
-}
-/* line 161, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .week span {
-  margin-left: 17px;
-  color: #838384;
-}
-/* line 166, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .date01 {
-  border: 1px #f00 solid;
-  width: 280px;
-  margin: 0 auto;
-  color: #838384;
-}
-/* line 171, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .date01 span {
-  margin-left: 20px;
-  margin-right: 7px;
-}
-/* line 174, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .bookbox .textlist .date01 span:nth-child(1) {
-  margin-left: 65px;
-}
-/* line 180, assets\less\guesthouse_details.less */
+/* line 98, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .bookbox .bookbutton {
   color: #fff;
-  background-color: #f4a8cf;
+  background-color: #838384;
   border-radius: 15px;
   text-align: center;
   line-height: 65px;
@@ -869,95 +1217,89 @@ header .menubar div:nth-child(4) {
   font-size: 20px;
   margin: 40px auto 0;
 }
-/* line 192, assets\less\guesthouse_details.less */
+/* line 110, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .house {
   position: relative;
   width: 967px;
   height: 500px;
-  border: 1px #0f0 solid;
 }
-/* line 198, assets\less\guesthouse_details.less */
+/* line 115, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .house .housepic img {
   display: block;
   margin: 0 auto;
 }
-/* line 204, assets\less\guesthouse_details.less */
+/* line 121, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .house .arrow span {
   width: 98px;
   height: 500px;
 }
-/* line 207, assets\less\guesthouse_details.less */
+/* line 124, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .house .arrow span:nth-child(1) {
   background-image: url(../images/g_arrowL.png);
   background-repeat: no-repeat;
   background-position: left 0px center;
   float: left;
 }
-/* line 213, assets\less\guesthouse_details.less */
+/* line 130, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .house .arrow span:nth-child(2) {
   background-image: url(../images/g_arrowR.png);
   background-repeat: no-repeat;
   background-position: right 0px center;
   float: right;
 }
-/* line 221, assets\less\guesthouse_details.less */
+/* line 138, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details {
-  border: 1px #0f0 solid;
   width: 967px;
   padding: 100px 0 0;
 }
-/* line 225, assets\less\guesthouse_details.less */
+/* line 141, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .explanation {
-  border: 1px #000 solid;
   padding-bottom: 60px;
 }
-/* line 228, assets\less\guesthouse_details.less */
+/* line 143, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .explanation p {
   font-size: 16px;
 }
-/* line 230, assets\less\guesthouse_details.less */
+/* line 145, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional {
   position: relative;
   height: 460px;
 }
-/* line 233, assets\less\guesthouse_details.less */
+/* line 148, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional h2 {
   background-image: url(../images/check.png);
   background-repeat: no-repeat;
   padding-left: 27.5px;
 }
-/* line 238, assets\less\guesthouse_details.less */
+/* line 153, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional p {
   padding-left: 27.5px;
 }
-/* line 241, assets\less\guesthouse_details.less */
+/* line 156, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional .addlist01 {
   float: left;
-  border: 1px #f0f solid;
 }
-/* line 244, assets\less\guesthouse_details.less */
+/* line 158, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional .addlist01 li {
   margin-top: 40px;
 }
-/* line 248, assets\less\guesthouse_details.less */
+/* line 162, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional .addlist02 {
   float: right;
-  border: 1px #f0f solid;
 }
-/* line 251, assets\less\guesthouse_details.less */
+/* line 164, assets\less\guesthouse_details.less */
 .guesthouse_details .contents .detailswrap .details .additional .addlist02 li {
   margin-top: 40px;
 }
-/* line 256, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review {
+/* line 169, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments {
   position: relative;
-  border: 1px #f0f solid;
   width: 967px;
   height: 730px;
   padding-top: 100px;
 }
-/* line 262, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewname01 {
+/* line 174, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewname01 {
   width: 190px;
   height: 45px;
   border: 1px #838384 solid;
@@ -968,8 +1310,8 @@ header .menubar div:nth-child(4) {
   position: absolute;
   color: #838384;
 }
-/* line 273, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewname02 {
+/* line 185, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewname02 {
   width: 190px;
   height: 45px;
   border: 1px #838384 solid;
@@ -981,27 +1323,27 @@ header .menubar div:nth-child(4) {
   z-index: -1;
   color: #838384;
 }
-/* line 285, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox {
+/* line 197, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox {
   border: 1px #838384 solid;
   background-color: #fff;
   width: 967px;
   height: 685px;
   margin-top: 45px;
 }
-/* line 291, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li {
+/* line 203, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li {
   position: relative;
   padding: 50px 100px;
 }
-/* line 295, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li:nth-child(1) {
+/* line 206, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li:nth-child(1) {
   background-image: url(../images/reviewline.png);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
-/* line 302, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li:nth-child(2) .button div {
+/* line 213, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li:nth-child(2) .button div {
   border-radius: 15px;
   width: 125px;
   height: 35px;
@@ -1014,32 +1356,32 @@ header .menubar div:nth-child(4) {
   background-color: #838384;
   color: #fff;
 }
-/* line 317, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li img {
+/* line 228, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li img {
   position: absolute;
 }
-/* line 320, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li .write {
+/* line 231, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li .write {
   margin-left: 168px;
 }
-/* line 322, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li .write span {
+/* line 233, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li .write span {
   color: #838384;
 }
-/* line 324, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li:last-child {
+/* line 235, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li:last-child {
   padding: 0;
   padding-bottom: 50px;
 }
-/* line 327, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li:last-child .textbox {
+/* line 238, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbox {
   width: 765px;
   height: 163px;
   border: 1px #838384 solid;
   margin: 0 auto;
 }
-/* line 333, assets\less\guesthouse_details.less */
-.guesthouse_details .contents .detailswrap .details .review .reviewbox li:last-child .textbutton {
+/* line 244, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbutton {
   border-radius: 15px;
   width: 125px;
   height: 35px;
@@ -1050,70 +1392,1624 @@ header .menubar div:nth-child(4) {
   background-color: #838384;
   color: #fff;
 }
-/* line 354, assets\less\guesthouse_details.less */
-.guesthouse_details .headline {
+/* line 260, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries {
   position: relative;
-  height: 5px;
-  background-image: url(../images/gradation01.png);
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 265, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  color: #838384;
+  z-index: -1;
+}
+/* line 276, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  color: #838384;
+  background-color: #fff;
+}
+/* line 288, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 294, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 297, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center bottom;
 }
-/* line 361, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom {
-  height: 230px;
-  background-color: #f9f7f7;
+/* line 304, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
 }
-/* line 364, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .lang {
-  float: left;
-  padding-top: 50px;
-  margin-left: 100px;
+/* line 319, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li img {
+  position: absolute;
 }
-/* line 368, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .lang div {
-  width: 222px;
-  height: 44px;
-  border: 1px #939597 solid;
-  color: #939597;
-  padding: 0 20px 0 10px;
+/* line 322, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li .answeruser {
+  margin-left: 150px;
+}
+/* line 323, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite {
+  margin-left: 168px;
+}
+/* line 325, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite span {
+  color: #838384;
+}
+/* line 327, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer {
+  margin-left: 318px;
+}
+/* line 329, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer span {
+  color: #838384;
+}
+/* line 331, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 334, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 340, assets\less\guesthouse_details.less */
+.guesthouse_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 4, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap {
+  width: 1720px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+/* line 8, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 554px;
+  height: 1140px;
+  float: right;
+  margin-right: 100px;
+}
+/* line 15, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .text {
+  margin-top: 75px;
+  position: absolute;
+  left: 110px;
+}
+/* line 19, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .text div {
+  width: 290px;
+  height: 50px;
+  border: 2px #838384 solid;
+  line-height: 50px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #838384;
+  padding: 0 20px;
   background-image: url(../images/g_arrow.png);
-  background-position: right 10px center;
   background-repeat: no-repeat;
-  line-height: 44px;
+  background-position: right 10px center;
+  margin-bottom: 313px;
+}
+/* line 32, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .text div:last-child {
+  margin-bottom: 0;
+}
+/* line 37, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist {
+  margin-top: 130px;
+}
+/* line 39, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist li {
+  position: relative;
+  width: 330px;
+  height: 280px;
+  border: 2px #838384 solid;
+  background-color: #fff;
+  margin: 0 auto 83px;
+}
+/* line 46, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist li:last-child {
+  height: 113px;
+  margin-bottom: 0;
+}
+/* line 49, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist li:last-child span {
+  display: block;
+  font-size: 16px;
+  color: #838384;
+  margin: 10px 10px 10px 20px;
+}
+/* line 57, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist {
+  color: #838384;
+  position: relative;
+}
+/* line 60, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist table {
+  margin: 0 auto;
+  width: 250px;
+  height: 220px;
+}
+/* line 66, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist caption span {
+  display: block;
+  margin: 20px auto 5px ;
+}
+/* line 70, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist caption li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 18px 0 0;
+  position: absolute;
+  border: none;
+}
+/* line 78, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist caption li:nth-child(1) {
+  left: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowL.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 85, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .textlist .datelist caption li:last-child {
+  right: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowR.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 98, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .bookbox .bookbutton {
+  color: #fff;
+  background-color: #838384;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 65px;
+  width: 250px;
+  height: 65px;
+  font-size: 20px;
+  margin: 40px auto 0;
+}
+/* line 110, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .house {
+  position: relative;
+  width: 967px;
+  height: 500px;
+}
+/* line 115, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .house .housepic img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 121, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .house .arrow span {
+  width: 98px;
+  height: 500px;
+}
+/* line 124, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .house .arrow span:nth-child(1) {
+  background-image: url(../images/g_arrowL.png);
+  background-repeat: no-repeat;
+  background-position: left 0px center;
+  float: left;
+}
+/* line 130, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .house .arrow span:nth-child(2) {
+  background-image: url(../images/g_arrowR.png);
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+  float: right;
+}
+/* line 138, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details {
+  width: 967px;
+  padding: 100px 0 0;
+}
+/* line 141, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .explanation {
+  padding-bottom: 60px;
+}
+/* line 143, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .explanation p {
+  font-size: 16px;
+}
+/* line 145, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional {
+  position: relative;
+  height: 460px;
+}
+/* line 148, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional h2 {
+  background-image: url(../images/check.png);
+  background-repeat: no-repeat;
+  padding-left: 27.5px;
+}
+/* line 153, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional p {
+  padding-left: 27.5px;
+}
+/* line 156, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional .addlist01 {
+  float: left;
+}
+/* line 158, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional .addlist01 li {
+  margin-top: 40px;
+}
+/* line 162, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional .addlist02 {
+  float: right;
+}
+/* line 164, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .additional .addlist02 li {
+  margin-top: 40px;
+}
+/* line 169, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 174, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  color: #838384;
+}
+/* line 185, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  z-index: -1;
+  color: #838384;
+}
+/* line 197, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 203, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 206, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 213, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 228, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li img {
+  position: absolute;
+}
+/* line 231, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li .write {
+  margin-left: 168px;
+}
+/* line 233, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li .write span {
+  color: #838384;
+}
+/* line 235, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 238, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 244, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 260, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 265, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  color: #838384;
+  z-index: -1;
+}
+/* line 276, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  color: #838384;
+  background-color: #fff;
+}
+/* line 288, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 294, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 297, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 304, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 319, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li img {
+  position: absolute;
+}
+/* line 322, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li .answeruser {
+  margin-left: 150px;
+}
+/* line 323, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite {
+  margin-left: 168px;
+}
+/* line 325, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite span {
+  color: #838384;
+}
+/* line 327, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer {
+  margin-left: 318px;
+}
+/* line 329, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer span {
+  color: #838384;
+}
+/* line 331, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 334, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 340, assets\less\countryside_details.less */
+.countryside_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 4, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap {
+  width: 1720px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+/* line 8, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 554px;
+  height: 1140px;
+  float: right;
+  margin-right: 100px;
+}
+/* line 15, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .text {
+  margin-top: 75px;
+  position: absolute;
+  left: 110px;
+}
+/* line 19, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .text div {
+  width: 290px;
+  height: 50px;
+  border: 2px #838384 solid;
+  line-height: 50px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #838384;
+  padding: 0 20px;
+  background-image: url(../images/g_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  margin-bottom: 313px;
+}
+/* line 32, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .text div:last-child {
+  margin-bottom: 0;
+}
+/* line 37, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist {
+  margin-top: 130px;
+}
+/* line 39, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist li {
+  position: relative;
+  width: 330px;
+  height: 280px;
+  border: 2px #838384 solid;
+  background-color: #fff;
+  margin: 0 auto 83px;
+}
+/* line 46, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist li:last-child {
+  height: 113px;
+  margin-bottom: 0;
+}
+/* line 49, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist li:last-child span {
+  display: block;
+  font-size: 16px;
+  color: #838384;
+  margin: 10px 10px 10px 20px;
+}
+/* line 57, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist {
+  color: #838384;
+  position: relative;
+}
+/* line 60, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist table {
+  margin: 0 auto;
+  width: 250px;
+  height: 220px;
+}
+/* line 66, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist caption span {
+  display: block;
+  margin: 20px auto 5px ;
+}
+/* line 70, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist caption li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 18px 0 0;
+  position: absolute;
+  border: none;
+}
+/* line 78, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist caption li:nth-child(1) {
+  left: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowL.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 85, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .textlist .datelist caption li:last-child {
+  right: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowR.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 98, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .bookbox .bookbutton {
+  color: #fff;
+  background-color: #838384;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 65px;
+  width: 250px;
+  height: 65px;
+  font-size: 20px;
+  margin: 40px auto 0;
+}
+/* line 110, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .house {
+  position: relative;
+  width: 967px;
+  height: 500px;
+}
+/* line 115, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .house .housepic img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 121, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .house .arrow span {
+  width: 98px;
+  height: 500px;
+}
+/* line 124, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .house .arrow span:nth-child(1) {
+  background-image: url(../images/g_arrowL.png);
+  background-repeat: no-repeat;
+  background-position: left 0px center;
+  float: left;
+}
+/* line 130, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .house .arrow span:nth-child(2) {
+  background-image: url(../images/g_arrowR.png);
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+  float: right;
+}
+/* line 138, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details {
+  width: 967px;
+  padding: 100px 0 0;
+}
+/* line 141, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .explanation {
+  padding-bottom: 60px;
+}
+/* line 143, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .explanation p {
+  font-size: 16px;
+}
+/* line 145, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional {
+  position: relative;
+  height: 460px;
+}
+/* line 148, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional h2 {
+  background-image: url(../images/check.png);
+  background-repeat: no-repeat;
+  padding-left: 27.5px;
+}
+/* line 153, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional p {
+  padding-left: 27.5px;
+}
+/* line 156, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional .addlist01 {
+  float: left;
+}
+/* line 158, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional .addlist01 li {
+  margin-top: 40px;
+}
+/* line 162, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional .addlist02 {
+  float: right;
+}
+/* line 164, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .additional .addlist02 li {
+  margin-top: 40px;
+}
+/* line 169, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 174, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  color: #838384;
+}
+/* line 185, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  z-index: -1;
+  color: #838384;
+}
+/* line 197, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 203, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 206, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 213, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 228, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li img {
+  position: absolute;
+}
+/* line 231, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li .write {
+  margin-left: 168px;
+}
+/* line 233, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li .write span {
+  color: #838384;
+}
+/* line 235, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 238, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 244, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 260, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 265, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  color: #838384;
+  z-index: -1;
+}
+/* line 276, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  color: #838384;
+  background-color: #fff;
+}
+/* line 288, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 294, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 297, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 304, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 319, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li img {
+  position: absolute;
+}
+/* line 322, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li .answeruser {
+  margin-left: 150px;
+}
+/* line 323, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite {
+  margin-left: 168px;
+}
+/* line 325, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite span {
+  color: #838384;
+}
+/* line 327, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer {
+  margin-left: 318px;
+}
+/* line 329, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer span {
+  color: #838384;
+}
+/* line 331, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 334, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 340, assets\less\lakecabin_details.less */
+.lakecabin_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 4, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap {
+  width: 1720px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+/* line 8, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 554px;
+  height: 1140px;
+  float: right;
+  margin-right: 100px;
+}
+/* line 15, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .text {
+  margin-top: 75px;
+  position: absolute;
+  left: 110px;
+}
+/* line 19, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .text div {
+  width: 290px;
+  height: 50px;
+  border: 2px #838384 solid;
+  line-height: 50px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #838384;
+  padding: 0 20px;
+  background-image: url(../images/g_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  margin-bottom: 313px;
+}
+/* line 32, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .text div:last-child {
+  margin-bottom: 0;
+}
+/* line 37, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist {
+  margin-top: 130px;
+}
+/* line 39, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist li {
+  position: relative;
+  width: 330px;
+  height: 280px;
+  border: 2px #838384 solid;
+  background-color: #fff;
+  margin: 0 auto 83px;
+}
+/* line 46, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist li:last-child {
+  height: 113px;
+  margin-bottom: 0;
+}
+/* line 49, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist li:last-child span {
+  display: block;
+  font-size: 16px;
+  color: #838384;
+  margin: 10px 10px 10px 20px;
+}
+/* line 57, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist {
+  color: #838384;
+  position: relative;
+}
+/* line 60, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist table {
+  margin: 0 auto;
+  width: 250px;
+  height: 220px;
+}
+/* line 66, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist caption span {
+  display: block;
+  margin: 20px auto 5px ;
+}
+/* line 70, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist caption li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 18px 0 0;
+  position: absolute;
+  border: none;
+}
+/* line 78, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist caption li:nth-child(1) {
+  left: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowL.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 85, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .textlist .datelist caption li:last-child {
+  right: 10px;
+  top: 4px;
+  background-image: url(../images/g_smallarrowR.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 98, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .bookbox .bookbutton {
+  color: #fff;
+  background-color: #838384;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 65px;
+  width: 250px;
+  height: 65px;
+  font-size: 20px;
+  margin: 40px auto 0;
+}
+/* line 110, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .house {
+  position: relative;
+  width: 967px;
+  height: 500px;
+}
+/* line 115, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .house .housepic img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 121, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .house .arrow span {
+  width: 98px;
+  height: 500px;
+}
+/* line 124, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .house .arrow span:nth-child(1) {
+  background-image: url(../images/g_arrowL.png);
+  background-repeat: no-repeat;
+  background-position: left 0px center;
+  float: left;
+}
+/* line 130, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .house .arrow span:nth-child(2) {
+  background-image: url(../images/g_arrowR.png);
+  background-repeat: no-repeat;
+  background-position: right 0px center;
+  float: right;
+}
+/* line 138, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details {
+  width: 967px;
+  padding: 100px 0 0;
+}
+/* line 141, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .explanation {
+  padding-bottom: 60px;
+}
+/* line 143, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .explanation p {
+  font-size: 16px;
+}
+/* line 145, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional {
+  position: relative;
+  height: 460px;
+}
+/* line 148, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional h2 {
+  background-image: url(../images/check.png);
+  background-repeat: no-repeat;
+  padding-left: 27.5px;
+}
+/* line 153, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional p {
+  padding-left: 27.5px;
+}
+/* line 156, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional .addlist01 {
+  float: left;
+}
+/* line 158, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional .addlist01 li {
+  margin-top: 40px;
+}
+/* line 162, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional .addlist02 {
+  float: right;
+}
+/* line 164, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .additional .addlist02 li {
+  margin-top: 40px;
+}
+/* line 169, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 174, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  color: #838384;
+}
+/* line 185, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  z-index: -1;
+  color: #838384;
+}
+/* line 197, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 203, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 206, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 213, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 228, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li img {
+  position: absolute;
+}
+/* line 231, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li .write {
+  margin-left: 168px;
+}
+/* line 233, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li .write span {
+  color: #838384;
+}
+/* line 235, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 238, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 244, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .comments .reviewbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 260, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries {
+  position: relative;
+  width: 967px;
+  height: 730px;
+  padding-top: 100px;
+}
+/* line 265, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqname01 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  background-color: #eaeaea;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  color: #838384;
+  z-index: -1;
+}
+/* line 276, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqname02 {
+  width: 190px;
+  height: 45px;
+  border: 1px #838384 solid;
+  border-bottom: none;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  color: #838384;
+  background-color: #fff;
+}
+/* line 288, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox {
+  border: 1px #838384 solid;
+  background-color: #fff;
+  width: 967px;
+  height: 685px;
+  margin-top: 45px;
+}
+/* line 294, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li {
+  position: relative;
+  padding: 50px 100px;
+}
+/* line 297, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(1) {
+  background-image: url(../images/reviewline.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+/* line 304, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li:nth-child(2) .button div {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 507px;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 319, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li img {
+  position: absolute;
+}
+/* line 322, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li .answeruser {
+  margin-left: 150px;
+}
+/* line 323, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite {
+  margin-left: 168px;
+}
+/* line 325, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li .inqwrite span {
+  color: #838384;
+}
+/* line 327, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer {
+  margin-left: 318px;
+}
+/* line 329, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li .inqanswer span {
+  color: #838384;
+}
+/* line 331, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li:last-child {
+  padding: 0;
+  padding-bottom: 50px;
+}
+/* line 334, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbox {
+  width: 765px;
+  height: 163px;
+  border: 1px #838384 solid;
+  margin: 0 auto;
+}
+/* line 340, assets\less\chalet_details.less */
+.chalet_details .contents .detailswrap .details .inqueries .inqbox li:last-child .textbutton {
+  border-radius: 15px;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  float: right;
+  margin: 25px 100px 0 0;
+  background-color: #838384;
+  color: #fff;
+}
+/* line 3, assets\less\orderpage.less */
+.orderpage .contents .order {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1093px;
+  height: 750px;
+  border-bottom: 1px #bbbdc0 solid;
+  text-align: center;
+}
+/* line 10, assets\less\orderpage.less */
+.orderpage .contents .order .ordername {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 50px;
+}
+/* line 16, assets\less\orderpage.less */
+.orderpage .contents .order ul {
+  width: 1093px;
+  border-bottom: 1px #bbbdc0 solid;
+  font-size: 20px;
+  height: 75px;
+}
+/* line 21, assets\less\orderpage.less */
+.orderpage .contents .order ul:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+}
+/* line 28, assets\less\orderpage.less */
+.orderpage .contents .order ul li {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 5px;
+  width: 49%;
+}
+/* line 33, assets\less\orderpage.less */
+.orderpage .contents .order ul li:nth-child(1) {
+  text-align: left;
+}
+/* line 34, assets\less\orderpage.less */
+.orderpage .contents .order ul li:last-child {
+  text-align: right;
+}
+/* line 38, assets\less\orderpage.less */
+.orderpage .contents .order .product li {
+  width: 32.5%;
+}
+/* line 38, assets\less\orderpage.less */
+.orderpage .contents .order .product li:nth-child(2) {
+  text-align: left;
+}
+/* line 40, assets\less\orderpage.less */
+.orderpage .contents .order .textbox {
+  position: relative;
+  width: 1075px;
+  height: 222px;
+  margin: 100px auto 0;
+  text-align: right;
+}
+/* line 46, assets\less\orderpage.less */
+.orderpage .contents .order .textbox .textarea {
+  border: 1px #848485 solid;
+  width: 1055px;
+  height: 192px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+  text-align: left;
+  color: #848485;
+}
+/* line 56, assets\less\orderpage.less */
+.orderpage .contents .order .textbox span {
+  display: block;
+  text-align: right;
+}
+/* line 62, assets\less\orderpage.less */
+.orderpage .contents .payment {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1093px;
+  height: 830px;
+  text-align: center;
+}
+/* line 68, assets\less\orderpage.less */
+.orderpage .contents .payment .payname {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  display: block;
+}
+/* line 74, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext01 {
+  width: 750px;
+  margin: 0 auto 100px;
+}
+/* line 78, assets\less\orderpage.less */
+.orderpage .contents .payment label {
+  font-size: 18px;
+  display: block;
+}
+/* line 84, assets\less\orderpage.less */
+.orderpage .contents .payment input {
+  border-radius: 15px;
+  padding-left: 10px;
+  width: 330px;
+  height: 40px;
+}
+/* line 90, assets\less\orderpage.less */
+.orderpage .contents .payment .star {
+  color: #f00;
+}
+/* line 92, assets\less\orderpage.less */
+.orderpage .contents .payment .textlist01 li {
+  display: inline-block;
+  width: 48%;
+  text-align: left;
   margin-bottom: 5px;
 }
-/* line 381, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .notice {
-  float: right;
-  padding-right: 100px;
-  padding-top: 50px;
+/* line 99, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 {
+  width: 750px;
+  margin: 0 auto;
 }
-/* line 385, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .notice div {
+/* line 102, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .payopt {
+  float: left;
+  margin-left: 10px;
+}
+/* line 107, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .payopt span {
+  display: block;
+  font-size: 18px;
+  text-align: left;
+}
+/* line 112, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .payopt .creditopt {
+  border: 1px #848485 solid;
+  width: 169px;
+  height: 40px;
+  color: #838384;
+  line-height: 40px;
+  background-image: url(../images/g_arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding: 0 20px;
+  text-align: left;
+}
+/* line 124, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .payopt .creditlist {
+  width: 189px;
+  height: 100px;
+  border: 1px #848485 solid;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+/* line 131, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .payopt .creditlist li {
+  margin: 5px 0;
+  color: #838384;
+}
+/* line 137, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .textlist02 {
+  margin-left: 375px;
+}
+/* line 139, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .textlist02 li {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5px;
+}
+/* line 144, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .textlist02 li:nth-child(2) input {
+  width: 42px;
   display: inline-block;
+  padding: 0 15px;
 }
-/* line 387, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .traveling {
-  color: #939597;
-  margin-right: 50px;
+/* line 150, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .textlist02 li .mm {
+  width: 25px;
+  margin-right: 10px;
+  padding: 0 20px;
 }
-/* line 390, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .traveling span {
-  display: block;
+/* line 155, assets\less\orderpage.less */
+.orderpage .contents .payment .paytext02 .textlist02 li .yyyy {
+  width: 35px;
+  padding: 0 40px;
 }
-/* line 393, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .traveling span:nth-child(1) {
+/* line 162, assets\less\orderpage.less */
+.orderpage .contents .payment .orderbutton {
+  background-color: #ef5050;
+  border: 1px #ef5050 solid;
+  border-radius: 15px;
+  width: 168px;
+  height: 52px;
+  margin: 50px auto 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
   font-weight: bold;
+  line-height: 52px;
+  text-align: center;
 }
-/* line 397, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .touch {
-  color: #939597;
+/* line 177, assets\less\orderpage.less */
+.orderpage .contents .orderpop {
+  position: absolute;
+  width: 900px;
+  height: 870px;
+  border: 1px #f00 solid;
+  left: 26%;
+  top: 30%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  display: none;
 }
-/* line 399, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .touch span {
+/* line 187, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner {
+  width: 800px;
+  height: 770px;
+  background-color: #f2f1f0;
+  margin: 50px;
+  position: relative;
+}
+/* line 193, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner strong {
+  font-size: 18px;
   display: block;
+  padding: 50px 0;
+  text-align: center;
 }
-/* line 402, assets\less\guesthouse_details.less */
-.guesthouse_details .bottom .touch span:nth-child(1) {
+/* line 199, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner .innerwrite {
+  width: 600px;
+  margin: 0 auto;
+}
+/* line 203, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner .orderlist01 {
+  padding: 50px 0;
+  border-bottom: 1px #838384 solid;
+}
+/* line 206, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner .orderlist01 ul {
+  border-bottom: 1px #838384 solid;
+}
+/* line 207, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner .orderlist01 li {
+  display: inline-block;
+  width: 49%;
+  line-height: 50px;
+}
+/* line 211, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner .orderlist01 li:nth-child(2) {
+  text-align: right;
+}
+/* line 215, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner .orderlist02 {
+  margin-top: 50px;
+}
+/* line 217, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner .orderlist02 ul {
+  border-bottom: 1px #838384 solid;
+}
+/* line 218, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner .orderlist02 li {
+  display: inline-block;
+  width: 49%;
+  line-height: 50px;
+}
+/* line 222, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner .orderlist02 li:nth-child(2) {
+  text-align: right;
+  border-bottom: none;
+}
+/* line 229, assets\less\orderpage.less */
+.orderpage .contents .orderpop .inner .donebutton {
+  background-color: #ef5050;
+  border: 1px #ef5050 solid;
+  border-radius: 15px;
+  width: 168px;
+  height: 52px;
+  margin: 50px auto 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
   font-weight: bold;
+  line-height: 52px;
+  text-align: center;
 }
