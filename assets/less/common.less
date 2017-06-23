@@ -256,14 +256,20 @@ header{
         }
       }
       .selftext{
-        margin:75px auto 0; 
-        width:797px;
+        margin:75px auto 0;
+        width:720px;
 
         span{
+          width:46%;
           border:1px #f00 solid;
           display: inline-block;
-          margin-right:40px;
-          margin-left: 10px;
+          &:first-child{
+            margin-right:40px;
+          }
+          &:nth-child(3){
+            margin-right: 40px;
+          }
+          //margin-left: 10px;
           margin-bottom:10px;
 
           label{
@@ -272,17 +278,20 @@ header{
 
           }
           input{
-            width: 340px;
+            width: 300px;
             height: 41px;
             border-radius: 15px;
+            padding: 0 10px;
           }
           .dd{
             width:63px;
             padding:0 10px;
+            margin-right:10px;
           }
           .mm{
             width:63px;
             padding:0 10px;
+            margin-right:10px;
           }
           .yyyy{
             width:108px;
