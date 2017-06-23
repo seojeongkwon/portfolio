@@ -19,13 +19,49 @@ p{
 button{font-family: 'Noto Sans CJK KR DemiLight',  cursive,sans-serif; margin:0; padding:0; }
 
 
+
+@media screen and (max-width:1300px) {
+  .menubox{
+    height:200px !important;
+    transition: 1s;
+    .menubar{
+      width: 50% !important;
+      div{
+        &:nth-child(1){margin-bottom: 7px;}
+        &:nth-child(2){margin-bottom: 7px;}
+      }
+    }
+  }
+
+
+}
+@media screen and (max-width:1122px) {
+  .menubox{
+    height:265px !important;
+    transiton:1s;
+    .menubar{
+      width: 25% !important;
+      div{
+        //&:nth-child(1){margin-bottom: 7px;}
+      //  &:nth-child(2){margin-bottom: 7px;}
+        &:nth-child(3){margin-bottom: 7px;}
+      }
+    }
+  }
+
+}
+
+
 .wrap{
-  width:1920px;
+  max-width:1920px;
 }
 header{
+  position:fixed;
+  width:100%;
+  z-index: 100;
   .top{
     position:relative;
-    width:1920px;
+    width:100%;
     height:107px;
     background-color: @header;
     background-image: none;
@@ -33,6 +69,7 @@ header{
       float: left;
       margin-top: 21.972px;
       margin-left: 50px;
+
     }
     span{
       float: right;
@@ -48,39 +85,54 @@ header{
     background-repeat: no-repeat;
     background-position: 0 0;
   }
-  .menubar{
+  .menubox{
     position:relative;
     background-color: #fff;
     height:165px;
-    div{
+    text-align: center;
+    //안에 inline-block을 주어야 부모에게 text-align을 줄떄 먹는다.
+    &:before{
+      content:"";
       display: inline-block;
-      width: 206px;
-      height: 46px;
-      text-align: center;
-      font-size: 22px;
-      position:relative;
-      top:35%;
-      left:25%;
-      margin-left:14px;
-      span{
-        line-height: 46px;
+      height:100%;
+      border:1px #f00 solid;
+      vertical-align: middle;
+    }
+    .menubar{
+      vertical-align: middle;
+      width:900px;
+      margin: 0 auto;
+      outline: 1px #f00 solid;
+      display: inline-block;
+      div{
+        display: inline-block;
+        width: 206px;
+        height: 46px;
+        text-align: center;
+        font-size: 22px;
+        //position:relative;
+        //top:35%;
+        //margin-right:14px;
+        span{
+          line-height: 46px;
+        }
       }
-    }
-    div:nth-child(1){
-      border: 2px @mainred solid;
-      color: @mainred;
-    }
-    div:nth-child(2){
-      border: 2px @mainorange solid;
-      color: @mainorange;
-    }
-    div:nth-child(3){
-      border: 2px @maingreen solid;
-      color: @maingreen;
-    }
-    div:nth-child(4){
-      border: 2px @mainviolet solid;
-      color: @mainviolet;
+      div:nth-child(1){
+        border: 2px @mainred solid;
+        color: @mainred;
+      }
+      div:nth-child(2){
+        border: 2px @mainorange solid;
+        color: @mainorange;
+      }
+      div:nth-child(3){
+        border: 2px @maingreen solid;
+        color: @maingreen;
+      }
+      div:nth-child(4){
+        border: 2px @mainviolet solid;
+        color: @mainviolet;
+      }
     }
   }
   .loginpop{
@@ -223,7 +275,7 @@ header{
     top:27%;
     background-color:rgba(255, 255, 255, .7);
     z-index: 1;
-    //display:none;
+    display:none;
     .inner{
       width:897px;
       height:834px;
@@ -257,31 +309,26 @@ header{
       }
       .selftext{
         margin:75px auto 0;
-        width:720px;
-
-        span{
-          width:46%;
-          border:1px #f00 solid;
-          display: inline-block;
-          &:first-child{
-            margin-right:40px;
-          }
-          &:nth-child(3){
-            margin-right: 40px;
-          }
-          //margin-left: 10px;
+        max-width:797px;
+        height:225px;
+        outline:1px #f00 solid;
+        div{
+          width:50%;
+          outline:1px #f00 solid;
+          box-sizing: border-box;
+          padding: 0 10px;
           margin-bottom:10px;
-
+          float:left;
           label{
             font-size: 18px;
             display: block;
-
           }
           input{
-            width: 300px;
+            width: 100%;
             height: 41px;
             border-radius: 15px;
-            padding: 0 10px;
+            box-sizing: border-box;
+            padding:0 10px;
           }
           .dd{
             width:63px;
@@ -312,9 +359,10 @@ header{
         font-weight: bold;
         line-height: 52px;
         text-align: center;
-        display: inline-block;
+        //display: inline-block;
         position:relative;
-        left:43%;
+        left:0;
+        //margin:50px auto 0;
         margin-top: 50px;
       }
     }

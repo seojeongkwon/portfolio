@@ -1,15 +1,30 @@
+@media screen and (max-width:1300px) {
+
+  .searchbar{
+    width: 50% !important;
+    margin:0 auto;
+  }
+
+}
+
 .index{
+
 .contents{
   position: relative;
   height:879px;
   background-image: url(../images/main.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   background-size: cover;
   .searchbar{
     text-align: center;
     padding-top: 416.5px;
     div{
+      width:180px;
+      display: inline-block;
+      border:1px #fff solid;
+      height:42px;
+      position:relative;
       strong{
         //부모는 위드값이 있고 strong에는 없기때문에 패딩을 줘도 안늘어남
           padding:0 10px 0 45px;
@@ -25,7 +40,6 @@
             background-repeat: no-repeat;
             background-position: right 0 center;
             display: block;
-
           }
       }
       strong + ul{
@@ -48,11 +62,6 @@
       select{position: absolute; top:400px;}
     }
     .locationbox{
-      display: inline-block;
-      width:180px;
-      border:1px #fff solid;
-      height:42px;
-      position:relative;
       strong{
         background-image: url(../images/008-location.png);
         background-repeat: no-repeat;
@@ -66,11 +75,6 @@
       display: none;
     }
     .datebox{
-      display: inline-block;
-      width:180px;
-      border:1px #fff solid;
-      height:42px;
-      position:relative;
       table{
         margin:0 auto;
         li{
@@ -115,11 +119,6 @@
     }
 
     .guestbox{
-      display: inline-block;
-      width:180px;
-      border:1px #fff solid;
-      height:42px;
-      position:relative;
       strong{
         background-image: url(../images/007-users.png);
         background-repeat: no-repeat;
@@ -128,11 +127,6 @@
       }
     }
     .typebox{
-      display: inline-block;
-      width:180px;
-      border:1px #fff solid;
-      height:42px;
-      position:relative;
       strong{
         background-image: url(../images/005-house.png);
         background-repeat: no-repeat;
@@ -141,11 +135,7 @@
       }
     }
     .searchbox{
-      width: 100px;
-      height: 42px;
-      border:1px #fff solid;
-      display: inline-block;
-      vertical-align: bottom;
+      width: 140px;
       padding:0 20px;
       background-image: url(../images/004-search.png);
       background-repeat: no-repeat;
