@@ -11,10 +11,8 @@
   <script>
   $(function(){
 
-
-  $('.locationbox').click(function(){
-
     $(this).children('ul').toggle()
+    $(this).siblings('div').css('opacity','0.2')
 
 /*    var idx;
 
@@ -47,7 +45,14 @@
 
     $(this).children('ul').toggle()
   })
+  $('.koreanbox').click(function(){
 
+    $(this).children('ul').toggle()
+  })
+  $('.krwbox').click(function(){
+
+    $(this).children('ul').toggle()
+  })
 
 })
   </script>
@@ -338,8 +343,47 @@
       <div class="headline"></div>
         <div class="bottom">
           <div class="lang">
-          <div><span>KOREAN</span></div>
-          <div><span>KRW</span></div>
+            <div class="koreanbox">
+              <strong><span>korean</span></strong>
+              <ul>
+                <li>Deutsch</li>
+                <li>Francais</li>
+                <li>Hrvatski</li>
+                <li>Magyar</li>
+                <li>Nederlands</li>
+                <li>Norsk</li>
+                <li>Porski</li>
+                <li>Turkce</li>
+                <li>Korean</li>
+              </ul>
+              <select name="" id="">
+                <option value="ion1">Deutsch</option>
+                <option value="ion2">Francais</option>
+                <option value="ion3">Hrvatski</option>
+                <option value="ion4">Magyar</option>
+                <option value="ion5">Nederlands</option>
+                <option value="ion6">Norsk</option>
+                <option value="ion7">Porski</option>
+                <option value="ion8">Turkce</option>
+                <option value="ion9">Korean</option>
+              </select>
+            </div>
+            <div class="krwbox">
+              <strong><span>krw</span></strong>
+              <ul>
+                <li>AED</li>
+                <li>IDR</li>
+                <li>KRW</li>
+                <li>CAD</li>
+                <li>HKD</li>
+              </ul>
+              <select name="" id="">
+                <option value="ion1">AED</option>
+                <option value="ion2">IDR</option>
+                <option value="ion3">KRW</option>
+                <option value="ion4">CAD</option>
+                <option value="ion5">HKD</option>
+            </div>
           </div>
           <div class="notice">
             <div class="traveling">
