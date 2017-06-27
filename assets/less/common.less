@@ -1,10 +1,11 @@
 html{
   height: 100%;
+  body{
+    height: 100%;
+    padding-top:272px;
+  }
 }
-body{
-  height: 100%;
-  padding-top:277px !important;
-}
+
 *{margin: 0; padding: 0;}
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,p{font-family: 'Noto Sans CJK KR DemiLight',  cursive,sans-serif; margin:0; padding:0;}
 li{
@@ -61,7 +62,8 @@ header{
   .menubox{
     position:relative;
     background-color: #fff;
-    height:165px;
+    height:160px;
+    font-size:0;
     text-align: center;
     //안에 inline-block을 주어야 부모에게 text-align을 줄떄 먹는다.
     &:before{
@@ -70,6 +72,7 @@ header{
       height:100%;
       //border:1px #f00 solid;
       vertical-align: middle;
+      margin:0;
     }
     .menubar{
       vertical-align: middle;
@@ -83,9 +86,7 @@ header{
         height: 46px;
         text-align: center;
         font-size: 22px;
-        //position:relative;
-        //top:35%;
-        //margin-right:14px;
+        margin: 0 1px;
         span{
           line-height: 46px;
         }
@@ -93,18 +94,34 @@ header{
       div:nth-child(1){
         border: 2px @mainred solid;
         color: @mainred;
+        &:hover{
+          background-color: @mainred;
+          color:#fff;
+        }
       }
       div:nth-child(2){
         border: 2px @mainorange solid;
         color: @mainorange;
+        &:hover{
+          background-color: @mainorange;
+          color:#fff;
+        }
       }
       div:nth-child(3){
         border: 2px @maingreen solid;
         color: @maingreen;
+        &:hover{
+          background-color: @maingreen;
+          color:#fff;
+        }
       }
       div:nth-child(4){
         border: 2px @mainviolet solid;
         color: @mainviolet;
+        &:hover{
+          background-color: @mainviolet;
+          color:#fff;
+        }
       }
     }
   }
@@ -592,31 +609,73 @@ header{
   }
 }
 @media screen and (max-width:980px) {
+
 header{
   .menubox{
-    height:200px;
+    height:160px;
     transition: 1s;
     .menubar{
-      width: 50% ;
+      width: 425.5px;
       div{
-        &:nth-child(1){margin-bottom: 7px;}
-        &:nth-child(2){margin-bottom: 7px;}
+        &:nth-child(1){margin-bottom: 2px;}
+        &:nth-child(2){margin-bottom: 2px;}
       }
     }
   }
-}
+ }
+} //528을 기준으로 그이하는 비포 버티칼미들이 안먹는다.
+@media screen and (max-width:528px) {
+  header{
+    .menubox{
+      &:before{
+        content:"";
+        border:1px #fff solid;
+        height:0; //before삭제 시키는법 몰라서 헤이트 0줌
+      }
+    }
+  }
 }
 @media screen and (max-width:480px) {
+  html{
+    body{
+      padding-top:187px;
+      transition: 1s;
+    }
+  }
+
 header{
+  .top{
+    height:60px;
+    img{
+      width:160px;
+      margin-top: 15px;
+      margin-left: 10px;
+    }
+    span{
+      font-size: 13px;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+  }
   .menubox{
-    height:265px;
-    transiton:1s;
+    height:120px;
+    background-color: #fff;
+    &:before{
+      content:"";
+      //border:1px #f00 solid;
+      height:100%; //before삭제 시키는법 몰라서 헤이트 0줌
+    }
     .menubar{
-      width: 25%;
+      width: 320px;
       div{
-        &:nth-child(3){margin-bottom: 7px;}
+        width: 146px;
+        height: 36px;
+        font-size: 18px;
+        span{
+          line-height: 36px;
+        }
       }
     }
   }
-}
+ }
 }
