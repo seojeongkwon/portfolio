@@ -4,8 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Document</title>
+  <script>
+  $(function(){
+
+
+  $('.locationbox').click(function(){
+
+    $(this).children('ul').toggle()
+
+/*    var idx;
+
+    $(this).find('li').click(function(){
+
+        idx = $(this).index()
+        var opt = $(this).text();
+        $(this).parent('ul').prev('strong').text(opt);
+
+    })
+
+
+    $(this).find('select').change(function(){
+      $('this').find('option').eq(idx).val();
+
+    })*/
+
+
+  })
+  $('.datebox').click(function(){
+
+    $(this).children('.table').toggle()
+  })
+
+  $('.guestbox').click(function(){
+
+    $(this).children('ul').toggle()
+  })
+  $('.typebox').click(function(){
+
+    $(this).children('ul').toggle()
+  })
+  $('.koreanbox').click(function(){
+
+    $(this).children('ul').toggle()
+  })
+  $('.krwbox').click(function(){
+
+    $(this).children('ul').toggle()
+  })
+
+})
+  </script>
 </head>
 <body class="countryside_details">
   <div class="wrap">
@@ -23,6 +74,7 @@
             <div><span>Chalet</span></div>
           </div>
         </div>
+
         <div class="loginpop">
           <div class="inner">
             <strong>log in</strong>
@@ -636,6 +688,7 @@
                 <option value="ion3">KRW</option>
                 <option value="ion4">CAD</option>
                 <option value="ion5">HKD</option>
+              </select>
             </div>
           </div>
           <div class="notice">

@@ -14,12 +14,13 @@
   }
   .listwrap{
     position: relative;
-    width:1720px;
+    max-width:1720px;
     height:1279px;
     margin: 0 auto;
     li{
+      border:1px #f00 solid;
       position:relative;
-      width: 1720px;
+      width: 100%;
       height:324px;
       padding: 50px 0;
       img{
@@ -30,6 +31,10 @@
         margin-top:50px;
         color:@fontcolor;
         font-size: 18px;
+        border:1px #f00 solid;
+        display: block;
+        height:164px;
+        overflow: hidden;
       }
       .details{
         width: 150px;
@@ -49,8 +54,33 @@
           background-position: 5px center;
           padding:0 5px 0 25px;
         }
+        &:hover{
+          background-color: @mainorange;
+          color:#fff;
+          span{
+            background-image: url(../images/w_arrowR.png);
+            background-repeat: no-repeat;
+            background-position: 5px center;
+            padding:0 5px 0 25px;
+          }
+        }
       }
     }
   }
 
+}
+@media screen and (max-width:950px) {
+.guesthouse{
+  .listwrap{
+     //width:1500px;
+
+    li{
+      width:70% ;
+       margin:0 auto;
+      img{
+        width:30% ;
+      float:none ;}
+    }
+  }
+}
 }
