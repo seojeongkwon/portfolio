@@ -3,36 +3,137 @@
     outline:1px @red solid;
 }
 
+.select_wrap(){
+box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+}
+
+@color-main-red:#ef5050;
+@color-main-orange:#f5b250;
+@color-main-green:#79c266;
+@color-main-violet:#a764a8;
+
+
+@top_h:107px;
+@menu_h:160px;
+@line_h:5px;
+@margin_h:100px;
+
+
+@tablet:768px;
+@tablet-resolve:1024px;
+@mobile:480px;
 
 html,body{
     margin:0; 
     padding:0;
     height:100%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+ul,ol,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+
+
+// assets object
+.link_btn{
+    .select_wrap();
+    &.main-red{border-color:@color-main-red}
+    &.main-orange{border-color:@color-main-orange}
+    &.main-green{border-color: @color-main-green}
+    &.main-violet{border-color: @color-main-violet;}
+}
+
+.select_Design{
+    .select_wrap();
 }
 
 .gnb{
-    height: 107px + 160px + 5px;
+    height: @top_h+@menu_h+@line_h;
     background-color:#FFF;
     position:fixed;
     left:0;
     top:0;
     right:0;
-    
-    .o();
 
     .top{
         height:107px;
         padding-bottom:5px;
         background-image:url(../images/gradation01.png);
         background-position: center bottom;
-        background-repeat: no-repeat;
-        .o();
+        background-repeat: repeat-x;
         }
 
     .menu{
-        .o();
         height:160px;
+        ul{
+            font-size:0;
+            text-align: center;
+            height:100%;
+            &::before{
+                content:"";
+                height:100%;
+                display:inline-block;
+                vertical-align: middle;
+            }
+            li{
+                display:inline-block;
+                font-size:initial;
+                margin: 0 1px;
+                text-align:center;
+                box-sizing: border-box;
+                vertical-align: middle;
+                a{
+                    display:block;
+                    width:210px;
+                    height:50px;
+                    line-height:50px;
+                    transition:1s;
+                    &.main-red{color:@color-main-red}
+                    &.main-orange{color:@color-main-orange}
+                    &.main-green{color: @color-main-green}
+                    &.main-violet{color: @color-main-violet;}
+                }
+            }
+        }
+
     }    
+}
+// menu 조정
+@media screen and (max-width:@tablet-resolve) {
+
+    .gnb .menu  ul li a{
+        width:150px;
+    }
+
+}
+
+@media screen and (max-width:@tablet) {
+
+    .gnb .menu  ul{
+        margin-top:30px;
+        &::before{
+            content:none;
+        }
+        li{
+            line-height:100%;
+            a{
+                width:768px / 3 ;
+            }
+        } 
+
+    }
+    
 }
 
 .intro{
@@ -41,6 +142,62 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    .o();   
+    border-top:1px transparent solid;
+
+    .seach_box{
+        color:#FFF;
+        margin-top:@top_h + @menu_h + @line_h + @margin_h;
+        font-size:0;
+        text-align: center;
+        
+        [type="submit"]{
+            background-color:transparent;
+            color:#FFF;
+            text-align: center !important;;
+            text-transform: uppercase;
+            border:1px #FFF solid !important;
+        }
+        [class^="select_"]{
+            text-align: left;
+            width:210px;
+            height:50px;
+            margin: 0 2px;
+            line-height:50px;
+            display:inline-block;
+            font-size:12px;
+            vertical-align: middle;
+            box-sizing: border-box;
+            border:0;
+            
+            strong{
+                border:1px #FFF solid;
+                display: block;
+                padding: 0 20px;
+                cursor: pointer;
+            }
+            ul{
+               margin-top:2px; 
+                border:1px #FFF solid;
+                display:none;
+            }
+            
+            a{
+                padding:0 20px;
+                color:#FFF;
+                display:block;
+            }
+
+            // 선텍박스 날림
+            select{
+                position: absolute;
+                left:-9999px;
+                top:-99999px;
+            }
+        }
+    }   
 }
-.footer{}
+
+.footer{
+    height:230px;
+    background-color: #f9f7f7;
+}

@@ -1,11 +1,53 @@
-/* line 7, assets/less/import.less */
+/* line 28, assets/less/import.less */
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: 'Noto Sans', sans-serif;
 }
-/* line 13, assets/less/import.less */
+/* line 35, assets/less/import.less */
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 41, assets/less/import.less */
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 49, assets/less/import.less */
+.link_btn {
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+}
+/* line 51, assets/less/import.less */
+.link_btn.main-red {
+  border-color: #ef5050;
+}
+/* line 52, assets/less/import.less */
+.link_btn.main-orange {
+  border-color: #f5b250;
+}
+/* line 53, assets/less/import.less */
+.link_btn.main-green {
+  border-color: #79c266;
+}
+/* line 54, assets/less/import.less */
+.link_btn.main-violet {
+  border-color: #a764a8;
+}
+/* line 57, assets/less/import.less */
+.select_Design {
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+}
+/* line 61, assets/less/import.less */
 .gnb {
   height: 272px;
   background-color: #FFF;
@@ -13,28 +55,153 @@ body {
   left: 0;
   top: 0;
   right: 0;
-  outline: 1px red solid;
 }
-/* line 23, assets/less/import.less */
+/* line 69, assets/less/import.less */
 .gnb .top {
   height: 107px;
   padding-bottom: 5px;
   background-image: url(../images/gradation01.png);
   background-position: center bottom;
-  background-repeat: no-repeat;
-  outline: 1px red solid;
+  background-repeat: repeat-x;
 }
-/* line 32, assets/less/import.less */
+/* line 77, assets/less/import.less */
 .gnb .menu {
-  outline: 1px red solid;
   height: 160px;
 }
-/* line 38, assets/less/import.less */
+/* line 79, assets/less/import.less */
+.gnb .menu ul {
+  font-size: 0;
+  text-align: center;
+  height: 100%;
+}
+/* line 83, assets/less/import.less */
+.gnb .menu ul::before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 89, assets/less/import.less */
+.gnb .menu ul li {
+  display: inline-block;
+  font-size: initial;
+  margin: 0 1px;
+  text-align: center;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+/* line 96, assets/less/import.less */
+.gnb .menu ul li a {
+  display: block;
+  width: 210px;
+  height: 50px;
+  line-height: 50px;
+  transition: 1s;
+}
+/* line 102, assets/less/import.less */
+.gnb .menu ul li a.main-red {
+  color: #ef5050;
+}
+/* line 103, assets/less/import.less */
+.gnb .menu ul li a.main-orange {
+  color: #f5b250;
+}
+/* line 104, assets/less/import.less */
+.gnb .menu ul li a.main-green {
+  color: #79c266;
+}
+/* line 105, assets/less/import.less */
+.gnb .menu ul li a.main-violet {
+  color: #a764a8;
+}
+@media screen and (max-width: 1024px) {
+  /* line 115, assets/less/import.less */
+  .gnb .menu ul li a {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 123, assets/less/import.less */
+  .gnb .menu ul {
+    margin-top: 30px;
+  }
+  /* line 125, assets/less/import.less */
+  .gnb .menu ul::before {
+    content: none;
+  }
+  /* line 128, assets/less/import.less */
+  .gnb .menu ul li {
+    line-height: 100%;
+  }
+  /* line 130, assets/less/import.less */
+  .gnb .menu ul li a {
+    width: 256px;
+  }
+}
+/* line 139, assets/less/import.less */
 .intro {
   height: 100%;
   background-image: url(../images/main.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  outline: 1px red solid;
+  border-top: 1px transparent solid;
+}
+/* line 147, assets/less/import.less */
+.intro .seach_box {
+  color: #FFF;
+  margin-top: 372px;
+  font-size: 0;
+  text-align: center;
+}
+/* line 153, assets/less/import.less */
+.intro .seach_box [type="submit"] {
+  background-color: transparent;
+  color: #FFF;
+  text-align: center !important;
+  text-transform: uppercase;
+  border: 1px #FFF solid !important;
+}
+/* line 160, assets/less/import.less */
+.intro .seach_box [class^="select_"] {
+  text-align: left;
+  width: 210px;
+  height: 50px;
+  margin: 0 2px;
+  line-height: 50px;
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: 0;
+}
+/* line 172, assets/less/import.less */
+.intro .seach_box [class^="select_"] strong {
+  border: 1px #FFF solid;
+  display: block;
+  padding: 0 20px;
+  cursor: pointer;
+}
+/* line 178, assets/less/import.less */
+.intro .seach_box [class^="select_"] ul {
+  margin-top: 2px;
+  border: 1px #FFF solid;
+  display: none;
+}
+/* line 184, assets/less/import.less */
+.intro .seach_box [class^="select_"] a {
+  padding: 0 20px;
+  color: #FFF;
+  display: block;
+}
+/* line 191, assets/less/import.less */
+.intro .seach_box [class^="select_"] select {
+  position: absolute;
+  left: -9999px;
+  top: -99999px;
+}
+/* line 200, assets/less/import.less */
+.footer {
+  height: 230px;
+  background-color: #f9f7f7;
 }
