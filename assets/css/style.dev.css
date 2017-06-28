@@ -1,0 +1,40 @@
+/* line 7, assets/less/import.less */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/* line 13, assets/less/import.less */
+.gnb {
+  height: 272px;
+  background-color: #FFF;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  outline: 1px red solid;
+}
+/* line 23, assets/less/import.less */
+.gnb .top {
+  height: 107px;
+  padding-bottom: 5px;
+  background-image: url(../images/gradation01.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  outline: 1px red solid;
+}
+/* line 32, assets/less/import.less */
+.gnb .menu {
+  outline: 1px red solid;
+  height: 160px;
+}
+/* line 38, assets/less/import.less */
+.intro {
+  height: 100%;
+  background-image: url(../images/main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  outline: 1px red solid;
+}

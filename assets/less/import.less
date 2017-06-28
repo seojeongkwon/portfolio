@@ -1,0 +1,46 @@
+//mix 
+.o(@red:red){
+    outline:1px @red solid;
+}
+
+
+html,body{
+    margin:0; 
+    padding:0;
+    height:100%;
+}
+
+.gnb{
+    height: 107px + 160px + 5px;
+    background-color:#FFF;
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    
+    .o();
+
+    .top{
+        height:107px;
+        padding-bottom:5px;
+        background-image:url(../images/gradation01.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        .o();
+        }
+
+    .menu{
+        .o();
+        height:160px;
+    }    
+}
+
+.intro{
+    height:100%;
+    background-image: url(../images/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    .o();   
+}
+.footer{}
