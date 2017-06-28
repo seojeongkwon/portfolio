@@ -45,7 +45,7 @@ header{
       margin-left: 50px;
 
     }
-    span{
+    .logsign{
       float: right;
       margin-top: 43.078px;
       margin-right: 48.58px;
@@ -72,19 +72,18 @@ header{
       height:100%;
       //border:1px #f00 solid;
       vertical-align: middle;
-      margin:0;
     }
     .menubar{
       vertical-align: middle;
       width:851px;
-      margin: 0 auto;
+      //margin: 0 auto;
       //outline: 1px #f00 solid;
       display: inline-block;
       div{
         display: inline-block;
         width: 206px;
         height: 46px;
-        text-align: center;
+        //text-align: center;
         font-size: 22px;
         margin: 0 1px;
         span{
@@ -612,10 +611,13 @@ header{
 
 header{
   .menubox{
-    height:160px;
-    transition: 1s;
+    &:before{
+
+    }
     .menubar{
       width: 425.5px;
+      //margin-top:30px;
+      transition:1s;
       div{
         &:nth-child(1){margin-bottom: 2px;}
         &:nth-child(2){margin-bottom: 2px;}
@@ -626,15 +628,27 @@ header{
 } //528을 기준으로 그이하는 비포 버티칼미들이 안먹는다.
 @media screen and (max-width:528px) {
   header{
+    .top{
+      img{
+          width:300px;
+          transition: 1s;
+          margin-top: 25px;
+          margin-left: 25px;
+      }
+      .logsign{
+        margin-right:25px;
+      }
+    }
     .menubox{
-      &:before{
-        content:"";
-        border:1px #f00 solid;
-        height:0; //before삭제 시키는법 몰라서 헤이트 0줌
+       .menubar{
+
+
+       }
       }
     }
   }
-}
+
+
 @media screen and (max-width:480px) {
   html{
     body{
@@ -651,7 +665,7 @@ header{
       margin-top: 15px;
       margin-left: 10px;
     }
-    span{
+    .logsign{
       font-size: 13px;
       margin-top: 20px;
       margin-right: 10px;
