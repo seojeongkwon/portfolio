@@ -154,6 +154,22 @@
         //border:1px #f00 solid;
         width: 567px;
         margin:0 auto;
+        div{margin-bottom: 4px;}
+      }
+    }
+  }
+}
+@media screen and (max-width:800px) {
+  .index{
+    .bottom{
+      .lang{
+        margin-left:50px;
+        transition:1s;
+      }
+      .notice{
+        padding-right:50px;
+        transition:1s;
+        .traveling{margin-right:20px; transition:1s;}
       }
     }
   }
@@ -167,19 +183,43 @@
         margin:0 auto;
       }
     }
+    .bottom{
+      .lang{
+        padding-top:30px;
+        margin:0;
+        float:none;
+        text-align: center;
+        div{
+          display: inline-block;
+          strong{
+
+            span{
+
+            }
+          }
+        }
+      }
+      .notice{
+
+      }
+    }
   }
 }
 
 @media screen and (max-width:480px) {
   .index{
     .contents{
+      background-size: 800px;
+      height:365px;
       .searchbar{
         //border:1px #f00 solid;
         width: 190px;
         margin:0 auto;
-        padding-top:50px;
-        div{margin-bottom: 10px;}
+        padding-top:45px;
       }
+    }
+    .empty{
+      height:120px;
     }
   }
 }

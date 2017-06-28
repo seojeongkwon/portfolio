@@ -629,7 +629,7 @@ header{
     .menubox{
       &:before{
         content:"";
-        border:1px #fff solid;
+        border:1px #f00 solid;
         height:0; //before삭제 시키는법 몰라서 헤이트 0줌
       }
     }
@@ -678,4 +678,24 @@ header{
     }
   }
  }
+ .bottom{
+   height:190px;
+   .lang{
+    div{
+      width:160px;
+      height:36px;
+      font-size: 15px;
+      line-height: 36px;
+      text-align: left;
+      strong{span{background-position: right 5px center;}}
+      select{position:absolute; top:9999px; left:9999px;}
+    }
+   }
+   .notice{
+     padding-top:10px;
+     font-size: 15px;
+     div{float:left;}
+   }
+ }
+
 }
