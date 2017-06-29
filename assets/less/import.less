@@ -1,4 +1,4 @@
-//mix 
+//mix
 .o(@red:red){
     outline:1px @red solid;
 }
@@ -26,7 +26,7 @@ box-sizing: border-box;
 @mobile:480px;
 
 html,body{
-    margin:0; 
+    margin:0;
     padding:0;
     height:100%;
     font-family: 'Noto Sans', sans-serif;
@@ -98,7 +98,7 @@ a{
                     width:210px;
                     height:50px;
                     line-height:50px;
-                    transition:1s;
+                    transition:.3s;
                     &.main-red{color:@color-main-red}
                     &.main-orange{color:@color-main-orange}
                     &.main-green{color: @color-main-green}
@@ -107,7 +107,7 @@ a{
             }
         }
 
-    }    
+    }
 }
 // menu 조정
 @media screen and (max-width:@tablet-resolve) {
@@ -130,10 +130,10 @@ a{
             a{
                 width:768px / 3 ;
             }
-        } 
+        }
 
     }
-    
+
 }
 
 .intro{
@@ -149,7 +149,7 @@ a{
         margin-top:@top_h + @menu_h + @line_h + @margin_h;
         font-size:0;
         text-align: center;
-        
+
         [type="submit"]{
             background-color:transparent;
             color:#FFF;
@@ -168,7 +168,7 @@ a{
             vertical-align: middle;
             box-sizing: border-box;
             border:0;
-            
+
             strong{
                 border:1px #FFF solid;
                 display: block;
@@ -176,11 +176,11 @@ a{
                 cursor: pointer;
             }
             ul{
-               margin-top:2px; 
+               margin-top:2px;
                 border:1px #FFF solid;
                 display:none;
             }
-            
+
             a{
                 padding:0 20px;
                 color:#FFF;
@@ -194,7 +194,7 @@ a{
                 top:-99999px;
             }
         }
-    }   
+    }
 }
 
 .footer{
