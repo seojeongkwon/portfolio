@@ -59,8 +59,6 @@ a{
 }
 
 .gnb{
-    height: @top_h+@menu_h+@line_h;
-    background-color:#FFF;
     position:fixed;
     left:0;
     top:0;
@@ -71,11 +69,13 @@ a{
         padding-bottom:5px;
         background-image:url(../images/gradation01.png);
         background-position: center bottom;
+        background-color:#FFF;
         background-repeat: repeat-x;
         }
 
     .menu{
         height:160px;
+        background-color:#FFF;
         ul{
             font-size:0;
             text-align: center;
@@ -98,7 +98,7 @@ a{
                     width:210px;
                     height:50px;
                     line-height:50px;
-                    transition:1s;
+                    transition:.3s;
                     &.main-red{color:@color-main-red}
                     &.main-orange{color:@color-main-orange}
                     &.main-green{color: @color-main-green}
@@ -120,19 +120,23 @@ a{
 
 @media screen and (max-width:@tablet) {
 
-    .gnb .menu  ul{
-        margin-top:30px;
-        &::before{
-            content:none;
-        }
-        li{
-            line-height:100%;
-            a{
-                width:768px / 3 ;
+    .gnb .menu{
+            height:auto;
+        ul{
+           padding:30px 0;
+            &::before{
+                content:none;
             }
-        } 
+            li{
+                line-height:100%;
+                a{
+                    width:768px / 3 ;
+                }
+            } 
 
-    }
+        }
+    } 
+        
     
 }
 

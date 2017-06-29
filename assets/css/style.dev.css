@@ -49,24 +49,24 @@ a {
 }
 /* line 61, assets/less/import.less */
 .gnb {
-  height: 272px;
-  background-color: #FFF;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
 }
-/* line 69, assets/less/import.less */
+/* line 67, assets/less/import.less */
 .gnb .top {
   height: 107px;
   padding-bottom: 5px;
   background-image: url(../images/gradation01.png);
   background-position: center bottom;
+  background-color: #FFF;
   background-repeat: repeat-x;
 }
-/* line 77, assets/less/import.less */
+/* line 76, assets/less/import.less */
 .gnb .menu {
   height: 160px;
+  background-color: #FFF;
 }
 /* line 79, assets/less/import.less */
 .gnb .menu ul {
@@ -96,7 +96,7 @@ a {
   width: 210px;
   height: 50px;
   line-height: 50px;
-  transition: 1s;
+  transition: .3s;
 }
 /* line 102, assets/less/import.less */
 .gnb .menu ul li a.main-red {
@@ -122,23 +122,27 @@ a {
 }
 @media screen and (max-width: 768px) {
   /* line 123, assets/less/import.less */
-  .gnb .menu ul {
-    margin-top: 30px;
+  .gnb .menu {
+    height: auto;
   }
   /* line 125, assets/less/import.less */
+  .gnb .menu ul {
+    padding: 30px 0;
+  }
+  /* line 127, assets/less/import.less */
   .gnb .menu ul::before {
     content: none;
   }
-  /* line 128, assets/less/import.less */
+  /* line 130, assets/less/import.less */
   .gnb .menu ul li {
     line-height: 100%;
   }
-  /* line 130, assets/less/import.less */
+  /* line 132, assets/less/import.less */
   .gnb .menu ul li a {
     width: 256px;
   }
 }
-/* line 139, assets/less/import.less */
+/* line 143, assets/less/import.less */
 .intro {
   height: 100%;
   background-image: url(../images/main.png);
@@ -147,14 +151,14 @@ a {
   background-position: center;
   border-top: 1px transparent solid;
 }
-/* line 147, assets/less/import.less */
+/* line 151, assets/less/import.less */
 .intro .seach_box {
   color: #FFF;
   margin-top: 372px;
   font-size: 0;
   text-align: center;
 }
-/* line 153, assets/less/import.less */
+/* line 157, assets/less/import.less */
 .intro .seach_box [type="submit"] {
   background-color: transparent;
   color: #FFF;
@@ -162,7 +166,7 @@ a {
   text-transform: uppercase;
   border: 1px #FFF solid !important;
 }
-/* line 160, assets/less/import.less */
+/* line 164, assets/less/import.less */
 .intro .seach_box [class^="select_"] {
   text-align: left;
   width: 210px;
@@ -175,32 +179,32 @@ a {
   box-sizing: border-box;
   border: 0;
 }
-/* line 172, assets/less/import.less */
+/* line 176, assets/less/import.less */
 .intro .seach_box [class^="select_"] strong {
   border: 1px #FFF solid;
   display: block;
   padding: 0 20px;
   cursor: pointer;
 }
-/* line 178, assets/less/import.less */
+/* line 182, assets/less/import.less */
 .intro .seach_box [class^="select_"] ul {
   margin-top: 2px;
   border: 1px #FFF solid;
   display: none;
 }
-/* line 184, assets/less/import.less */
+/* line 188, assets/less/import.less */
 .intro .seach_box [class^="select_"] a {
   padding: 0 20px;
   color: #FFF;
   display: block;
 }
-/* line 191, assets/less/import.less */
+/* line 195, assets/less/import.less */
 .intro .seach_box [class^="select_"] select {
   position: absolute;
   left: -9999px;
   top: -99999px;
 }
-/* line 200, assets/less/import.less */
+/* line 204, assets/less/import.less */
 .footer {
   height: 230px;
   background-color: #f9f7f7;
