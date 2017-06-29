@@ -56,40 +56,35 @@ button {
 /* line 31, assets\less\common.less */
 header {
   position: fixed;
-  width: 100%;
-  z-index: 100;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
-/* line 36, assets\less\common.less */
+/* line 37, assets\less\common.less */
 header .top {
   position: relative;
-  width: 100%;
   height: 107px;
   background-color: #f9f7f7;
-  background-image: none;
+  padding-bottom: 5px;
+  background-image: url(../images/gradation01.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
 }
-/* line 42, assets\less\common.less */
+/* line 45, assets\less\common.less */
 header .top img {
   float: left;
   margin-top: 21.972px;
   margin-left: 50px;
 }
-/* line 48, assets\less\common.less */
+/* line 51, assets\less\common.less */
 header .top span {
   float: right;
   margin-top: 43.078px;
   margin-right: 48.58px;
   color: #6479ba;
 }
-/* line 55, assets\less\common.less */
-header .headline {
-  position: relative;
-  height: 5px;
-  background-image: url(../images/gradation01.png);
-  background-repeat: no-repeat;
-  background-position: center 0;
-}
-/* line 62, assets\less\common.less */
+/* line 58, assets\less\common.less */
 header .menubox {
   position: relative;
   background-color: #fff;
@@ -97,7 +92,7 @@ header .menubox {
   font-size: 0;
   text-align: center;
 }
-/* line 69, assets\less\common.less */
+/* line 65, assets\less\common.less */
 header .menubox:before {
   content: "";
   display: inline-block;
@@ -105,14 +100,14 @@ header .menubox:before {
   vertical-align: middle;
   margin: 0;
 }
-/* line 77, assets\less\common.less */
+/* line 73, assets\less\common.less */
 header .menubox .menubar {
   vertical-align: middle;
   width: 851px;
   margin: 0 auto;
   display: inline-block;
 }
-/* line 83, assets\less\common.less */
+/* line 79, assets\less\common.less */
 header .menubox .menubar div {
   display: inline-block;
   width: 206px;
@@ -121,51 +116,51 @@ header .menubox .menubar div {
   font-size: 22px;
   margin: 0 1px;
 }
-/* line 90, assets\less\common.less */
+/* line 86, assets\less\common.less */
 header .menubox .menubar div span {
   line-height: 46px;
 }
-/* line 94, assets\less\common.less */
+/* line 90, assets\less\common.less */
 header .menubox .menubar div:nth-child(1) {
   border: 2px #ef5050 solid;
   color: #ef5050;
 }
-/* line 97, assets\less\common.less */
+/* line 93, assets\less\common.less */
 header .menubox .menubar div:nth-child(1):hover {
   background-color: #ef5050;
   color: #fff;
 }
-/* line 102, assets\less\common.less */
+/* line 98, assets\less\common.less */
 header .menubox .menubar div:nth-child(2) {
   border: 2px #f5b250 solid;
   color: #f5b250;
 }
-/* line 105, assets\less\common.less */
+/* line 101, assets\less\common.less */
 header .menubox .menubar div:nth-child(2):hover {
   background-color: #f5b250;
   color: #fff;
 }
-/* line 110, assets\less\common.less */
+/* line 106, assets\less\common.less */
 header .menubox .menubar div:nth-child(3) {
   border: 2px #79c266 solid;
   color: #79c266;
 }
-/* line 113, assets\less\common.less */
+/* line 109, assets\less\common.less */
 header .menubox .menubar div:nth-child(3):hover {
   background-color: #79c266;
   color: #fff;
 }
-/* line 118, assets\less\common.less */
+/* line 114, assets\less\common.less */
 header .menubox .menubar div:nth-child(4) {
   border: 2px #a764a8 solid;
   color: #a764a8;
 }
-/* line 121, assets\less\common.less */
+/* line 117, assets\less\common.less */
 header .menubox .menubar div:nth-child(4):hover {
   background-color: #a764a8;
   color: #fff;
 }
-/* line 128, assets\less\common.less */
+/* line 124, assets\less\common.less */
 header .loginpop {
   position: absolute;
   width: 826px;
@@ -176,51 +171,51 @@ header .loginpop {
   z-index: 1;
   display: none;
 }
-/* line 137, assets\less\common.less */
+/* line 133, assets\less\common.less */
 header .loginpop .inner {
   width: 726px;
   height: 418px;
   background-color: #f2f1f0;
   margin: 50px;
 }
-/* line 142, assets\less\common.less */
+/* line 138, assets\less\common.less */
 header .loginpop .inner strong {
   font-size: 30px;
   display: block;
   padding: 50px 0 0;
   text-align: center;
 }
-/* line 148, assets\less\common.less */
+/* line 144, assets\less\common.less */
 header .loginpop .inner .idpassword {
   width: 626px;
   margin: 0 auto;
 }
-/* line 151, assets\less\common.less */
+/* line 147, assets\less\common.less */
 header .loginpop .inner .idpassword small {
   color: #f00;
   display: block;
   margin-top: 50px;
   font-size: 14px;
 }
-/* line 157, assets\less\common.less */
+/* line 153, assets\less\common.less */
 header .loginpop .inner .idpassword .logintxt {
   display: block;
   float: left;
 }
-/* line 160, assets\less\common.less */
+/* line 156, assets\less\common.less */
 header .loginpop .inner .idpassword .logintxt label {
   font-size: 18px;
   display: inline-block;
   width: 150px;
 }
-/* line 165, assets\less\common.less */
+/* line 161, assets\less\common.less */
 header .loginpop .inner .idpassword .logintxt input {
   width: 217px;
   height: 25px;
   border-radius: 15px;
   padding: 0 10px;
 }
-/* line 172, assets\less\common.less */
+/* line 168, assets\less\common.less */
 header .loginpop .inner .idpassword .loginbutton {
   background-color: #ef5050;
   border: 1px #ef5050 solid;
@@ -237,21 +232,21 @@ header .loginpop .inner .idpassword .loginbutton {
   margin-left: 50px;
   margin-top: 7px;
 }
-/* line 189, assets\less\common.less */
+/* line 185, assets\less\common.less */
 header .loginpop .inner .findlist {
   margin-top: 50px;
 }
-/* line 191, assets\less\common.less */
+/* line 187, assets\less\common.less */
 header .loginpop .inner .findlist span {
   font-size: 16px;
   display: block;
 }
-/* line 195, assets\less\common.less */
+/* line 191, assets\less\common.less */
 header .loginpop .inner .findlist a {
   font-size: 13px;
   color: #4c60ab;
 }
-/* line 202, assets\less\common.less */
+/* line 198, assets\less\common.less */
 header .passwordpop {
   position: absolute;
   width: 815px;
@@ -262,46 +257,46 @@ header .passwordpop {
   z-index: 1;
   display: none;
 }
-/* line 211, assets\less\common.less */
+/* line 207, assets\less\common.less */
 header .passwordpop .inner {
   width: 715px;
   height: 280px;
   background-color: #f2f1f0;
   margin: 50px;
 }
-/* line 216, assets\less\common.less */
+/* line 212, assets\less\common.less */
 header .passwordpop .inner strong {
   font-size: 30px;
   display: block;
   padding: 50px 0 0;
   text-align: center;
 }
-/* line 222, assets\less\common.less */
+/* line 218, assets\less\common.less */
 header .passwordpop .inner .passwordfind {
   width: 615px;
   margin: 0 auto;
   font-size: 18px;
 }
-/* line 226, assets\less\common.less */
+/* line 222, assets\less\common.less */
 header .passwordpop .inner .passwordfind > span {
   display: block;
   margin-top: 50px;
   font-size: 16px;
 }
-/* line 232, assets\less\common.less */
+/* line 228, assets\less\common.less */
 header .passwordpop .inner .passwordfind .email label {
   font-size: 18px;
   display: inline-block;
   width: 150px;
 }
-/* line 237, assets\less\common.less */
+/* line 233, assets\less\common.less */
 header .passwordpop .inner .passwordfind .email input {
   width: 217px;
   height: 25px;
   border-radius: 15px;
   padding: 0 10px;
 }
-/* line 244, assets\less\common.less */
+/* line 240, assets\less\common.less */
 header .passwordpop .inner .passwordfind .sendbutton {
   background-color: #ef5050;
   border: 1px #ef5050 solid;
@@ -317,7 +312,7 @@ header .passwordpop .inner .passwordfind .sendbutton {
   display: inline-block;
   margin-left: 50px;
 }
-/* line 262, assets\less\common.less */
+/* line 258, assets\less\common.less */
 header .signuppop {
   position: absolute;
   width: 997px;
@@ -328,28 +323,28 @@ header .signuppop {
   z-index: 1;
   display: none;
 }
-/* line 271, assets\less\common.less */
+/* line 267, assets\less\common.less */
 header .signuppop .inner {
   width: 897px;
   height: 834px;
   background-color: #f2f1f0;
   margin: 50px;
 }
-/* line 276, assets\less\common.less */
+/* line 272, assets\less\common.less */
 header .signuppop .inner strong {
   font-size: 30px;
   display: block;
   padding: 50px 0 0;
   text-align: center;
 }
-/* line 282, assets\less\common.less */
+/* line 278, assets\less\common.less */
 header .signuppop .inner .textbox {
   position: relative;
   width: 794px;
   height: 185px;
   margin: 50px 0 0 40px;
 }
-/* line 287, assets\less\common.less */
+/* line 283, assets\less\common.less */
 header .signuppop .inner .textbox .textarea {
   border: 1px #848485 solid;
   width: 792px;
@@ -360,19 +355,19 @@ header .signuppop .inner .textbox .textarea {
   text-align: left;
   color: #848485;
 }
-/* line 297, assets\less\common.less */
+/* line 293, assets\less\common.less */
 header .signuppop .inner .textbox span {
   display: block;
   text-align: right;
 }
-/* line 302, assets\less\common.less */
+/* line 298, assets\less\common.less */
 header .signuppop .inner .selftext {
   margin: 75px auto 0;
   max-width: 797px;
   height: 225px;
   outline: 1px #f00 solid;
 }
-/* line 307, assets\less\common.less */
+/* line 303, assets\less\common.less */
 header .signuppop .inner .selftext div {
   width: 50%;
   outline: 1px #f00 solid;
@@ -381,12 +376,12 @@ header .signuppop .inner .selftext div {
   margin-bottom: 10px;
   float: left;
 }
-/* line 314, assets\less\common.less */
+/* line 310, assets\less\common.less */
 header .signuppop .inner .selftext div label {
   font-size: 18px;
   display: block;
 }
-/* line 318, assets\less\common.less */
+/* line 314, assets\less\common.less */
 header .signuppop .inner .selftext div input {
   width: 100%;
   height: 41px;
@@ -394,24 +389,24 @@ header .signuppop .inner .selftext div input {
   box-sizing: border-box;
   padding: 0 10px;
 }
-/* line 325, assets\less\common.less */
+/* line 321, assets\less\common.less */
 header .signuppop .inner .selftext div .dd {
   width: 63px;
   padding: 0 10px;
   margin-right: 10px;
 }
-/* line 330, assets\less\common.less */
+/* line 326, assets\less\common.less */
 header .signuppop .inner .selftext div .mm {
   width: 63px;
   padding: 0 10px;
   margin-right: 10px;
 }
-/* line 335, assets\less\common.less */
+/* line 331, assets\less\common.less */
 header .signuppop .inner .selftext div .yyyy {
   width: 108px;
   padding: 0 10px;
 }
-/* line 342, assets\less\common.less */
+/* line 338, assets\less\common.less */
 header .signuppop .inner .joinbutton {
   background-color: #ef5050;
   border: 1px #ef5050 solid;
@@ -428,7 +423,7 @@ header .signuppop .inner .joinbutton {
   left: 0;
   margin-top: 50px;
 }
-/* line 364, assets\less\common.less */
+/* line 360, assets\less\common.less */
 .contents .pic {
   position: relative;
   width: 100%;
@@ -436,7 +431,7 @@ header .signuppop .inner .joinbutton {
   border: 1px #000 solid;
   background-color: #7f332f;
 }
-/* line 370, assets\less\common.less */
+/* line 366, assets\less\common.less */
 .contents .pic .write {
   position: absolute;
   top: 270px;
@@ -447,16 +442,16 @@ header .signuppop .inner .joinbutton {
   display: block;
   opacity: 0.5;
 }
-/* line 380, assets\less\common.less */
+/* line 376, assets\less\common.less */
 .contents .pic .searchmenu {
   margin-top: 60px;
 }
-/* line 383, assets\less\common.less */
+/* line 379, assets\less\common.less */
 .contents .pic .searchmenu .searchbar {
   text-align: center;
   padding-top: 39px;
 }
-/* line 386, assets\less\common.less */
+/* line 382, assets\less\common.less */
 .contents .pic .searchmenu .searchbar div {
   width: 180px;
   display: inline-block;
@@ -464,7 +459,7 @@ header .signuppop .inner .joinbutton {
   height: 42px;
   position: relative;
 }
-/* line 392, assets\less\common.less */
+/* line 388, assets\less\common.less */
 .contents .pic .searchmenu .searchbar div strong {
   padding: 0 10px 0 45px;
   display: block;
@@ -475,14 +470,14 @@ header .signuppop .inner .joinbutton {
   font-weight: normal;
   text-align: left;
 }
-/* line 402, assets\less\common.less */
+/* line 398, assets\less\common.less */
 .contents .pic .searchmenu .searchbar div strong span {
   background-image: url(../images/w_arrow01.png);
   background-repeat: no-repeat;
   background-position: right 0 center;
   display: block;
 }
-/* line 409, assets\less\common.less */
+/* line 405, assets\less\common.less */
 .contents .pic .searchmenu .searchbar div strong + ul {
   border: 1px #fff solid;
   margin-top: 2px;
@@ -491,40 +486,40 @@ header .signuppop .inner .joinbutton {
   text-align: left;
   display: none;
 }
-/* line 416, assets\less\common.less */
+/* line 412, assets\less\common.less */
 .contents .pic .searchmenu .searchbar div strong + ul li {
   height: 42px;
   line-height: 42px;
   padding: 0 20px;
   color: #fff;
 }
-/* line 421, assets\less\common.less */
+/* line 417, assets\less\common.less */
 .contents .pic .searchmenu .searchbar div strong + ul li:hover {
   background-color: rgba(255, 0, 0, 0.1);
 }
-/* line 426, assets\less\common.less */
+/* line 422, assets\less\common.less */
 .contents .pic .searchmenu .searchbar div select {
   position: absolute;
   top: 400px;
 }
-/* line 429, assets\less\common.less */
+/* line 425, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .locationbox strong {
   background-image: url(../images/008-location.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
   background-size: 12%;
 }
-/* line 436, assets\less\common.less */
+/* line 432, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .table {
   color: #fff;
   border: 1px #fff solid;
   display: none;
 }
-/* line 442, assets\less\common.less */
+/* line 438, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .datebox table {
   margin: 0 auto;
 }
-/* line 445, assets\less\common.less */
+/* line 441, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .datebox table li:nth-child(1) {
   float: left;
   border: 1px #fff solid;
@@ -535,7 +530,7 @@ header .signuppop .inner .joinbutton {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 455, assets\less\common.less */
+/* line 451, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .datebox table li:nth-child(2) {
   float: right;
   border: 1px #fff solid;
@@ -546,40 +541,40 @@ header .signuppop .inner .joinbutton {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 466, assets\less\common.less */
+/* line 462, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .datebox table .date {
   display: block;
   margin-top: 5px;
 }
-/* line 471, assets\less\common.less */
+/* line 467, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .datebox .checkin {
   background-image: url(../images/006-calendar.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
   background-size: 15%;
 }
-/* line 477, assets\less\common.less */
+/* line 473, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .datebox .checkout {
   background-image: url(../images/006-calendar.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
   background-size: 15%;
 }
-/* line 486, assets\less\common.less */
+/* line 482, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .guestbox strong {
   background-image: url(../images/007-users.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
   background-size: 15%;
 }
-/* line 494, assets\less\common.less */
+/* line 490, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .typebox strong {
   background-image: url(../images/005-house.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
   background-size: 15%;
 }
-/* line 501, assets\less\common.less */
+/* line 497, assets\less\common.less */
 .contents .pic .searchmenu .searchbar .searchbox {
   width: 140px;
   padding: 0 20px;
@@ -592,7 +587,7 @@ header .signuppop .inner .joinbutton {
   line-height: 42px;
   text-align: center;
 }
-/* line 517, assets\less\common.less */
+/* line 513, assets\less\common.less */
 .headline {
   position: relative;
   height: 5px;
@@ -600,19 +595,19 @@ header .signuppop .inner .joinbutton {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-/* line 524, assets\less\common.less */
+/* line 520, assets\less\common.less */
 .bottom {
   height: 230px;
   background-color: #f9f7f7;
   position: relative;
 }
-/* line 528, assets\less\common.less */
+/* line 524, assets\less\common.less */
 .bottom .lang {
   float: left;
   padding-top: 50px;
   margin-left: 100px;
 }
-/* line 532, assets\less\common.less */
+/* line 528, assets\less\common.less */
 .bottom .lang div {
   width: 180px;
   height: 42px;
@@ -621,7 +616,7 @@ header .signuppop .inner .joinbutton {
   margin-bottom: 5px;
   position: relative;
 }
-/* line 539, assets\less\common.less */
+/* line 535, assets\less\common.less */
 .bottom .lang div strong {
   font-weight: normal;
   text-transform: uppercase;
@@ -630,14 +625,14 @@ header .signuppop .inner .joinbutton {
   line-height: 42px;
   display: block;
 }
-/* line 546, assets\less\common.less */
+/* line 542, assets\less\common.less */
 .bottom .lang div strong span {
   background-image: url(../images/g_arrow.png);
   background-repeat: no-repeat;
   background-position: right 10px center;
   display: block;
 }
-/* line 553, assets\less\common.less */
+/* line 549, assets\less\common.less */
 .bottom .lang div strong + ul {
   border: 1px #838384 solid;
   background-color: #fff;
@@ -647,83 +642,83 @@ header .signuppop .inner .joinbutton {
   text-align: left;
   display: none;
 }
-/* line 561, assets\less\common.less */
+/* line 557, assets\less\common.less */
 .bottom .lang div strong + ul li {
   height: 42px;
   line-height: 42px;
   padding: 0 10px;
   color: #838384;
 }
-/* line 566, assets\less\common.less */
+/* line 562, assets\less\common.less */
 .bottom .lang div strong + ul li:hover {
   background-color: rgba(255, 200, 100, 0.1);
 }
-/* line 573, assets\less\common.less */
+/* line 569, assets\less\common.less */
 .bottom .lang .koreanbox ul {
   position: relative;
   top: -426px;
 }
-/* line 579, assets\less\common.less */
+/* line 575, assets\less\common.less */
 .bottom .lang .krwbox ul {
   position: relative;
   top: -258px;
 }
-/* line 585, assets\less\common.less */
+/* line 581, assets\less\common.less */
 .bottom .notice {
   float: right;
   padding-right: 100px;
   padding-top: 50px;
 }
-/* line 589, assets\less\common.less */
+/* line 585, assets\less\common.less */
 .bottom .notice div {
   display: inline-block;
 }
-/* line 591, assets\less\common.less */
+/* line 587, assets\less\common.less */
 .bottom .traveling {
   color: #939597;
   margin-right: 50px;
 }
-/* line 594, assets\less\common.less */
+/* line 590, assets\less\common.less */
 .bottom .traveling span {
   display: block;
 }
-/* line 597, assets\less\common.less */
+/* line 593, assets\less\common.less */
 .bottom .traveling span:nth-child(1) {
   font-weight: bold;
 }
-/* line 601, assets\less\common.less */
+/* line 597, assets\less\common.less */
 .bottom .touch {
   color: #939597;
 }
-/* line 603, assets\less\common.less */
+/* line 599, assets\less\common.less */
 .bottom .touch span {
   display: block;
 }
-/* line 606, assets\less\common.less */
+/* line 602, assets\less\common.less */
 .bottom .touch span:nth-child(1) {
   font-weight: bold;
 }
 @media screen and (max-width: 980px) {
-  /* line 614, assets\less\common.less */
+  /* line 610, assets\less\common.less */
   header .menubox {
     height: 160px;
     transition: 1s;
   }
-  /* line 617, assets\less\common.less */
+  /* line 613, assets\less\common.less */
   header .menubox .menubar {
     width: 425.5px;
   }
-  /* line 620, assets\less\common.less */
+  /* line 616, assets\less\common.less */
   header .menubox .menubar div:nth-child(1) {
     margin-bottom: 2px;
   }
-  /* line 621, assets\less\common.less */
+  /* line 617, assets\less\common.less */
   header .menubox .menubar div:nth-child(2) {
     margin-bottom: 2px;
   }
 }
 @media screen and (max-width: 528px) {
-  /* line 630, assets\less\common.less */
+  /* line 626, assets\less\common.less */
   header .menubox:before {
     content: "";
     border: 1px #fff solid;
@@ -731,48 +726,48 @@ header .signuppop .inner .joinbutton {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 640, assets\less\common.less */
+  /* line 636, assets\less\common.less */
   html body {
     padding-top: 187px;
     transition: 1s;
   }
-  /* line 647, assets\less\common.less */
+  /* line 643, assets\less\common.less */
   header .top {
     height: 60px;
   }
-  /* line 649, assets\less\common.less */
+  /* line 645, assets\less\common.less */
   header .top img {
     width: 160px;
     margin-top: 15px;
     margin-left: 10px;
   }
-  /* line 654, assets\less\common.less */
+  /* line 650, assets\less\common.less */
   header .top span {
     font-size: 13px;
     margin-top: 20px;
     margin-right: 10px;
   }
-  /* line 660, assets\less\common.less */
+  /* line 656, assets\less\common.less */
   header .menubox {
     height: 120px;
     background-color: #fff;
   }
-  /* line 663, assets\less\common.less */
+  /* line 659, assets\less\common.less */
   header .menubox:before {
     content: "";
     height: 100%;
   }
-  /* line 668, assets\less\common.less */
+  /* line 664, assets\less\common.less */
   header .menubox .menubar {
     width: 320px;
   }
-  /* line 670, assets\less\common.less */
+  /* line 666, assets\less\common.less */
   header .menubox .menubar div {
     width: 146px;
     height: 36px;
     font-size: 18px;
   }
-  /* line 674, assets\less\common.less */
+  /* line 670, assets\less\common.less */
   header .menubox .menubar div span {
     line-height: 36px;
   }
