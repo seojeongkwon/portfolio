@@ -11,6 +11,11 @@
   <script>
   $(function(){
 
+  $('.menuboxbtn').click(function(){
+    $(this).children('.menubox').toggle().css("top","50px");
+    $(this).css({"background-image":"url(../images/r_arrow04.png)","background-repeat":"no-repeat","background-position":"center top 20px"})
+  });
+
 
   $('.locationbox').click(function(){
     $(this).children('ul').toggle()
@@ -64,8 +69,11 @@
     <header>
       <div class="top">
         <img src="assets/images/1_Primary_logo_on_transparent_340x63.png" alt="">
-        <span>Log in / Sign up</span>
+        <div class="logsign" >
+          <span><a>Log in</a></span> / <span><a>Sign up</a></span>
+        </div>
       </div>
+      <div class="menuboxbtn">
         <div class="menubox">
           <div class="menubar">
             <div><span>Guest house</span></div>
@@ -74,6 +82,8 @@
             <div><span>Chalet</span></div>
           </div>
         </div>
+
+      </div>
 
         <div class="loginpop">
           <div class="inner">
@@ -153,7 +163,7 @@
           <li>South America</li>
         </ul>
 
-        <select name="" id="">
+        <select class="select_delete" name="" id="">
           <option value="ion1">Africa</option>
           <option value="ion2">Asia</option>
           <option value="ion3">Australia</option>
@@ -309,7 +319,7 @@
           <li>6</li>
         </ul>
 
-        <select name="" id="">
+        <select class="select_delete" name="" id="">
           <option value="ion1">1</option>
           <option value="ion2">2</option>
           <option value="ion3">3</option>
@@ -327,7 +337,7 @@
           <li>Chalet</li>
         </ul>
 
-        <select name="" id="">
+        <select class="select_delete" name="" id="">
           <option value="ion1">Guest house</option>
           <option value="ion2">Countryside</option>
           <option value="ion3">Lake cabin</option>
@@ -339,9 +349,7 @@
 
     </div>
     <footer>
-      <div class="empty">
-      </div>
-      <div class="headline"></div>
+      <div class="empty"></div>
         <div class="bottom">
           <div class="lang">
             <div class="koreanbox">
@@ -357,7 +365,7 @@
                 <li>Turkce</li>
                 <li>Korean</li>
               </ul>
-              <select name="" id="">
+              <select class="select_delete" name="" id="">
                 <option value="ion1">Deutsch</option>
                 <option value="ion2">Francais</option>
                 <option value="ion3">Hrvatski</option>
@@ -378,7 +386,7 @@
                 <li>CAD</li>
                 <li>HKD</li>
               </ul>
-              <select name="" id="">
+              <select class="select_delete" name="" id="">
                 <option value="ion1">AED</option>
                 <option value="ion2">IDR</option>
                 <option value="ion3">KRW</option>
@@ -388,18 +396,18 @@
             </div>
           </div>
           <div class="notice">
+            <div class="touch">
+              <span>GET IN TOUCH</span>
+              <span><i class=""></i>Traveling Anyang-si manan-gu</br> Doosan we’ve apt  110-901</span>
+              <span><i class="phone"></i>+0153 123 5678</span>
+              <span><i class="email"></i>fksdud377@gmail.com</span>
+            </div>
             <div class="traveling">
               <span>TRAVELING</span>
               <span>회사소개</span>
               <span>둘러보기</span>
               <span>정책</span>
               <span>도움말</span>
-            </div>
-            <div class="touch">
-              <span>GET IN TOUCH</span>
-              <span><i class=""></i>Traveling Anyang-si manan-gu</br> Doosan we’ve apt  110-901</span>
-              <span><i class="phone"></i>+0153 123 5678</span>
-              <span><i class="email"></i>fksdud377@gmail.com</span>
             </div>
           </div>
         </div>

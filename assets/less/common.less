@@ -1,7 +1,7 @@
 html{
   height: 100%;
   body{
-    height: 100%;
+    height: auto;
     padding-top:272px;
   }
 }
@@ -48,7 +48,7 @@ header{
       margin-left: 50px;
 
     }
-    span{
+    .logsign{
       float: right;
       margin-top: 43.078px;
       margin-right: 48.58px;
@@ -56,7 +56,7 @@ header{
    }
   }
   .menubox{
-    position:relative;
+
     background-color: #fff;
     height:160px;
     font-size:0;
@@ -68,19 +68,18 @@ header{
       height:100%;
       //border:1px #f00 solid;
       vertical-align: middle;
-      margin:0;
     }
     .menubar{
       vertical-align: middle;
-      width:851px;
-      margin: 0 auto;
+      //width:851px;
       //outline: 1px #f00 solid;
       display: inline-block;
+      transition: .5s;
       div{
         display: inline-block;
         width: 206px;
         height: 46px;
-        text-align: center;
+        //text-align: center;
         font-size: 22px;
         margin: 0 1px;
         span{
@@ -122,26 +121,32 @@ header{
     }
   }
   .loginpop{
-    position:absolute;
+    transition: .5s;
+    position:relative;
+    top:100%;
+    margin:0 auto;
     width:826px;
     height:518px;
-    left:489px;
-    top:35%;
     background-color:rgba(255, 255, 255, .7);
     z-index: 1;
     display:none;
     .inner{
+      transition: .5s;
+      position: relative;
+      top:50px;
+      left:50px;
       width:726px;
       height:418px;
       background-color: #f2f1f0;
-      margin:50px;
       strong{
         font-size: 30px;
         display: block;
         padding:50px 0 0;
         text-align: center;
+        text-transform: uppercase;
       }
       .idpassword{
+        transition: .5s;
         width:626px;
         margin: 0 auto;
           small{
@@ -166,6 +171,7 @@ header{
             }
           }
           .loginbutton{
+            transition: .5s;
             background-color: @mainred;
             border:1px @mainred solid;
             border-radius: 15px;
@@ -196,27 +202,30 @@ header{
     }
   }
   .passwordpop{
-    position:absolute;
-    width:815px;
+    transition: .5s;
+    position:relative;
+    top:100%;
+    margin:0 auto;
+    width:715px;
     height:380px;
-    left:515px;
-    top:35%;
     background-color:rgba(255, 255, 255, .7);
     z-index: 1;
-    display:none;
+    //display:none;
     .inner{
-      width:715px;
+      position: relative;
+      top:50px;
+      left:50px;
+      width:615px;
       height:280px;
       background-color: #f2f1f0;
-      margin:50px;
       strong{
         font-size: 30px;
         display: block;
-        padding:50px 0 0;
+        padding:40px 0 0;
         text-align: center;
       }
       .passwordfind{
-        width:615px;
+        width:515px;
         margin: 0 auto;
         font-size: 18px;
           >span{
@@ -231,7 +240,7 @@ header{
               width:150px; //inline-block을 한후 width값을 줘야 먹음
             }
             input{
-              width: 217px;
+              width: 150px;
               height: 25px;
               border-radius: 15px;
               padding:0 10px;
@@ -250,7 +259,7 @@ header{
             line-height: 52px;
             text-align: center;
             display: inline-block;
-            margin-left: 50px;
+            margin-left: 20px;
           }
       }
     }
@@ -419,7 +428,6 @@ header{
               }
             }
         }
-        select{position: absolute; top:400px;}
       }
       .locationbox{
         strong{
@@ -510,20 +518,22 @@ header{
    }
   }
 }
-.headline{
-  position: relative;
-  height:5px;
-  background-image: url(../images/gradation01.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.empty{
+  height:60px;
+  background-color: #fff;
 }
 .bottom{
-  height: 230px;
+  padding-top:5px;
+  background-image: url(../images/gradation01.png);
+  background-repeat: repeat-x;
+  background-position: center top;
+  padding:50px 0;
   background-color: @header;
   position:relative;
+  overflow: hidden;
+}
   .lang{
     float:left;
-    padding-top:50px;
     margin-left: 100px;
     div{
       width:180px;
@@ -539,10 +549,11 @@ header{
         height:42px;
         line-height: 42px;
         display: block;
+        text-align: left;
         span{
           background-image: url(../images/g_arrow.png);
           background-repeat: no-repeat;
-          background-position: right 10px center;
+          background-position: right  center;
           display: block;
         }
       }
@@ -579,12 +590,12 @@ header{
     }
   }
   .notice{
-    float:right;
     padding-right:100px;
-    padding-top:50px;
+    overflow: hidden;
     div{display: inline-block;}
   }
   .traveling{
+      float:right;
     color: #939597;
     margin-right: 50px;
     span{
@@ -595,6 +606,7 @@ header{
     }
   }
   .touch{
+      float:right;
     color: #939597;
     span{
       display: block;
@@ -603,74 +615,354 @@ header{
       font-weight: bold;
     }
   }
-}
-@media screen and (max-width:980px) {
+
+@media screen and (max-width:1024px) {
 
 header{
+  .top{
+    img{
+        width:300px;
+        transition: 0.5s;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .logsign{
+      font-size: 15px;
+      margin-right:25px;
+      transition: 1s;
+    }
+  }
   .menubox{
-    height:160px;
-    transition: 1s;
+
     .menubar{
-      width: 425.5px;
+
       div{
+        width:160px;
+        transition: 1s;
         &:nth-child(1){margin-bottom: 2px;}
         &:nth-child(2){margin-bottom: 2px;}
       }
     }
   }
+  .loginpop{
+
+    width:726px;
+    height:418px;
+    .inner{
+
+      width:626px;
+      height:318px;
+      strong{
+        padding:35px 0 0;
+      //  text-align: center;
+      }
+      .idpassword{
+        width:455px;
+          small{
+          margin-top: 20px;
+          }
+          .logintxt{
+            label{
+              width:100px;
+            }
+            input{
+              width: 150px;
+              height: 25px;
+            //  padding: 0 10px;
+            }
+          }
+          .loginbutton{
+            width: 130px;
+            height: 42px;
+            line-height: 42px;
+          //  margin-left: 50px;
+          //  margin-top: 7px;
+          }
+      }
+    }
+  }
+
  }
-} //528을 기준으로 그이하는 비포 버티칼미들이 안먹는다.
-@media screen and (max-width:528px) {
+ footer{
+ .bottom{
+   .lang{
+     div{
+       width: 146px;
+       height: 36px;
+       line-height: 36px;
+       strong{
+         height: 36px;
+         line-height: 36px;
+         padding:0 10px;
+         text-align: left;
+       }
+     }
+   }
+ }
+}
+}
+@media screen and (max-width:800px) {
+  //로그인버튼 중간배치하기!!!!!!!!
   header{
+    .top{
+      img{
+          width:250px;
+          transition: 0.5s;
+          margin-top:27px;
+      }
+    }
     .menubox{
-      &:before{
-        content:"";
-        border:1px #fff solid;
-        height:0; //before삭제 시키는법 몰라서 헤이트 0줌
+      .menubar{
+        width:425px;
+        div{width:206px; transition: 1s;}
+      }
+    }
+    .loginpop{
+      width:426px;
+      height:398px;
+      .inner{
+        position: relative;
+        top:30px;
+        left:30px;
+        width:366px;
+        height:338px;
+        strong{
+          padding:30px 0 0;
+          font-size: 25px;
+        }
+        .idpassword{
+          width:275px;
+            small{
+            margin:20px 0 5px;
+            }
+            .logintxt{
+              margin-bottom: 5px;
+              label{
+                width:100px;
+              }
+              input{
+                width: 150px;
+                height: 25px;
+              }
+            }
+            .loginbutton{
+              position: relative;
+              top:65px;
+              width: 150px;
+              height: 42px;
+              line-height: 42px;
+            }
+        }
+        .findlist{
+          position: relative;
+          bottom:95px;
+          span{font-size: 13px;}
+          a{font-size: 12px;}
+        }
+      }
+    }
+    .passwordpop{
+      width:515px;
+      height:380px;
+      .inner{
+        width:415px;
+        height:280px;
+        strong{
+          font-size: 25px;
+        //  padding:40px 0 0;
+        //  text-align: center;
+        }
+        .passwordfind{
+          width:415px;
+        //  font-size: 18px;
+            >span{
+          //  font-size: 16px;
+            }
+          /*  .email{
+              label{
+                font-size: 18px;
+                display: inline-block;
+                width:150px; //inline-block을 한후 width값을 줘야 먹음
+              }
+              input{
+                width: 150px;
+                height: 25px;
+                border-radius: 15px;
+                padding:0 10px;
+              }
+            }
+            .sendbutton{
+              background-color: @mainred;
+              border:1px @mainred solid;
+              border-radius: 15px;
+              width: 167px;
+              height: 52px;
+              text-transform: uppercase;
+              font-size: 18px;
+              color:#fff;
+              font-weight: bold;
+              line-height: 52px;
+              text-align: center;
+              display: inline-block;
+              margin-left: 20px;
+            }*/
+        }
+      }
+    }
+
+
+
+  }
+}
+@media screen and (max-width:650px) {
+  footer{
+    .bottom{
+        padding: 40px 0;
+      .lang{
+        float:none;
+        width:420px;
+        margin:0 auto !important;
+        div{
+          display: inline-block;
+          width:200px;
+        }
+      }
+      .notice{
+        padding-top: 10px;
+        width:350px;
+        margin:0 auto;
+        .touch{margin-left: 10px;}
+
       }
     }
   }
 }
+
 @media screen and (max-width:480px) {
   html{
     body{
-      padding-top:187px;
-      transition: 1s;
+      padding-top:115px;
+      //padding-top:187px;
+      transition: 0.5s;
     }
   }
 
-header{
-  .top{
-    height:60px;
-    img{
-      width:160px;
-      margin-top: 15px;
-      margin-left: 10px;
+  header{
+    .top{
+      height:60px;
+      img{
+        width:160px;
+        margin-top: 15px;
+        margin-left: 10px;
+        transition: 1s;
+      }
+      .logsign{
+       margin-top: 22px;
+       font-size: 13px;
+      }
     }
-    span{
-      font-size: 13px;
-      margin-top: 20px;
-      margin-right: 10px;
-    }
-  }
-  .menubox{
-    height:120px;
-    background-color: #fff;
-    &:before{
-      content:"";
-      //border:1px #f00 solid;
-      height:100%; //before삭제 시키는법 몰라서 헤이트 0줌
-    }
-    .menubar{
-      width: 320px;
-      div{
-        width: 146px;
-        height: 36px;
-        font-size: 18px;
-        span{
-          line-height: 36px;
+    .menuboxbtn{
+      height:50px;
+      background-color: #fff;
+      background-image: url(../images/r_arrow03.png);
+      background-position: center top 20px;
+      background-repeat: no-repeat;
+      position: relative;
+      .menubox{
+        position: relative;
+        display: none;
+        height:190px;
+        background-color: #fff;
+        .menubar{
+          width:226px;
+          vertical-align: top;
+          div{
+            width: 220px;
+            height: 36px;
+            font-size: 18px;
+            display: block;
+            span{
+              line-height: 36px;
+            }
+          }
         }
       }
+    }
+    .loginpop{
+      width:320px;
+      height:360px;
+      .inner{
+        position: relative;
+        top:20px;
+        left:20px;
+        width:280px;
+        height:320px;
+        strong{
+          font-size: 22px;
+        }
+        .idpassword{
+            small{
+              font-size: 13px;
+              margin-left:25px;
+            }
+            .logintxt{
+
+              label{
+                margin-left: 25px;
+                font-size: 16px;
+                width:70px;
+              }
+              input{
+                width: 120px;
+
+              }
+            }
+            .loginbutton{
+              width: 140px;
+              height: 38px;
+              line-height: 38px;
+              top:55px;
+            }
+        }
+        .findlist{
+          margin-left: 25px;
+
+        }
+      }
+    }
+  }
+  footer{
+    .empty{
+      height:50px !important;
+    }
+  .bottom{
+    transition: 0.5s;
+    padding: 20px 0;
+    .lang{
+      width:300px;
+      div{
+        width: 146px;
+        height: 30px;
+        line-height: 30px;
+        strong{
+          height: 30px;
+          line-height: 30px;
+          span{
+            font-size: 13px;
+          }
+        }
+
+      }
+    }
+    .notice{
+      padding-top:10px;
+      font-size: 13px;
+      padding-right:0 !important;
+      width:285px;
+      margin: 0 auto;
+      .traveling{margin-right:10px;}
+
+
     }
   }
  }
