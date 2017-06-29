@@ -1,4 +1,4 @@
-/* line 28, assets/less/import.less */
+/* line 42, assets/less/import.less */
 html,
 body {
   margin: 0;
@@ -6,7 +6,7 @@ body {
   height: 100%;
   font-family: 'Noto Sans', sans-serif;
 }
-/* line 35, assets/less/import.less */
+/* line 49, assets/less/import.less */
 ul,
 ol,
 li {
@@ -14,74 +14,121 @@ li {
   margin: 0;
   padding: 0;
 }
-/* line 41, assets/less/import.less */
+/* line 55, assets/less/import.less */
 a {
   text-decoration: none;
   color: #000;
 }
-/* line 49, assets/less/import.less */
+/* line 60, assets/less/import.less */
+address {
+  font-style: normal;
+}
+/* line 64, assets/less/import.less */
 .link_btn {
   box-sizing: border-box;
   border-width: 1px;
+  border-color: #FFF;
   border-style: solid;
 }
-/* line 51, assets/less/import.less */
+/* line 66, assets/less/import.less */
 .link_btn.main-red {
-  border-color: #ef5050;
+  border-color: #ef5050 !important;
+  color: #ef5050 !important;
 }
-/* line 52, assets/less/import.less */
+/* line 70, assets/less/import.less */
 .link_btn.main-orange {
-  border-color: #f5b250;
+  border-color: #f5b250 !important;
+  color: #f5b250 !important;
 }
-/* line 53, assets/less/import.less */
+/* line 74, assets/less/import.less */
 .link_btn.main-green {
-  border-color: #79c266;
+  border-color: #79c266 !important;
+  color: #79c266 !important;
 }
-/* line 54, assets/less/import.less */
+/* line 79, assets/less/import.less */
 .link_btn.main-violet {
-  border-color: #a764a8;
+  border-color: #a764a8 !important;
+  color: #a764a8 !important;
 }
-/* line 57, assets/less/import.less */
+/* line 83, assets/less/import.less */
+.link_btn.main-base {
+  border-color: #666 !important;
+  color: #666 !important;
+}
+/* line 90, assets/less/import.less */
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* line 98, assets/less/import.less */
 .select_Design {
+  height: 50px;
   box-sizing: border-box;
   border-width: 1px;
+  border-color: #FFF;
   border-style: solid;
 }
-/* line 61, assets/less/import.less */
+/* line 102, assets/less/import.less */
+.select_Design strong {
+  padding: 0 20px;
+}
+/* line 105, assets/less/import.less */
+.select_Design select {
+  position: absolute;
+  left: -9999px;
+  top: -99999px;
+}
+/* line 110, assets/less/import.less */
+.select_Design .selet_list {
+  margin-top: 2px;
+  border: 1px #FFF solid;
+  display: none;
+}
+/* line 116, assets/less/import.less */
+.select_Design a {
+  padding: 0 20px;
+  color: #FFF;
+  display: block;
+}
+/* line 123, assets/less/import.less */
 .gnb {
-  height: 272px;
-  background-color: #FFF;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
 }
-/* line 69, assets/less/import.less */
+/* line 129, assets/less/import.less */
 .gnb .top {
   height: 107px;
   padding-bottom: 5px;
   background-image: url(../images/gradation01.png);
   background-position: center bottom;
+  background-color: #FFF;
   background-repeat: repeat-x;
 }
-/* line 77, assets/less/import.less */
+/* line 138, assets/less/import.less */
 .gnb .menu {
   height: 160px;
+  background-color: #FFF;
 }
-/* line 79, assets/less/import.less */
+/* line 141, assets/less/import.less */
+.gnb .menu .wrapper {
+  height: 100%;
+}
+/* line 144, assets/less/import.less */
 .gnb .menu ul {
   font-size: 0;
   text-align: center;
   height: 100%;
 }
-/* line 83, assets/less/import.less */
+/* line 148, assets/less/import.less */
 .gnb .menu ul::before {
   content: "";
   height: 100%;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 89, assets/less/import.less */
+/* line 154, assets/less/import.less */
 .gnb .menu ul li {
   display: inline-block;
   font-size: initial;
@@ -90,55 +137,59 @@ a {
   box-sizing: border-box;
   vertical-align: middle;
 }
-/* line 96, assets/less/import.less */
+/* line 161, assets/less/import.less */
 .gnb .menu ul li a {
   display: block;
   width: 210px;
   height: 50px;
   line-height: 50px;
-  transition: 1s;
+  transition: .3s;
 }
-/* line 102, assets/less/import.less */
+/* line 167, assets/less/import.less */
 .gnb .menu ul li a.main-red {
   color: #ef5050;
 }
-/* line 103, assets/less/import.less */
+/* line 168, assets/less/import.less */
 .gnb .menu ul li a.main-orange {
   color: #f5b250;
 }
-/* line 104, assets/less/import.less */
+/* line 169, assets/less/import.less */
 .gnb .menu ul li a.main-green {
   color: #79c266;
 }
-/* line 105, assets/less/import.less */
+/* line 170, assets/less/import.less */
 .gnb .menu ul li a.main-violet {
   color: #a764a8;
 }
 @media screen and (max-width: 1024px) {
-  /* line 115, assets/less/import.less */
+  /* line 180, assets/less/import.less */
   .gnb .menu ul li a {
     width: 150px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 123, assets/less/import.less */
-  .gnb .menu ul {
-    margin-top: 30px;
+  /* line 188, assets/less/import.less */
+  .gnb .menu {
+    height: auto;
   }
-  /* line 125, assets/less/import.less */
+  /* line 190, assets/less/import.less */
+  .gnb .menu ul {
+    padding: 30px 0;
+  }
+  /* line 192, assets/less/import.less */
   .gnb .menu ul::before {
     content: none;
   }
-  /* line 128, assets/less/import.less */
+  /* line 195, assets/less/import.less */
   .gnb .menu ul li {
     line-height: 100%;
   }
-  /* line 130, assets/less/import.less */
+  /* line 197, assets/less/import.less */
   .gnb .menu ul li a {
     width: 256px;
   }
 }
-/* line 139, assets/less/import.less */
+/* line 208, assets/less/import.less */
 .intro {
   height: 100%;
   background-image: url(../images/main.png);
@@ -147,14 +198,14 @@ a {
   background-position: center;
   border-top: 1px transparent solid;
 }
-/* line 147, assets/less/import.less */
+/* line 216, assets/less/import.less */
 .intro .seach_box {
   color: #FFF;
   margin-top: 372px;
   font-size: 0;
   text-align: center;
 }
-/* line 153, assets/less/import.less */
+/* line 222, assets/less/import.less */
 .intro .seach_box [type="submit"] {
   background-color: transparent;
   color: #FFF;
@@ -162,7 +213,7 @@ a {
   text-transform: uppercase;
   border: 1px #FFF solid !important;
 }
-/* line 160, assets/less/import.less */
+/* line 229, assets/less/import.less */
 .intro .seach_box [class^="select_"] {
   text-align: left;
   width: 210px;
@@ -175,33 +226,61 @@ a {
   box-sizing: border-box;
   border: 0;
 }
-/* line 172, assets/less/import.less */
+/* line 241, assets/less/import.less */
 .intro .seach_box [class^="select_"] strong {
   border: 1px #FFF solid;
   display: block;
   padding: 0 20px;
   cursor: pointer;
 }
-/* line 178, assets/less/import.less */
-.intro .seach_box [class^="select_"] ul {
-  margin-top: 2px;
-  border: 1px #FFF solid;
-  display: none;
+/* line 255, assets/less/import.less */
+.footer {
+  padding: 30px 20px;
+  height: 170px;
+  background-color: #f9f7f7;
 }
-/* line 184, assets/less/import.less */
-.intro .seach_box [class^="select_"] a {
-  padding: 0 20px;
-  color: #FFF;
+/* line 261, assets/less/import.less */
+.footer .site-option {
+  float: left;
+}
+/* line 263, assets/less/import.less */
+.footer .site-option ul li {
+  width: 210px;
+}
+/* line 267, assets/less/import.less */
+.footer .site-menu {
+  float: right;
+}
+/* line 270, assets/less/import.less */
+.footer address {
+  margin-left: 20px;
+  float: right;
+}
+/* line 273, assets/less/import.less */
+.footer address span {
   display: block;
 }
-/* line 191, assets/less/import.less */
-.intro .seach_box [class^="select_"] select {
-  position: absolute;
-  left: -9999px;
-  top: -99999px;
+/* line 280, assets/less/import.less */
+.footer .select_Design {
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
 }
-/* line 200, assets/less/import.less */
-.footer {
-  height: 230px;
-  background-color: #f9f7f7;
+@media screen and (max-width: 480px) {
+  /* line 293, assets/less/import.less */
+  .footer .site-option ul {
+    margin-bottom: 10px;
+  }
+  /* line 297, assets/less/import.less */
+  .footer .site-option ul:after {
+    clear: both;
+  }
+  /* line 301, assets/less/import.less */
+  .footer .site-option ul li {
+    float: left;
+    width: 50%;
+  }
 }
