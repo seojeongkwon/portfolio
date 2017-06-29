@@ -3,16 +3,25 @@
     outline:1px @red solid;
 }
 
-.select_wrap(){
-box-sizing: border-box;
+.select_wrap(@color:#FFF){
+    box-sizing: border-box;
     border-width: 1px;
+    border-color:@color;
     border-style: solid;
 }
 
+
+.in_height(@h:50px){
+    height:@h;
+    line-height:@h;
+}
+
+//변수
 @color-main-red:#ef5050;
 @color-main-orange:#f5b250;
 @color-main-green:#79c266;
 @color-main-violet:#a764a8;
+@color-main-base:#666;
 
 
 @top_h:107px;
@@ -25,6 +34,11 @@ box-sizing: border-box;
 @tablet-resolve:1024px;
 @mobile:480px;
 
+@wrapwidth:1100px;
+
+
+
+//공통사항
 html,body{
     margin:0; 
     padding:0;
@@ -43,19 +57,67 @@ a{
     color:#000;
 }
 
+address{font-style:normal;}
 
 
 // assets object
 .link_btn{
     .select_wrap();
-    &.main-red{border-color:@color-main-red}
-    &.main-orange{border-color:@color-main-orange}
-    &.main-green{border-color: @color-main-green}
-    &.main-violet{border-color: @color-main-violet;}
+    &.main-red{
+        border-color:@color-main-red !important;
+        color:@color-main-red !important;
+        }
+    &.main-orange{
+        border-color:@color-main-orange !important;
+        color:@color-main-orange !important;
+    }
+    &.main-green{
+        border-color: @color-main-green !important;
+        color:@color-main-green !important;
+        }
+
+    &.main-violet{
+        border-color: @color-main-violet !important;
+        color:@color-main-violet !important;
+        }
+    &.main-base{
+        border-color: @color-main-base !important;
+        color:@color-main-base !important;
+        
+    }
 }
 
+.wrapper{
+    max-width: @wrapwidth;
+    margin: 0 auto;
+}
+
+
+
+
 .select_Design{
+    
+    height:50px;
     .select_wrap();
+    strong{
+        padding:0 20px;
+    }
+    select{
+        position: absolute;
+        left:-9999px;
+        top:-99999px;
+    }
+    .selet_list{
+        margin-top:2px; 
+        border:1px #FFF solid;
+        display:none;
+    }
+    
+    a{
+        padding:0 20px;
+        color:#FFF;
+        display:block;
+    }
 }
 
 .gnb{
@@ -76,6 +138,9 @@ a{
     .menu{
         height:160px;
         background-color:#FFF;
+        .wrapper{
+            height:100%;
+        }
         ul{
             font-size:0;
             text-align: center;
@@ -179,29 +244,68 @@ a{
                 padding: 0 20px;
                 cursor: pointer;
             }
-            ul{
-               margin-top:2px; 
-                border:1px #FFF solid;
-                display:none;
-            }
             
-            a{
-                padding:0 20px;
-                color:#FFF;
-                display:block;
-            }
 
             // 선텍박스 날림
-            select{
-                position: absolute;
-                left:-9999px;
-                top:-99999px;
-            }
+            
         }
     }   
 }
 
 .footer{
-    height:230px;
+    padding:30px 20px;
+    height:170px;
+    
     background-color: #f9f7f7;
+
+    .site-option{
+        float: left;
+        ul li{
+            width:210px;
+        }
+    } 
+    .site-menu{
+        float:right;
+    }
+    address{
+        margin-left:20px;
+        float:right;
+        span{
+            display:block;
+        }
+    }
+    
+     
+
+    .select_Design{
+        .in_height();
+        .select_wrap(@color:#000);
+
+     
+    }
+
+}
+
+
+@media screen and (max-width:@mobile){
+.footer{
+    
+    .site-option ul{
+        
+        margin-bottom:10px;
+
+        &:after{
+            clear: both;
+        }
+
+        li{
+            float:left;
+            width:50%;
+        }
+
+    } 
+   
+
+}
+
 }
