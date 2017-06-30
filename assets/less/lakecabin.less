@@ -2,19 +2,7 @@
 
 
 .contents{
-  .linewrap{
-    position:absolute;
-    width:1920px;
-    height:1279px;
-    li{
-      width: 1920px;
-      height:324px;
-      padding:50px 0;
-      background-image: url(../images/listline.png);
-      background-repeat: no-repeat;
-      background-position: center bottom;
-    }
-  }
+
   .listwrap{
     position: relative;
     width:1720px;
@@ -25,6 +13,10 @@
       width: 1720px;
       height:324px;
       padding: 50px 0;
+      background-image: url(../images/listline.png);
+      background-repeat: no-repeat;
+      background-position: center top;
+      &:first-child{background-image: none;}
       img{
         margin-right:100px;
         float:left;

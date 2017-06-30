@@ -21,10 +21,6 @@ p{
 button{font-family: 'Noto Sans CJK KR DemiLight',  cursive,sans-serif; margin:0; padding:0; }
 
 
-
-
-
-
 .wrap{
   max-width:1920px;
 }
@@ -56,7 +52,6 @@ header{
    }
   }
   .menubox{
-
     background-color: #fff;
     height:160px;
     font-size:0;
@@ -71,15 +66,12 @@ header{
     }
     .menubar{
       vertical-align: middle;
-      //width:851px;
-      //outline: 1px #f00 solid;
       display: inline-block;
       transition: .5s;
       div{
         display: inline-block;
         width: 206px;
         height: 46px;
-        //text-align: center;
         font-size: 22px;
         margin: 0 1px;
         span{
@@ -120,251 +112,258 @@ header{
       }
     }
   }
-  .loginpop{
+}
+
+.loginpop{
+  transition: .5s;
+  position:absolute;
+  top:100px;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin:auto;
+  width:826px;
+  height:518px;
+  background-color:rgba(255, 255, 255, .7);
+  z-index: 150;
+  display:none;
+  .inner{
     transition: .5s;
-    position:relative;
-    top:100%;
-    margin:0 auto;
-    width:826px;
-    height:518px;
-    background-color:rgba(255, 255, 255, .7);
-    z-index: 1;
-    display:none;
-    .inner{
+    position: relative;
+    top:50px;
+    left:50px;
+    width:726px;
+    height:418px;
+    background-color: #f2f1f0;
+    strong{
+      font-size: 30px;
+      display: block;
+      padding:50px 0 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .idpassword{
       transition: .5s;
-      position: relative;
-      top:50px;
-      left:50px;
-      width:726px;
-      height:418px;
-      background-color: #f2f1f0;
-      strong{
-        font-size: 30px;
+      width:626px;
+      margin: 0 auto;
+        small{
+        color:#f00;
         display: block;
-        padding:50px 0 0;
-        text-align: center;
-        text-transform: uppercase;
-      }
-      .idpassword{
-        transition: .5s;
-        width:626px;
-        margin: 0 auto;
-          small{
-          color:#f00;
-          display: block;
-          margin-top: 50px;
-          font-size: 14px;
-          }
-          .logintxt{
-            display: block;
-            float: left;
-            label{
-              font-size: 18px;
-              display: inline-block;
-              width:150px;
-            }
-            input{
-              width: 217px;
-              height: 25px;
-              border-radius: 15px;
-              padding: 0 10px;
-            }
-          }
-          .loginbutton{
-            transition: .5s;
-            background-color: @mainred;
-            border:1px @mainred solid;
-            border-radius: 15px;
-            width: 167px;
-            height: 52px;
-            text-transform: uppercase;
-            font-size: 18px;
-            color:#fff;
-            font-weight: bold;
-            line-height: 52px;
-            text-align: center;
-            display: inline-block;
-            margin-left: 50px;
-            margin-top: 7px;
-          }
-      }
-      .findlist{
-        margin-top:50px;
-        span{
-          font-size: 16px;
-          display: block;
+        margin-top: 50px;
+        font-size: 14px;
         }
-        a{
-          font-size: 13px;
-          color:#4c60ab;
-        }
-      }
-    }
-  }
-  .passwordpop{
-    transition: .5s;
-    position:relative;
-    top:100%;
-    margin:0 auto;
-    width:715px;
-    height:380px;
-    background-color:rgba(255, 255, 255, .7);
-    z-index: 1;
-    //display:none;
-    .inner{
-      position: relative;
-      top:50px;
-      left:50px;
-      width:615px;
-      height:280px;
-      background-color: #f2f1f0;
-      strong{
-        font-size: 30px;
-        display: block;
-        padding:40px 0 0;
-        text-align: center;
-      }
-      .passwordfind{
-        width:515px;
-        margin: 0 auto;
-        font-size: 18px;
-          >span{
+        .logintxt{
           display: block;
-          margin-top: 50px;
-          font-size: 16px;
-          }
-          .email{
-            label{
-              font-size: 18px;
-              display: inline-block;
-              width:150px; //inline-block을 한후 width값을 줘야 먹음
-            }
-            input{
-              width: 150px;
-              height: 25px;
-              border-radius: 15px;
-              padding:0 10px;
-            }
-          }
-          .sendbutton{
-            background-color: @mainred;
-            border:1px @mainred solid;
-            border-radius: 15px;
-            width: 167px;
-            height: 52px;
-            text-transform: uppercase;
-            font-size: 18px;
-            color:#fff;
-            font-weight: bold;
-            line-height: 52px;
-            text-align: center;
-            display: inline-block;
-            margin-left: 20px;
-          }
-      }
-    }
-  }
-  .signuppop{
-    position:absolute;
-    width:997px;
-    height:934px;
-    left:515px;
-    top:27%;
-    background-color:rgba(255, 255, 255, .7);
-    z-index: 1;
-    display:none;
-    .inner{
-      width:897px;
-      height:834px;
-      background-color: #f2f1f0;
-      margin:50px;
-      strong{
-        font-size: 30px;
-        display: block;
-        padding:50px 0 0;
-        text-align: center;
-      }
-      .textbox{
-        position: relative;
-        width: 794px;
-        height: 185px;
-        margin: 50px 0 0 40px;
-        .textarea{
-          border:1px #848485 solid;
-          width:792px;
-          height:183px;
-          padding: 0 10px;
-          margin-bottom: 10px;
-          overflow-y: scroll;
-          text-align: left;
-          color:#848485;
-        }
-        span{
-          display: block;
-          text-align: right;
-        }
-      }
-      .selftext{
-        margin:75px auto 0;
-        max-width:797px;
-        height:225px;
-        outline:1px #f00 solid;
-        div{
-          width:50%;
-          outline:1px #f00 solid;
-          box-sizing: border-box;
-          padding: 0 10px;
-          margin-bottom:10px;
-          float:left;
+          float: left;
           label{
             font-size: 18px;
-            display: block;
+            display: inline-block;
+            width:150px;
           }
           input{
-            width: 100%;
-            height: 41px;
+            width: 217px;
+            height: 25px;
             border-radius: 15px;
-            box-sizing: border-box;
-            padding:0 10px;
-          }
-          .dd{
-            width:63px;
-            padding:0 10px;
-            margin-right:10px;
-          }
-          .mm{
-            width:63px;
-            padding:0 10px;
-            margin-right:10px;
-          }
-          .yyyy{
-            width:108px;
-            padding:0 10px;
+            padding: 0 10px;
           }
         }
+        .loginbutton{
+          transition: .5s;
+          background-color: @mainred;
+          border:1px @mainred solid;
+          border-radius: 15px;
+          width: 167px;
+          height: 52px;
+          text-transform: uppercase;
+          font-size: 18px;
+          color:#fff;
+          font-weight: bold;
+          line-height: 52px;
+          text-align: center;
+          display: inline-block;
+          margin-left: 50px;
+          margin-top: 7px;
+        }
+    }
+    .findlist{
+      margin-top:50px;
+      span{
+        font-size: 16px;
+        display: block;
       }
-
-      .joinbutton{
-        background-color: @mainred;
-        border:1px @mainred solid;
-        border-radius: 15px;
-        width: 167px;
-        height: 52px;
-        text-transform: uppercase;
-        font-size: 18px;
-        color:#fff;
-        font-weight: bold;
-        line-height: 52px;
-        text-align: center;
-        //display: inline-block;
-        position:relative;
-        left:0;
-        //margin:50px auto 0;
-        margin-top: 50px;
+      a{
+        font-size: 13px;
+        color:#4c60ab;
       }
     }
   }
 }
+.passwordpop{
+  transition: .5s;
+  position:absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin: auto;
+  width:715px;
+  height:380px;
+  background-color:rgba(255, 255, 255, .7);
+  z-index: 150;
+  display:none;
+  .inner{
+    position: relative;
+    top:50px;
+    left:50px;
+    width:615px;
+    height:280px;
+    background-color: #f2f1f0;
+    strong{
+      font-size: 30px;
+      display: block;
+      padding:40px 0 0;
+      text-align: center;
+    }
+    .passwordfind{
+      width:515px;
+      margin: 0 auto;
+      font-size: 18px;
+        >span{
+        display: block;
+        margin-top: 50px;
+        font-size: 16px;
+        }
+        .email{
+          label{
+            font-size: 18px;
+            display: inline-block;
+            width:150px; //inline-block을 한후 width값을 줘야 먹음
+          }
+          input{
+            width: 150px;
+            height: 25px;
+            border-radius: 15px;
+            padding:0 10px;
+          }
+        }
+        .sendbutton{
+          background-color: @mainred;
+          border:1px @mainred solid;
+          border-radius: 15px;
+          width: 167px;
+          height: 52px;
+          text-transform: uppercase;
+          font-size: 18px;
+          color:#fff;
+          font-weight: bold;
+          line-height: 52px;
+          text-align: center;
+          display: inline-block;
+          margin-left: 20px;
+        }
+    }
+  }
+}
+.signuppop{
+  position:absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width:850px;
+  height:840px;
+  background-color:rgba(255, 255, 255, .7);
+  z-index: 150;
+  display:none;
+  .inner{
+    position: relative;
+    top:50px;
+    left:50px;
+    width:750px;
+    height:740px;
+    background-color: #f2f1f0;
+    strong{
+      font-size: 30px;
+      display: block;
+      padding:50px 0 0;
+      text-align: center;
+    }
+    .textbox{
+      position: relative;
+      width: 655px;
+      height: 185px;
+      margin: 50px 0 0 40px;
+      .textarea{
+        border:1px #848485 solid;
+        width:652px;
+        height:183px;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        overflow-y: scroll;
+        text-align: left;
+        color:#848485;
+      }
+      span{
+        display: block;
+        text-align: right;
+      }
+    }
+    .selftext{
+      margin:50px auto 0;
+      width:697px;
+      height:206px;
+      div{
+        width:50%;
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin-bottom:10px;
+        float:left;
+        label{
+          font-size: 18px;
+          display: block;
+        }
+        input{
+          width: 90%;
+          height: 35px;
+          border-radius: 15px;
+          box-sizing: border-box;
+          padding:0 10px;
+        }
+        .dd{
+          width:63px;
+          padding:0 10px;
+          margin-right:10px;
+        }
+        .mm{
+          width:63px;
+          padding:0 10px;
+          margin-right:10px;
+        }
+        .yyyy{
+          width:108px;
+          padding:0 10px;
+        }
+      }
+    }
+
+    .joinbutton{
+      background-color: @mainred;
+      border:1px @mainred solid;
+      border-radius: 15px;
+      width: 167px;
+      height: 52px;
+      text-transform: uppercase;
+      font-size: 18px;
+      color:#fff;
+      font-weight: bold;
+      line-height: 52px;
+      display: block;
+      margin:50px auto 0;
+    }
+  }
+}
+
 .contents{
   .pic{
     position:relative;
@@ -633,9 +632,7 @@ header{
     }
   }
   .menubox{
-
     .menubar{
-
       div{
         width:160px;
         transition: 1s;
@@ -644,65 +641,94 @@ header{
       }
     }
   }
-  .loginpop{
-
-    width:726px;
-    height:418px;
-    .inner{
-
-      width:626px;
-      height:318px;
-      strong{
-        padding:35px 0 0;
-      //  text-align: center;
-      }
-      .idpassword{
-        width:455px;
-          small{
-          margin-top: 20px;
-          }
-          .logintxt{
-            label{
-              width:100px;
-            }
-            input{
-              width: 150px;
-              height: 25px;
-            //  padding: 0 10px;
-            }
-          }
-          .loginbutton{
-            width: 130px;
-            height: 42px;
-            line-height: 42px;
-          //  margin-left: 50px;
-          //  margin-top: 7px;
-          }
-      }
-    }
-  }
-
  }
- footer{
- .bottom{
-   .lang{
-     div{
-       width: 146px;
-       height: 36px;
-       line-height: 36px;
-       strong{
-         height: 36px;
-         line-height: 36px;
-         padding:0 10px;
-         text-align: left;
-       }
+ .loginpop{
+   width:726px;
+   height:418px;
+   .inner{
+     width:626px;
+     height:318px;
+     strong{
+       padding:35px 0 0;
+     }
+     .idpassword{
+       width:455px;
+         small{
+         margin-top: 20px;
+         }
+         .logintxt{
+           label{
+             width:100px;
+           }
+           input{
+             width: 150px;
+             height: 25px;
+           }
+         }
+         .loginbutton{
+           width: 130px;
+           height: 42px;
+           line-height: 42px;
+         }
      }
    }
  }
-}
+ .signuppop{
+   width:700px;
+   height:834px;
+   .inner{
+     width:600px;
+     height:734px;
+     .textbox{
+       width: 502px;
+       .textarea{
+         width:500px;
+         font-size: 15px;
+       }
+     }
+     .selftext{
+       width:500px;
+       height:225px;
+       div{
+         &:last-child{width:53%;}
+         input{
+           width: 100%;
+         }
+         .dd,.mm{
+           margin-right:5px;
+         }
+         .yyyy{
+           width:90px;
+         }
+       }
+     }
+     .joinbutton{
+       width: 150px;
+       height: 42px;
+       line-height: 42px;
+     }
+   }
+ }
+
+ footer{
+  .bottom{
+    .lang{
+      div{
+        width: 146px;
+        height: 36px;
+        line-height: 36px;
+        strong{
+          height: 36px;
+          line-height: 36px;
+          padding:0 10px;
+          text-align: left;
+        }
+      }
+    }
+  }
+ }
 }
 @media screen and (max-width:800px) {
-  //로그인버튼 중간배치하기!!!!!!!!
   header{
     .top{
       img{
@@ -717,102 +743,119 @@ header{
         div{width:206px; transition: 1s;}
       }
     }
-    .loginpop{
-      width:426px;
-      height:398px;
-      .inner{
-        position: relative;
-        top:30px;
-        left:30px;
-        width:366px;
-        height:338px;
-        strong{
-          padding:30px 0 0;
-          font-size: 25px;
-        }
-        .idpassword{
-          width:275px;
-            small{
-            margin:20px 0 5px;
-            }
-            .logintxt{
-              margin-bottom: 5px;
-              label{
-                width:100px;
-              }
-              input{
-                width: 150px;
-                height: 25px;
-              }
-            }
-            .loginbutton{
-              position: relative;
-              top:65px;
-              width: 150px;
-              height: 42px;
-              line-height: 42px;
-            }
-        }
-        .findlist{
-          position: relative;
-          bottom:95px;
-          span{font-size: 13px;}
-          a{font-size: 12px;}
-        }
-      }
-    }
-    .passwordpop{
-      width:515px;
-      height:380px;
-      .inner{
-        width:415px;
-        height:280px;
-        strong{
-          font-size: 25px;
-        //  padding:40px 0 0;
-        //  text-align: center;
-        }
-        .passwordfind{
-          width:415px;
-        //  font-size: 18px;
-            >span{
-          //  font-size: 16px;
-            }
-          /*  .email{
-              label{
-                font-size: 18px;
-                display: inline-block;
-                width:150px; //inline-block을 한후 width값을 줘야 먹음
-              }
-              input{
-                width: 150px;
-                height: 25px;
-                border-radius: 15px;
-                padding:0 10px;
-              }
-            }
-            .sendbutton{
-              background-color: @mainred;
-              border:1px @mainred solid;
-              border-radius: 15px;
-              width: 167px;
-              height: 52px;
-              text-transform: uppercase;
-              font-size: 18px;
-              color:#fff;
-              font-weight: bold;
-              line-height: 52px;
-              text-align: center;
-              display: inline-block;
-              margin-left: 20px;
-            }*/
-        }
-      }
-    }
-
-
-
   }
+  .loginpop{
+    width:426px;
+    height:398px;
+    .inner{
+      position: relative;
+      top:30px;
+      left:30px;
+      width:366px;
+      height:338px;
+      strong{
+        padding:30px 0 0;
+        font-size: 25px;
+      }
+      .idpassword{
+        width:275px;
+          small{
+          margin:20px 0 5px;
+          }
+          .logintxt{
+            margin-bottom: 5px;
+            label{
+              width:100px;
+            }
+            input{
+              width: 150px;
+              height: 25px;
+            }
+          }
+          .loginbutton{
+            position: relative;
+            top:65px;
+            width: 150px;
+            height: 42px;
+            line-height: 42px;
+            display: block;
+            margin:0 auto;
+          }
+      }
+      .findlist{
+        position: relative;
+        bottom:95px;
+        span{font-size: 13px;}
+        a{font-size: 12px;}
+      }
+    }
+  }
+  .passwordpop{
+    width:420px;
+    height:320px;
+    .inner{
+      width:360px;
+      height:260px;
+      top:30px;
+      left:30px;
+      strong{
+        font-size: 25px;
+      }
+      .passwordfind{
+        width:325px;
+          >span{
+            margin-top:20px;
+          }
+          .sendbutton{
+            width: 150px;
+            height: 42px;
+            line-height: 42px;
+            margin: 20px auto 0;
+            display: block;
+          }
+      }
+    }
+  }
+  .signuppop{
+    width:450px;
+    height:720px;
+    .inner{
+      top:30px;
+      left:30px;
+      width:390px;
+      height:660px;
+      strong{
+        font-size: 25px;
+        padding-top:30px;
+      }
+      .textbox{
+        width: 302px;
+        margin-top:40px;
+        .textarea{
+          width:300px;
+          font-size: 15px;
+        }
+        span{font-size: 15px;}
+      }
+      .selftext{
+        width:350px;
+        height:185px;
+        div{
+          &:last-child{width:71%;}
+          label{
+            font-size: 16px;
+          }
+          input{
+            height: 31px;
+          }
+        }
+      }
+      .joinbutton{
+        margin-top: 40px;
+      }
+    }
+  }
+
 }
 @media screen and (max-width:650px) {
   footer{
@@ -832,7 +875,6 @@ header{
         width:350px;
         margin:0 auto;
         .touch{margin-left: 10px;}
-
       }
     }
   }
@@ -842,11 +884,9 @@ header{
   html{
     body{
       padding-top:115px;
-      //padding-top:187px;
       transition: 0.5s;
     }
   }
-
   header{
     .top{
       height:60px;
@@ -888,46 +928,115 @@ header{
         }
       }
     }
-    .loginpop{
-      width:320px;
-      height:360px;
-      .inner{
-        position: relative;
-        top:20px;
-        left:20px;
-        width:280px;
-        height:320px;
-        strong{
-          font-size: 22px;
-        }
-        .idpassword{
-            small{
-              font-size: 13px;
-              margin-left:25px;
+  }
+  .loginpop{
+    margin:18px auto 0;
+    width:320px;
+    height:360px;
+    .inner{
+      position: relative;
+      top:20px;
+      left:20px;
+      width:280px;
+      height:320px;
+      strong{
+        font-size: 22px;
+      }
+      .idpassword{
+          small{
+            font-size: 13px;
+            margin-left:25px;
+          }
+          .logintxt{
+            label{
+              margin-left: 25px;
+              font-size: 16px;
+              width:80px;
             }
-            .logintxt{
-
-              label{
-                margin-left: 25px;
-                font-size: 16px;
-                width:70px;
-              }
-              input{
-                width: 120px;
-
-              }
+            input{
+              width: 120px;
             }
-            .loginbutton{
-              width: 140px;
-              height: 38px;
-              line-height: 38px;
-              top:55px;
+          }
+          .loginbutton{
+            width: 140px;
+            height: 38px;
+            line-height: 38px;
+            top:55px;
+          }
+      }
+      .findlist{
+        margin-left: 25px;
+      }
+    }
+  }
+  .passwordpop{
+    margin:150px auto 0;
+    width:320px;
+    height:300px;
+    .inner{
+      width:280px;
+      height:260px;
+      top:20px;
+      left:20px;
+      strong{
+        font-size: 22px;
+      }
+      .passwordfind{
+        width:256px;
+          >span{
+            margin-top:20px;
+          }
+          .email{
+            label{display: none;}
+            input{
+              display: block;
+              margin:15px auto 0;
             }
+          }
+          .sendbutton{
+            width: 140px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 18px;
+            margin: 20px auto 0;
+            display: block;
+          }
+      }
+    }
+  }
+  .signuppop{
+    bottom:200px;
+    width:350px;
+    height:600px;
+    .inner{
+      top:20px;
+      left:20px;
+      width:310px;
+      height:560px;
+      strong{
+        font-size: 22px;
+      }
+      .textbox{
+        width: 222px;
+        margin-top:20px;
+        .textarea{
+          width:220px;
+          height:150px;
+          font-size: 13px;
         }
-        .findlist{
-          margin-left: 25px;
-
+        span{font-size: 13px;}
+      }
+      .selftext{
+        margin-top:5px;
+        width:260px;
+        height:165px;
+        div{
+          margin-bottom: 0;
+          &:last-child{width:100%;}
         }
+      }
+      .joinbutton{
+        margin-top: 40px;
       }
     }
   }
@@ -951,7 +1060,6 @@ header{
             font-size: 13px;
           }
         }
-
       }
     }
     .notice{
@@ -961,8 +1069,6 @@ header{
       width:285px;
       margin: 0 auto;
       .traveling{margin-right:10px;}
-
-
     }
   }
  }
