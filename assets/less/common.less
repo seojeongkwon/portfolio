@@ -35,7 +35,7 @@ header{
     height:107px;
     background-color: @header;
     padding-bottom:5px;
-    background-image: url(../images/gradation01.png);
+    background-image: url(../images/gradation01.jpg);
     background-repeat: repeat-x;
     background-position: center bottom;
     img{
@@ -367,22 +367,27 @@ header{
 .contents{
   .pic{
     position:relative;
-    width: 100%;
+    width: 1620px;
     height: 403px;
-    border: 1px #000 solid;
-    background-color: #7f332f;
+    margin:0 auto;
     .write{
       position: absolute;
-      top:270px;
-      left:50px;
-      width: 514px;
-      height: 100px;
-      color:@header;
-      display: block;
-      opacity: 0.5;
+      bottom:25px;
+      right:0;
+      width: 568px;
+      height: 178px;
+      background-color: rgba(255,255,255,.2);
+      span{
+        color:#fff;
+        font-size: 18px;
+        font-family: sans-serif;
+        display: block;
+        margin:0 auto;
+        padding-left:35px;
+        padding-top:38px;
+      }
     }
     .searchmenu{
-      //border:1px #f0f solid;
       margin-top:60px;
     .searchbar{
       text-align: center;
@@ -440,14 +445,19 @@ header{
         color:#fff;
         border:1px #fff solid;
         display: none;
+        width: 180px;
+        height: 200px;
+        position:relative;
+        top:2px;
       }
       .datebox{
         table{
           margin:0 auto;
+          width: 180px;
+          height: 170px;
           li{
             &:nth-child(1){
               float:left;
-              border:1px #fff solid;
               margin-top:10px;
               width: 20px;
               height: 20px;
@@ -457,7 +467,6 @@ header{
             }
             &:nth-child(2){
               float:right;
-              border:1px #fff solid;
               margin-top:10px;
               width: 20px;
               height: 20px;
@@ -517,19 +526,42 @@ header{
    }
   }
 }
+@media screen and (max-width:1200px) {
+
+    .contents{
+      .pic{
+        .searchbar{
+          //border:1px #f00 solid;
+          width: 567px;
+          margin:0 auto;
+          div{margin-bottom: 4px;}
+        }
+      }
+    }
+}
+@media screen and (max-width:480px) {
+    .contents{
+      //background-size: 800px;
+      .pic{
+        height:365px;
+
+      }
+    }
+
+}
+
 .empty{
   height:60px;
   background-color: #fff;
 }
 .bottom{
   padding-top:5px;
-  background-image: url(../images/gradation01.png);
+  background-image: url(../images/gradation01.jpg);
   background-repeat: repeat-x;
   background-position: center top;
   padding:50px 0;
   background-color: @header;
   position:relative;
-  overflow: hidden;
 }
   .lang{
     float:left;
@@ -577,14 +609,14 @@ header{
     }
     .koreanbox{
       ul{
-        position:relative;
-        top:-426px;
+        position: absolute;
+        top:-384px;
       }
     }
     .krwbox{
       ul{
-        position:relative;
-        top:-258px;
+        position:absolute;
+        top:-216px;
       }
     }
   }
@@ -1048,9 +1080,10 @@ header{
     transition: 0.5s;
     padding: 20px 0;
     .lang{
-      width:300px;
+      width:280px;
+      margin:0 auto;
       div{
-        width: 146px;
+        width: 136px;
         height: 30px;
         line-height: 30px;
         strong{
@@ -1060,6 +1093,7 @@ header{
             font-size: 13px;
           }
         }
+        ul{font-size: 13px;}
       }
     }
     .notice{
@@ -1068,7 +1102,7 @@ header{
       padding-right:0 !important;
       width:285px;
       margin: 0 auto;
-      .traveling{margin-right:10px;}
+      //.traveling{margin-right:5px;}
     }
   }
  }
