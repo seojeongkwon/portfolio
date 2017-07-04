@@ -367,15 +367,15 @@ header{
 .contents{
   .pic{
     position:relative;
-    width: 1620px;
     height: 403px;
-    margin:0 auto;
+    margin:0 150px;
+    transition: 1s;
     .write{
       position: absolute;
       bottom:25px;
       right:0;
-      width: 568px;
-      height: 178px;
+      width: 550px;
+      height: 130px;
       background-color: rgba(255,255,255,.15);
       padding-left:50px;
       box-sizing: border-box;
@@ -388,9 +388,9 @@ header{
       }
       span{
         color:#fff;
-        font-size: 18px;
+        //font-size: 18px;
         width: 460px;
-        height: 84px;
+        height: 75px;
         margin:0 auto;
         display: inline-block;
         vertical-align: middle;
@@ -443,7 +443,7 @@ header{
       }
       .locationbox{
         strong{
-          background-image: url(../images/008-location.png);
+          background-image: url(../images/location.png);
           background-repeat: no-repeat;
           background-position: left 10px center;
           background-size: 12%;
@@ -489,13 +489,13 @@ header{
           }
         }
         .checkin{
-          background-image: url(../images/006-calendar.png);
+          background-image: url(../images/calendar.png);
           background-repeat: no-repeat;
           background-position: left 10px center;
           background-size: 15%;
         }
         .checkout{
-          background-image: url(../images/006-calendar.png);
+          background-image: url(../images/calendar.png);
           background-repeat: no-repeat;
           background-position: left 10px center;
           background-size: 15%;
@@ -504,7 +504,7 @@ header{
 
       .guestbox{
         strong{
-          background-image: url(../images/007-users.png);
+          background-image: url(../images/users.png);
           background-repeat: no-repeat;
           background-position: left 10px center;
           background-size: 15%;
@@ -512,7 +512,7 @@ header{
       }
       .typebox{
         strong{
-          background-image: url(../images/005-house.png);
+          background-image: url(../images/house.png);
           background-repeat: no-repeat;
           background-position: left 10px center;
           background-size: 15%;
@@ -521,7 +521,7 @@ header{
       .searchbox{
         width: 140px;
         padding:0 20px;
-        background-image: url(../images/004-search.png);
+        background-image: url(../images/search.png);
         background-repeat: no-repeat;
         background-position: left 10px center;
         background-size: 15%;
@@ -534,24 +534,49 @@ header{
    }
   }
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1500px) {
 
     .contents{
       .pic{
+        margin:0 50px;
+      }
+    }
+}
+@media screen and (max-width:1300px) {
+
+    .contents{
+      .pic{
+        .searchmenu{
+          .searchbar{
+            padding-top:45px;
+            width: 567px;
+            margin:0 auto;
+            div{margin-bottom: 4px;}
+          }
+        }
+      }
+    }
+}
+
+@media screen and (max-width:1024px) {
+  .contents{
+    .pic{
+      margin:0 50px;
+      .searchmenu{
         .searchbar{
-          //border:1px #f00 solid;
-          width: 567px;
+          padding-top:25px;
+          width: 425px;
           margin:0 auto;
           div{margin-bottom: 4px;}
         }
       }
     }
+  }
 }
 @media screen and (max-width:480px) {
     .contents{
       //background-size: 800px;
       .pic{
-        height:365px;
 
       }
     }
@@ -647,11 +672,37 @@ header{
   .touch{
       float:right;
     color: #939597;
-    span{
-      display: block;
-    }
     span:nth-child(1){
       font-weight: bold;
+      margin-left:-10px;
+    }
+    span:nth-child(2){
+      padding-left:25px;
+      background-image: url(../images/icon/placeholder.png);
+      background-position: left 2px top 5px;
+      background-repeat: no-repeat;
+      background-size: 16px 22px;
+      display: inline-block;
+    }
+    span:nth-child(3){
+      padding-left:25px;
+      background-image: url(../images/icon/phone.png);
+      background-repeat: no-repeat;
+      background-size: 18px 17px;
+      display: inline-block;
+      background-position: left 0 center;
+    }
+    span:nth-child(4){
+      padding-left: 25px;
+      background-image: url(../images/icon/contact.png);
+      background-repeat: no-repeat;
+      background-size: 17px;
+      display: inline-block;
+      background-position: left 0 center;
+    }
+    span{
+      display: block !important;
+      padding-left: 10px;
     }
   }
 

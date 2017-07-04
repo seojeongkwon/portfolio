@@ -9,7 +9,8 @@
   .listwrap{
     position: relative;
     height:1279px;
-    margin: 0 144px;
+    margin: 0 150px;
+    transition: 1s;
     li{
       border:1px #f00 solid;
       position:relative;
@@ -19,40 +20,56 @@
       background-image: url(../images/listline.png);
       background-repeat: no-repeat;
       background-position: center top;
+      transition: .5s;
       &:first-child{background-image: none;}
       img{
-        margin-right:100px;
         float:left;
+        transition: .5s;
+      }
+      .explanation{
+        margin-left: 596px;
+        max-width: 1008px;
+        padding: 0 40px;
+        transition: .5s;
       }
       p{
         padding-top:30px;
         color:@fontcolor;
         font-size: 18px;
-        border:1px #f00 solid;
+        //border:1px #f00 solid;
         display: block;
         height:164px;
         overflow: hidden;
       }
+      .icon{
+        background-image: url(../images/g_smallarrowR.png);
+        background-repeat: no-repeat;
+        background-position: left 0 top 11px;
+        background-size: 10px;
+        padding-left:22px;
+        padding-top:7px;
+      }
       .details{
         width: 150px;
         height: 45px;
-        border:2px @mainorange solid;
+        border:2px @mainred solid;
         border-radius: 10px;
-        color:@mainorange;
+        color:@mainred;
         font-size: 20px;
         margin-left:596px;
         text-align: center;
         line-height: 45px;
         position: absolute;
         bottom:50px;
+        transition: 1s;
         span{
-          background-image: url(../images/y_arrow02.png);
+          background-image: url(../images/r_arrow02.png);
           background-repeat: no-repeat;
           background-position: 5px center;
           padding:0 5px 0 25px;
         }
         &:hover{
-          background-color: @mainorange;
+          background-color: @mainred;
           color:#fff;
           span{
             background-image: url(../images/w_arrowR.png);
@@ -62,22 +79,181 @@
           }
         }
       }
+      &:nth-child(1){
+        .icon{
+          span{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            padding:5px;
+          }
+          span:nth-child(1){
+            background-image: url(../images/icon/buildings.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(2){
+            background-image: url(../images/icon/bathtub.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(3){
+            background-image: url(../images/icon/air-conditioner.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(4){
+            background-image: url(../images/icon/holidays.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(5){
+            background-image: url(../images/icon/parking.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(6){
+            background-image: url(../images/icon/computer.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+
+        }
+      }
+      &:nth-child(2){
+        .icon{
+          span{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            padding:5px;
+          }
+          span:nth-child(1){
+            background-image: url(../images/icon/lift-sign.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(2){
+            background-image: url(../images/icon/laundry.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(3){
+            background-image: url(../images/icon/buildings.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(4){
+            background-image: url(../images/icon/technology.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+        }
+      }
+      &:nth-child(3){
+        .icon{
+          span{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            padding:5px;
+          }
+          span:nth-child(1){
+            background-image: url(../images/icon/buildings.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(2){
+            background-image: url(../images/icon/bathtub.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(3){
+            background-image: url(../images/icon/air-conditioner.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(4){
+            background-image: url(../images/icon/computer.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+        }
+      }
     }
   }
-
 }
-@media screen and (max-width:950px) {
+@media screen and (max-width:1500px) {
+  .guesthouse{
+    .listwrap{
+      margin: 0 50px;
+      li{
+        .explanation{
+          max-width: 560px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1350px) {
+  .guesthouse{
+    .listwrap{
+      margin: 0 50px;
+      li{
+        height:260px;
+          img{
+            width:396px;
+          }
+          p{padding-top:0;}
+        .explanation{
+          max-width: 560px;
+          margin-left: 450px;
+        }
+        .details{
+          margin-left:450px;
+          bottom:50px;
+          width: 130px;
+          height: 35px;
+          font-size: 18px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .guesthouse{
+    .listwrap{
+      margin: 0 50px;
+      li{
+        height:500px;
+        img{
+          float:none;
+          margin: 0 auto;
+          display: block;
+        }
+        .explanation{
+          margin: 20px auto 0;
+          text-align: center;
+          max-width: 518px;
+          .icon{
+            width:263px;
+            position: relative;
+            left:20px;
+          }
+        }
+        .details{
+          bottom:63px;
+          right:110px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:960px) {
 .guesthouse{
   .listwrap{
-     //width:1500px;
 
-    li{
-      width:70% ;
-       margin:0 auto;
-      img{
-        width:30% ;
-      float:none ;}
-    }
   }
 }
 }
