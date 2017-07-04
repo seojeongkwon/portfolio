@@ -561,7 +561,6 @@ header{
 @media screen and (max-width:1024px) {
   .contents{
     .pic{
-      margin:0 50px;
       .searchmenu{
         .searchbar{
           padding-top:25px;
@@ -573,11 +572,54 @@ header{
     }
   }
 }
+@media screen and (max-width:650px) {
+  .contents{
+    .pic{
+      .write{display: none;}
+    }
+  }
+}
 @media screen and (max-width:480px) {
     .contents{
-      //background-size: 800px;
       .pic{
-
+        margin:0 25px;
+        height:272px;
+        .searchmenu{
+          .searchbar{
+            div{
+              width:40px;
+              margin-bottom: 0;
+              strong{
+                span{display: none;}
+               }
+            }
+            .locationbox strong{
+              background-position: left 8px center;
+              background-size: 40%;
+            }
+            .datebox .checkin{
+              background-position: left 8px center;
+              background-size: 40%;
+            }
+            .datebox .checkout{
+              background-position: left 8px center;
+              background-size: 40%;
+            }
+            .guestbox strong{
+              background-position: left 8px center;
+              background-size: 40%;
+            }
+            .typebox strong{
+              background-position: left 8px center;
+              background-size: 40%;
+            }
+            .searchbox{
+              width:50px;
+              padding:0 10px;
+              span{display: none;}
+            }
+          }
+        }
       }
     }
 
@@ -670,7 +712,7 @@ header{
     }
   }
   .touch{
-      float:right;
+    float:right;
     color: #939597;
     span:nth-child(1){
       font-weight: bold;

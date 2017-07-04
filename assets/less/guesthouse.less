@@ -8,7 +8,6 @@
 
   .listwrap{
     position: relative;
-    height:1279px;
     margin: 0 150px;
     transition: 1s;
     li{
@@ -38,8 +37,11 @@
         font-size: 18px;
         //border:1px #f00 solid;
         display: block;
-        height:164px;
+        height:170px;
         overflow: hidden;
+        strong{
+          font-size: 20px;
+        }
       }
       .icon{
         background-image: url(../images/g_smallarrowR.png);
@@ -47,7 +49,8 @@
         background-position: left 0 top 11px;
         background-size: 10px;
         padding-left:22px;
-        padding-top:7px;
+        padding-top:5px;
+        height:38px;
       }
       .details{
         width: 150px;
@@ -56,7 +59,7 @@
         border-radius: 10px;
         color:@mainred;
         font-size: 20px;
-        margin-left:596px;
+        margin-left:635px;
         text-align: center;
         line-height: 45px;
         position: absolute;
@@ -107,17 +110,6 @@
             background-repeat: no-repeat;
             background-size: 30px;
           }
-          span:nth-child(5){
-            background-image: url(../images/icon/parking.png);
-            background-repeat: no-repeat;
-            background-size: 30px;
-          }
-          span:nth-child(6){
-            background-image: url(../images/icon/computer.png);
-            background-repeat: no-repeat;
-            background-size: 30px;
-          }
-
         }
       }
       &:nth-child(2){
@@ -198,7 +190,6 @@
 @media screen and (max-width:1350px) {
   .guesthouse{
     .listwrap{
-      margin: 0 50px;
       li{
         height:260px;
           img{
@@ -210,7 +201,7 @@
           margin-left: 450px;
         }
         .details{
-          margin-left:450px;
+          margin-left:489px;
           bottom:50px;
           width: 130px;
           height: 35px;
@@ -224,7 +215,6 @@
 @media screen and (max-width:1024px) {
   .guesthouse{
     .listwrap{
-      margin: 0 50px;
       li{
         height:500px;
         img{
@@ -235,25 +225,58 @@
         .explanation{
           margin: 20px auto 0;
           text-align: center;
-          max-width: 518px;
+          max-width: 580px;
+          padding:0;
           .icon{
             width:263px;
             position: relative;
             left:20px;
+            text-align: left;
           }
         }
         .details{
-          bottom:63px;
+          bottom:58px;
           right:110px;
         }
       }
     }
   }
 }
-@media screen and (max-width:960px) {
+@media screen and (max-width:750px) {
 .guesthouse{
   .listwrap{
-
+    li{
+      height:435px;
+      img{width:300px;}
+      p{padding:0 10px;}
+      .details{
+        width:110px;
+        bottom:56px;
+        right:65px;
+      }
+    }
   }
 }
+}
+@media screen and (max-width:480px) {
+  .guesthouse{
+    .listwrap{
+      margin: 0 25px;
+      li{
+        /////////////////////////////패딩이 위아래 똑같이 안먹음
+        padding:25px 0;
+        height:365px;
+        img{width:250px;}
+        p{
+          padding:0 10px;
+          height:130px;
+        }
+        .details{
+          width:110px;
+          bottom:37px;
+          right:35px;
+        }
+      }
+    }
+  }
 }
