@@ -64,7 +64,7 @@
         line-height: 45px;
         position: absolute;
         bottom:50px;
-        transition: 1s;
+                  transition: .5s;
         span{
           background-image: url(../images/r_arrow02.png);
           background-repeat: no-repeat;
@@ -258,23 +258,46 @@
   }
 }
 }
+@media screen and (max-width:550px) {
+  .guesthouse{
+    .listwrap{
+      li{
+        .details{
+          right: 35px;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width:480px) {
   .guesthouse{
     .listwrap{
       margin: 0 25px;
       li{
-        /////////////////////////////패딩이 위아래 똑같이 안먹음
         padding:25px 0;
-        height:365px;
+        height:343px;
         img{width:250px;}
+        .explanation{margin-top:10px;}
         p{
+          strong{font-size: 18px;}
           padding:0 10px;
-          height:130px;
+          height:128px;
+          font-size: 16px;
         }
+        .icon{margin-top: 3px;}
         .details{
-          width:110px;
-          bottom:37px;
+          width:100px;
+          height:30px;
+          line-height: 30px;
+          font-size: 16px;
+          bottom:25px;
           right:35px;
+          span{
+            padding-left:22px;
+          }
+          &:hover{
+            span{padding-left:22px;}
+          }
         }
       }
     }

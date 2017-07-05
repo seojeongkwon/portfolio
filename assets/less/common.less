@@ -369,7 +369,7 @@ header{
     position:relative;
     height: 403px;
     margin:0 150px;
-    transition: 1s;
+    transition: .5s;
     .write{
       position: absolute;
       bottom:25px;
@@ -443,10 +443,10 @@ header{
       }
       .locationbox{
         strong{
-          background-image: url(../images/location.png);
+          background-image: url(../images/icon/locationicon.png);
           background-repeat: no-repeat;
           background-position: left 10px center;
-          background-size: 12%;
+          background-size: 15%;
         }
       }
       .table{
@@ -489,13 +489,13 @@ header{
           }
         }
         .checkin{
-          background-image: url(../images/calendar.png);
+          background-image: url(../images/icon/checkinicon.png);
           background-repeat: no-repeat;
           background-position: left 10px center;
           background-size: 15%;
         }
         .checkout{
-          background-image: url(../images/calendar.png);
+          background-image: url(../images/icon/checkouticon.png);
           background-repeat: no-repeat;
           background-position: left 10px center;
           background-size: 15%;
@@ -504,7 +504,7 @@ header{
 
       .guestbox{
         strong{
-          background-image: url(../images/users.png);
+          background-image: url(../images/icon/usersicon.png);
           background-repeat: no-repeat;
           background-position: left 10px center;
           background-size: 15%;
@@ -512,7 +512,7 @@ header{
       }
       .typebox{
         strong{
-          background-image: url(../images/house.png);
+          background-image: url(../images/icon/houseicon.png);
           background-repeat: no-repeat;
           background-position: left 10px center;
           background-size: 15%;
@@ -521,7 +521,7 @@ header{
       .searchbox{
         width: 140px;
         padding:0 20px;
-        background-image: url(../images/search.png);
+        background-image: url(../images/icon/searchicon.png);
         background-repeat: no-repeat;
         background-position: left 10px center;
         background-size: 15%;
@@ -557,7 +557,16 @@ header{
       }
     }
 }
-
+@media screen and (max-width:1150px) {
+  .contents{
+    .pic{
+      height: 347px;
+      .write{
+        display: none;
+      }
+    }
+  }
+}
 @media screen and (max-width:1024px) {
   .contents{
     .pic{
@@ -575,10 +584,18 @@ header{
 @media screen and (max-width:650px) {
   .contents{
     .pic{
+      .searchmenu{
+        .searchbar{
+          width: 334px;
+          div{width: 160px;   transition: 1s;}
+          .searchbox{width: 120px;   transition: 1s;}
+        }
+      }
       .write{display: none;}
     }
   }
 }
+
 @media screen and (max-width:480px) {
     .contents{
       .pic{
@@ -587,35 +604,39 @@ header{
         .searchmenu{
           .searchbar{
             div{
-              width:40px;
+              //border:none;
+            border-radius: 25px;
+              width:42px;
               margin-bottom: 0;
               strong{
                 span{display: none;}
                }
             }
             .locationbox strong{
-              background-position: left 8px center;
-              background-size: 40%;
+              background-position: left 9px center;
+              background-size: 43%;
             }
             .datebox .checkin{
-              background-position: left 8px center;
+              background-position: left 9.5px center;
               background-size: 40%;
             }
             .datebox .checkout{
-              background-position: left 8px center;
+              background-position: left 9.5px center;
               background-size: 40%;
             }
             .guestbox strong{
-              background-position: left 8px center;
+              background-position: left 10.5px center;
               background-size: 40%;
             }
             .typebox strong{
-              background-position: left 8px center;
+              background-position: left 10.5px center;
               background-size: 40%;
             }
             .searchbox{
-              width:50px;
+              width:22px;
               padding:0 10px;
+              background-position: left 11px center;
+              background-size: 50%;
               span{display: none;}
             }
           }
