@@ -604,12 +604,29 @@ header{
         .searchmenu{
           .searchbar{
             div{
-              //border:none;
-            border-radius: 25px;
+              border-radius: 25px;
               width:42px;
               margin-bottom: 0;
               strong{
                 span{display: none;}
+               }
+               strong + ul{
+                 width:280px;
+                  border:0px;
+                 li{
+                   border:1px #fff solid;
+                   width:35%;
+                   float:left;
+                 }
+               }
+               .table{
+                 border-radius:0;
+                 width:276px;
+                 height:180px;
+                 table{
+                   width:276px;
+                   heigt:150px;
+                 }
                }
             }
             .locationbox strong{
@@ -639,13 +656,36 @@ header{
               background-size: 50%;
               span{display: none;}
             }
+
+            .checkin .table{
+              //position 안먹음!!!
+              position: relative;
+              left:-107%;
+            }
+            .checkout .table{
+              //position해줬는데 안먹음. 개발자도구에서 하면 먹힘 (안먹힐떄도 있음)
+              position:relative;
+              left:-115%;
+              table{
+                position: relative;
+                left:-222%;
+              }
+            }
+            .guestbox ul{
+              position:relative;
+              left:-345%;
+            }
+            .typebox ul{
+              position:relative;
+              left:-460%;
+            }
           }
         }
       }
     }
 
 }
-
+footer{
 .empty{
   height:60px;
   background-color: #fff;
@@ -658,6 +698,7 @@ header{
   padding:50px 0;
   background-color: @header;
   position:relative;
+  overflow: hidden;
 }
   .lang{
     float:left;
@@ -740,6 +781,7 @@ header{
       margin-left:-10px;
     }
     span:nth-child(2){
+      width: 235px;
       padding-left:25px;
       background-image: url(../images/icon/placeholder.png);
       background-position: left 2px top 5px;
@@ -768,7 +810,7 @@ header{
       padding-left: 10px;
     }
   }
-
+}
 @media screen and (max-width:1024px) {
 
 header{
@@ -1025,10 +1067,11 @@ header{
         }
       }
       .notice{
+        overflow: hidden;
         padding-top: 10px;
-        width:350px;
+        //padding-right:0 !important;
+        width:400px;
         margin:0 auto;
-        .touch{margin-left: 10px;}
       }
     }
   }
@@ -1202,7 +1245,7 @@ header{
     transition: 0.5s;
     padding: 20px 0;
     .lang{
-      width:280px;
+      width:282px;
       margin:0 auto;
       div{
         width: 136px;
@@ -1224,7 +1267,9 @@ header{
       padding-right:0 !important;
       width:285px;
       margin: 0 auto;
-      //.traveling{margin-right:5px;}
+      overflow: hidden;
+      //notice의 영역이 안잡혀있음./////////////////////////////////
+      .touch{width: 195px;}
     }
   }
  }
