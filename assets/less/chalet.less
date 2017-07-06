@@ -1,13 +1,15 @@
 .chalet{
-.contents{
-  .pic{
-    background-image: url(../images/pic04.jpg);
-    background-repeat: no-repeat;
+  .contents{
+    .pic{
+      background-image: url(../images/pic04.jpg);
+      background-repeat: no-repeat;
+    }
   }
 
   .listwrap{
     position: relative;
-    margin: 0 144px;
+    margin: 0 150px;
+    transition: 1s;
     li{
       position:relative;
       width: 100%;
@@ -16,37 +18,286 @@
       background-image: url(../images/listline.png);
       background-repeat: no-repeat;
       background-position: center top;
+      transition: .5s;
       &:first-child{background-image: none;}
       img{
-        margin-right:100px;
         float:left;
+        transition: .5s;
+      }
+      .explanation{
+        margin-left: 596px;
+        max-width: 1008px;
+        padding: 0 40px;
+        transition: .5s;
       }
       p{
-        margin-top:50px;
+        padding-top:30px;
         color:@fontcolor;
         font-size: 18px;
+        display: block;
+        height:170px;
+        overflow: hidden;
+        strong{
+          font-size: 20px;
+        }
+      }
+      .icon{
+        background-image: url(../images/g_smallarrowR.png);
+        background-repeat: no-repeat;
+        background-position: left 0 top 11px;
+        background-size: 10px;
+        padding-left:22px;
+        padding-top:5px;
+        height:38px;
       }
       .details{
         width: 150px;
         height: 45px;
-        border: 2px @mainred solid;
+        border:2px @mainviolet solid;
         border-radius: 10px;
-        color:@mainred;
+        color:@mainviolet;
         font-size: 20px;
-        margin-left:596px;
+        margin-left:635px;
         text-align: center;
         line-height: 45px;
         position: absolute;
         bottom:50px;
+                  transition: .5s;
         span{
-          background-image: url(../images/r_arrow02.png);
+          background-image: url(../images/v_arrow02.png);
           background-repeat: no-repeat;
           background-position: 5px center;
           padding:0 5px 0 25px;
+        }
+        &:hover{
+          background-color: @mainviolet;
+          color:#fff;
+          span{
+            background-image: url(../images/w_arrowR.png);
+            background-repeat: no-repeat;
+            background-position: 5px center;
+            padding:0 5px 0 25px;
+          }
+        }
+      }
+      &:nth-child(1){
+        .icon{
+          span{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            padding:5px;
+          }
+          span:nth-child(1){
+            background-image: url(../images/icon/buildings.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(2){
+            background-image: url(../images/icon/bathtub.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(3){
+            background-image: url(../images/icon/air-conditioner.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(4){
+            background-image: url(../images/icon/holidays.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+        }
+      }
+      &:nth-child(2){
+        .icon{
+          span{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            padding:5px;
+          }
+          span:nth-child(1){
+            background-image: url(../images/icon/lift-sign.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(2){
+            background-image: url(../images/icon/laundry.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(3){
+            background-image: url(../images/icon/buildings.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(4){
+            background-image: url(../images/icon/technology.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+        }
+      }
+      &:nth-child(3){
+        .icon{
+          span{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            padding:5px;
+          }
+          span:nth-child(1){
+            background-image: url(../images/icon/buildings.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(2){
+            background-image: url(../images/icon/bathtub.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(3){
+            background-image: url(../images/icon/air-conditioner.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(4){
+            background-image: url(../images/icon/computer.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
         }
       }
     }
   }
 }
-
+@media screen and (max-width:1500px) {
+  .chalet{
+    .listwrap{
+      margin: 0 50px;
+      li{
+        .explanation{
+          max-width: 560px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1350px) {
+  .chalet{
+    .listwrap{
+      li{
+        height:260px;
+          img{
+            width:396px;
+          }
+          p{padding-top:0;}
+        .explanation{
+          max-width: 560px;
+          margin-left: 450px;
+        }
+        .details{
+          margin-left:489px;
+          bottom:50px;
+          width: 130px;
+          height: 35px;
+          font-size: 18px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .chalet{
+    .listwrap{
+      li{
+        height:500px;
+        img{
+          float:none;
+          margin: 0 auto;
+          display: block;
+        }
+        .explanation{
+          margin: 20px auto 0;
+          text-align: center;
+          max-width: 580px;
+          padding:0;
+          .icon{
+            width:263px;
+            position: relative;
+            left:20px;
+            text-align: left;
+          }
+        }
+        .details{
+          bottom:58px;
+          right:110px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:750px) {
+.chalet{
+  .listwrap{
+    li{
+      height:435px;
+      img{width:300px;}
+      p{padding:0 10px;}
+      .details{
+        width:110px;
+        bottom:56px;
+        right:65px;
+      }
+    }
+  }
+}
+}
+@media screen and (max-width:550px) {
+  .chalet{
+    .listwrap{
+      li{
+        .details{
+          right: 35px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:480px) {
+  .chalet{
+    .listwrap{
+      margin: 0 25px;
+      li{
+        padding:25px 0;
+        height:343px;
+        img{width:250px;}
+        .explanation{margin-top:10px;}
+        p{
+          strong{font-size: 18px;}
+          padding:0 10px;
+          height:128px;
+          font-size: 16px;
+        }
+        .icon{margin-top: 3px;}
+        .details{
+          width:100px;
+          height:30px;
+          line-height: 30px;
+          font-size: 16px;
+          bottom:25px;
+          right:35px;
+          span{
+            padding-left:22px;
+          }
+          &:hover{
+            span{padding-left:22px;}
+          }
+        }
+      }
+    }
+  }
 }

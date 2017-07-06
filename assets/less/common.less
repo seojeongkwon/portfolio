@@ -49,6 +49,7 @@ header{
       margin-top: 43.078px;
       margin-right: 48.58px;
       color: #6479ba;
+      span:hover{cursor:pointer;}
    }
   }
   .menubox{
@@ -61,7 +62,6 @@ header{
       content:"";
       display: inline-block;
       height:100%;
-      //border:1px #f00 solid;
       vertical-align: middle;
     }
     .menubar{
@@ -84,6 +84,8 @@ header{
         &:hover{
           background-color: @mainred;
           color:#fff;
+          cursor: pointer;
+
         }
       }
       div:nth-child(2){
@@ -92,6 +94,8 @@ header{
         &:hover{
           background-color: @mainorange;
           color:#fff;
+          cursor: pointer;
+
         }
       }
       div:nth-child(3){
@@ -100,6 +104,8 @@ header{
         &:hover{
           background-color: @maingreen;
           color:#fff;
+          cursor: pointer;
+
         }
       }
       div:nth-child(4){
@@ -108,6 +114,8 @@ header{
         &:hover{
           background-color: @mainviolet;
           color:#fff;
+          cursor: pointer;
+
         }
       }
     }
@@ -368,7 +376,6 @@ header{
   .pic{
     position:relative;
     height: 403px;
-    margin:0 150px;
     transition: .5s;
     .write{
       position: absolute;
@@ -381,7 +388,6 @@ header{
       box-sizing: border-box;
       &:before{
         content:"";
-        //border:1px #f00 solid;
         height:100%;
         display: inline-block;
         vertical-align: middle;
@@ -406,6 +412,9 @@ header{
         border:1px #fff solid;
         height:42px;
         position:relative;
+        &:hover{
+          cursor:pointer;
+        }
         strong{
           //부모는 위드값이 있고 strong에는 없기때문에 패딩을 줘도 안늘어남
             padding:0 10px 0 45px;
@@ -437,6 +446,7 @@ header{
               color:#fff;
               &:hover{
                 background-color:rgba(255,0,0,0.1);
+                cursor: pointer;
               }
             }
         }
@@ -481,6 +491,12 @@ header{
               background-image: url(../images/w_arrowR.png);
               background-repeat: no-repeat;
               background-position: center;
+            }
+          }
+          td{
+            &:hover{
+              background-color:rgba(255,0,0,0.1);
+              cursor: pointer;
             }
           }
           .date{
@@ -600,7 +616,7 @@ header{
     .contents{
       .pic{
         margin:0 25px;
-        height:272px;
+        height:295px;
         .searchmenu{
           .searchbar{
             div{
@@ -613,19 +629,39 @@ header{
                strong + ul{
                  width:280px;
                   border:0px;
+                  font-size: 16px;
+                  //margin-top:2px;
                  li{
                    border:1px #fff solid;
-                   width:35%;
+                   width:42%;
                    float:left;
+                   padding:0 10px;
+                   &:nth-child(1){
+                     border-bottom:0;
+                     border-right:0;
+                   }
+                   &:nth-child(2){
+                     border-bottom:0;
+                   }
+                   &:nth-child(3){
+                     border-bottom:0;
+                     border-right:0;
+                   }
+                   &:nth-child(4){
+                     border-bottom:0;
+                   }
+                   &:nth-child(5){
+                     border-right:0;
+                   }
                  }
                }
                .table{
                  border-radius:0;
                  width:276px;
-                 height:180px;
+                 height:202px;
                  table{
                    width:276px;
-                   heigt:150px;
+                   heigt:160px;
                  }
                }
             }
@@ -633,13 +669,23 @@ header{
               background-position: left 9px center;
               background-size: 43%;
             }
-            .datebox .checkin{
-              background-position: left 9.5px center;
-              background-size: 40%;
-            }
-            .datebox .checkout{
-              background-position: left 9.5px center;
-              background-size: 40%;
+            .datebox{
+              .checkin{
+                background-position: left 9.5px center;
+                background-size: 40%;
+              }
+              .checkintable{
+                position: relative;
+                left: -114%;
+              }
+              .checkout{
+                background-position: left 9.5px center;
+                background-size: 40%;
+              }
+              .checkouttable{
+                position:relative;
+                left:-227%;
+              }
             }
             .guestbox strong{
               background-position: left 10.5px center;
@@ -659,25 +705,28 @@ header{
 
             .checkin .table{
               //position 안먹음!!!
-              position: relative;
-              left:-107%;
+
             }
             .checkout .table{
               //position해줬는데 안먹음. 개발자도구에서 하면 먹힘 (안먹힐떄도 있음)
-              position:relative;
-              left:-115%;
-              table{
-                position: relative;
-                left:-222%;
-              }
+
+
             }
             .guestbox ul{
               position:relative;
-              left:-345%;
+              left:-340%;
             }
             .typebox ul{
               position:relative;
-              left:-460%;
+              left:-453%;
+              li{
+                &:nth-child(3){
+                  border-bottom:1px #fff solid;
+                }
+                &:nth-child(4){
+                  border-bottom:1px #fff solid;
+                }
+              }
             }
           }
         }

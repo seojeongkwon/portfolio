@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Document</title>
   <script>
@@ -67,15 +67,14 @@
           <span><a>Log in</a></span> / <span><a>Sign up</a></span>
         </div>
       </div>
-        <div class="headline"></div>
-        <div class="menubox">
-          <div class="menubar">
-            <div><span>Guest house</span></div>
-            <div><span>Countryside</span></div>
-            <div><span>Lake cabin</span></div>
-            <div><span>Chalet</span></div>
+          <div class="menubox">
+            <div class="menubar">
+              <div><span>Guest house</span></div>
+              <div><span>Countryside</span></div>
+              <div><span>Lake cabin</span></div>
+              <div><span>Chalet</span></div>
+            </div>
           </div>
-        </div>
     </header>
 
     <div class="loginpop">
@@ -167,7 +166,7 @@
          </div>
          <div class="datebox">
            <strong class="checkin"><span>check in</span></strong>
-           <div class="table">
+           <div class="table checkintable">
            <table>
              <caption>
                <ul>
@@ -235,7 +234,7 @@
          </div>
          <div class="datebox">
            <strong class="checkout"><span>check out</span></strong>
-           <div class="table">
+           <div class="table checkouttable">
            <table>
              <caption>
                <ul>
@@ -337,23 +336,25 @@
              <option value="ion4">Chalet</option>
            </select>
          </div>
-         <div class="searchbox">search</div>
+         <div class="searchbox"><span>search</span></div>
         </div>
         </div>
         <div class="write">
         <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br>
-            Nunc ut efficitur ante.</br>
             Donec dapibus dictum scelerisque.</br>
             Maecenas semper erat et justo porta auctor nec lobortis elit.
         </span>
         </div>
       </div>
+
       <div class="listwrap">
         <ul>
           <li class="list1">
             <img src="assets/images/country01.jpg" alt="">
+            <div class="explanation">
             <p>
+              <strong>countryside01</strong></br>
               Duis aute irure dolor in reprehenderit in voluptate</br>
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</br>
               sunt in culpa qui officia deserunt mollit anim id est laborum.</br>
@@ -361,13 +362,23 @@
               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</br>
               architecto beatae vitae dicta sunt explicabo.
             </p>
+            <div class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            </div>
             <div class="details">
               <span>Details</span>
             </div>
+
           </li>
           <li class="list2">
             <img src="assets/images/country02.jpg" alt="">
+            <div class="explanation">
             <p>
+              <strong>countryside02</strong></br>
               Duis aute irure dolor in reprehenderit in voluptate</br>
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</br>
               sunt in culpa qui officia deserunt mollit anim id est laborum.</br>
@@ -375,13 +386,22 @@
               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</br>
               architecto beatae vitae dicta sunt explicabo.
             </p>
+            <div class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            </div>
             <div class="details">
               <span>Details</span>
             </div>
           </li>
           <li class="list3">
             <img src="assets/images/country03.jpg" alt="">
+            <div class="explanation">
             <p>
+              <strong>countryside03</strong></br>
               Duis aute irure dolor in reprehenderit in voluptate</br>
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</br>
               sunt in culpa qui officia deserunt mollit anim id est laborum.</br>
@@ -389,6 +409,13 @@
               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</br>
               architecto beatae vitae dicta sunt explicabo.
             </p>
+            <div class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            </div>
             <div class="details">
               <span>Details</span>
             </div>
@@ -397,7 +424,6 @@
       </div>
     </div>
     <footer>
-      <div class="headline"></div>
         <div class="bottom">
           <div class="lang">
             <div class="koreanbox">
@@ -443,22 +469,24 @@
               </select>
             </div>
           </div>
+
           <div class="notice">
+          <div class="touch">
+            <span>GET IN TOUCH</span>
+            <span>Traveling Anyang-si manan-gu Doosan we’ve apt  110-901</span>
+            <span>+0153 123 5678</span>
+            <span>fksdud377@gmail.com</span>
+          </div>
             <div class="traveling">
               <span>TRAVELING</span>
               <span>회사소개</span>
               <span>둘러보기</span>
               <span>정책</span>
               <span>도움말</span>
-            </div>
-            <div class="touch">
-              <span>GET IN TOUCH</span>
-              <span><i class=""></i>Traveling Anyang-si manan-gu</br> Doosan we’ve apt  110-901</span>
-              <span><i class="phone"></i>+0153 123 5678</span>
-              <span><i class="email"></i>fksdud377@gmail.com</span>
-            </div>
           </div>
         </div>
+
+      </div>
     </footer>
   </div>
 </body>
