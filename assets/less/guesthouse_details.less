@@ -1,25 +1,24 @@
 .guesthouse_details{
 
 .contents{
-  margin:0 150px;
   .pic{
     background-image: url(../images/pic01.jpg);
     background-repeat: no-repeat;
   }
   .detailswrap{
     width:100%;
-    //서브페이지 모두 콘텐츠에 마직 0 150주고 디테일뤱 위드백프로주고 부킹박스 마진라이트 0 해주기
     padding: 100px 0;
     .bookbox{
       position:relative;
       background-color: rgba(0,0,0,.1);
-      width: 554px;
+      width: 474px;
       height: 1140px;
       float:right;
       .text{
         margin-top: 75px;
         position:absolute;
-        left:110px;
+        left:50%;
+        margin-left:-167px;
         div{
           width: 290px;
           height: 50px;
@@ -97,7 +96,6 @@
           }
         }
 
-
       }
       .bookbutton{
         color:#fff;
@@ -114,8 +112,8 @@
     .house{
       border:1px #f00 solid;
       position:relative;
-      width:855px;
-      height:500px;
+      width:890px;
+      height:auto;
       .housepic{
         img{
           display: block;
@@ -125,28 +123,32 @@
       .arrow{
         span{
           border:1px #f00 solid;
-          //width:98px;
-          width:40px;
-          height:500px;
+          width:58px;
+          height:60px;
         }
         span:nth-child(1){
           background-image: url(../images/g_arrowL.png);
           background-repeat: no-repeat;
-          background-position:left 0px center;
-          float:left;
+          position: absolute;
+          top:50%;
+          left:0;
+          margin-top:-30px;
         }
         span:nth-child(2){
           background-image: url(../images/g_arrowR.png);
           background-repeat: no-repeat;
           background-position:right 0px center;
-          float:right;
+          position: absolute;
+          top:50%;
+          right:0;
+          margin-top:-30px;
         }
       }
     }
     .details{
       width:917px;
       padding:100px 0 0;
-      margin-left: 50px;
+      //margin-left: 50px;
       .explanation{
         padding-bottom:60px;
         p{font-size: 16px;}
@@ -157,10 +159,12 @@
         h2{
           background-image: url(../images/check.png);
           background-repeat: no-repeat;
-          padding-left: 27.5px;
+          padding-left: 35px;
+          padding-top:5px;
+          height:24px;
         }
         p{
-          padding-left:27.5px;
+          padding-left:35px;
         }
         .addlist01{
           float:left;
@@ -363,11 +367,23 @@
         }
       }
 
-
-
     }
   }
 
  }
 
+}
+@media screen and (max-width:1700px) {
+  .contents{
+    .detailswrap{
+      .house{
+        width:700px;
+        .housepic{
+          img{
+            width:700px;
+          }
+        }
+      }
+    }
+  }
 }
