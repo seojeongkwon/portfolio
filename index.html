@@ -11,12 +11,12 @@
   <script>
   $(function(){
 
-  $('.menuboxbtn').click(function(){
+/*  $('.menuboxbtn').click(function(){
     $(this).children('.menubox').toggle().css("top","50px");
     $(this).css({"background-image":"url(../images/r_arrow04.png)","background-repeat":"no-repeat","background-position":"center top 20px"})
-  });
+  }); */
 
-
+  
   $('.locationbox').click(function(){
     $(this).children('ul').toggle()
   //$(this).siblings('div').css('opacity','0.2')
@@ -148,7 +148,7 @@
       </div>
     </div>
 
-    <div class="contents">
+    <div class="main_contents">
 
      <div class="searchbar">
       <div class="locationbox">
@@ -343,7 +343,7 @@
           <option value="ion4">Chalet</option>
         </select>
       </div>
-      <div class="searchbox">search</div>
+      <button class="searchbox"><span>search</span></button>
      </div>
 
     </div>

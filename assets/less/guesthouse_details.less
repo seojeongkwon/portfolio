@@ -12,9 +12,9 @@
   }
     .bookbox{
       position:relative;
-      background-color: rgba(0,0,0,.05);
+      background-color: rgba(0,0,0,.03);
       width: 474px;
-      height: 725px;
+      height: 550px;
       float:right;
       text-align: center;
       padding-top:65px;
@@ -23,10 +23,10 @@
           transition: 1s;
           width:330px;
           display: inline-block;
-          border:1px @fontcolor solid;
+          border:1px #aeaeae solid;
           height:50px;
           position:relative;
-          margin-bottom: 130px;;
+          margin-bottom: 50px;;
           &:hover{
             cursor:pointer;
           }
@@ -38,7 +38,7 @@
               font-size: 18px;
               height:50px;
               line-height:50px;
-              color:@fontcolor;
+              color:#aeaeae;
               font-weight: normal;
               text-align: left;
               span{
@@ -49,7 +49,7 @@
               }
           }
           strong + ul{
-              border:1px @fontcolor solid;
+              border:1px #aeaeae solid;
               margin-top:2px;
               position:absolute;
               width:100%;
@@ -59,7 +59,7 @@
                 height:50px;
                 line-height:50px;
                 padding: 0 20px;
-                color:@fontcolor;
+                color:#aeaeae;
                 &:hover{
                   background-color:rgba(255,0,0,0.1);
                   cursor: pointer;
@@ -68,8 +68,8 @@
           }
         }
         .table{
-          color:@fontcolor;
-          border:1px @fontcolor solid;
+          color:#aeaeae;
+          border:1px #aeaeae solid;
           display: none;
           width: 330px;
           height: 280px;
@@ -118,13 +118,14 @@
       .bookbutton{
         color:#fff;
         background-color: #aeaeae;
+        border:1px #aeaeae solid;
         border-radius: 15px;
         text-align: center;
-        line-height: 65px;
-        width: 250px;
-        height: 65px;
+        line-height: 52px;
+        width: 180px;
+        height: 52px;
         font-size: 20px;
-        margin: 40px auto 0;
+        margin: 130px auto 0;
       }
 
     .house{
@@ -198,7 +199,12 @@
         width: 765px;
         height: 163px;
         border:1px @fontcolor solid;
+        display: block;
         margin:0 auto;
+        padding:10px;
+        resize: none;
+        overflow-y: scroll;
+        margin-bottom:75px;
       }
       .namebox_w{
         width:190px;
@@ -223,29 +229,33 @@
         color:@fontcolor;
       }
       .button{
-        div{
+        button{
+          border:1px #aeaeae solid;
           border-radius: 15px;
           width: 125px;
           height: 35px;
           text-align: center;
           line-height: 35px;
           display: inline-block;
+          //right 0 이 이상함
           position:relative;
           top:20px;
-          left:480px;
-          background-color: @fontcolor;
+          right:65px;
+          background-color: #aeaeae;
           color:#fff;
         }
       }
-      .textbutton{
+      .replybtn{
+        border:1px #aeaeae solid;
         border-radius: 15px;
         width: 125px;
         height: 35px;
         text-align: center;
         line-height: 35px;
-        float:right;
-        margin: 25px 65px 0 0;
-        background-color: @fontcolor;
+        position: absolute;
+        bottom:25px;
+        right:55px;
+        background-color: #aeaeae;
         color:#fff;
       }
       .comments{
@@ -256,40 +266,44 @@
         .reviewname02{
           left:200px;
         }
+      }
         .reviewbox{
           border:1px @fontcolor solid;
           background-color: #fff;
           width:100%;
-          height:685px;
+          height:auto;
           margin-top:45px;
           li{
             position:relative;
+            height:auto;
             padding:50px 100px;
+            overflow: hidden;
             &:nth-child(1){
               background-image: url(../images/reviewline.png);
               background-repeat: no-repeat;
               background-position: center bottom;
             }
-            img{
-              position:absolute;
-            }
-            .write{
-              margin-left:168px;
-              span{color:@fontcolor;}
-            }
             &:last-child{
               padding:0;
-              padding-bottom:50px;
             }
           }
+          img{
+            width:100px;
+            position:absolute;
+          }
         }
-      }
+
+            .write{
+              margin-left:158px;
+              span{color:@fontcolor;}
+            }
 
       .inqueries{
         position:relative;
         width:900px;
         height:auto;
         padding-top:100px;
+      }
         .inqname02{
           left:200px;
         }
@@ -297,9 +311,10 @@
           border:1px @fontcolor solid;
           background-color: #fff;
           width:100%;
-          height:685px;
+          height:auto;
           margin-top:45px;
           li{
+            height:auto;
             position:relative;
             padding:50px 100px;
             &:nth-child(1){
@@ -307,45 +322,40 @@
               background-repeat: no-repeat;
               background-position: center bottom;
             }
-            img{
-              position:absolute;
+            &:last-child{
+              padding:0;
             }
-            .answeruser{ margin-left:150px;}
+          }
+          img{
+            width:100px;
+            position:absolute;
+          }
+        }
+            .answeruser{ margin-left:80px;}
             .inqwrite{
-              margin-left:168px;
+              margin-left:158px;
               span{color:@fontcolor;}
             }
             .inqanswer{
-              margin-left:318px;
+              margin-left:238px;
               span{color:@fontcolor;}
             }
-            &:last-child{
-              padding:0;
-              padding-bottom:50px;
-
-            }
-          }
-        }
-      }
-
-
-
 
 }
 @media screen and (max-width:1700px) {
-
+body{
     .contents{
         .bookbox{
           width: 434px;
         }
-        .house{
-          width:820px;
-          }
-          .housepic{
-            img{
-              width:700px;
+          .house{
+            width:820px;
             }
-        }
+            .housepic{
+              img{
+                width:700px;
+              }
+          }
         .textbox{
           width: 687px;
         }
@@ -356,11 +366,25 @@
         }
         .comments{
           width:820px;
+          .reviewbox{
+        //    li{img{width:100px;}}
+        //    .write{margin-left: 158px;}
+          }
         }
         .inqueries{
           width:820px;
+        //  .inqwbox{
+          //  li{
+            //  img{width:100px !important;}
+            //  .inqwrite{margin-left: 158px;}
+            //  .inqanswer{margin-left: 308px;}
+            //  .answeruser{margin-left:130px;}
+          //  }
+
+        //  }
         }
     }
+  }
 }
 @media screen and (max-width:1550px) {
   .contents{
@@ -375,19 +399,18 @@
         }
       }
     }
-    .house{
-      width:620px;
-      }
-      .housepic{
-        img{
-          width:500px;
+    .detailswrap{
+      .house{
+        width:620px;
+        }
+        .housepic{
+          img{
+            width:500px;
+          }
         }
     }
       .details{
         padding-top:50px;
-        .explanation{
-      //    padding-bottom: 25px;
-        }
         .additional{width: 50%;}
       }
       .comments{
@@ -396,4 +419,57 @@
 
   }
 
+}
+@media screen and (max-width:1400px) {
+ .contents{
+   .detailswrap{
+     .bookbox{
+       width: 400px;
+     }
+     .textbox{
+       width: 550px;
+       height:100px;
+       margin-bottom: 50px;
+     }
+     .comments{
+       width:670px;
+       li{
+         padding:30px 50px;
+         img{width: 90px;}
+       }
+     }
+     .inqueries{
+       width:670px;
+       li{
+         padding:30px 50px;
+         img{width: 90px;}
+       }
+     }
+   }
+ }
+}
+@media screen and (max-width:1200px) {
+
+}
+@media screen and (max-width:1150px) {
+  .contents{
+    .detailswrap{
+      padding:50px 0;
+      .bookbox{
+        width: 404px;
+      }
+    }
+    .house{
+      width:530px;
+      }
+      .housepic{
+        img{
+          width:450px;
+        }
+    }
+    .arrow{
+      span{width:38px;}
+    }
+
+  }
 }

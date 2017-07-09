@@ -2,7 +2,7 @@ html{
   height: 100%;
   body{
     height: auto;
-    padding-top:272px;
+    padding-top:192px;
   }
 }
 
@@ -32,7 +32,7 @@ header{
   z-index: 100;
   .top{
     position:relative;
-    height:107px;
+    height:67px;
     background-color: @header;
     padding-bottom:5px;
     background-image: url(../images/gradation01.jpg);
@@ -40,13 +40,14 @@ header{
     background-position: center bottom;
     img{
       float: left;
-      margin-top: 21.972px;
+      width: 15%;
+      margin-top: 12px;
       margin-left: 50px;
 
     }
     .logsign{
       float: right;
-      margin-top: 43.078px;
+      margin-top: 25px;
       margin-right: 48.58px;
       color: #6479ba;
       span:hover{cursor:pointer;}
@@ -54,7 +55,7 @@ header{
   }
   .menubox{
     background-color: #fff;
-    height:160px;
+    height:120px;
     font-size:0;
     text-align: center;
     //안에 inline-block을 주어야 부모에게 text-align을 줄떄 먹는다.
@@ -537,8 +538,12 @@ header{
         }
       }
       .searchbox{
-        width: 140px;
+        vertical-align: top;
+        width: 180px;
         padding:0 20px;
+        background-color: #fff;
+        background-color: transparent;
+        border:1px #fff solid;
         background-image: url(../images/icon/searchicon.png);
         background-repeat: no-repeat;
         background-position: left 10px center;
