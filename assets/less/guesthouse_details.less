@@ -206,7 +206,7 @@
         display: none;
       }
       /* Display the control once it is inside the map. */
-      #map .map-control {
+      .map .map-control {
         display: block;
         text-indent: -9999px;
       }
@@ -217,7 +217,7 @@
         padding-left: 5px;
         padding-right: 5px;
       }
-      #map{
+      .map{
         transition: .5s;
         width: 900px;
         height: 450px;
@@ -389,7 +389,7 @@ body{
                 width:700px;
               }
           }
-          #map{
+          .map{
             width: 820px;
             height: 400px;
           }
@@ -448,7 +448,7 @@ body{
      .bookbox{
        width: 400px;
      }
-     #map{
+     .map{
        width: 670px;
        height: 350px;
        margin-top:50px;
@@ -521,7 +521,7 @@ body{
         line-height: 42px;
         font-size: 18px;
       }
-      #map{
+      .map{
         width: 630px;
       }
       .textbox{
@@ -557,7 +557,7 @@ body{
     .detailswrap{
       padding:50px 0;
       .bookbox{width: 310px; height: 485px;}
-      #map{width: 530px;}
+      .map{width: 530px;}
       .textbox{
         width: 430px;
       }
@@ -596,21 +596,79 @@ body{
 @media screen and (max-width:950px) {
   .contents{
     .detailswrap{
+        .house{
+          width:580px;
+          display: block;
+          margin:0 auto ;
+          .housepic{
+            img{width:500px;}
+          }
+        }
       .bookbox{
-        width: 530px;
+        float: none;
+        width: 580px;
+        height:auto;
+        margin:50px auto 0;
+        padding:20px 0;
         div{
-          width:40px;
-          //이어서하기--------------------------------------
+          width:42px;
+          border-radius: 25px;
+          margin-bottom: 0;
+          margin-right:33.5px;
+          span{
+            display: none;
+          }
+          .table{
+            border-radius: 0;
+            width:205px;
+            height:210px;
+            table{
+              width: 185px;
+              height: 176px;
+            }
+          }
+        }
+        .checkouttable{left:-82px;}
+        .datein{
+          background-image: none;
+          background-image: url(../images/icon/g_checkinicon.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 60%;
+        }
+        .dateout{
+          background-image: url(../images/icon/g_checkouticon.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 60%;
+
+        }
+        .guestbox{
+          background-image: url(../images/icon/g_usersicon.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 60%;
+          margin-right:40px;
+          ul{
+            width: 205px; right:-1px;
+            li{
+              height:40px;
+              line-height: 40px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .bookbutton{
+        margin:0;
+        width:140px;
+        vertical-align: top;
         }
       }
-    }
-    .bookbox{
-      float:none;
-      margin-top: 50px;
-      div{
-        text-indent:-9999px;
-        border-radius:20px;
-      }
+      .explanation{margin:0 auto;}
+      .addlist01{margin:0 auto; width:705px;}
+      #map{margin:0 auto;}
+      //margin 0 auto;가 먹지않는다.
     }
 
   }
