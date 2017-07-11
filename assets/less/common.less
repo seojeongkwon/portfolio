@@ -7,7 +7,7 @@ html{
 }
 
 *{margin: 0; padding: 0;}
-body,html,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,p{font-family: 'Noto Sans CJK KR DemiLight', sans-serif; margin:0; padding:0;}
+body,html,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,p{margin:0; padding:0;}
 li{
   list-style: none;
 }
@@ -18,7 +18,7 @@ h2{
 p{
   color:@fontcolor;
 }
-button{font-family: 'Noto Sans CJK KR DemiLight',  cursive,sans-serif; margin:0; padding:0; }
+button{margin:0; padding:0; }
 
 
 .wrap{
@@ -68,7 +68,6 @@ header{
     .menubar{
       vertical-align: middle;
       display: inline-block;
-      transition: .5s;
       div{
         display: inline-block;
         width: 206px;
@@ -525,7 +524,7 @@ header{
         strong{
           background-image: url(../images/icon/usersicon.png);
           background-repeat: no-repeat;
-          background-position: left 10px center;
+          background-position: left 8px center;
           background-size: 15%;
         }
       }
@@ -539,19 +538,20 @@ header{
       }
       .searchbox{
         vertical-align: top;
-        width: 180px;
+        width: 182px;
         padding:0 20px;
         background-color: #fff;
         background-color: transparent;
         border:1px #fff solid;
         background-image: url(../images/icon/searchicon.png);
         background-repeat: no-repeat;
-        background-position: left 10px center;
+        background-position: left 40px center;
         background-size: 15%;
         text-transform: uppercase;
         color:#fff;
         line-height: 42px;
         text-align: center;
+        span{padding-left:20px;}
       }
     }
    }
@@ -614,8 +614,8 @@ header{
       .searchmenu{
         .searchbar{
           width: 334px;
-          div{width: 160px;   transition: 1s;}
-          .searchbox{width: 120px;   transition: 1s;}
+          div{width: 160px;}
+          .searchbox{width: 160px;}
         }
       }
       .write{display: none;}
@@ -640,7 +640,6 @@ header{
                  width:280px;
                   border:0px;
                   font-size: 16px;
-                  //margin-top:2px;
                  li{
                    border:1px #fff solid;
                    width:42%;
@@ -682,12 +681,28 @@ header{
             }
             .locationbox strong{
               background-position: left 9px center;
-              background-size: 43%;
+              background-size: 45%;
+            }
+            .locationbox:hover{
+              strong{
+                background-image: url(../images/icon/ho_w_locationicon.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                padding:0;
+              }
             }
             .datebox{
               .checkin{
                 background-position: left 9.5px center;
                 background-size: 40%;
+              }
+              .checkin:hover{
+                background-image: url(../images/icon/ho_w_checkinicon.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                padding:0;
               }
               .checkintable{
                 position: relative;
@@ -697,18 +712,43 @@ header{
                 background-position: left 9.5px center;
                 background-size: 40%;
               }
+              .checkout:hover{
+                background-image: url(../images/icon/ho_w_checkouticon.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                padding:0;
+              }
               .checkouttable{
                 position:relative;
                 left:-227%;
               }
             }
             .guestbox strong{
-              background-position: left 10.5px center;
-              background-size: 40%;
+              background-position: left 8px center;
+              background-size: 50%;
+            }
+            .guestbox:hover{
+              strong{
+                background-image: url(../images/icon/ho_w_usersicon.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                padding:0;
+              }
             }
             .typebox strong{
-              background-position: left 10.5px center;
-              background-size: 40%;
+              background-position: left 9px center;
+              background-size: 43%;
+            }
+            .typebox:hover{
+              strong{
+                  background-image: url(../images/icon/ho_w_houseicon.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                  padding:0;
+              }
             }
             .searchbox{
               width:22px;
@@ -716,6 +756,13 @@ header{
               background-position: left 11px center;
               background-size: 50%;
               span{display: none;}
+            }
+            .searchbox:hover{
+                background-image: url(../images/icon/ho_w_searchicon.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                padding:0;
             }
 
             .checkin .table{
