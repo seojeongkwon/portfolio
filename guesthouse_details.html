@@ -155,7 +155,14 @@
 
 
 
+
   $(function(){
+
+
+    $('.menuboxbtn').click(function(){
+        $(this).children('.menubox').toggle().css("top","50px");
+        $(this).toggleClass('menu_uparrow');
+      });
 
 
   $('.locationbox').click(function(){
@@ -207,13 +214,14 @@
 </head>
 <body class="guesthouse_details">
   <div class="wrap">
-    <header style="display:none">
+    <header>
       <div class="top">
         <img src="assets/images/Primary_logo_340x63.png" alt="">
         <div class="logsign" >
           <span><a>Log in</a></span> / <span><a>Sign up</a></span>
         </div>
       </div>
+      <div class="menuboxbtn">
         <div class="menubox">
           <div class="menubar">
             <div><span>Guest house</span></div>
@@ -222,6 +230,8 @@
             <div><span>Chalet</span></div>
           </div>
         </div>
+      </div>
+
     </header>
 
     <div class="loginpop">
@@ -789,7 +799,7 @@
       </div>
     </div>
     <footer>
-      <div class="headline"></div>
+      <div class="empty"></div>
         <div class="bottom">
           <div class="lang">
             <div class="koreanbox">
@@ -835,7 +845,14 @@
               </select>
             </div>
           </div>
+
           <div class="notice">
+            <div class="touch">
+              <span>GET IN TOUCH</span>
+              <span>Traveling Anyang-si manan-gu Doosan we’ve apt  110-901</span>
+              <span>+0153 123 5678</span>
+              <span>fksdud377@gmail.com</span>
+            </div>
             <div class="traveling">
               <span>TRAVELING</span>
               <span>회사소개</span>
@@ -843,13 +860,8 @@
               <span>정책</span>
               <span>도움말</span>
             </div>
-            <div class="touch">
-              <span>GET IN TOUCH</span>
-              <span><i class=""></i>Traveling Anyang-si manan-gu</br> Doosan we’ve apt  110-901</span>
-              <span><i class="phone"></i>+0153 123 5678</span>
-              <span><i class="email"></i>fksdud377@gmail.com</span>
-            </div>
           </div>
+
         </div>
     </footer>
   </div>

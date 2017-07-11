@@ -11,12 +11,13 @@
   <script>
   $(function(){
 
-/*  $('.menuboxbtn').click(function(){
-    $(this).children('.menubox').toggle().css("top","50px");
-    $(this).css({"background-image":"url(../images/r_arrow04.png)","background-repeat":"no-repeat","background-position":"center top 20px"})
-  }); */
+    $('.menuboxbtn').click(function(){
+        $(this).children('.menubox').toggle().css("top","50px");
+        $(this).toggleClass('menu_uparrow');
+      });
 
-  
+
+
   $('.locationbox').click(function(){
     $(this).children('ul').toggle()
   //$(this).siblings('div').css('opacity','0.2')
