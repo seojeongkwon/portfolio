@@ -1,0 +1,33 @@
+익스7에서 호환안됨.
+:before
+:after
+:last-child
+:nth-child
+
+
+::붙이면 익스8까지? (하위브라우저 호환 안됨)
+::before
+::after
+::last-child
+::nth-child
+
+header태그는 html5에서 사용
+
+하위버전에서도 사용하는법.(IE9이하 html5지원하는법)
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+inline
+block
+
+display:inline-block
+*display:inline;
+*zoom:1;  1=100%,2=200%
+
+
+yomen
+bower
+grunt - gulp 자동화 처리기구,전처리기
+less - sass 자동화 처리기구,전처리기

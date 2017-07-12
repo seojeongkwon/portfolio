@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="guide.css">
     <style>
+    ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
       button{
         border: 0;
         background-color: transparent;
@@ -82,13 +89,33 @@
         .icon-big-mynews.active{ /*active또는 on을 많이 쓴다.*/
           background-position: -1px -150px;
         }
-        .icon-big-press{
+        .icon-big-allpress{
           width:86px;
           height:29px;
           background-position: -88px -116px;
         }
-        .icon-big-press.active{
+        .icon-big-allpress.active{
           background-position: -89px -150px;
+        }
+
+        .category li{
+          float:left;
+        }
+        .category .icon-mainpress{
+          width: 67px;
+          height: 11px;
+          background-position: -96px -258px;
+        }
+        .category .icon-mainpress:hover{
+          background-position: -185px -258px;
+        }
+        .category .icon-total{
+          width: 66px;
+          height: 11px;
+          background-position: -92px -284px;
+        }
+        .category .icon-total:hover{
+          background-position: -181px -284px;
         }
 
     </style>
@@ -113,11 +140,21 @@
         </div>
 
         <div class="btn-group txt-c">
-          <button class="icon-big-mynews active">이전</button>
-          <button class="icon-big-press">다음</button>
+          <button class="icon-big-mynews active">마이뉴스</button>
+          <button class="icon-big-allpress">전체언론사</button>
         </div>
         <h2>메시지</h2>
+
         <h2>노티피케이션</h2>
+
+        <h2>리스트</h2>
+
+        <div class="category">
+          <ul>
+            <li><a href="" class="icon-mainpress">주요 언론사</a></li>
+            <li><a href="" class="icon-total">종합 경제</a></li>
+          </ul>
+        </div>
     </div>
 
 </body>

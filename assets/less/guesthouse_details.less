@@ -125,14 +125,40 @@
         height: 52px;
         font-size: 20px;
         margin: 130px auto 0;
+        &:hover{background-color: #a2a1a1;}
       }
 
     .house{
-      border:1px #f00 solid;
       position:relative;
       width:890px;
       height:auto;
       display: inline-block;
+      button{
+        position: absolute;
+        width:30px;
+        height:40px;
+        background-size: 30px 40px;
+        background-repeat: no-repeat;
+        margin-top:-20px;
+        top:50%;
+        text-indent: -9999px;
+      }
+      button:nth-child(1){
+        background-image: url(../images/wg_arrowL.png);
+        left:0;
+        &:hover{
+          background-image: url(../images/g_arrowL.png);
+        }
+      }
+
+      button:nth-child(2){
+        background-image: url(../images/wg_arrowR.png);
+        background-position:right 0px center;
+        right:0;
+        &:hover{
+          background-image: url(../images/g_arrowR.png);
+        }
+      }
     }
     .housepic{
       img{
@@ -140,30 +166,8 @@
         margin: 0 auto;
       }
     }
-      .arrow{
-        span{
-          border:1px #f00 solid;
-          width:58px;
-          height:60px;
-        }
-        span:nth-child(1){
-          background-image: url(../images/g_arrowL.png);
-          background-repeat: no-repeat;
-          position: absolute;
-          top:50%;
-          left:0;
-          margin-top:-30px;
-        }
-        span:nth-child(2){
-          background-image: url(../images/g_arrowR.png);
-          background-repeat: no-repeat;
-          background-position:right 0px center;
-          position: absolute;
-          top:50%;
-          right:0;
-          margin-top:-30px;
-        }
-      }
+
+
 
     .details{
       padding-top:100px;
@@ -260,7 +264,7 @@
         float:right;
         button{
           border:1px #aeaeae solid;
-          border-radius: 15px;
+          border-radius: 13px;
           width: 125px;
           height: 35px;
           text-align: center;
@@ -272,7 +276,7 @@
       }
       .replybtn{
         border:1px #aeaeae solid;
-        border-radius: 15px;
+        border-radius: 13px;
         width: 125px;
         height: 35px;
         text-align: center;
@@ -523,9 +527,6 @@ body{
       .map{
         width: 630px;
       }
-      .textbox{
-        width: 500px;
-      }
       .namebox_w{
         width: 152px;
         height: 36px;
@@ -535,6 +536,12 @@ body{
         width: 152px;
         height: 36px;
         line-height: 36px;
+      }
+      .textbox{
+        width: 500px;
+      }
+      .replybtn{
+        right:40px;
       }
       .comments{
         width: 620px;
@@ -560,6 +567,7 @@ body{
       .textbox{
         width: 430px;
       }
+      .replybtn{right:30px;}
       .comments{
         width: 530px;
         li{padding:20px 30px;}
@@ -647,26 +655,12 @@ body{
           background-position: center;
           background-size: 60%;
         }
-        // .datein:hover{
-        //   background-image: url(../images/icon/ho_g_checkinicon.png);
-        //   background-repeat: no-repeat;
-        //   background-position: center;
-        //   background-size: 100%;
-        //   padding:0;
-        // }
         .dateout{
           background-image: url(../images/icon/g_checkouticon.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: 60%;
         }
-        // .dateout:hover{
-        //   background-image: url(../images/icon/ho_g_checkouticon.png);
-        //   background-repeat: no-repeat;
-        //   background-position: center;
-        //   background-size: 100%;
-        //   padding:0;
-        // }
         .guestbox{
           background-image: url(../images/icon/g_usersicon.png);
           background-repeat: no-repeat;
@@ -682,13 +676,6 @@ body{
             }
           }
         }
-        // .guestbox:hover{
-        //   background-image: url(../images/icon/ho_g_usersicon.png);
-        //   background-repeat: no-repeat;
-        //   background-position: center;
-        //   background-size: 100%;
-        //   padding:0;
-        // }
         .bookbutton{
           margin:0;
           width:140px;
@@ -739,9 +726,11 @@ body{
         padding:20px 0;
 
       }
-      .details{margin:30px auto 0;}
+      .details{margin:0 auto;}
       .explanation{
         width: 520px;
+        h2{font-size: 16px;}
+        p{font-size: 14px;}
       }
       .addlist01{
         width:520px;
@@ -755,6 +744,13 @@ body{
       .textbox{
         width: 440px;
       }
+      .button{
+        .modify{width: 115px;}
+        .delete{width: 115px;}
+      }
+      .replybtn{
+        width: 115px;
+      }
       .comments{
         width: 520px;
       }
@@ -766,5 +762,81 @@ body{
   }
 }
 @media screen and (max-width:570px) {
-  
+  .contents{
+    .detailswrap{
+        .house{
+          width:400px;
+          .arrow{
+            button{
+              width:25px;
+              height:35px;
+              &:nth-child(1){
+                background-size: 25px 35px;
+                margin-top:-17.5px;
+              }
+              &:nth-child(2){
+                background-size: 25px 35px;
+                margin-top:-17.5px;
+              }
+            }
+          }
+          .housepic{
+            img{width:320px;}
+          }
+        }
+      .bookbox{
+        width: 400px;
+        margin:30px auto 0;
+        padding:20px 0;
+        .bookbutton{
+          width:42px;
+          border-radius: 25px;
+          background-image: url(../images/icon/checkicon02.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 22px;
+          span{display: none;}
+          &:hover{background-color: #a2a1a1;}
+        }
+      }
+      .details{padding-top:20px;}
+      .explanation{
+        width: 400px;
+      }
+      .addlist01{
+        width:400px;
+      }
+      #map{
+        width: 400px;
+        height: 300px;
+        margin:50px auto 0;
+      }
+      .textbox{
+        width: 320px;
+      }
+      .button{
+        .modify{width: 95px; height:32px; line-height: 32px;}
+        .delete{width: 95px; height:32px; line-height: 32px;}
+      }
+      .replybtn{
+        width: 95px;
+        height:32px;
+        line-height: 32px;
+      }
+      .namebox_w{width:134px;}
+      .namebox_g{width: 134px;}
+      .details{
+        .comments{
+          width: 400px;
+          .reviewname02{left:140px;}
+        }
+        .inqueries{
+          width: 400px;
+          .inqname02{left:140px;}
+        }
+
+      }
+    }
+
+  }
 }
