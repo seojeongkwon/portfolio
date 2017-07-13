@@ -1,190 +1,181 @@
 .countryside{
-.contents{
-  .pic{
-    background-image: url(../images/pic03-2.jpg);
-    background-repeat: no-repeat;
-  }
-}
-
-.listwrap{
-  width:100%;
-  position: relative;
-  transition: 1s;
-  li{
-    position:relative;
-    width: 100%;
-    height:324px;
-    padding: 50px 0;
-    background-image: url(../images/listline.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    transition: .5s;
-    &:first-child{background-image: none;}
-    img{
-      float:left;
-      transition: .5s;
-    }
-    .explanation{
-      margin-left: 596px;
-      max-width: 1008px;
-      padding: 0 40px;
-      transition: .5s;
-    }
-    p{
-      padding-top:30px;
-      color:@fontcolor;
-      font-size: 18px;
-      display: block;
-      height:170px;
-      overflow: hidden;
-      strong{
-        font-size: 20px;
-      }
-    }
-    .icon{
-      background-image: url(../images/g_smallarrowR.png);
+  .contents{
+    .pic{
+      background-image: url(../images/pic03-2.jpg);
       background-repeat: no-repeat;
-      background-position: left 0 top 11px;
-      background-size: 10px;
-      padding-left:22px;
-      padding-top:5px;
-      height:38px;
     }
-    .detailsbtn{
-      width: 150px;
-      height: 45px;
-      border:2px @mainorange solid;
-      border-radius: 10px;
-      color:@mainorange;
-      background-color: transparent;
-      font-size: 20px;
-      margin-left:635px;
-      text-align: center;
-      line-height: 45px;
-      position: absolute;
-      bottom:50px;
+  }
+
+  .listwrap{
+    width:100%;
+    position: relative;
+    transition: 1s;
+    li{
+      position:relative;
+      width: 100%;
+      height:324px;
+      padding: 50px 0;
+      background-image: url(../images/listline.png);
+      background-repeat: no-repeat;
+      background-position: center top;
       transition: .5s;
-      span{
-        background-image: url(../images/y_arrow02.png);
-        background-repeat: no-repeat;
-        background-position: 5px center;
-        padding:0 5px 0 25px;
+      &:first-child{background-image: none;}
+      img{
+        float:left;
+        transition: .5s;
       }
-      &:hover{
-        background-color: @mainorange;
-        color:#fff;
+      .explanation{
+        margin-left: 596px;
+        width:auto;
+        padding: 0 40px;
+        transition: .5s;
+      }
+      p{
+        padding-top:30px;
+        color:@fontcolor;
+        font-size: 18px;
+        display: block;
+        height:170px;
+        overflow: hidden;
+        strong{
+          font-size: 20px;
+        }
+      }
+      .icon{
+        background-image: url(../images/g_smallarrowR.png);
+        background-repeat: no-repeat;
+        background-position: left 0 top 11px;
+        background-size: 10px;
+        padding-left:22px;
+        padding-top:5px;
+        height:38px;
+      }
+      .detailsbtn{
+        width: 150px;
+        height: 45px;
+        line-height: 45px;
+        border:2px @mainorange solid;
+        border-radius: 10px;
+        a{color:@mainorange;}
+        background-color: transparent;
+        font-size: 20px;
+        text-align: center;
+        position: absolute;
+        right:150px;
+        bottom:50px;
+        transition: .5s;
+        vertical-align: top;
         span{
-          background-image: url(../images/w_arrowR.png);
+          background-image: url(../images/y_arrow02.png);
           background-repeat: no-repeat;
           background-position: 5px center;
           padding:0 5px 0 25px;
         }
-      }
-    }
-    &:nth-child(1){
-      .icon{
-        span{
-          width: 30px;
-          height: 30px;
-          display: inline-block;
-          padding:5px;
-        }
-        span:nth-child(1){
-          background-image: url(../images/icon/buildings.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
-        }
-        span:nth-child(2){
-          background-image: url(../images/icon/bathtub.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
-        }
-        span:nth-child(3){
-          background-image: url(../images/icon/air-conditioner.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
-        }
-        span:nth-child(4){
-          background-image: url(../images/icon/holidays.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
+        &:hover{
+          background-color: @mainorange;
+          a{color:#fff;}
+          span{
+            background-image: url(../images/w_arrowR.png);
+            background-repeat: no-repeat;
+            background-position: 5px center;
+            padding:0 5px 0 25px;
+          }
         }
       }
-    }
-    &:nth-child(2){
-      .icon{
-        span{
-          width: 30px;
-          height: 30px;
-          display: inline-block;
-          padding:5px;
-        }
-        span:nth-child(1){
-          background-image: url(../images/icon/lift-sign.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
-        }
-        span:nth-child(2){
-          background-image: url(../images/icon/laundry.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
-        }
-        span:nth-child(3){
-          background-image: url(../images/icon/buildings.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
-        }
-        span:nth-child(4){
-          background-image: url(../images/icon/technology.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
+      &:nth-child(1){
+        .icon{
+          span{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            padding:5px;
+          }
+          span:nth-child(1){
+            background-image: url(../images/icon/buildings.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(2){
+            background-image: url(../images/icon/bathtub.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(3){
+            background-image: url(../images/icon/air-conditioner.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(4){
+            background-image: url(../images/icon/holidays.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
         }
       }
-    }
-    &:nth-child(3){
-      .icon{
-        span{
-          width: 30px;
-          height: 30px;
-          display: inline-block;
-          padding:5px;
+      &:nth-child(2){
+        .icon{
+          span{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            padding:5px;
+          }
+          span:nth-child(1){
+            background-image: url(../images/icon/lift-sign.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(2){
+            background-image: url(../images/icon/laundry.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(3){
+            background-image: url(../images/icon/buildings.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(4){
+            background-image: url(../images/icon/technology.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
         }
-        span:nth-child(1){
-          background-image: url(../images/icon/buildings.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
-        }
-        span:nth-child(2){
-          background-image: url(../images/icon/bathtub.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
-        }
-        span:nth-child(3){
-          background-image: url(../images/icon/air-conditioner.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
-        }
-        span:nth-child(4){
-          background-image: url(../images/icon/computer.png);
-          background-repeat: no-repeat;
-          background-size: 30px;
+      }
+      &:nth-child(3){
+        .icon{
+          span{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            padding:5px;
+          }
+          span:nth-child(1){
+            background-image: url(../images/icon/buildings.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(2){
+            background-image: url(../images/icon/bathtub.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(3){
+            background-image: url(../images/icon/air-conditioner.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
+          span:nth-child(4){
+            background-image: url(../images/icon/computer.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+          }
         }
       }
     }
   }
 }
-}
-@media screen and (max-width:1500px) {
-  .countryside{
-    .listwrap{
-      li{
-        .explanation{
-          max-width: 560px;
-        }
-      }
-    }
-  }
-}
+
 @media screen and (max-width:1350px) {
   .countryside{
     .listwrap{
@@ -195,16 +186,15 @@
           }
           p{padding-top:0;}
         .explanation{
-          max-width: 560px;
           margin-left: 450px;
         }
-        .details{
+        .detailsbtn{
           margin-left:489px;
           bottom:50px;
           width: 130px;
           height: 35px;
           font-size: 18px;
-          line-height: 35px;
+          line-height: 31px;
         }
       }
     }
@@ -223,7 +213,6 @@
         .explanation{
           margin: 20px auto 0;
           text-align: center;
-          max-width: 580px;
           padding:0;
           .icon{
             width:263px;
@@ -232,7 +221,7 @@
             text-align: left;
           }
         }
-        .details{
+        .detailsbtn{
           bottom:58px;
           right:110px;
         }
@@ -246,8 +235,8 @@
     li{
       height:435px;
       img{width:300px;}
-      p{padding:0 10px;}
-      .details{
+      p{padding:0 10px !important;}
+      .detailsbtn{
         width:110px;
         bottom:56px;
         right:65px;
@@ -260,7 +249,7 @@
   .countryside{
     .listwrap{
       li{
-        .details{
+        .detailsbtn{
           right: 35px;
         }
       }
@@ -282,10 +271,10 @@
           font-size: 16px;
         }
         .icon{margin-top: 3px;}
-        .details{
+        .detailsbtn{
           width:100px;
           height:30px;
-          line-height: 30px;
+          line-height: 26px;
           font-size: 16px;
           bottom:25px;
           right:35px;
