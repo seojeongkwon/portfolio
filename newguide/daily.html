@@ -2,39 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="guide.css">
+
+  <script>
+
+    var data = {
+            list:[{
+                title:'최민수, “최수종 논란? 폭행은 없었다”',
+                contents:'배우 최민수가 "라디오스타"를 쥐락펴락했다. 강렬한 카리스마를 발산하는 그가 "민수르"로서의 컴백을 예고하며 재치 입담꾼으로 활약했다.'
+            },{
+                title:'최민수, “최수종 논란? 폭행은 없었다”',
+                contents:'배우 최민수가 "라디오스타"를 쥐락펴락했다. 강렬한 카리스마를 발산하는 그가 "민수르"로서의 컴백을 예고하며 재치 입담꾼으로 활약했다.'
+            }
+          ]
+        };
+
+
+  $(function(){
+
+    var url = location.href;
+    var urls = url.split("?");
+    urls = urls[1].split("=");
+    console.log(urls);
+    var sqe = Number(urls[1]);
+
+    $('h2').text(data.list[sqe].title);
+    $('p').text(data.list[sqe].contents);
+  });
+
+  </script>
+
+
+
   <style>
   body{
     background-image: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);
        }
-    header{
+    header.layout{
       border:1px #f00 solid;
       height: 56px;
       background-image: url(http://static.naver.net/newsstand/img/20121231/bg_hd.png);
       background-repeat: repeat-x;
-
     }
     header .newslogan{border:1px #F00 solid; width:100px;height:50px; float:left;}
     header .site_option{border:1px #F00 solid; width:100px;height:50px; float:right;}
-    header .section_meun{border:1px #f00 solid;}
+    header .section_menu{border:1px #f00 solid;}
 
-    section{
+    .wrapper{
+      width: 936px;
+      height: 540px;
+      margin: auto;
+      position:relative;
+    }
+    .controller-btn-group{
+      position: absolute;
+      width:100%;
+      border:1px #F00 solid;
+      top:50%;
+    }
+    .controller-btn-group button{
+      position: absolute;
+      top:-21.5px;
+    }
+    .controller-btn-group .icon-big-arrowL{
+      right:-21px;
+    }
+    .controller-btn-group .icon-big-arrowR{
+      left:-21px;
+    }
+    .news{
+      width:inherit;
+      width:900px;
+      height:540px;
+      border:1px #F00 solid;
+      margin:auto;
+      background-image: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png);
+      padding:0 18px;
+      background-repeat: no-repeat;
+    }
+    section.layout{
       border:1px #f00 solid;
       min-height:500px;
     }
 
-    .news{
-
-           width:900px;
-           height:540px;
-           border:1px #F00 solid;
-           margin:auto;
-           background-image: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png);
-           padding:0 18px;
-           background-repeat: no-repeat;
-       }
+    .news header{
+      height:111px;
+      outline:1px #f00 solid;
+      margin-bottom:20px;
+    }
+    .news section{
+      height:380px;
+      outline:1px #f00 solid;
+    }
 
     footer{
       background: #000;
@@ -48,7 +113,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header class="layout">
           <div class="newslogan">
 
           </div>
@@ -59,18 +124,36 @@
 
           <div class="section_menu">
                <div class="btn-group txt-c">
-                  <button class="icon-mynews active">마이뉴스</button>
-                  <button class="icon-allnews">전체언론사</button>
+                  <button class="icon-big-mynews active">마이뉴스</button>
+                  <button class="icon-big-allpress">전체언론사</button>
               </div>
           </div>
 
       </header>
 
-      <section id="daily">
+      <section id="daily" class="layout">
 
+        <div class="wrapper">
+          <div class="controller-btn-group">
+            <button class="icon-big-arrowL">test test</button>
+            <button class="icon-big-arrowR">test test</button>
+          </div>
+
+          <!--컨텐츠-->
           <div class="news">
 
+            <header>
+
+            </header>
+
+            <section>
+    <h2></h2>
+    <p></p>
+            </section>
+
           </div>
+
+        </div>
 
       </section>
 
