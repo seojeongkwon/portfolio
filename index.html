@@ -11,10 +11,24 @@
   <script>
   $(function(){
 
-    $('.menuboxbtn').click(function(){
-        $(this).children('.menubox').toggle().css("top","50px");
-        $(this).toggleClass('menu_uparrow');
-      });
+
+
+  function blind(){
+    $('body').append("<div class='blind'></div>");
+    $('.blind').fadeTo(500,.6);
+  };
+
+  $('.loginbtn').click(function(){
+    blind();
+    $('.loginpop').show();
+
+  })
+
+    // 닫기
+  $('.loginbutton').click(function(){
+    $('.blind').remove();
+    $('.loginpop').hide();
+  })
 
 
 
@@ -62,6 +76,20 @@
     $(this).children('ul').toggle()
   })
 
+
+
+
+  $(window).resize(function(){
+    var a= $(this).width();
+
+    if(a <= 480){
+      $('.menuboxbtn').click(function(){
+          $(this).children('.menubox').toggle().css("top","50px");
+          $(this).toggleClass('menu_uparrow');
+        });
+    };
+  });
+
 })
   </script>
 </head>
@@ -71,7 +99,7 @@
       <div class="top">
         <a href="index.html"><img src="assets/images/Primary_logo_340x63.png" alt=""></a>
         <div class="logsign" >
-          <span><a>Log in</a></span> / <span><a>Sign up</a></span>
+          <span class="loginbtn"><a>Log in</a></span> / <span class="signupbtn"><a>Sign up</a></span>
         </div>
       </div>
       <div class="menuboxbtn">
@@ -86,7 +114,7 @@
       </div>
     </header>
 
-    <div class="loginpop">
+    <div class="loginpop ">
       <div class="inner">
         <strong>log in</strong>
         <div class="idpassword">
@@ -96,8 +124,8 @@
            <button class="loginbutton">login</button>
 
           <div class="findlist">
-              <span>패스워드를 잊어버렸습니까? <a>password find</a></span>
-              <span>회원이 아닙니까? <a>sign up</a></span>
+              <span>패스워드를 잊어버렸습니까? <a href="" class="passwordbtn">password find</a></span>
+              <span>회원이 아닙니까? <a href="" class="signupbtn">sign up</a></span>
           </div>
         </div>
       </div>
