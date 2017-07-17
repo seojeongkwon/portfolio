@@ -1,6 +1,5 @@
 .index{
 
-
 .main_contents{
   position: relative;
   height:879px;
@@ -17,6 +16,7 @@
       border:1px #fff solid;
       height:42px;
       position:relative;
+      &:hover{cursor: pointer;}
       strong{
         //부모는 위드값이 있고 strong에는 없기때문에 패딩을 줘도 안늘어남
           padding:0 10px 0 45px;
@@ -95,6 +95,11 @@
             background-position: center;
           }
         }
+        td{
+          &:hover{
+            background-color:rgba(255,0,0,0.1);
+          }
+        }
         .date{
           display: block;
           margin-top:5px;
@@ -138,12 +143,13 @@
       border:1px #fff solid;
       background-image: url(../images/icon/searchicon.png);
       background-repeat: no-repeat;
-      background-position: left 10px center;
+      background-position: left 40px center;
       background-size: 15%;
       text-transform: uppercase;
       color:#fff;
       line-height: 42px;
       text-align: center;
+      span{padding-left:20px;}
     }
   }
 

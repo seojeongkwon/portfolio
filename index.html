@@ -5,13 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="wow.min.js"></script>
 <link rel="stylesheet" href="assets/css/style.css">
   <title>Document</title>
   <script>
   $(function(){
-
-
 
   function blind(){
     $('body').append("<div class='blind'></div>");
@@ -19,19 +16,29 @@
   };
 
 
-  $('.loginbtn').click(function(){
+
+  $('.loginbtn').click(function(e){
+    e.preventDefault();
     blind();
     $('.loginpop').fadeTo(200,1);
   });
     // 닫기
   $('.loginbutton').click(function(){
     $('.blind').remove();
-    $('.loginpop').hide();
+    $('.loginpop').fadeOut(200,0);
+  });
+    //닫기 버튼
+  $('.closebtn').click(function(){
+    $('.blind').remove();
+    $('.loginpop').fadeOut(200,0);
   });
 
 
-  $('.signupbtn').click(function(){
+
+  $('.signupbtn').click(function(e){
+    e.preventDefault();
     blind();
+    $('.loginpop').fadeOut(200,0);
     $('.signuppop').fadeTo(200,1);
   });
     // 닫기
@@ -39,25 +46,39 @@
     $('.blind').remove();
     $('.signuppop').hide();
   });
+  $('.closebtn').click(function(){
+    $('.blind').remove();
+    $('.signuppop').fadeOut(200,0);
+  });
 
 
-//안됨. 사인클릭 두개만들어야하나?
-  $('.passwordbtn').click(function(){
-    $('.loginpop').hide();
-    $('.passwordpop').show();
+
+  $('.passwordbtn').click(function(e){
+    e.preventDefault();
+    $('.loginpop').fadeOut(200,0);
+    $('.passwordpop').fadeTo(200,1);
   });
     // 닫기
   $('.sendbutton').click(function(){
     $('.blind').remove();
     $('.passwordpop').hide();
   });
+  $('.closebtn').click(function(){
+    $('.blind').remove();
+    $('.passwordpop').fadeOut(200,0);
+  });
 
 
-
-
+//메인 메뉴바
   $('.locationbox').click(function(){
-    $(this).children('ul').toggle()
-  //$(this).siblings('div').css('opacity','0.2')
+    $(this).children('ul').toggle();
+
+    $(this).find('li').click(function(){
+      txt = $(this).text();
+      console.log(txt);
+      $(this).parent('ul').siblings('strong').text(txt).css('background-color','rgba(255,0,0,.08)');
+    });
+
 
 /*    var idx;
 
@@ -76,27 +97,78 @@
     })*/
 
 
-  })
-  $('.datebox').click(function(){
+  });
+  $('.checkinbox').click(function(){
 
-    $(this).children('.table').toggle()
-  })
+    $(this).children('.table').toggle();
+    $(this).find('td').click(function(){
+      txt = $(this).text();
+      console.log(txt);
+      $(this).parents('.checkinbox').find('strong').text(txt).css('background-color','rgba(255,0,0,.08)');
+
+    });
+  });
+
+
+  $('.checkoutbox').click(function(){
+
+    $(this).children('.table').toggle();
+    $(this).find('td').click(function(){
+      txt = $(this).text();
+      console.log(txt);
+      $(this).parents('.checkoutbox').find('strong').text(txt).css('background-color','rgba(255,0,0,.08)');
+
+    });
+  });
+
+
 
   $('.guestbox').click(function(){
 
-    $(this).children('ul').toggle()
-  })
+    $(this).children('ul').toggle();
+
+    $(this).find('li').click(function(){
+      txt = $(this).text();
+      $(this).parent('ul').siblings('strong').text(txt).css('background-color','rgba(255,0,0,.08)');
+
+    });
+
+  });
+
+
+
   $('.typebox').click(function(){
 
-    $(this).children('ul').toggle()
-  })
+    $(this).children('ul').toggle();
+
+    $(this).find('li').click(function(){
+      txt = $(this).text();
+      $(this).parent('ul').siblings('strong').text(txt).css('background-color','rgba(255,0,0,.08)');
+    });
+
+  });
+
+
+
+
   $('.koreanbox').click(function(){
 
-    $(this).children('ul').toggle()
-  })
+    $(this).children('ul').toggle();
+
+    $(this).find('li').click(function(){
+      txt = $(this).text();
+      $(this).parent('ul').siblings('strong').text(txt).css({'background-color':'rgba(255,200,100,0.1)','font-size':'13px;'});
+    });
+  });
+
   $('.krwbox').click(function(){
 
-    $(this).children('ul').toggle()
+    $(this).children('ul').toggle();
+
+    $(this).find('li').click(function(){
+      txt = $(this).text();
+      $(this).parent('ul').siblings('strong').text(txt).css({'background-color':'rgba(255,200,100,0.1)','font-size':'13px;'});
+    });
   })
 
 
@@ -105,12 +177,44 @@
   $(window).resize(function(){
     var a= $(this).width();
 
+//수정수정수정//////////////////////////////////////////////////////////////////
+    if(661 <= a,a <= 1200){
+      $('.locationbox').click(function(){
+           $(this).siblings('.guestbox').css('opacity','0.1');
+      });
+      $('.checkinbox').click(function(){
+           $(this).siblings('.typebox').css('opacity','0.1');
+      });
+      $('.checkoutbox').click(function(){
+           $(this).siblings('.searchbox').css('opacity','0.1');
+      });
+    };
+
+    if(a <= 660){
+      $('.locationbox').click(function(){
+           $(this).siblings('.checkoutbox').css('opacity','0.1');
+           $(this).siblings('.typebox').css('opacity','0.1');
+      });
+      $('.checkinbox').click(function(){
+           $(this).siblings('.guestbox').css('opacity','0.1');
+           $(this).siblings('.searchbox').css('opacity','0.1');
+      });
+    };
+
+
     if(a <= 480){
       $('.menuboxbtn').click(function(){
           $(this).children('.menubox').toggle().css("top","50px");
           $(this).toggleClass('menu_uparrow');
         });
+      $('.locationbox').click(function(){
+           $(this).siblings('div').css('opacity','0.1');
+           $(this).siblings('.searchbox').css('opacity','0.1');
+      });
     };
+
+
+
   });
 
 })
@@ -140,10 +244,11 @@
     <div class="loginpop ">
       <div class="inner">
         <strong>log in</strong>
+        <span class="closebtn"></span>
         <div class="idpassword">
           <small>*입력하신 정보가 없습니다.</small>
-           <span class="logintxt"><label for="">id</label><input type="text" /></span>
-           <span class="logintxt"><label class="passwordlabel" for="">password</label><input type="text" /></span>
+           <span class="logintxt"><label for="id">id</label><input type="text" id="id" /></span>
+           <span class="logintxt"><label class="passwordlabel" for="password">password</label><input type="text" id="password" /></span>
            <button class="loginbutton">login</button>
 
           <div class="findlist">
@@ -157,12 +262,13 @@
     <div class="passwordpop">
       <div class="inner">
         <strong>passwrod find</strong>
+        <span class="closebtn"></span>
         <div class="passwordfind">
           <span>가입 시 입력한 이메일을 입력해주세요.</span>
           <div class="email">
-             <span><label for="">e-mail address</label><input type="text" /></span>
-           <button class="sendbutton">send</button>
+             <span><label for="email">e-mail address</label><input type="text" id="email" /></span>
           </div>
+          <button class="sendbutton">send</button>
         </div>
       </div>
     </div>
@@ -170,7 +276,8 @@
     <div class="signuppop">
       <div class="inner">
         <strong>sign up</strong>
-        <div class="textbox">
+        <span class="closebtn"></span>
+        <div class="agreebox">
           <div class="textarea">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque. Maecenas
               semper erat et justo porta auctor nec lobortis elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -190,11 +297,11 @@
           <span><input type="checkbox" />Agree</span>
         </div>
         <div class="selftext">
-          <div><label for="">name</label><input type="text" /></div>
-          <div><label for="">first name</label><input type="text" /></div>
-          <div><label for="">e-mail address</label><input type="text" /></div>
-          <div><label for="">password</label><input type="text" /></div>
-          <div><label for="">date of birth</label><input class="dd" placeholder="DD" type="text" /><input class="mm" placeholder="MM" type="text" /><input class="yyyy" placeholder="YYYY" type="text" /></div>
+          <div><label for="name">name</label><input type="text" id="name"/></div>
+          <div><label for="firstname">first name</label><input type="text" id="firstname" /></div>
+          <div><label for="address">e-mail address</label><input type="text" id="address"/></div>
+          <div><label for="pass">password</label><input type="text" id="pass"/></div>
+          <div><label for="datebirth">date of birth</label><input class="dd" placeholder="DD" type="text" id="datebirth"/><input class="mm" placeholder="MM" type="text" /><input class="yyyy" placeholder="YYYY" type="text" /></div>
         </div>
         <button class="joinbutton">join</button>
       </div>
@@ -214,7 +321,7 @@
           <li>South America</li>
         </ul>
 
-        <select class="select_delete" name="" id="">
+        <select class="select_delete" name="location" id="locationbox">
           <option value="ion1">Africa</option>
           <option value="ion2">Asia</option>
           <option value="ion3">Australia</option>
@@ -223,7 +330,7 @@
           <option value="ion4">South America</option>
         </select>
       </div>
-      <div class="datebox">
+      <div class="datebox checkinbox">
         <strong class="checkin"><span>check in</span></strong>
         <div class="table">
         <table>
@@ -291,7 +398,7 @@
         </table>
         </div>
       </div>
-      <div class="datebox">
+      <div class="datebox checkoutbox">
         <strong class="checkout"><span>check out</span></strong>
         <div class="table">
         <table>

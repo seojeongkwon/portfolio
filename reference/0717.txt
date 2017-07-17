@@ -1,0 +1,16 @@
+c9  fksdud377@nate.com 
+
+반응형 디자인 실무 책.
+
+
+section 경제면사회면(h1 h2 태그와 같이 사용해야함)
+article 그안의 세부 기사들
+
+
+영어는 하단이 3픽셀 p,g는 하단에 1픽셀 한글은 하단에 무조건1픽셀씩 떨어져있음 상단은 2픽셀정도 
+padding: 7px 10px 9px
+
+
+
+line-height: font 사이즈의 150~180%
+폰트 20px line-hegiht:36px 상단line-height 8px + padding-top:2, padding-bottom은 1
