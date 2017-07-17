@@ -154,6 +154,7 @@
   $('.koreanbox').click(function(){
 
     $(this).children('ul').toggle();
+
     $(this).find('span').toggleClass('menu_g_uparrow');
 
     $(this).find('li').click(function(){
@@ -188,6 +189,8 @@
 // !aaa -> aaa != true
   $(window).resize(function(){
 
+
+///////줄일때마다 눌렀던게 누적되어서 중복됨. 초기화시키는법?
     var a= $(this).width();
     var aaa = false;
 
