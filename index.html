@@ -154,10 +154,22 @@
   $('.koreanbox').click(function(){
 
     $(this).children('ul').toggle();
+    $(this).toggleClass('menu_g_uparrow').css({
+      'background-image':'url(assets/images/g_arrow02.png)',
+      'background-repeat':'no-repeat',
+      'background-position':'right 10px center'
+    });
 
     $(this).find('li').click(function(){
       txt = $(this).text();
-      $(this).parent('ul').siblings('strong').text(txt).css({'background-color':'rgba(255,200,100,0.1)','font-size':'13px;'});
+      $(this).parent('ul').siblings('strong').text(txt)
+      .css({
+        'background-color':'rgba(255,200,100,0.1)',
+        'background-image':'url(assets/images/g_arrow02.png)',
+        'background-repeat':'no-repeat',
+        'background-position':'right 10px center',
+        'font-size':'13px;'
+      });
     });
   });
 
