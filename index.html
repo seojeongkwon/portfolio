@@ -18,17 +18,40 @@
     $('.blind').fadeTo(500,.6);
   };
 
+
   $('.loginbtn').click(function(){
     blind();
-    $('.loginpop').show();
-
-  })
-
+    $('.loginpop').fadeTo(200,1);
+  });
     // 닫기
   $('.loginbutton').click(function(){
     $('.blind').remove();
     $('.loginpop').hide();
-  })
+  });
+
+
+  $('.signupbtn').click(function(){
+    blind();
+    $('.signuppop').fadeTo(200,1);
+  });
+    // 닫기
+  $('.joinbutton').click(function(){
+    $('.blind').remove();
+    $('.signuppop').hide();
+  });
+
+
+//안됨. 사인클릭 두개만들어야하나?
+  $('.passwordbtn').click(function(){
+    $('.loginpop').hide();
+    $('.passwordpop').show();
+  });
+    // 닫기
+  $('.sendbutton').click(function(){
+    $('.blind').remove();
+    $('.passwordpop').hide();
+  });
+
 
 
 
