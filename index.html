@@ -69,22 +69,18 @@
   });
 
 
+
+
 //메인 메뉴바
   $('.locationbox').click(function(){
     $(this).children('ul').toggle();
 
     $(this).find('li').click(function(){
       txt = $(this).text();
-      console.log(txt);
-      $(this).parent('ul').filter('strong').text(txt)
-      .css('background-color','rgba(255,0,0,.08)');
-      $(this).parents('div').css({
-        'background-image':'url(assets/images/w_arrow01.png)',
-        'background-size':'8%',
-        'background-repeat':'no-repeat',
-        'background-position':'right 10px center'
-      });
+    $(this).parents('.locationbox').find('span').text(txt)
+    .css('background-color','rgba(255,0,0,.08)');
     });
+
 // 원래  div안에  strong에 아이콘있고 span에 화살표있는데
 // 리스트 클릭하면 리스트안에는 span이 없어서 화삺표사라지고
 //리스트로 대체되면서 아이콘도 사라짐
