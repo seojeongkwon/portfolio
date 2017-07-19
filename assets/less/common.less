@@ -16,6 +16,9 @@ html{
   background-image: url('../images/w_arrow01.png') !important;
 }
 
+.on{
+  opacity:0.1;
+}
 
 *{margin: 0; padding: 0;}
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,p{margin:0; padding:0;}
@@ -121,7 +124,7 @@ header{
         transition: .5s;
         &:hover{cursor: pointer;}
         span{
-          line-height: 46px;
+          line-height: 42px;
         }
       }
       div:nth-child(1){
@@ -352,9 +355,10 @@ header{
         text-align: left;
         color:#848485;
       }
-      span{
+      label{
         display: block;
         text-align: right;
+        span{margin-left:5px;}
       }
     }
     .selftext{
@@ -477,6 +481,7 @@ header{
             border:1px #fff solid;
             margin-top:2px;
             position:absolute;
+            left:-1px;
             width:100%;
             text-align: left;
             display: none;
@@ -508,6 +513,7 @@ header{
         height: 200px;
         position:relative;
         top:2px;
+        left:-1px;
       }
       .datebox{
         table{
@@ -803,16 +809,6 @@ header{
                 padding:0;
 
             }
-
-            .checkin .table{
-              //position 안먹음!!!
-
-            }
-            .checkout .table{
-              //position해줬는데 안먹음. 개발자도구에서 하면 먹힘 (안먹힐떄도 있음)
-
-
-            }
             .guestbox ul{
               position:relative;
               left:-340%;
@@ -839,6 +835,17 @@ footer{
 .empty{
   height:60px;
   background-color: #fff;
+  position: relative;
+  span{
+    display: block;
+    width: 50px;
+    height: 25px;
+    background-color: #aeaeae;
+    position: absolute;
+    left:50%;
+    margin-left:-25px;
+    color:#fff;
+  }
 }
 .bottom{
   padding-top:5px;
@@ -880,6 +887,7 @@ footer{
         background-color:#fff;
         margin-top:2px;
         position:absolute;
+        left:-1px;
         width:100%;
         text-align: left;
         display: none;
@@ -1179,7 +1187,7 @@ header{
           width:300px;
           font-size: 15px;
         }
-        span{font-size: 15px;}
+        label{font-size: 15px;}
       }
       .selftext{
         width:350px;
@@ -1369,7 +1377,7 @@ header{
           height:150px;
           font-size: 13px;
         }
-        span{font-size: 13px;}
+        label{font-size: 13px;}
       }
       .selftext{
         margin-top:5px;

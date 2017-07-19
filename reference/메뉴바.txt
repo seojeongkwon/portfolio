@@ -1,0 +1,336 @@
+//메모
+
+//헤더 메뉴바
+$('.locationbox').click(function(){
+  $(this).children('ul').toggle();
+
+  $(this).find('li').click(function(){
+    txt = $(this).text();
+    $(this).parents('.locationbox').find('span').text(txt);
+    $(this).parents('.locationbox').find('strong').css('background-color','rgba(255,0,0,.08)');
+  });
+
+  $(this).siblings('div').find('ul').hide();
+  $(this).siblings('div').find('.table').hide();
+
+/*    var idx;
+  $(this).find('li').click(function(){
+
+      idx = $(this).index()
+      var opt = $(this).text();
+      $(this).parent('ul').prev('strong').text(opt);
+  })
+  $(this).find('select').change(function(){
+    $('this').find('option').eq(idx).val();
+  })*/
+});
+
+
+
+$('.checkinbox').click(function(){
+
+  $(this).children('.table').toggle();
+  $(this).find('td').click(function(){
+    txt = $(this).text();
+    $(this).parents('.checkinbox').find('strong').find('span').text(txt);
+    $(this).parents('.checkinbox').find('strong').css('background-color','rgba(255,0,0,.08)');
+  });
+
+  $(this).siblings('div').find('ul').hide();
+  $(this).siblings('div').find('.table').hide();
+});
+
+
+$('.checkoutbox').click(function(){
+
+  $(this).children('.table').toggle();
+  $(this).find('td').click(function(){
+    txt = $(this).text();
+    $(this).parents('.checkoutbox').find('strong').find('span').text(txt);
+    $(this).parents('.checkoutbox').find('strong').css('background-color','rgba(255,0,0,.08)');
+  });
+
+  $(this).siblings('div').find('ul').hide();
+  $(this).siblings('div').find('.table').hide();
+});
+
+
+
+$('.guestbox').click(function(){
+
+  $(this).children('ul').toggle();
+
+  $(this).find('li').click(function(){
+    txt = $(this).text();
+    $(this).parents('.guestbox').find('span').text(txt);
+    $(this).parents('.guestbox').find('strong').css('background-color','rgba(255,0,0,.08)');
+  });
+
+  $(this).siblings('div').find('ul').hide();
+  $(this).siblings('div').find('.table').hide();
+});
+
+
+
+$('.typebox').click(function(){
+
+  $(this).children('ul').toggle();
+
+  $(this).find('li').click(function(){
+    txt = $(this).text();
+    $(this).parents('.typebox').find('span').text(txt);
+    $(this).parents('.typebox').find('strong').css('background-color','rgba(255,0,0,.08)');
+  });
+
+  $(this).siblings('div').find('ul').hide();
+  $(this).siblings('div').find('.table').hide();
+});
+
+
+//푸터 메뉴바
+$('.koreanbox').click(function(){
+
+  $(this).children('ul').toggle();
+
+  $(this).find('span').toggleClass('menu_g_uparrow');
+
+  $(this).find('li').click(function(){
+    txt = $(this).text();
+    $(this).parents('.koreanbox').find('span').text(txt);
+    $(this).parents('.koreanbox').find('strong').css('background-color','rgba(255,200,100,0.1)');
+  });
+
+  $(this).siblings('div').find('ul').hide();
+});
+
+$('.krwbox').click(function(){
+
+  $(this).children('ul').toggle();
+
+  $(this).find('span').toggleClass('menu_g_uparrow');
+
+  $(this).find('li').click(function(){
+    txt = $(this).text();
+    $(this).parents('.krwbox').find('span').text(txt);
+    $(this).parents('.krwbox').find('strong').css('background-color','rgba(255,200,100,0.1)');
+  });
+
+  $(this).siblings('div').find('ul').hide();
+});
+
+
+
+
+
+
+
+$(window).resize(function(){
+
+  // !aaa -> aaa != true
+  //줄일때마다 눌렀던게 누적되어서 중복됨. 초기화시키는법?
+  var a = $(this).width();
+
+  var aaa = false;
+  if(660 < a && a <= 1200){
+
+    $('.locationbox').click(function(){
+
+      if(aaa){
+         $(this).siblings('.guestbox').css('opacity','1');
+         aaa=false;
+      }else{
+        $(this).siblings('.guestbox').css('opacity','0.1');
+        aaa=true;
+      };
+
+    });
+
+  $('.locationbox').off('click');
+
+  var bbb = false;
+    $('.checkinbox').click(function(){
+
+      if(bbb){
+        $(this).siblings('.typebox').css('opacity','1');
+         bbb=false;
+      }else{
+        $(this).siblings('.typebox').css('opacity','0.1');
+        bbb=true;
+      };
+
+    });
+
+    $('.checkinbox').off('click');
+
+  var ccc = false;
+    $('.checkoutbox').click(function(){
+      if(ccc){
+        $(this).siblings('.searchbox').css('opacity','1');
+         ccc=false;
+      }else{
+        $(this).siblings('.searchbox').css('opacity','0.1');
+        ccc=true;
+      };
+    });
+    $('.checkoutbox').off('click');
+
+  }else if(480 < a && a <= 660){
+    var ddd = false;
+
+    $('.locationbox').click(function(){
+
+      if(ddd){
+        $(this).siblings('.checkoutbox').css('opacity','1');
+        $(this).siblings('.typebox').css('opacity','1');
+         ddd=false;
+      }else{
+        $(this).siblings('.checkoutbox').css('opacity','0.1');
+        $(this).siblings('.typebox').css('opacity','0.1');
+        ddd=true;
+      };
+    });
+
+    $('.locationbox').off('click');
+
+    var eee = false;
+    $('.checkinbox').click(function(){
+
+      if(eee){
+        $(this).siblings('.guestbox').css('opacity','1');
+        $(this).siblings('.searchbox').css('opacity','1');
+         eee=false;
+      }else{
+        $(this).siblings('.guestbox').css('opacity','0.1');
+        $(this).siblings('.searchbox').css('opacity','0.1');
+        eee=true;
+      };
+
+    });
+
+    $('.checkinbox').off('click');
+
+    var fff = false;
+    $('.checkoutbox').click(function(){
+
+      if(fff){
+        $(this).siblings('.typebox').css('opacity','1');
+         fff=false;
+      }else{
+        $(this).siblings('.typebox').css('opacity','0.1');
+        fff=true;
+      };
+    });
+
+    $('.checkoutbox').off('click');
+
+    var ggg = false;
+    $('.guestbox').click(function(){
+
+      if(ggg){
+        $(this).siblings('.searchbox').css('opacity','1');
+         ggg=false;
+      }else{
+        $(this).siblings('.searchbox').css('opacity','0.1');
+        ggg=true;
+      };
+    });
+
+    $('.guestbox').off('click');
+
+  }else if(a <= 480){
+
+    var hhh = false;
+    $('.locationbox').click(function(){
+      if(hhh){
+        $(this).siblings('.checkinbox').css('opacity','1');
+        $(this).siblings('.checkoutbox').css('opacity','1');
+        $(this).siblings('.guestbox').css('opacity','1');
+        $(this).siblings('.typebox').css('opacity','1');
+        $(this).siblings('.searchbox').css('opacity','1');
+         hhh=false;
+      }else{
+        $(this).siblings('.checkinbox').css('opacity','0.1');
+        $(this).siblings('.checkoutbox').css('opacity','0.1');
+        $(this).siblings('.guestbox').css('opacity','0.1');
+        $(this).siblings('.typebox').css('opacity','0.1');
+        $(this).siblings('.searchbox').css('opacity','0.1');
+        hhh=true;
+      };
+    });
+
+    $('.locationbox').off('click');
+
+    var iii = false;
+    $('.checkinbox').click(function(){
+      if(iii){
+        $(this).siblings('.checkoutbox').css('opacity','1');
+        $(this).siblings('.guestbox').css('opacity','1');
+        $(this).siblings('.typebox').css('opacity','1');
+        $(this).siblings('.searchbox').css('opacity','1');
+         iii=false;
+      }else{
+        $(this).siblings('.checkoutbox').css('opacity','0.1');
+        $(this).siblings('.guestbox').css('opacity','0.1');
+        $(this).siblings('.typebox').css('opacity','0.1');
+        $(this).siblings('.searchbox').css('opacity','0.1');
+        iii=true;
+      };
+    });
+
+    $('.checkinbox').off('click');
+
+    var jjj = false;
+    $('.checkoutbox').click(function(){
+      if(jjj){
+        $(this).siblings('.guestbox').css('opacity','1');
+        $(this).siblings('.typebox').css('opacity','1');
+        $(this).siblings('.searchbox').css('opacity','1');
+         jjj=false;
+      }else{
+        $(this).siblings('.guestbox').css('opacity','0.1');
+        $(this).siblings('.typebox').css('opacity','0.1');
+        $(this).siblings('.searchbox').css('opacity','0.1');
+        jjj=true;
+      };
+    });
+
+    $('.checkoutbox').off('click');
+
+    var kkk = false;
+    $('.guestbox').click(function(){
+      if(kkk){
+        $(this).siblings('.typebox').css('opacity','1');
+        $(this).siblings('.searchbox').css('opacity','1');
+         kkk=false;
+      }else{
+        $(this).siblings('.typebox').css('opacity','0.1');
+        $(this).siblings('.searchbox').css('opacity','0.1');
+        kkk=true;
+      };
+    });
+
+    $('.guestbox').off('click');
+
+    var lll = false;
+    $('.typebox').click(function(){
+      if(lll){
+        $(this).siblings('.searchbox').css('opacity','1');
+         lll=false;
+      }else{
+        $(this).siblings('.searchbox').css('opacity','0.1');
+        lll=true;
+      };
+    });
+
+    $('.typebox').off('click');
+
+    //헤더 메뉴바 클릭
+    $('.menuboxbtn').click(function(){
+        $(this).children('.menubox').toggle().css("top","50px");
+        $(this).toggleClass('menu_uparrow');
+      });
+  };
+
+
+
+});

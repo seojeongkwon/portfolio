@@ -110,39 +110,21 @@ $('.lang').find('div').click(function(){
 });
 
 
-$('.searchbar>div').click(function(){
+$('.searchbar div').click(function(){
   var i = $(this).index();
   resizeHide(i);
 
-});
+})
 function resizeHide(idx){
-  console.log(idx);
+  console.log(idx)
   if($('html').is('.labtop')){
-
-    switch (idx) {
-      case 0:
-      $('.searchbar>div').removeClass('on')
-        $('.searchbar>div').eq(3).addClass('on')
-
-        break;
-      case 1:
-      $('.searchbar>div').removeClass('on')
-        $('.searchbar>div').eq(4).addClass('on')
-        break;
-      case 2:
-      $('.searchbar>div').removeClass('on')
-        $('.searchbar>div').eq(5).addClass('on')
-        break;
-      default:
-
-    }
+      $('.searchbar div').eq(idx+5).toggleClass('on');
   }else if($('html').is('.tablet')){
-
-
+      $('.searchbar div').eq(idx+5).toggleClass('on');
   }else if($('html').is('.mobile')){
-
-  };
-};
+      $('.searchbar div').eq(idx+5).toggleClass('on');
+  }
+}
 
 $(window).resize(function(){
 
@@ -163,14 +145,8 @@ $(window).resize(function(){
   }
 
 });
-      // //헤더 메뉴바 클릭
-      // $('.menuboxbtn').click(function(){
-      //     $(this).children('.menubox').toggle().css("top","50px");
-      //     $(this).toggleClass('menu_uparrow');
-      //   });
 
-
-  $(window).trigger("resize");
+$(window).trigger('resize');
 
 
 
@@ -461,7 +437,7 @@ $(window).resize(function(){
           <option value="ion4">Chalet</option>
         </select>
       </div>
-      <div><button class="searchbox"><span>search</span></button></div>
+      <button class="searchbox"><span>search</span></button>
      </div>
 
     </div>

@@ -10,52 +10,368 @@
   <script>
   $(function(){
 
+  function blind(){
+    $('body').append("<div class='blind'></div>");
+    $('.blind').fadeTo(500,.6);
+  };
 
+  $('.loginbtn').click(function(e){
+    e.preventDefault();
+    blind();
+    $('.loginpop').fadeTo(200,1);
+  });
+    // 닫기
+  $('.loginbutton').click(function(){
+    $('.blind').remove();
+    $('.loginpop').fadeOut(200,0);
+  });
+    //닫기 버튼
+  $('.closebtn').click(function(){
+    $('.blind').remove();
+    $('.loginpop').fadeOut(200,0);
+  });
+
+
+  $('.signupbtn').click(function(e){
+    e.preventDefault();
+    blind();
+    $('.loginpop').fadeOut(200,0);
+    $('.signuppop').fadeTo(200,1);
+  });
+    // 닫기
+  $('.joinbutton').click(function(){
+    $('.blind').remove();
+    $('.signuppop').hide();
+  });
+  $('.closebtn').click(function(){
+    $('.blind').remove();
+    $('.signuppop').fadeOut(200,0);
+  });
+
+
+  $('.passwordbtn').click(function(e){
+    e.preventDefault();
+    $('.loginpop').fadeOut(200,0);
+    $('.passwordpop').fadeTo(200,1);
+  });
+    // 닫기
+  $('.sendbutton').click(function(){
+    $('.blind').remove();
+    $('.passwordpop').hide();
+  });
+  $('.closebtn').click(function(){
+    $('.blind').remove();
+    $('.passwordpop').fadeOut(200,0);
+  });
+
+
+
+  //메인 메뉴바
   $('.locationbox').click(function(){
-
-    $(this).children('ul').toggle()
-
-/*    var idx;
+    $(this).children('ul').toggle();
 
     $(this).find('li').click(function(){
+      txt = $(this).text();
+      $(this).parents('.locationbox').find('span').text(txt);
+      $(this).parents('.locationbox').find('strong').css('background-color','rgba(255,0,0,.08)');
+    });
 
-        idx = $(this).index()
-        var opt = $(this).text();
-        $(this).parent('ul').prev('strong').text(opt);
-
-    })
-
-
-    $(this).find('select').change(function(){
-      $('this').find('option').eq(idx).val();
-
-    })*/
+    $(this).siblings('div').find('ul').hide();
+    $(this).siblings('div').find('.table').hide();
+  });
 
 
-  })
-  $('.datebox').click(function(){
 
-    $(this).children('.table').toggle()
-  })
+  $('.checkinbox').click(function(){
+
+    $(this).children('.table').toggle();
+    $(this).find('td').click(function(){
+      txt = $(this).text();
+      $(this).parents('.checkinbox').find('strong').find('span').text(txt);
+      $(this).parents('.checkinbox').find('strong').css('background-color','rgba(255,0,0,.08)');
+    });
+
+    $(this).siblings('div').find('ul').hide();
+    $(this).siblings('div').find('.table').hide();
+  });
+
+
+  $('.checkoutbox').click(function(){
+
+    $(this).children('.table').toggle();
+    $(this).find('td').click(function(){
+      txt = $(this).text();
+      $(this).parents('.checkoutbox').find('strong').find('span').text(txt);
+      $(this).parents('.checkoutbox').find('strong').css('background-color','rgba(255,0,0,.08)');
+    });
+
+    $(this).siblings('div').find('ul').hide();
+    $(this).siblings('div').find('.table').hide();
+  });
+
+
 
   $('.guestbox').click(function(){
 
-    $(this).children('ul').toggle()
-  })
+    $(this).children('ul').toggle();
+
+    $(this).find('li').click(function(){
+      txt = $(this).text();
+      $(this).parents('.guestbox').find('span').text(txt);
+      $(this).parents('.guestbox').find('strong').css('background-color','rgba(255,0,0,.08)');
+    });
+
+    $(this).siblings('div').find('ul').hide();
+    $(this).siblings('div').find('.table').hide();
+  });
+
+
+
   $('.typebox').click(function(){
 
-    $(this).children('ul').toggle()
-  })
+    $(this).children('ul').toggle();
+
+    $(this).find('li').click(function(){
+      txt = $(this).text();
+      $(this).parents('.typebox').find('span').text(txt);
+      $(this).parents('.typebox').find('strong').css('background-color','rgba(255,0,0,.08)');
+    });
+
+    $(this).siblings('div').find('ul').hide();
+    $(this).siblings('div').find('.table').hide();
+  });
+
+
+
+
   $('.koreanbox').click(function(){
 
-    $(this).children('ul').toggle()
-  })
+    $(this).children('ul').toggle();
+
+    $(this).find('span').toggleClass('menu_g_uparrow');
+
+    $(this).find('li').click(function(){
+      txt = $(this).text();
+      $(this).parents('.koreanbox').find('span').text(txt);
+      $(this).parents('.koreanbox').find('strong').css('background-color','rgba(255,200,100,0.1)');
+    });
+
+    $(this).siblings('div').find('ul').hide();
+  });
+
   $('.krwbox').click(function(){
 
-    $(this).children('ul').toggle()
-  })
+    $(this).children('ul').toggle();
 
-})
+    $(this).find('span').toggleClass('menu_g_uparrow');
+
+    $(this).find('li').click(function(){
+      txt = $(this).text();
+      $(this).parents('.krwbox').find('span').text(txt);
+      $(this).parents('.krwbox').find('strong').css('background-color','rgba(255,200,100,0.1)');
+    });
+
+    $(this).siblings('div').find('ul').hide();
+  });
+
+
+
+  // !aaa -> aaa != true
+  $(window).resize(function(){
+
+
+  ///////줄일때마다 눌렀던게 누적되어서 중복됨. 초기화시키는법?
+    var a= $(this).width();
+    var aaa = false;
+
+    if(660 < a && a <= 1200){
+
+      $('.locationbox').click(function(){
+
+        if(aaa){
+           $(this).siblings('.guestbox').css('opacity','1');
+           aaa=false;
+        }else{
+          $(this).siblings('.guestbox').css('opacity','0.1');
+          aaa=true;
+        };
+
+      });
+
+    var bbb = false;
+      $('.checkinbox').click(function(){
+
+        if(bbb){
+          $(this).siblings('.typebox').css('opacity','1');
+           bbb=false;
+        }else{
+          $(this).siblings('.typebox').css('opacity','0.1');
+          bbb=true;
+        };
+
+      });
+
+    var ccc = false;
+      $('.checkoutbox').click(function(){
+        if(ccc){
+          $(this).siblings('.searchbox').css('opacity','1');
+           ccc=false;
+        }else{
+          $(this).siblings('.searchbox').css('opacity','0.1');
+          ccc=true;
+        };
+      });
+
+    };
+
+    if(480 < a && a <= 660){
+      var ddd = false;
+
+      $('.locationbox').click(function(){
+
+        if(ddd){
+          $(this).siblings('.checkoutbox').css('opacity','1');
+          $(this).siblings('.typebox').css('opacity','1');
+           ddd=false;
+        }else{
+          $(this).siblings('.checkoutbox').css('opacity','0.1');
+          $(this).siblings('.typebox').css('opacity','0.1');
+          ddd=true;
+        };
+      });
+
+      var eee = false;
+      $('.checkinbox').click(function(){
+
+        if(eee){
+          $(this).siblings('.guestbox').css('opacity','1');
+          $(this).siblings('.searchbox').css('opacity','1');
+           eee=false;
+        }else{
+          $(this).siblings('.guestbox').css('opacity','0.1');
+          $(this).siblings('.searchbox').css('opacity','0.1');
+          eee=true;
+        };
+
+      });
+
+      var fff = false;
+      $('.checkoutbox').click(function(){
+
+        if(fff){
+          $(this).siblings('.typebox').css('opacity','1');
+           fff=false;
+        }else{
+          $(this).siblings('.typebox').css('opacity','0.1');
+          fff=true;
+        };
+      });
+
+      var ggg = false;
+      $('.guestbox').click(function(){
+
+        if(ggg){
+          $(this).siblings('.searchbox').css('opacity','1');
+           ggg=false;
+        }else{
+          $(this).siblings('.searchbox').css('opacity','0.1');
+          ggg=true;
+        };
+      });
+
+    };
+
+
+    if(a <= 480){
+
+      var hhh = false;
+      $('.locationbox').click(function(){
+        if(hhh){
+          $(this).siblings('.checkinbox').css('opacity','1');
+          $(this).siblings('.checkoutbox').css('opacity','1');
+          $(this).siblings('.guestbox').css('opacity','1');
+          $(this).siblings('.typebox').css('opacity','1');
+          $(this).siblings('.searchbox').css('opacity','1');
+           hhh=false;
+        }else{
+          $(this).siblings('.checkinbox').css('opacity','0.1');
+          $(this).siblings('.checkoutbox').css('opacity','0.1');
+          $(this).siblings('.guestbox').css('opacity','0.1');
+          $(this).siblings('.typebox').css('opacity','0.1');
+          $(this).siblings('.searchbox').css('opacity','0.1');
+          hhh=true;
+        };
+      });
+
+      var iii = false;
+      $('.checkinbox').click(function(){
+        if(iii){
+          $(this).siblings('.checkoutbox').css('opacity','1');
+          $(this).siblings('.guestbox').css('opacity','1');
+          $(this).siblings('.typebox').css('opacity','1');
+          $(this).siblings('.searchbox').css('opacity','1');
+           iii=false;
+        }else{
+          $(this).siblings('.checkoutbox').css('opacity','0.1');
+          $(this).siblings('.guestbox').css('opacity','0.1');
+          $(this).siblings('.typebox').css('opacity','0.1');
+          $(this).siblings('.searchbox').css('opacity','0.1');
+          iii=true;
+        };
+      });
+
+      var jjj = false;
+      $('.checkoutbox').click(function(){
+        if(jjj){
+          $(this).siblings('.guestbox').css('opacity','1');
+          $(this).siblings('.typebox').css('opacity','1');
+          $(this).siblings('.searchbox').css('opacity','1');
+           jjj=false;
+        }else{
+          $(this).siblings('.guestbox').css('opacity','0.1');
+          $(this).siblings('.typebox').css('opacity','0.1');
+          $(this).siblings('.searchbox').css('opacity','0.1');
+          jjj=true;
+        };
+      });
+
+      var kkk = false;
+      $('.guestbox').click(function(){
+        if(kkk){
+          $(this).siblings('.typebox').css('opacity','1');
+          $(this).siblings('.searchbox').css('opacity','1');
+           kkk=false;
+        }else{
+          $(this).siblings('.typebox').css('opacity','0.1');
+          $(this).siblings('.searchbox').css('opacity','0.1');
+          kkk=true;
+        };
+      });
+
+      var lll = false;
+      $('.typebox').click(function(){
+        if(lll){
+          $(this).siblings('.searchbox').css('opacity','1');
+           lll=false;
+        }else{
+          $(this).siblings('.searchbox').css('opacity','0.1');
+          lll=true;
+        };
+      });
+
+
+
+      $('.menuboxbtn').click(function(){
+          $(this).children('.menubox').toggle().css("top","50px");
+          $(this).toggleClass('menu_uparrow');
+        });
+    };
+
+
+
+  });
+
+  });
   </script>
 </head>
 <body class="guesthouse">
@@ -169,7 +485,7 @@
              <option value="ion4">South America</option>
            </select>
          </div>
-         <div class="datebox">
+         <div class="datebox checkinbox">
            <strong class="checkin"><span>check in</span></strong>
            <div class="table checkintable">
            <table>
@@ -237,7 +553,7 @@
            </table>
            </div>
          </div>
-         <div class="datebox">
+         <div class="datebox checkoutbox">
            <strong class="checkout"><span>check out</span></strong>
            <div class="table checkouttable">
            <table>
@@ -428,6 +744,9 @@
       </div>
     </div>
     <footer>
+      <div class="empty">
+        <span>+ more</span>
+      </div>
         <div class="bottom">
           <div class="lang">
             <div class="koreanbox">
