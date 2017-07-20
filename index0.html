@@ -117,12 +117,25 @@ $('.searchbar div').click(function(){
 })
 function resizeHide(idx){
   console.log(idx)
+
   if($('html').is('.labtop')){
-      $('.searchbar div').eq(idx+5).toggleClass('on');
+  aaa=false;
+    $('.searchbar>div').removeClass('on');
+
+    if(!aaa){
+      $('.searchbar>div').eq(3).addClass('on');
+      aaa=true;
+    }else{
+      $('.searchbar>div').removeClass('on');
+    }
+
+
+
+
   }else if($('html').is('.tablet')){
-      $('.searchbar div').eq(idx+5).toggleClass('on');
-  }else if($('html').is('.mobile')){
-      $('.searchbar div').eq(idx+5).toggleClass('on');
+      $('.searchbar>div').eq(3).toggleClass('on');
+  }else($('html').is('.mobile')){
+      $('.searchbar>div').eq(3).toggleClass('on');
   }
 }
 

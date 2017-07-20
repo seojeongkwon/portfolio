@@ -113,34 +113,82 @@ $('.lang').find('div').click(function(){
 $('.searchbar>div').click(function(){
   var i = $(this).index();
   resizeHide(i);
-
 });
+
 function resizeHide(idx){
   console.log(idx);
   if($('html').is('.labtop')){
 
     switch (idx) {
       case 0:
-      $('.searchbar>div').removeClass('on')
-        $('.searchbar>div').eq(3).addClass('on')
-
+        $('.searchbar>div').eq(3).toggleClass('on').siblings().removeClass('on');
         break;
       case 1:
-      $('.searchbar>div').removeClass('on')
-        $('.searchbar>div').eq(4).addClass('on')
+        $('.searchbar>div').eq(4).toggleClass('on').siblings().removeClass('on');
         break;
       case 2:
-      $('.searchbar>div').removeClass('on')
-        $('.searchbar>div').eq(5).addClass('on')
+        $('.searchbar>div').eq(5).toggleClass('on').siblings().removeClass('on')
+        break;
+      default:
+    };
+
+  }else if($('html').is('.tablet')){
+
+    switch (idx) {
+      case 0:
+        $('.searchbar>div').eq(2).toggleClass('on');
+        $('.searchbar>div').eq(4).toggleClass('on');
+        $(this).siblings().removeClass('on');
+        break;
+      case 1:
+        $('.searchbar>div').eq(3).toggleClass('on');
+        $('.searchbar>div').eq(5).toggleClass('on');
+        $(this).siblings().removeClass('on');
+        break;
+      case 2:
+        $('.searchbar>div').eq(4).toggleClass('on').siblings().removeClass('on')
+        break;
+      case 3:
+        $('.searchbar>div').eq(5).toggleClass('on').siblings().removeClass('on')
+        break;
+      default:
+    };
+
+  }else if($('html').is('.mobile')){
+    switch (idx) {
+      case 0:
+      $('.searchbar>div').eq(1).toggleClass('on');
+      $('.searchbar>div').eq(2).toggleClass('on');
+      $('.searchbar>div').eq(3).toggleClass('on');
+      $('.searchbar>div').eq(4).toggleClass('on');
+      $('.searchbar>div').eq(5).toggleClass('on');
+      $(this).siblings().removeClass('on');
+        break;
+      case 1:
+      $('.searchbar>div').eq(2).toggleClass('on');
+      $('.searchbar>div').eq(3).toggleClass('on');
+      $('.searchbar>div').eq(4).toggleClass('on');
+      $('.searchbar>div').eq(5).toggleClass('on');
+      $(this).siblings().removeClass('on');
+        break;
+      case 2:
+      $('.searchbar>div').eq(3).toggleClass('on');
+      $('.searchbar>div').eq(4).toggleClass('on');
+      $('.searchbar>div').eq(5).toggleClass('on');
+      $(this).siblings().removeClass('on');
+        break;
+      case 3:
+      $('.searchbar>div').eq(4).toggleClass('on');
+      $('.searchbar>div').eq(5).toggleClass('on');
+      $(this).siblings().removeClass('on');
+        break;
+      case 4:
+      $('.searchbar>div').eq(5).toggleClass('on');
+      $(this).siblings().removeClass('on');
         break;
       default:
 
     }
-  }else if($('html').is('.tablet')){
-
-
-  }else if($('html').is('.mobile')){
-
   };
 };
 
