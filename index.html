@@ -129,66 +129,86 @@ function resizeHide(idx){
       case 2:
         $('.searchbar>div').eq(5).toggleClass('on').siblings().removeClass('on')
         break;
+      case 3:
+        $('.searchbar>div').siblings().removeClass('on')
+        break;
+      case 4:
+        $('.searchbar>div').siblings().removeClass('on')
+        break;
+      case 5:
+        $('.searchbar>div').siblings().removeClass('on')
+        break;
       default:
     };
 
   }else if($('html').is('.tablet')){
 
+    $(this).siblings().removeClass('on');
     switch (idx) {
       case 0:
-        $('.searchbar>div').eq(2).toggleClass('on');
-        $('.searchbar>div').eq(4).toggleClass('on');
-        $(this).siblings().removeClass('on');
+        $('.searchbar>div').eq(2).toggleClass('on').end().eq(4).toggleClass('on');
+        $('.searchbar>div').eq(1).removeClass('on').end().eq(3).removeClass('on').end().eq(5).removeClass('on')
+        //각자 지정해서 명령하기 힘들면 각자 클래스를 줘서 not이라는 클래스를 줘서 없으면 실행되게 한다.
         break;
       case 1:
-        $('.searchbar>div').eq(3).toggleClass('on');
-        $('.searchbar>div').eq(5).toggleClass('on');
-        $(this).siblings().removeClass('on');
+        $('.searchbar>div').eq(3).toggleClass('on').end().eq(5).toggleClass('on');
+        $('.searchbar>div').eq(2).removeClass('on').end().eq(4).removeClass('on')
         break;
       case 2:
-        $('.searchbar>div').eq(4).toggleClass('on').siblings().removeClass('on')
+        $('.searchbar>div').eq(4).toggleClass('on')
+        $('.searchbar>div').eq(0).removeClass('on').end().eq(1).removeClass('on').end().eq(3).removeClass('on').end().eq(5).removeClass('on')
         break;
       case 3:
-        $('.searchbar>div').eq(5).toggleClass('on').siblings().removeClass('on')
+        $('.searchbar>div').eq(5).toggleClass('on')
+        $('.searchbar>div').eq(0).removeClass('on').end().eq(1).removeClass('on').end().eq(2).removeClass('on').end().eq(4).removeClass('on')
         break;
+      case 4:
+        $('.searchbar>div').removeClass('on')
       default:
     };
 
   }else if($('html').is('.mobile')){
+
     switch (idx) {
       case 0:
-      $('.searchbar>div').eq(1).toggleClass('on');
-      $('.searchbar>div').eq(2).toggleClass('on');
-      $('.searchbar>div').eq(3).toggleClass('on');
-      $('.searchbar>div').eq(4).toggleClass('on');
-      $('.searchbar>div').eq(5).toggleClass('on');
+      $('.searchbar>div').each(function(i,e){
+        $('.searchbar>div').eq(i+1).toggleClass('on');
+      });
+
       $(this).siblings().removeClass('on');
         break;
       case 1:
-      $('.searchbar>div').eq(2).toggleClass('on');
-      $('.searchbar>div').eq(3).toggleClass('on');
-      $('.searchbar>div').eq(4).toggleClass('on');
-      $('.searchbar>div').eq(5).toggleClass('on');
+      $('.searchbar>div').each(function(i,e){
+        $('.searchbar>div').eq(i+2).toggleClass('on');
+      });
+
       $(this).siblings().removeClass('on');
         break;
       case 2:
-      $('.searchbar>div').eq(3).toggleClass('on');
-      $('.searchbar>div').eq(4).toggleClass('on');
-      $('.searchbar>div').eq(5).toggleClass('on');
+      $('.searchbar>div').each(function(i,e){
+        $('.searchbar>div').eq(i+3).toggleClass('on');
+      });
+
       $(this).siblings().removeClass('on');
         break;
       case 3:
-      $('.searchbar>div').eq(4).toggleClass('on');
-      $('.searchbar>div').eq(5).toggleClass('on');
+      $('.searchbar>div').each(function(i,e){
+        $('.searchbar>div').eq(i+4).toggleClass('on');
+      });
+
       $(this).siblings().removeClass('on');
         break;
       case 4:
-      $('.searchbar>div').eq(5).toggleClass('on');
+      $('.searchbar>div').each(function(i,e){
+        $('.searchbar>div').eq(i+5).toggleClass('on');
+      });
+
       $(this).siblings().removeClass('on');
         break;
       default:
+    };
 
-    }
+
   };
 };
 
@@ -206,17 +226,15 @@ $(window).resize(function(){
     console.log("tablet");
   }else if(ww < 480 && !$('html').is('.mobile')){
     $('html').removeClass().addClass('mobile');
-
+    //헤더 메뉴바 클릭
+     $('.menuboxbtn').click(function(){
+         $(this).children('.menubox').toggle().css("top","50px");
+         $(this).toggleClass('menu_uparrow');
+       });
     console.log("mobile");
   }
 
 });
-      // //헤더 메뉴바 클릭
-      // $('.menuboxbtn').click(function(){
-      //     $(this).children('.menubox').toggle().css("top","50px");
-      //     $(this).toggleClass('menu_uparrow');
-      //   });
-
 
   $(window).trigger("resize");
 
@@ -237,15 +255,15 @@ $(window).resize(function(){
         </div>
       </div>
       <div class="menuboxbtn">
-        <div class="menubox">
-          <div class="menubar">
-            <div><span><a href="guesthouse.html">Guest house</a></span></div>
-            <div><span><a href="countryside.html">Countryside</a></span></div>
-            <div><span><a href="lakecabin.html">Lake cabin</a></span></div>
-            <div><span><a href="chalet.html">Chalet</a></span></div>
+          <div class="menubox">
+            <div class="menubar">
+              <div><span><a href="guesthouse.html">Guest house</a></span></div>
+              <div><span><a href="countryside.html">Countryside</a></span></div>
+              <div><span><a href="lakecabin.html">Lake cabin</a></span></div>
+              <div><span><a href="chalet.html">Chalet</a></span></div>
+            </div>
           </div>
-        </div>
-      </div>
+     </div>
     </header>
 
     <div class="loginpop ">

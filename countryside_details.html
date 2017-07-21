@@ -34,7 +34,7 @@
        styleSelector.addEventListener('change', function() {
          map.setOptions({styles: styles[styleSelector.value]});
        });
-     }
+     };
 
      var styles = {
        default: null,
@@ -152,63 +152,232 @@
 
      };
 
+     $(function(){
+
+     function blind(){
+       $('body').append("<div class='blind'></div>");
+       $('.blind').fadeTo(500,.6);
+     };
+
+     $('.loginbtn').click(function(e){
+       e.preventDefault();
+       blind();
+       $('.loginpop').fadeTo(200,1);
+     });
+       // 닫기
+     $('.loginbutton').click(function(){
+       $('.blind').remove();
+       $('.loginpop').fadeOut(200,0);
+     });
+       //닫기 버튼
+     $('.closebtn').click(function(){
+       $('.blind').remove();
+       $('.loginpop').fadeOut(200,0);
+     });
+
+
+     $('.signupbtn').click(function(e){
+       e.preventDefault();
+       blind();
+       $('.loginpop').fadeOut(200,0);
+       $('.signuppop').fadeTo(200,1);
+     });
+       // 닫기
+     $('.joinbutton').click(function(){
+       $('.blind').remove();
+       $('.signuppop').hide();
+     });
+     $('.closebtn').click(function(){
+       $('.blind').remove();
+       $('.signuppop').fadeOut(200,0);
+     });
+
+
+     $('.passwordbtn').click(function(e){
+       e.preventDefault();
+       $('.loginpop').fadeOut(200,0);
+       $('.passwordpop').fadeTo(200,1);
+     });
+       // 닫기
+     $('.sendbutton').click(function(){
+       $('.blind').remove();
+       $('.passwordpop').hide();
+     });
+     $('.closebtn').click(function(){
+       $('.blind').remove();
+       $('.passwordpop').fadeOut(200,0);
+     });
 
 
 
-  $(function(){
+   //메인 메뉴바
+   $('.searchbar').find('div').click(function(){
+     $(this).children('ul').toggle();
+
+     $(this).find('li').click(function(){
+       txt = $(this).text();
+       $(this).parent('ul').parent('div').find('span').text(txt);
+       $(this).parent('ul').parent('div').find('strong').css('background-color','rgba(255,0,0,.08)');
+     });
+
+     $(this).siblings('div').find('ul').hide();
+     $(this).siblings('div').find('.table').hide();
+   });
+
+   $('.searchbar').find('div').click(function(){
+     $(this).children('.table').toggle();
+     $(this).find('td').click(function(){
+       txt = $(this).text();
+       $(this).parents('.table').parent('div').find('strong').find('span').text(txt);
+       $(this).parents('.table').parent('div').find('strong').css('background-color','rgba(255,0,0,.08)');
+     });
+
+     $(this).siblings('div').find('ul').hide();
+     $(this).siblings('div').find('.table').hide();
+   });
 
 
-    $('.menuboxbtn').click(function(){
-        $(this).children('.menubox').toggle().css("top","50px");
-        $(this).toggleClass('menu_uparrow');
-      });
+
+   //푸터 메뉴바
+   $('.lang').find('div').click(function(){
+     $(this).children('ul').toggle();
+
+     $(this).find('span').toggleClass('menu_g_uparrow');
+
+     $(this).find('li').click(function(){
+       txt = $(this).text();
+       $(this).parent('ul').parent('div').find('span').text(txt);
+       $(this).parent('ul').parent('div').find('strong').css('background-color','rgba(255,200,100,0.1)');
+     });
+
+     $(this).siblings('div').find('ul').hide();
+   });
 
 
-  $('.locationbox').click(function(){
+   $('.searchbar>div').click(function(){
+     var i = $(this).index();
+     resizeHide(i);
+   });
 
-    $(this).children('ul').toggle()
+   function resizeHide(idx){
+     console.log(idx);
+     if($('html').is('.labtop')){
 
-/*    var idx;
+       switch (idx) {
+         case 0:
+           $('.searchbar>div').eq(3).toggleClass('on').siblings().removeClass('on');
+           break;
+         case 1:
+           $('.searchbar>div').eq(4).toggleClass('on').siblings().removeClass('on');
+           break;
+         case 2:
+           $('.searchbar>div').eq(5).toggleClass('on').siblings().removeClass('on')
+           break;
+         default:
+       };
 
-    $(this).find('li').click(function(){
+     }else if($('html').is('.tablet')){
 
-        idx = $(this).index()
-        var opt = $(this).text();
-        $(this).parent('ul').prev('strong').text(opt);
+       switch (idx) {
+         case 0:
+           $('.searchbar>div').eq(2).toggleClass('on');
+           $('.searchbar>div').eq(4).toggleClass('on');
+           $(this).siblings().removeClass('on');
+           break;
+         case 1:
+           $('.searchbar>div').eq(3).toggleClass('on');
+           $('.searchbar>div').eq(5).toggleClass('on');
+           $(this).siblings().removeClass('on');
+           break;
+         case 2:
+           $('.searchbar>div').eq(4).toggleClass('on').siblings().removeClass('on')
+           break;
+         case 3:
+           $('.searchbar>div').eq(5).toggleClass('on').siblings().removeClass('on')
+           break;
+         default:
+       };
 
-    })
+     }else if($('html').is('.mobile')){
+       switch (idx) {
+         case 0:
+         $('.searchbar>div').eq(1).toggleClass('on');
+         $('.searchbar>div').eq(2).toggleClass('on');
+         $('.searchbar>div').eq(3).toggleClass('on');
+         $('.searchbar>div').eq(4).toggleClass('on');
+         $('.searchbar>div').eq(5).toggleClass('on');
+         $(this).siblings().removeClass('on');
+           break;
+         case 1:
+         $('.searchbar>div').eq(2).toggleClass('on');
+         $('.searchbar>div').eq(3).toggleClass('on');
+         $('.searchbar>div').eq(4).toggleClass('on');
+         $('.searchbar>div').eq(5).toggleClass('on');
+         $(this).siblings().removeClass('on');
+           break;
+         case 2:
+         $('.searchbar>div').eq(3).toggleClass('on');
+         $('.searchbar>div').eq(4).toggleClass('on');
+         $('.searchbar>div').eq(5).toggleClass('on');
+         $(this).siblings().removeClass('on');
+           break;
+         case 3:
+         $('.searchbar>div').eq(4).toggleClass('on');
+         $('.searchbar>div').eq(5).toggleClass('on');
+         $(this).siblings().removeClass('on');
+           break;
+         case 4:
+         $('.searchbar>div').eq(5).toggleClass('on');
+         $(this).siblings().removeClass('on');
+           break;
+         default:
+
+       }
+     };
+   };
+
+   $(window).resize(function(){
+
+     var ww = $(this).width();
+
+     if(ww > 1024  && ww < 1300 && !$('html').is('.labtop')){
+       $('html').removeClass().addClass('labtop');
+
+       console.log("labtop");
+     }else if(ww > 480 && ww < 1024 && !$('html').is('.tablet')){
+       $('html').removeClass().addClass('tablet');
+
+       console.log("tablet");
+     }else if(ww < 480 && !$('html').is('.mobile')){
+       $('html').removeClass().addClass('mobile');
+
+       console.log("mobile");
+     }
+
+   });
+         //헤더 메뉴바 클릭
+          $('.menuboxbtn').click(function(){
+              $(this).children('.menubox').toggle().css("top","50px");
+              $(this).toggleClass('menu_uparrow');
+            });
+
+ if( $(window).trigger("resize")){
+   $('searchbox>div').find('ul').hide();
+   $('searchbox>div').removeClass('on');
+ }
 
 
-    $(this).find('select').change(function(){
-      $('this').find('option').eq(idx).val();
-
-    })*/
+     $(window).trigger("resize");
 
 
-  })
-  $('.datebox').click(function(){
 
-    $(this).children('.table').toggle()
-  })
 
-  $('.guestbox').click(function(){
 
-    $(this).children('ul').toggle()
-  })
-  $('.typebox').click(function(){
+   });
 
-    $(this).children('ul').toggle()
-  })
-  $('.koreanbox').click(function(){
 
-    $(this).children('ul').toggle()
-  })
-  $('.krwbox').click(function(){
 
-    $(this).children('ul').toggle()
-  })
 
-})
   </script>
 </head>
 <body class="countryside_details">
@@ -495,7 +664,9 @@
              <option value="ion4">Chalet</option>
            </select>
          </div>
-         <button class="searchbox"><span>search</span></button>
+         <div>
+           <button class="searchbox"><span>search</span></button>
+         </div>
         </div>
         </div>
         <div class="write">
