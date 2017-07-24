@@ -177,7 +177,7 @@ if($('html').is('.labtop')){
              aaa = false;
         });
 
-        console.log(aaa);
+        console.log(aaa); //왜 else의 콘솔은 안나오지?
     }
       break;
     case 1:
