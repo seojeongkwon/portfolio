@@ -162,20 +162,22 @@ if($('html').is('.labtop')){
   };
 
 }else if($('html').is('.mobile')){
-
+  var aaa = false;
   switch (idx) {
     case 0:
-    var aaa = false;
     if(!aaa){
         $('.searchbar>div').each(function(i,e){
           $('.searchbar>div').eq(i+1).addClass('on');
+          aaa = true;
         });
-        aaa = true;
+
     }else{
         $('.searchbar>div').each(function(i,e){
            $('.searchbar>div').eq(i+1).removeClass('on');
+             aaa = false;
         });
-        aaa = false;
+
+        console.log(aaa);
     }
       break;
     case 1:
@@ -201,16 +203,23 @@ if($('html').is('.labtop')){
       break;
     case 3:
     $(this).siblings().removeClass('on');
-    $('.searchbar>div').each(function(i,e){
-      $('.searchbar>div').eq(i+4).toggleClass('on');
-    });
-
+    var ccc = false;
+    if( !ccc) {
+        $('.searchbar>div').eq(4).addClass('on');
+        $('.searchbar>div').eq(5).addClass('on');
+        ccc = true;
+        console.log(ccc);
+    } else {
+      $('.searchbar>div').eq(4).removeClass('on');
+      $('.searchbar>div').eq(5).removeClass('on');
+      ccc = false;
+      console.log(ccc);
+    };
     $(this).siblings().removeClass('on');
       break;
     case 4:
-    $('.searchbar>div').each(function(i,e){
-      $('.searchbar>div').eq(i+5).toggleClass('on');
-    });
+      $('.searchbar>div').eq(5).toggleClass('on');
+
 
     $(this).siblings().removeClass('on');
       break;
@@ -223,6 +232,12 @@ if($('html').is('.labtop')){
 };
 
 $(window).resize(function(){
+
+  $('.searchbar>div').find('ul').hide();
+  $('.searchbar>div').find('.table').hide();
+  $('.searchbar>div').siblings().removeClass('on');
+
+  $('.lang div').find('ul').hide();
 
 var ww = $(this).width();
 
