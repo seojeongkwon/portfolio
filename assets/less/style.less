@@ -37,7 +37,6 @@
       }
       strong + ul{
           border:1px #fff solid;
-          background-color: rgba(255, 255, 255, .1);
           margin-top:2px;
           position:absolute;
           left:-1px;
@@ -49,8 +48,9 @@
             line-height:42px;
             padding: 0 20px;
             color:#fff;
+            background-color: rgba(0, 0, 0, .1);
             &:hover{
-              background-color:rgba(255,0,0,0.1);
+              background-color:rgba(255,255,255,0.1);
             }
           }
       }
@@ -67,7 +67,7 @@
     .table{
       color:#fff;
       border:1px #fff solid;
-      background-color: rgba(255, 255, 255, .1);
+      background-color: rgba(0, 0, 0, .1);
       width: 180px;
       height: 200px;
       display: none;
@@ -102,7 +102,7 @@
         }
         td{
           &:hover{
-            background-color:rgba(255,0,0,0.1);
+            background-color:rgba(255,255,255,0.1);
           }
         }
         .date{
@@ -211,10 +211,114 @@
       background-size: 1120px;
       height:495px;
       .searchbar{
-        //border:1px #f00 solid;
-        width: 190px;
-        margin:0 auto;
-        padding-top:45px;
+        padding-top:150px;
+        div{
+          border-radius: 25px;
+          width:42px;
+          margin-bottom: 0;
+          //vertical-align: top;
+          //searchbar는 버티칼 바탐줌  왜징?
+          strong{
+            span{display: none;}
+          }
+           strong + ul{
+             width:280px;
+              border:0px;
+              font-size: 15px;
+             li{
+               border:1px #fff solid;
+               width:34.5%;
+               float:left;
+               padding:0 10px;
+               &:nth-child(1){
+                 border-bottom:0;
+                 border-right:0;
+               }
+               &:nth-child(2){
+                 border-bottom:0;
+               }
+               &:nth-child(3){
+                 border-bottom:0;
+                 border-right:0;
+               }
+               &:nth-child(4){
+                 border-bottom:0;
+               }
+               &:nth-child(5){
+                 border-right:0;
+               }
+             }
+           }
+           .table{
+             border-radius:0;
+             width:231px;
+             height:202px;
+             table{
+               width:100%;
+               heigt:160px;
+               font-size: 15px;
+             }
+           }
+        }
+        .searchbox{
+          //vertical-align: bottom;
+          border-radius: 25px;
+          width:42px !important;
+          height: 42px;
+        }
+        .locationbox strong{
+          background-position: left 9px center;
+          background-size: 45%;
+        }
+        .datebox{
+          .checkin{
+            background-position: left 9.5px center;
+            background-size: 40%;
+          }
+          .checkintable{
+            position: relative;
+            left: -114%;
+          }
+          .checkout{
+            background-position: left 9.5px center;
+            background-size: 40%;
+          }
+          .checkouttable{
+            position:relative;
+            left:-229%;
+          }
+        }
+        .guestbox strong{
+          background-position: left 8px center;
+          background-size: 50%;
+        }
+        .typebox strong{
+          background-position: left 9px center;
+          background-size: 43%;
+        }
+        .searchbox{
+          width:22px;
+          padding:0 10px;
+          background-position: left 11px center;
+          background-size: 50%;
+          span{display: none;}
+        }
+        .guestbox ul{
+          position:relative;
+          left:-347%;
+        }
+        .typebox ul{
+          position:relative;
+          left:-462%;
+          li{
+            &:nth-child(3){
+              border-bottom:1px #fff solid;
+            }
+            &:nth-child(4){
+              border-bottom:1px #fff solid;
+            }
+          }
+        }
       }
     }
   }

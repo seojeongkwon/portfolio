@@ -1,0 +1,86 @@
+.locationbox strong{
+  background-position: left 9px center;
+  background-size: 45%;
+}
+.locationbox:hover{
+  strong{
+    background-image: url(../images/icon/ho_w_locationicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding:0;
+  }
+}
+.datebox{
+  .checkin{
+    background-position: left 9.5px center;
+    background-size: 40%;
+  }
+  .checkin:hover{
+    background-image: url(../images/icon/ho_w_checkinicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding:0;
+  }
+  .checkintable{
+    position: relative;
+    left: -114%;
+  }
+  .checkout{
+    background-position: left 9.5px center;
+    background-size: 40%;
+  }
+  .checkout:hover{
+    background-image: url(../images/icon/ho_w_checkouticon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding:0;
+  }
+  .checkouttable{
+    position:relative;
+    left:-227%;
+  }
+}
+.guestbox strong{
+  background-position: left 8px center;
+  background-size: 50%;
+}
+.guestbox:hover{
+  strong{
+    background-image: url(../images/icon/ho_w_usersicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding:0;
+  }
+}
+.typebox strong{
+  background-position: left 9px center;
+  background-size: 43%;
+}
+.typebox:hover{
+  strong{
+      background-image: url(../images/icon/ho_w_houseicon.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding:0;
+  }
+}
+.searchbox{
+  width:22px;
+  padding:0 10px;
+  background-position: left 11px center;
+  background-size: 50%;
+  span{display: none;}
+}
+.searchbox:hover{
+    background-image: url(../images/icon/ho_w_searchicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding:0;
+
+}

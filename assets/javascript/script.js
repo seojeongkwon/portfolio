@@ -5,6 +5,17 @@ function blind(){
   $('.blind').fadeTo(500,.6);
 };
 
+
+// $('.loginbtn').click(function(e){
+//     e.preventDefault();
+//     $('#loginload').load("loginpop.html #login_box");
+//     $(window).scrollTop(0);
+// });
+//
+// $('#loginload').on('click','.closebtn',function(){
+//     $('#loginload').children('#login_box').remove();
+// });
+
 $('.loginbtn').click(function(e){
   e.preventDefault();
   blind();
@@ -54,10 +65,25 @@ $('.closebtn').click(function(){
   $('.passwordpop').fadeOut(200,0);
 });
 
+$('.orderbutton').click(function(e){
+  e.preventDefault();
+  blind();
+  $('.orderpop').fadeTo(200,1);
+});
+  // 닫기
+$('.donebutton').click(function(){
+  $('.blind').remove();
+  $('.orderpop').fadeOut(200,0);
+});
+  //닫기 버튼
+$('.closebtn').click(function(){
+  $('.blind').remove();
+  $('.orderpop').fadeOut(200,0);
+});
 
 
 //메인 메뉴바
-$('.searchbar').find('div').click(function(){
+$('.searchbar div').click(function(){
 $(this).children('ul').toggle();
 
 $(this).find('li').click(function(){
@@ -70,7 +96,7 @@ $(this).siblings('div').find('ul').hide();
 $(this).siblings('div').find('.table').hide();
 });
 
-$('.searchbar').find('div').click(function(){
+$('.searchbar div').click(function(){
 $(this).children('.table').toggle();
 $(this).find('td').click(function(){
   txt = $(this).text();
@@ -106,129 +132,89 @@ resizeHide(i);
 });
 
 function resizeHide(idx){
-console.log(idx);
-if($('html').is('.labtop')){
+  //console.log(idx);
+  if($('html').is('.labtop')){
 
-  switch (idx) {
-    case 0:
-      $('.searchbar>div').eq(3).toggleClass('on').siblings().removeClass('on');
-      break;
-    case 1:
-      $('.searchbar>div').eq(4).toggleClass('on').siblings().removeClass('on');
-      break;
-    case 2:
-      $('.searchbar>div').eq(5).toggleClass('on').siblings().removeClass('on');
-      break;
-    case 3:
-      $('.searchbar>div').siblings().removeClass('on');
-      break;
-    case 4:
-      $('.searchbar>div').siblings().removeClass('on');
-      break;
-    case 5:
-      $('.searchbar>div').siblings().removeClass('on');
-      break;
-    default:
-  };
-
-}else if($('html').is('.tablet')){
-
-  $(this).siblings().removeClass('on');
-  switch (idx) {
-    case 0:
-      $('.searchbar>div').eq(2).toggleClass('on').end().eq(4).toggleClass('on');
-      $('.searchbar>div').eq(1).removeClass('on').end().eq(3).removeClass('on').end().eq(5).removeClass('on');
-      //각자 지정해서 명령하기 힘들면 각자 클래스를 줘서 not이라는 클래스를 줘서 없으면 실행되게 한다.
-      break;
-    case 1:
-      $('.searchbar>div').eq(3).toggleClass('on').end().eq(5).toggleClass('on');
-      $('.searchbar>div').eq(2).removeClass('on').end().eq(4).removeClass('on');
-      break;
-    case 2:
-      $('.searchbar>div').eq(4).toggleClass('on');
-      $('.searchbar>div').eq(0).removeClass('on').end().eq(1).removeClass('on').end().eq(3).removeClass('on').end().eq(5).removeClass('on');
-      break;
-    case 3:
-      $('.searchbar>div').eq(5).toggleClass('on');
-      $('.searchbar>div').eq(0).removeClass('on').end().eq(1).removeClass('on').end().eq(2).removeClass('on').end().eq(4).removeClass('on');
-      break;
-    case 4:
-      $('.searchbar>div').removeClass('on');
-      break;
-    case 5:
-      $('.searchbar>div').removeClass('on');
-      break;
-    default:
-  };
-
-}else if($('html').is('.mobile')){
-  var aaa = false;
-  switch (idx) {
-    case 0:
-    if(!aaa){
-        $('.searchbar>div').each(function(i,e){
-          $('.searchbar>div').eq(i+1).addClass('on');
-          aaa = true;
-        });
-
-    }else{
-        $('.searchbar>div').each(function(i,e){
-           $('.searchbar>div').eq(i+1).removeClass('on');
-             aaa = false;
-        });
-
-        console.log(aaa); //왜 else의 콘솔은 안나오지?
-    }
-      break;
-    case 1:
-    var bbb = false;
-    if(!bbb){
-        $('.searchbar>div').each(function(i,e){
-          $('.searchbar>div').eq(i+2).addClass('on');
-        });
-        bbb = true;
-    }else{
-        $('.searchbar>div').each(function(i,e){
-           $('.searchbar>div').eq(i+2).removeClass('on');
-        });
-        bbb = false;
-    }
-      break;
-    case 2:
-    $('.searchbar>div').each(function(i,e){
-      $('.searchbar>div').eq(i+3).toggleClass('on');
-    });
-
-    $(this).siblings().removeClass('on');
-      break;
-    case 3:
-    $(this).siblings().removeClass('on');
-    var ccc = false;
-    if( !ccc) {
-        $('.searchbar>div').eq(4).addClass('on');
-        $('.searchbar>div').eq(5).addClass('on');
-        ccc = true;
-        console.log(ccc);
-    } else {
-      $('.searchbar>div').eq(4).removeClass('on');
-      $('.searchbar>div').eq(5).removeClass('on');
-      ccc = false;
-      console.log(ccc);
+    switch (idx) {
+      case 0:
+        $('.searchbar>div').eq(3).toggleClass('on').siblings().removeClass('on');
+        break;
+      case 1:
+        $('.searchbar>div').eq(4).toggleClass('on').siblings().removeClass('on');
+        break;
+      case 2:
+        $('.searchbar>div').eq(5).toggleClass('on').siblings().removeClass('on');
+        break;
+      case 3:
+        $('.searchbar>div').siblings().removeClass('on');
+        break;
+      case 4:
+        $('.searchbar>div').siblings().removeClass('on');
+        break;
+      case 5:
+        $('.searchbar>div').siblings().removeClass('on');
+        break;
+      default:
     };
-    $(this).siblings().removeClass('on');
-      break;
-    case 4:
-      $('.searchbar>div').eq(5).toggleClass('on');
 
+  }else if($('html').is('.tablet')){
 
     $(this).siblings().removeClass('on');
-      break;
+    switch (idx) {
+      case 0:
+        $('.searchbar>div').eq(2).toggleClass('on').end().eq(4).toggleClass('on');
+        $('.searchbar>div').eq(1).removeClass('on').end().eq(3).removeClass('on').end().eq(5).removeClass('on');
+        //각자 지정해서 명령하기 힘들면 각자 클래스를 줘서 not이라는 클래스를 줘서 없으면 실행되게 한다.
+        break;
+      case 1:
+        $('.searchbar>div').eq(3).toggleClass('on').end().eq(5).toggleClass('on');
+        $('.searchbar>div').eq(2).removeClass('on').end().eq(4).removeClass('on');
+        break;
+      case 2:
+        $('.searchbar>div').eq(4).toggleClass('on');
+        $('.searchbar>div').eq(0).removeClass('on').end().eq(1).removeClass('on').end().eq(3).removeClass('on').end().eq(5).removeClass('on');
+        break;
+      case 3:
+        $('.searchbar>div').eq(5).toggleClass('on');
+        $('.searchbar>div').eq(0).removeClass('on').end().eq(1).removeClass('on').end().eq(2).removeClass('on').end().eq(4).removeClass('on');
+        break;
+      case 4:
+        $('.searchbar>div').removeClass('on');
+        break;
+      case 5:
+        $('.searchbar>div').removeClass('on');
+        break;
+      default:
+    };
 
-    default:
+  }else if($('html').is('.mobile')){
+
+        switch (idx){
+          case 0:
+          console.log(idx);
+          $('.searchbar>div').eq(0).css("background-color","rgba(0,0,0,.1");
+            break;
+          case 1:
+          $('.searchbar>div').eq(1).css("background-color","rgba(0,0,0,.1");
+            break;
+          case 2:
+          $('.searchbar>div').eq(2).css("background-color","rgba(0,0,0,.1");
+            break;
+          case 3:
+          $('.searchbar>div').eq(3).css("background-color","rgba(0,0,0,.1");
+            break;
+          case 4:
+          $('.searchbar>div').eq(4).css("background-color","rgba(0,0,0,.1");
+            break;
+          case 5:
+          $('.searchbar>div').eq(5).css("background-color","rgba(0,0,0,.1");
+            break;
+          default:
+        };
+
+
+
   };
-
-
-};
 };
 
 $(window).resize(function(){

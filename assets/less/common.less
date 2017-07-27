@@ -1,4 +1,4 @@
-html{
+xobno_.noitacol.acol ,html{
   height: 100%;
   body{
     height: auto;
@@ -19,6 +19,9 @@ html{
 .on{
   opacity:0.1;
 }
+
+
+
 
 *{margin: 0; padding: 0;}
 body,html,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,p{margin:0; padding:0;}
@@ -317,8 +320,7 @@ header{
 }
 .signuppop{
   position:absolute;
-  top:0;
-  bottom: 0;
+  top:100px;
   left: 0;
   right: 0;
   margin: auto;
@@ -381,7 +383,7 @@ header{
           border-radius: 15px;
           box-sizing: border-box;
           padding:0 10px;
-        }
+        }₩
         .dd{
           width:63px;
           padding:0 10px;
@@ -485,14 +487,15 @@ header{
             width:100%;
             text-align: left;
             display: none;
-            background-color: rgba(255, 255, 255, .1);
             li{
               height:42px;
-              line-height:42px;
+              line-height:44px;
               padding: 0 20px;
               color:#fff;
+              font-size: 15px;
+              background-color: rgba(0, 0, 0, .1);
               &:hover{
-                background-color:rgba(255,0,0,0.1);
+                background-color:rgba(255,255,255,0.1);
                 cursor: pointer;
               }
             }
@@ -512,9 +515,11 @@ header{
         display: none;
         width: 180px;
         height: 200px;
+        font-size: 15px;
         position:relative;
         top:2px;
         left:-1px;
+        background-color:rgba(0,0,0,0.1);
       }
       .datebox{
         table{
@@ -543,7 +548,7 @@ header{
           }
           td{
             &:hover{
-              background-color:rgba(255,0,0,0.1);
+              background-color:rgba(255,255,255,0.1);
             }
           }
           .date{
@@ -676,6 +681,8 @@ header{
               border-radius: 25px;
               width:42px;
               margin-bottom: 0;
+              vertical-align: top;
+              //searchbar는 버티칼 바탐줌  왜징?
               strong{
                 span{display: none;}
               }
@@ -685,7 +692,7 @@ header{
                   font-size: 16px;
                  li{
                    border:1px #fff solid;
-                   width:42%;
+                   width:34.5%;
                    float:left;
                    padding:0 10px;
                    &:nth-child(1){
@@ -709,15 +716,16 @@ header{
                }
                .table{
                  border-radius:0;
-                 width:276px;
+                 width:231px;
                  height:202px;
                  table{
-                   width:276px;
+                   width:100%;
                    heigt:160px;
                  }
                }
             }
             .searchbox{
+              vertical-align: bottom;
               border-radius: 25px;
               width:42px !important;
               height: 42px;
@@ -726,26 +734,10 @@ header{
               background-position: left 9px center;
               background-size: 45%;
             }
-            .locationbox:hover{
-              strong{
-                background-image: url(../images/icon/ho_w_locationicon.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-                padding:0;
-              }
-            }
             .datebox{
               .checkin{
                 background-position: left 9.5px center;
                 background-size: 40%;
-              }
-              .checkin:hover{
-                background-image: url(../images/icon/ho_w_checkinicon.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-                padding:0;
               }
               .checkintable{
                 position: relative;
@@ -754,13 +746,6 @@ header{
               .checkout{
                 background-position: left 9.5px center;
                 background-size: 40%;
-              }
-              .checkout:hover{
-                background-image: url(../images/icon/ho_w_checkouticon.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-                padding:0;
               }
               .checkouttable{
                 position:relative;
@@ -771,27 +756,9 @@ header{
               background-position: left 8px center;
               background-size: 50%;
             }
-            .guestbox:hover{
-              strong{
-                background-image: url(../images/icon/ho_w_usersicon.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-                padding:0;
-              }
-            }
             .typebox strong{
               background-position: left 9px center;
               background-size: 43%;
-            }
-            .typebox:hover{
-              strong{
-                  background-image: url(../images/icon/ho_w_houseicon.png);
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  background-position: center;
-                  padding:0;
-              }
             }
             .searchbox{
               width:22px;
@@ -799,14 +766,6 @@ header{
               background-position: left 11px center;
               background-size: 50%;
               span{display: none;}
-            }
-            .searchbox:hover{
-                background-image: url(../images/icon/ho_w_searchicon.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-                padding:0;
-
             }
             .guestbox ul{
               position:relative;
@@ -1357,6 +1316,7 @@ header{
     }
   }
   .signuppop{
+    top:150px;
     bottom:200px;
     width:350px;
     height:600px;
@@ -1376,16 +1336,19 @@ header{
           height:150px;
           font-size: 13px;
         }
-        label{font-size: 13px;}
+        label{
+          font-size: 13px;
+        }
       }
       .selftext{
         margin-top:5px;
         width:260px;
         height:165px;
         div{
-          margin-bottom: 0;
+          margin-bottom: 3px;
           &:last-child{width:100%;}
         }
+        .dd{margin-bottom:3px;}
       }
       .joinbutton{
         margin-top: 40px;
