@@ -1,8 +1,8 @@
 $(function(){
 
 function blind(){
-  $('body').append("<div class='blind'></div>");
-  $('.blind').fadeTo(500,.6);
+  $('body').append('<div class="blind"></div>  ');
+  $('.blind').fadeTo(500,1);
 };
 
 
