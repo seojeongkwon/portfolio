@@ -4,21 +4,13 @@
   top: -9999px;
   left: -9999px;
 }
-<<<<<<< HEAD
-/* line 1, assets/less/common.less */
+/* line 1, assets\less\common.less */
 xobno_.noitacol.acol,
 html {
   height: 100%;
 }
-/* line 3, assets/less/common.less */
-xobno_.noitacol.acol body,
-=======
-/* line 1, assets\less\common.less */
-html {
-  height: 100%;
-}
 /* line 3, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+xobno_.noitacol.acol body,
 html body {
   height: auto;
   padding-top: 192px;
@@ -39,20 +31,12 @@ html body {
 .on {
   opacity: 0.1;
 }
-<<<<<<< HEAD
-/* line 26, assets/less/common.less */
-=======
-/* line 23, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 26, assets\less\common.less */
 * {
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
-/* line 27, assets/less/common.less */
-=======
-/* line 24, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 27, assets\less\common.less */
 body,
 html,
 h1,
@@ -69,56 +53,32 @@ p {
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
-/* line 28, assets/less/common.less */
-=======
-/* line 25, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 28, assets\less\common.less */
 a {
   text-decoration: none;
   color: #000;
 }
-<<<<<<< HEAD
-/* line 32, assets/less/common.less */
-li {
-  list-style: none;
-}
-/* line 35, assets/less/common.less */
-=======
-/* line 29, assets\less\common.less */
-li {
-  list-style: none;
-}
 /* line 32, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+li {
+  list-style: none;
+}
+/* line 35, assets\less\common.less */
 h2 {
   font-size: 18px;
   color: #838384;
 }
-<<<<<<< HEAD
-/* line 39, assets/less/common.less */
+/* line 39, assets\less\common.less */
 p {
   color: #838384;
 }
-/* line 43, assets/less/common.less */
-=======
-/* line 36, assets\less\common.less */
-p {
-  color: #838384;
-}
-/* line 40, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 43, assets\less\common.less */
 button {
   margin: 0;
   padding: 0;
   background-color: transparent;
   border: none;
 }
-<<<<<<< HEAD
-/* line 50, assets/less/common.less */
-=======
-/* line 47, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 50, assets\less\common.less */
 .blind {
   position: fixed;
   z-index: 149;
@@ -129,11 +89,7 @@ button {
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
 }
-<<<<<<< HEAD
-/* line 60, assets/less/common.less */
-=======
-/* line 57, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 60, assets\less\common.less */
 .closebtn {
   position: absolute;
   top: 7px;
@@ -145,19 +101,11 @@ button {
   width: 15px;
   height: 15px;
 }
-<<<<<<< HEAD
-/* line 73, assets/less/common.less */
-.wrap {
-  max-width: 1920px;
-}
-/* line 76, assets/less/common.less */
-=======
-/* line 70, assets\less\common.less */
-.wrap {
-  max-width: 1920px;
-}
 /* line 73, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+.wrap {
+  max-width: 1920px;
+}
+/* line 76, assets\less\common.less */
 header {
   position: fixed;
   top: 0;
@@ -165,11 +113,7 @@ header {
   right: 0;
   z-index: 100;
 }
-<<<<<<< HEAD
-/* line 82, assets/less/common.less */
-=======
-/* line 79, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 82, assets\less\common.less */
 header .top {
   position: relative;
   height: 67px;
@@ -179,80 +123,48 @@ header .top {
   background-repeat: repeat-x;
   background-position: center bottom;
 }
-<<<<<<< HEAD
-/* line 90, assets/less/common.less */
-=======
-/* line 87, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 90, assets\less\common.less */
 header .top img {
   float: left;
   width: 230px;
   margin-top: 12px;
   margin-left: 50px;
 }
-<<<<<<< HEAD
-/* line 97, assets/less/common.less */
-=======
-/* line 94, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 97, assets\less\common.less */
 header .top .logsign {
   float: right;
   margin-top: 25px;
   margin-right: 48.58px;
   color: #6479ba;
 }
-<<<<<<< HEAD
-/* line 102, assets/less/common.less */
+/* line 102, assets\less\common.less */
 header .top .logsign a {
   color: #6479ba;
-}
-/* line 103, assets/less/common.less */
-header .top .logsign span:hover {
-  cursor: pointer;
-}
-/* line 106, assets/less/common.less */
-=======
-/* line 99, assets\less\common.less */
-header .top .logsign a {
-  color: #6479ba;
-}
-/* line 100, assets\less\common.less */
-header .top .logsign span:hover {
-  cursor: pointer;
 }
 /* line 103, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+header .top .logsign span:hover {
+  cursor: pointer;
+}
+/* line 106, assets\less\common.less */
 header .menubox {
   background-color: #fff;
   height: 120px;
   font-size: 0;
   text-align: center;
 }
-<<<<<<< HEAD
-/* line 112, assets/less/common.less */
-=======
-/* line 109, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 112, assets\less\common.less */
 header .menubox:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-<<<<<<< HEAD
-/* line 118, assets/less/common.less */
-=======
-/* line 115, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 118, assets\less\common.less */
 header .menubox .menubar {
   vertical-align: middle;
   display: inline-block;
 }
-<<<<<<< HEAD
-/* line 121, assets/less/common.less */
-=======
-/* line 118, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 121, assets\less\common.less */
 header .menubox .menubar div {
   display: inline-block;
   width: 206px;
@@ -261,155 +173,79 @@ header .menubox .menubar div {
   margin: 0 1px;
   transition: .5s;
 }
-<<<<<<< HEAD
-/* line 128, assets/less/common.less */
+/* line 128, assets\less\common.less */
 header .menubox .menubar div:hover {
   cursor: pointer;
 }
-/* line 129, assets/less/common.less */
+/* line 129, assets\less\common.less */
 header .menubox .menubar div span {
   line-height: 42px;
-}
-/* line 133, assets/less/common.less */
-header .menubox .menubar div:nth-child(1) {
-  border: 2px #ef5050 solid;
-}
-/* line 135, assets/less/common.less */
-header .menubox .menubar div:nth-child(1) a {
-  color: #ef5050;
-}
-/* line 136, assets/less/common.less */
-header .menubox .menubar div:nth-child(1):hover {
-  background-color: #ef5050;
-}
-/* line 138, assets/less/common.less */
-header .menubox .menubar div:nth-child(1):hover a {
-  color: #fff;
-}
-/* line 141, assets/less/common.less */
-header .menubox .menubar div:nth-child(2) {
-  border: 2px #f5b250 solid;
-}
-/* line 143, assets/less/common.less */
-header .menubox .menubar div:nth-child(2) a {
-  color: #f5b250;
-}
-/* line 144, assets/less/common.less */
-header .menubox .menubar div:nth-child(2):hover {
-  background-color: #f5b250;
-}
-/* line 146, assets/less/common.less */
-header .menubox .menubar div:nth-child(2):hover a {
-  color: #fff;
-}
-/* line 150, assets/less/common.less */
-header .menubox .menubar div:nth-child(3) {
-  border: 2px #79c266 solid;
-}
-/* line 152, assets/less/common.less */
-header .menubox .menubar div:nth-child(3) a {
-  color: #79c266;
-}
-/* line 153, assets/less/common.less */
-header .menubox .menubar div:nth-child(3):hover {
-  background-color: #79c266;
-}
-/* line 155, assets/less/common.less */
-header .menubox .menubar div:nth-child(3):hover a {
-  color: #fff;
-}
-/* line 159, assets/less/common.less */
-header .menubox .menubar div:nth-child(4) {
-  border: 2px #a764a8 solid;
-}
-/* line 161, assets/less/common.less */
-header .menubox .menubar div:nth-child(4) a {
-  color: #a764a8;
-}
-/* line 162, assets/less/common.less */
-header .menubox .menubar div:nth-child(4):hover {
-  background-color: #a764a8;
-}
-/* line 164, assets/less/common.less */
-header .menubox .menubar div:nth-child(4):hover a {
-  color: #fff;
-}
-/* line 171, assets/less/common.less */
-=======
-/* line 125, assets\less\common.less */
-header .menubox .menubar div:hover {
-  cursor: pointer;
-}
-/* line 126, assets\less\common.less */
-header .menubox .menubar div span {
-  line-height: 42px;
-}
-/* line 130, assets\less\common.less */
-header .menubox .menubar div:nth-child(1) {
-  border: 2px #ef5050 solid;
-}
-/* line 132, assets\less\common.less */
-header .menubox .menubar div:nth-child(1) a {
-  color: #ef5050;
 }
 /* line 133, assets\less\common.less */
+header .menubox .menubar div:nth-child(1) {
+  border: 2px #ef5050 solid;
+}
+/* line 135, assets\less\common.less */
+header .menubox .menubar div:nth-child(1) a {
+  color: #ef5050;
+}
+/* line 136, assets\less\common.less */
 header .menubox .menubar div:nth-child(1):hover {
   background-color: #ef5050;
 }
-/* line 135, assets\less\common.less */
+/* line 138, assets\less\common.less */
 header .menubox .menubar div:nth-child(1):hover a {
   color: #fff;
 }
-/* line 138, assets\less\common.less */
+/* line 141, assets\less\common.less */
 header .menubox .menubar div:nth-child(2) {
   border: 2px #f5b250 solid;
 }
-/* line 140, assets\less\common.less */
+/* line 143, assets\less\common.less */
 header .menubox .menubar div:nth-child(2) a {
   color: #f5b250;
 }
-/* line 141, assets\less\common.less */
+/* line 144, assets\less\common.less */
 header .menubox .menubar div:nth-child(2):hover {
   background-color: #f5b250;
 }
-/* line 143, assets\less\common.less */
+/* line 146, assets\less\common.less */
 header .menubox .menubar div:nth-child(2):hover a {
   color: #fff;
 }
-/* line 147, assets\less\common.less */
+/* line 150, assets\less\common.less */
 header .menubox .menubar div:nth-child(3) {
   border: 2px #79c266 solid;
 }
-/* line 149, assets\less\common.less */
+/* line 152, assets\less\common.less */
 header .menubox .menubar div:nth-child(3) a {
   color: #79c266;
 }
-/* line 150, assets\less\common.less */
+/* line 153, assets\less\common.less */
 header .menubox .menubar div:nth-child(3):hover {
   background-color: #79c266;
 }
-/* line 152, assets\less\common.less */
+/* line 155, assets\less\common.less */
 header .menubox .menubar div:nth-child(3):hover a {
   color: #fff;
 }
-/* line 156, assets\less\common.less */
+/* line 159, assets\less\common.less */
 header .menubox .menubar div:nth-child(4) {
   border: 2px #a764a8 solid;
 }
-/* line 158, assets\less\common.less */
+/* line 161, assets\less\common.less */
 header .menubox .menubar div:nth-child(4) a {
   color: #a764a8;
 }
-/* line 159, assets\less\common.less */
+/* line 162, assets\less\common.less */
 header .menubox .menubar div:nth-child(4):hover {
   background-color: #a764a8;
 }
-/* line 161, assets\less\common.less */
+/* line 164, assets\less\common.less */
 header .menubox .menubar div:nth-child(4):hover a {
   color: #fff;
 }
-/* line 168, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 171, assets\less\common.less */
 .loginpop {
   transition: .5s;
   position: fixed;
@@ -424,11 +260,7 @@ header .menubox .menubar div:nth-child(4):hover a {
   z-index: 150;
   display: none;
 }
-<<<<<<< HEAD
-/* line 184, assets/less/common.less */
-=======
-/* line 181, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 184, assets\less\common.less */
 .loginpop .inner {
   transition: .5s;
   position: relative;
@@ -438,11 +270,7 @@ header .menubox .menubar div:nth-child(4):hover a {
   height: 370px;
   background-color: #f2f1f0;
 }
-<<<<<<< HEAD
-/* line 192, assets/less/common.less */
-=======
-/* line 189, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 192, assets\less\common.less */
 .loginpop .inner strong {
   font-size: 30px;
   display: block;
@@ -450,62 +278,38 @@ header .menubox .menubar div:nth-child(4):hover a {
   text-align: center;
   text-transform: uppercase;
 }
-<<<<<<< HEAD
-/* line 199, assets/less/common.less */
-=======
-/* line 196, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 199, assets\less\common.less */
 .loginpop .inner .idpassword {
   transition: .5s;
   width: 626px;
   margin: 0 auto;
 }
-<<<<<<< HEAD
-/* line 203, assets/less/common.less */
-=======
-/* line 200, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 203, assets\less\common.less */
 .loginpop .inner .idpassword small {
   color: #f00;
   display: block;
   margin-top: 50px;
   font-size: 14px;
 }
-<<<<<<< HEAD
-/* line 209, assets/less/common.less */
-=======
-/* line 206, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 209, assets\less\common.less */
 .loginpop .inner .idpassword .logintxt {
   display: block;
   float: left;
 }
-<<<<<<< HEAD
-/* line 212, assets/less/common.less */
-=======
-/* line 209, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 212, assets\less\common.less */
 .loginpop .inner .idpassword .logintxt label {
   font-size: 18px;
   display: inline-block;
   width: 150px;
 }
-<<<<<<< HEAD
-/* line 217, assets/less/common.less */
-=======
-/* line 214, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 217, assets\less\common.less */
 .loginpop .inner .idpassword .logintxt input {
   width: 217px;
   height: 25px;
   border-radius: 15px;
   padding: 0 10px;
 }
-<<<<<<< HEAD
-/* line 224, assets/less/common.less */
-=======
-/* line 221, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 224, assets\less\common.less */
 .loginpop .inner .idpassword .loginbutton {
   transition: .5s;
   background-color: #ef5050;
@@ -522,37 +326,21 @@ header .menubox .menubar div:nth-child(4):hover a {
   margin-left: 50px;
   margin-top: 7px;
 }
-<<<<<<< HEAD
-/* line 241, assets/less/common.less */
+/* line 241, assets\less\common.less */
 .loginpop .inner .findlist {
   margin-top: 50px;
 }
-/* line 243, assets/less/common.less */
-=======
-/* line 238, assets\less\common.less */
-.loginpop .inner .findlist {
-  margin-top: 50px;
-}
-/* line 240, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 243, assets\less\common.less */
 .loginpop .inner .findlist span {
   font-size: 16px;
   display: block;
 }
-<<<<<<< HEAD
-/* line 247, assets/less/common.less */
-=======
-/* line 244, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 247, assets\less\common.less */
 .loginpop .inner .findlist a {
   font-size: 13px;
   color: #4c60ab;
 }
-<<<<<<< HEAD
-/* line 254, assets/less/common.less */
-=======
-/* line 251, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 254, assets\less\common.less */
 .passwordpop {
   transition: .5s;
   position: fixed;
@@ -567,11 +355,7 @@ header .menubox .menubar div:nth-child(4):hover a {
   z-index: 150;
   display: none;
 }
-<<<<<<< HEAD
-/* line 267, assets/less/common.less */
-=======
-/* line 264, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 267, assets\less\common.less */
 .passwordpop .inner {
   position: relative;
   top: 25px;
@@ -580,63 +364,39 @@ header .menubox .menubar div:nth-child(4):hover a {
   height: 280px;
   background-color: #f2f1f0;
 }
-<<<<<<< HEAD
-/* line 274, assets/less/common.less */
-=======
-/* line 271, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 274, assets\less\common.less */
 .passwordpop .inner strong {
   font-size: 30px;
   display: block;
   padding: 40px 0 0;
   text-align: center;
 }
-<<<<<<< HEAD
-/* line 280, assets/less/common.less */
-=======
-/* line 277, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 280, assets\less\common.less */
 .passwordpop .inner .passwordfind {
   width: 515px;
   margin: 0 auto;
   font-size: 18px;
 }
-<<<<<<< HEAD
-/* line 284, assets/less/common.less */
-=======
-/* line 281, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 284, assets\less\common.less */
 .passwordpop .inner .passwordfind > span {
   display: block;
   margin-top: 50px;
   font-size: 16px;
 }
-<<<<<<< HEAD
-/* line 290, assets/less/common.less */
-=======
-/* line 287, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 290, assets\less\common.less */
 .passwordpop .inner .passwordfind .email label {
   font-size: 18px;
   display: inline-block;
   width: 150px;
 }
-<<<<<<< HEAD
-/* line 295, assets/less/common.less */
-=======
-/* line 292, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 295, assets\less\common.less */
 .passwordpop .inner .passwordfind .email input {
   width: 150px;
   height: 25px;
   border-radius: 15px;
   padding: 0 10px;
 }
-<<<<<<< HEAD
-/* line 303, assets/less/common.less */
-=======
-/* line 300, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 303, assets\less\common.less */
 .passwordpop .inner .sendbutton {
   background-color: #ef5050;
   border: 1px #ef5050 solid;
@@ -653,18 +413,11 @@ header .menubox .menubar div:nth-child(4):hover a {
   bottom: 87px;
   right: 50px;
 }
-<<<<<<< HEAD
-/* line 321, assets/less/common.less */
+/* line 321, assets\less\common.less */
 .signuppop {
   position: absolute;
-  top: 100px;
-=======
-/* line 318, assets\less\common.less */
-.signuppop {
-  position: fixed;
-  top: 0;
+  top: 200px;
   bottom: 0;
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
   left: 0;
   right: 0;
   margin: auto;
@@ -674,11 +427,7 @@ header .menubox .menubar div:nth-child(4):hover a {
   z-index: 150;
   display: none;
 }
-<<<<<<< HEAD
-/* line 332, assets/less/common.less */
-=======
-/* line 330, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 333, assets\less\common.less */
 .signuppop .inner {
   position: relative;
   top: 25px;
@@ -687,33 +436,21 @@ header .menubox .menubar div:nth-child(4):hover a {
   height: 740px;
   background-color: #f2f1f0;
 }
-<<<<<<< HEAD
-/* line 339, assets/less/common.less */
-=======
-/* line 337, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 340, assets\less\common.less */
 .signuppop .inner strong {
   font-size: 30px;
   display: block;
   padding: 50px 0 0;
   text-align: center;
 }
-<<<<<<< HEAD
-/* line 345, assets/less/common.less */
-=======
-/* line 343, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 346, assets\less\common.less */
 .signuppop .inner .agreebox {
   position: relative;
   width: 655px;
   height: 185px;
   margin: 50px 0 0 40px;
 }
-<<<<<<< HEAD
-/* line 350, assets/less/common.less */
-=======
-/* line 348, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 351, assets\less\common.less */
 .signuppop .inner .agreebox .textarea {
   border: 1px #848485 solid;
   width: 652px;
@@ -724,38 +461,22 @@ header .menubox .menubar div:nth-child(4):hover a {
   text-align: left;
   color: #848485;
 }
-<<<<<<< HEAD
-/* line 360, assets/less/common.less */
-=======
-/* line 358, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 361, assets\less\common.less */
 .signuppop .inner .agreebox label {
   display: block;
   text-align: right;
 }
-<<<<<<< HEAD
-/* line 363, assets/less/common.less */
-.signuppop .inner .agreebox label span {
-  margin-left: 5px;
-}
-/* line 366, assets/less/common.less */
-=======
-/* line 361, assets\less\common.less */
-.signuppop .inner .agreebox label span {
-  margin-left: 5px;
-}
 /* line 364, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+.signuppop .inner .agreebox label span {
+  margin-left: 5px;
+}
+/* line 367, assets\less\common.less */
 .signuppop .inner .selftext {
   margin: 50px auto 0;
   width: 697px;
   height: 206px;
 }
-<<<<<<< HEAD
-/* line 370, assets/less/common.less */
-=======
-/* line 368, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 371, assets\less\common.less */
 .signuppop .inner .selftext div {
   width: 50%;
   box-sizing: border-box;
@@ -763,20 +484,12 @@ header .menubox .menubar div:nth-child(4):hover a {
   margin-bottom: 10px;
   float: left;
 }
-<<<<<<< HEAD
-/* line 376, assets/less/common.less */
-=======
-/* line 374, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 377, assets\less\common.less */
 .signuppop .inner .selftext div label {
   font-size: 18px;
   display: block;
 }
-<<<<<<< HEAD
-/* line 380, assets/less/common.less */
-=======
-/* line 378, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 381, assets\less\common.less */
 .signuppop .inner .selftext div input {
   width: 90%;
   height: 35px;
@@ -784,41 +497,24 @@ header .menubox .menubar div:nth-child(4):hover a {
   box-sizing: border-box;
   padding: 0 10px;
 }
-<<<<<<< HEAD
-/* line 386, assets/less/common.less */
+/* line 387, assets\less\common.less */
 .signuppop .inner .selftext div ₩ .dd {
-=======
-/* line 385, assets\less\common.less */
-.signuppop .inner .selftext div .dd {
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
   width: 63px;
   padding: 0 10px;
   margin-right: 10px;
 }
-<<<<<<< HEAD
-/* line 392, assets/less/common.less */
-=======
-/* line 390, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 393, assets\less\common.less */
 .signuppop .inner .selftext div .mm {
   width: 63px;
   padding: 0 10px;
   margin-right: 10px;
 }
-<<<<<<< HEAD
-/* line 397, assets/less/common.less */
-=======
-/* line 395, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 398, assets\less\common.less */
 .signuppop .inner .selftext div .yyyy {
   width: 108px;
   padding: 0 10px;
 }
-<<<<<<< HEAD
-/* line 404, assets/less/common.less */
-=======
-/* line 402, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 405, assets\less\common.less */
 .signuppop .inner .joinbutton {
   background-color: #ef5050;
   border: 1px #ef5050 solid;
@@ -832,30 +528,18 @@ header .menubox .menubar div:nth-child(4):hover a {
   display: block;
   margin: 50px auto 0;
 }
-<<<<<<< HEAD
-/* line 420, assets/less/common.less */
-=======
-/* line 418, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 421, assets\less\common.less */
 .contents {
   margin: 0 150px;
   transition: 1s;
 }
-<<<<<<< HEAD
-/* line 423, assets/less/common.less */
-=======
-/* line 421, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 424, assets\less\common.less */
 .contents .pic {
   position: relative;
   height: 403px;
   transition: .5s;
 }
-<<<<<<< HEAD
-/* line 427, assets/less/common.less */
-=======
-/* line 425, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 428, assets\less\common.less */
 .contents .pic .write {
   position: absolute;
   bottom: 25px;
@@ -866,22 +550,14 @@ header .menubox .menubar div:nth-child(4):hover a {
   padding-left: 50px;
   box-sizing: border-box;
 }
-<<<<<<< HEAD
-/* line 436, assets/less/common.less */
-=======
-/* line 434, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 437, assets\less\common.less */
 .contents .pic .write:before {
   content: "";
   height: 100%;
   display: inline-block;
   vertical-align: middle;
 }
-<<<<<<< HEAD
-/* line 442, assets/less/common.less */
-=======
-/* line 440, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 443, assets\less\common.less */
 .contents .pic .write span {
   color: #fff;
   width: 460px;
@@ -890,41 +566,25 @@ header .menubox .menubar div:nth-child(4):hover a {
   display: inline-block;
   vertical-align: middle;
 }
-<<<<<<< HEAD
-/* line 453, assets/less/common.less */
-=======
-/* line 451, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar {
+/* line 453, assets\less\common.less */
+.contents .pic .searchbar {
   text-align: center;
   padding-top: 65px;
 }
-<<<<<<< HEAD
-/* line 456, assets/less/common.less */
-=======
-/* line 454, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar div {
+/* line 456, assets\less\common.less */
+.contents .pic .searchbar div {
   width: 180px;
   display: inline-block;
   border: 1px #fff solid;
   height: 42px;
   position: relative;
 }
-<<<<<<< HEAD
-/* line 462, assets/less/common.less */
-.contents .pic .searchmenu .searchbar div:hover {
+/* line 462, assets\less\common.less */
+.contents .pic .searchbar div:hover {
   cursor: pointer;
 }
-/* line 465, assets/less/common.less */
-=======
-/* line 460, assets\less\common.less */
-.contents .pic .searchmenu .searchbar div:hover {
-  cursor: pointer;
-}
-/* line 463, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar div strong {
+/* line 465, assets\less\common.less */
+.contents .pic .searchbar div strong {
   padding: 0 10px 0 45px;
   display: block;
   font-size: 18px;
@@ -934,23 +594,15 @@ header .menubox .menubar div:nth-child(4):hover a {
   font-weight: normal;
   text-align: left;
 }
-<<<<<<< HEAD
-/* line 475, assets/less/common.less */
-=======
-/* line 473, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar div strong span {
+/* line 475, assets\less\common.less */
+.contents .pic .searchbar div strong span {
   background-image: url(../images/w_arrow01.png);
   background-repeat: no-repeat;
   background-position: right 0 center;
   display: block;
 }
-<<<<<<< HEAD
-/* line 482, assets/less/common.less */
-=======
-/* line 480, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar div strong + ul {
+/* line 482, assets\less\common.less */
+.contents .pic .searchbar div strong + ul {
   border: 1px #fff solid;
   margin-top: 2px;
   position: absolute;
@@ -959,12 +611,8 @@ header .menubox .menubar div:nth-child(4):hover a {
   text-align: left;
   display: none;
 }
-<<<<<<< HEAD
-/* line 490, assets/less/common.less */
-=======
-/* line 489, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar div strong + ul li {
+/* line 490, assets\less\common.less */
+.contents .pic .searchbar div strong + ul li {
   height: 42px;
   line-height: 44px;
   padding: 0 20px;
@@ -972,32 +620,20 @@ header .menubox .menubar div:nth-child(4):hover a {
   font-size: 15px;
   background-color: rgba(0, 0, 0, 0.1);
 }
-<<<<<<< HEAD
-/* line 497, assets/less/common.less */
-=======
-/* line 494, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar div strong + ul li:hover {
+/* line 497, assets\less\common.less */
+.contents .pic .searchbar div strong + ul li:hover {
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
-<<<<<<< HEAD
-/* line 505, assets/less/common.less */
-=======
-/* line 502, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .locationbox strong {
+/* line 505, assets\less\common.less */
+.contents .pic .searchbar .locationbox strong {
   background-image: url(../images/icon/locationicon.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
   background-size: 15%;
 }
-<<<<<<< HEAD
-/* line 512, assets/less/common.less */
-=======
-/* line 509, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .table {
+/* line 512, assets\less\common.less */
+.contents .pic .searchbar .table {
   color: #fff;
   border: 1px #fff solid;
   display: none;
@@ -1009,22 +645,14 @@ header .menubox .menubar div:nth-child(4):hover a {
   left: -1px;
   background-color: rgba(0, 0, 0, 0.1);
 }
-<<<<<<< HEAD
-/* line 525, assets/less/common.less */
-=======
-/* line 520, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .datebox table {
+/* line 525, assets\less\common.less */
+.contents .pic .searchbar .datebox table {
   margin: 0 auto;
   width: 180px;
   height: 170px;
 }
-<<<<<<< HEAD
-/* line 530, assets/less/common.less */
-=======
-/* line 525, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .datebox table li:nth-child(1) {
+/* line 530, assets\less\common.less */
+.contents .pic .searchbar .datebox table li:nth-child(1) {
   float: left;
   margin-top: 10px;
   width: 20px;
@@ -1033,12 +661,8 @@ header .menubox .menubar div:nth-child(4):hover a {
   background-repeat: no-repeat;
   background-position: center;
 }
-<<<<<<< HEAD
-/* line 539, assets/less/common.less */
-=======
-/* line 534, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .datebox table li:nth-child(2) {
+/* line 539, assets\less\common.less */
+.contents .pic .searchbar .datebox table li:nth-child(2) {
   float: right;
   margin-top: 10px;
   width: 20px;
@@ -1047,73 +671,45 @@ header .menubox .menubar div:nth-child(4):hover a {
   background-repeat: no-repeat;
   background-position: center;
 }
-<<<<<<< HEAD
-/* line 550, assets/less/common.less */
-=======
-/* line 545, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .datebox table td:hover {
+/* line 550, assets\less\common.less */
+.contents .pic .searchbar .datebox table td:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-<<<<<<< HEAD
-/* line 554, assets/less/common.less */
-=======
-/* line 549, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .datebox table .date {
+/* line 554, assets\less\common.less */
+.contents .pic .searchbar .datebox table .date {
   display: block;
   margin-top: 5px;
 }
-<<<<<<< HEAD
-/* line 559, assets/less/common.less */
-=======
-/* line 554, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .datebox .checkin {
+/* line 559, assets\less\common.less */
+.contents .pic .searchbar .datebox .checkin {
   background-image: url(../images/icon/checkinicon.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
   background-size: 15%;
 }
-<<<<<<< HEAD
-/* line 565, assets/less/common.less */
-=======
-/* line 560, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .datebox .checkout {
+/* line 565, assets\less\common.less */
+.contents .pic .searchbar .datebox .checkout {
   background-image: url(../images/icon/checkouticon.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
   background-size: 15%;
 }
-<<<<<<< HEAD
-/* line 574, assets/less/common.less */
-=======
-/* line 569, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .guestbox strong {
+/* line 574, assets\less\common.less */
+.contents .pic .searchbar .guestbox strong {
   background-image: url(../images/icon/usersicon.png);
   background-repeat: no-repeat;
   background-position: left 8px center;
   background-size: 15%;
 }
-<<<<<<< HEAD
-/* line 582, assets/less/common.less */
-=======
-/* line 577, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .typebox strong {
+/* line 582, assets\less\common.less */
+.contents .pic .searchbar .typebox strong {
   background-image: url(../images/icon/houseicon.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
   background-size: 15%;
 }
-<<<<<<< HEAD
-/* line 589, assets/less/common.less */
-=======
-/* line 584, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .searchbox {
+/* line 589, assets\less\common.less */
+.contents .pic .searchbar .searchbox {
   padding: 0 45px;
   background-color: transparent;
   background-image: url(../images/icon/searchicon.png);
@@ -1127,451 +723,235 @@ header .menubox .menubar div:nth-child(4):hover a {
   text-align: center;
   font-size: 0;
 }
-<<<<<<< HEAD
-/* line 602, assets/less/common.less */
-=======
-/* line 597, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
-.contents .pic .searchmenu .searchbar .searchbox span {
+/* line 602, assets\less\common.less */
+.contents .pic .searchbar .searchbox span {
   padding-left: 20px;
   font-size: 16px;
 }
 @media screen and (max-width: 1700px) {
-<<<<<<< HEAD
-  /* line 609, assets/less/common.less */
-=======
-  /* line 604, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 608, assets\less\common.less */
   .contents {
     margin: 0 100px;
   }
 }
 @media screen and (max-width: 1500px) {
-<<<<<<< HEAD
-  /* line 615, assets/less/common.less */
-=======
-  /* line 610, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 614, assets\less\common.less */
   .contents {
     margin: 0 50px;
   }
 }
 @media screen and (max-width: 1300px) {
-<<<<<<< HEAD
-  /* line 624, assets/less/common.less */
-=======
-  /* line 619, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 623, assets\less\common.less */
   .contents .pic .searchmenu .searchbar {
     padding-top: 45px;
     width: 567px;
     margin: 0 auto;
   }
-<<<<<<< HEAD
-  /* line 628, assets/less/common.less */
-=======
-  /* line 623, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 627, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div {
     margin-bottom: 4px;
   }
 }
 @media screen and (max-width: 1150px) {
-<<<<<<< HEAD
-  /* line 635, assets/less/common.less */
-  .contents {
-    margin: 0 25px;
-  }
-  /* line 637, assets/less/common.less */
-  .contents .pic {
-    height: 347px;
-  }
-  /* line 639, assets/less/common.less */
-=======
-  /* line 630, assets\less\common.less */
-  .contents {
-    margin: 0 25px;
-  }
-  /* line 632, assets\less\common.less */
-  .contents .pic {
-    height: 347px;
-  }
   /* line 634, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  .contents {
+    margin: 0 25px;
+  }
+  /* line 636, assets\less\common.less */
+  .contents .pic {
+    height: 347px;
+  }
+  /* line 638, assets\less\common.less */
   .contents .pic .write {
     display: none;
   }
 }
 @media screen and (max-width: 1024px) {
-<<<<<<< HEAD
-  /* line 649, assets/less/common.less */
-=======
-  /* line 644, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 648, assets\less\common.less */
   .contents .pic .searchmenu .searchbar {
     padding-top: 25px;
     width: 425px;
     margin: 0 auto;
   }
-<<<<<<< HEAD
-  /* line 653, assets/less/common.less */
-=======
-  /* line 648, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 652, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div {
     margin-bottom: 4px;
   }
 }
 @media screen and (max-width: 650px) {
-<<<<<<< HEAD
-  /* line 663, assets/less/common.less */
+  /* line 662, assets\less\common.less */
   .contents .pic .searchmenu .searchbar {
     width: 334px;
-  }
-  /* line 665, assets/less/common.less */
-  .contents .pic .searchmenu .searchbar div {
-    width: 160px;
-  }
-  /* line 666, assets/less/common.less */
-  .contents .pic .searchmenu .searchbar .searchbox {
-    width: 160px;
-  }
-  /* line 669, assets/less/common.less */
-=======
-  /* line 658, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar {
-    width: 334px;
-  }
-  /* line 660, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar div {
-    width: 160px;
-  }
-  /* line 661, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar .searchbox {
-    width: 160px;
   }
   /* line 664, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  .contents .pic .searchmenu .searchbar div {
+    width: 160px;
+  }
+  /* line 665, assets\less\common.less */
+  .contents .pic .searchmenu .searchbar .searchbox {
+    width: 160px;
+  }
+  /* line 668, assets\less\common.less */
   .contents .pic .write {
     display: none;
   }
 }
 @media screen and (max-width: 480px) {
-<<<<<<< HEAD
-  /* line 676, assets/less/common.less */
-  .contents .pic {
-    height: 295px;
-  }
-  /* line 680, assets/less/common.less */
-=======
-  /* line 671, assets\less\common.less */
-  .contents .pic {
-    height: 295px;
-  }
   /* line 675, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  .contents .pic {
+    height: 295px;
+  }
+  /* line 679, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div {
     border-radius: 25px;
     width: 42px;
     margin-bottom: 0;
     vertical-align: top;
   }
-<<<<<<< HEAD
-  /* line 687, assets/less/common.less */
+  /* line 686, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div strong span {
     display: none;
   }
-  /* line 689, assets/less/common.less */
-=======
-  /* line 680, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar div strong span {
-    display: none;
-  }
-  /* line 682, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 688, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div strong + ul {
     width: 280px;
     border: 0px;
-    font-size: 16px;
+    font-size: 15px;
   }
-<<<<<<< HEAD
-  /* line 693, assets/less/common.less */
-=======
-  /* line 686, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 692, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div strong + ul li {
     border: 1px #fff solid;
     width: 34.5%;
     float: left;
     padding: 0 10px;
   }
-<<<<<<< HEAD
-  /* line 698, assets/less/common.less */
-=======
-  /* line 691, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 697, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div strong + ul li:nth-child(1) {
     border-bottom: 0;
     border-right: 0;
   }
-<<<<<<< HEAD
-  /* line 702, assets/less/common.less */
+  /* line 701, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div strong + ul li:nth-child(2) {
     border-bottom: 0;
   }
-  /* line 705, assets/less/common.less */
-=======
-  /* line 695, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar div strong + ul li:nth-child(2) {
-    border-bottom: 0;
-  }
-  /* line 698, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 704, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div strong + ul li:nth-child(3) {
     border-bottom: 0;
     border-right: 0;
   }
-<<<<<<< HEAD
-  /* line 709, assets/less/common.less */
+  /* line 708, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div strong + ul li:nth-child(4) {
     border-bottom: 0;
   }
-  /* line 712, assets/less/common.less */
+  /* line 711, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div strong + ul li:nth-child(5) {
     border-right: 0;
   }
-  /* line 717, assets/less/common.less */
-=======
-  /* line 702, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar div strong + ul li:nth-child(4) {
-    border-bottom: 0;
-  }
-  /* line 705, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar div strong + ul li:nth-child(5) {
-    border-right: 0;
-  }
-  /* line 710, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 716, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div .table {
     border-radius: 0;
     width: 231px;
     height: 202px;
+    font-size: 15px;
   }
-<<<<<<< HEAD
-  /* line 721, assets/less/common.less */
-=======
-  /* line 714, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 721, assets\less\common.less */
   .contents .pic .searchmenu .searchbar div .table table {
     width: 100%;
     heigt: 160px;
   }
-<<<<<<< HEAD
-  /* line 727, assets/less/common.less */
-=======
-  /* line 720, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 727, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .searchbox {
     vertical-align: bottom;
     border-radius: 25px;
     width: 42px !important;
     height: 42px;
   }
-<<<<<<< HEAD
-  /* line 733, assets/less/common.less */
-=======
-  /* line 725, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 733, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .locationbox strong {
     background-position: left 9px center;
     background-size: 45%;
   }
-<<<<<<< HEAD
-  /* line 738, assets/less/common.less */
-=======
-  /* line 730, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar .locationbox:hover strong {
-    background-image: url(../images/icon/ho_w_locationicon.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 0;
-  }
-  /* line 739, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 738, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .datebox .checkin {
     background-position: left 9.5px center;
     background-size: 40%;
   }
-<<<<<<< HEAD
-  /* line 742, assets/less/common.less */
-=======
-  /* line 743, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar .datebox .checkin:hover {
-    background-image: url(../images/icon/ho_w_checkinicon.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 0;
-  }
-  /* line 750, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 742, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .datebox .checkintable {
     position: relative;
     left: -114%;
   }
-<<<<<<< HEAD
-  /* line 746, assets/less/common.less */
-=======
-  /* line 754, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 746, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .datebox .checkout {
     background-position: left 9.5px center;
     background-size: 40%;
   }
-<<<<<<< HEAD
-  /* line 750, assets/less/common.less */
-=======
-  /* line 758, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar .datebox .checkout:hover {
-    background-image: url(../images/icon/ho_w_checkouticon.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 0;
-  }
-  /* line 765, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 750, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .datebox .checkouttable {
     position: relative;
     left: -227%;
   }
-<<<<<<< HEAD
-  /* line 755, assets/less/common.less */
-=======
-  /* line 770, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 755, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .guestbox strong {
     background-position: left 8px center;
     background-size: 50%;
   }
-<<<<<<< HEAD
-  /* line 759, assets/less/common.less */
-=======
-  /* line 775, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar .guestbox:hover strong {
-    background-image: url(../images/icon/ho_w_usersicon.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 0;
-  }
-  /* line 783, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 759, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .typebox strong {
     background-position: left 9px center;
     background-size: 43%;
   }
-<<<<<<< HEAD
-  /* line 763, assets/less/common.less */
-=======
-  /* line 788, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar .typebox:hover strong {
-    background-image: url(../images/icon/ho_w_houseicon.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 0;
-  }
-  /* line 796, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 763, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .searchbox {
     width: 22px;
     padding: 0 10px;
     background-position: left 11px center;
     background-size: 50%;
   }
-<<<<<<< HEAD
-  /* line 768, assets/less/common.less */
+  /* line 768, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .searchbox span {
     display: none;
   }
-  /* line 770, assets/less/common.less */
-=======
-  /* line 801, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar .searchbox span {
-    display: none;
-  }
-  /* line 803, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar .searchbox:hover {
-    background-image: url(../images/icon/ho_w_searchicon.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 0;
-  }
-  /* line 811, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 770, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .guestbox ul {
     position: relative;
     left: -340%;
   }
-<<<<<<< HEAD
-  /* line 774, assets/less/common.less */
-=======
-  /* line 815, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 774, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .typebox ul {
     position: relative;
     left: -453%;
   }
-<<<<<<< HEAD
-  /* line 778, assets/less/common.less */
+  /* line 778, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .typebox ul li:nth-child(3) {
     border-bottom: 1px #fff solid;
   }
-  /* line 781, assets/less/common.less */
-=======
-  /* line 819, assets\less\common.less */
-  .contents .pic .searchmenu .searchbar .typebox ul li:nth-child(3) {
-    border-bottom: 1px #fff solid;
-  }
-  /* line 822, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 781, assets\less\common.less */
   .contents .pic .searchmenu .searchbar .typebox ul li:nth-child(4) {
     border-bottom: 1px #fff solid;
   }
 }
-<<<<<<< HEAD
-/* line 793, assets/less/common.less */
-=======
-/* line 834, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 793, assets\less\common.less */
 footer .empty {
   height: 60px;
   background-color: #fff;
   position: relative;
+  padding-top: 25px;
 }
-<<<<<<< HEAD
-/* line 797, assets/less/common.less */
-=======
-/* line 838, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 798, assets\less\common.less */
 footer .empty span {
   display: block;
-  width: 50px;
+  width: 65px;
   height: 25px;
+  text-align: center;
   background-color: #aeaeae;
   position: absolute;
   left: 50%;
   margin-left: -25px;
+  top: 0;
   color: #fff;
 }
-<<<<<<< HEAD
-/* line 808, assets/less/common.less */
-=======
-/* line 849, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 811, assets\less\common.less */
 footer .bottom {
   padding-top: 5px;
   background-image: url(../images/gradation01.jpg);
@@ -1582,20 +962,12 @@ footer .bottom {
   position: relative;
   transition: .5s;
 }
-<<<<<<< HEAD
-/* line 818, assets/less/common.less */
-=======
-/* line 859, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 821, assets\less\common.less */
 footer .lang {
   float: left;
   margin-left: 100px;
 }
-<<<<<<< HEAD
-/* line 821, assets/less/common.less */
-=======
-/* line 862, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 824, assets\less\common.less */
 footer .lang div {
   width: 180px;
   height: 42px;
@@ -1604,11 +976,7 @@ footer .lang div {
   margin-bottom: 5px;
   position: relative;
 }
-<<<<<<< HEAD
-/* line 828, assets/less/common.less */
-=======
-/* line 869, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 831, assets\less\common.less */
 footer .lang div strong {
   font-weight: normal;
   text-transform: uppercase;
@@ -1618,22 +986,14 @@ footer .lang div strong {
   display: block;
   text-align: left;
 }
-<<<<<<< HEAD
-/* line 836, assets/less/common.less */
-=======
-/* line 877, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 839, assets\less\common.less */
 footer .lang div strong span {
   background-image: url(../images/g_arrow01.png);
   background-repeat: no-repeat;
   background-position: right  center;
   display: block;
 }
-<<<<<<< HEAD
-/* line 843, assets/less/common.less */
-=======
-/* line 884, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 846, assets\less\common.less */
 footer .lang div strong + ul {
   border: 1px #838384 solid;
   background-color: #fff;
@@ -1644,108 +1004,60 @@ footer .lang div strong + ul {
   text-align: left;
   display: none;
 }
-<<<<<<< HEAD
-/* line 852, assets/less/common.less */
-=======
-/* line 893, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 855, assets\less\common.less */
 footer .lang div strong + ul li {
   height: 42px;
   line-height: 42px;
   padding: 0 10px;
   color: #838384;
 }
-<<<<<<< HEAD
-/* line 857, assets/less/common.less */
+/* line 860, assets\less\common.less */
 footer .lang div strong + ul li:hover {
   background-color: rgba(255, 200, 100, 0.1);
 }
-/* line 864, assets/less/common.less */
-=======
-/* line 898, assets\less\common.less */
-footer .lang div strong + ul li:hover {
-  background-color: rgba(255, 200, 100, 0.1);
-}
-/* line 905, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 867, assets\less\common.less */
 footer .lang .koreanbox ul {
   position: absolute;
   top: -384px;
   z-index: 200;
 }
-<<<<<<< HEAD
-/* line 871, assets/less/common.less */
-=======
-/* line 912, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 874, assets\less\common.less */
 footer .lang .krwbox ul {
   position: absolute;
   top: -216px;
 }
-<<<<<<< HEAD
-/* line 877, assets/less/common.less */
-=======
-/* line 918, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 880, assets\less\common.less */
 footer .notice {
   padding-right: 100px;
   overflow: hidden;
 }
-<<<<<<< HEAD
-/* line 880, assets/less/common.less */
+/* line 883, assets\less\common.less */
 footer .notice div {
   float: right;
 }
-/* line 882, assets/less/common.less */
-=======
-/* line 921, assets\less\common.less */
-footer .notice div {
-  float: right;
-}
-/* line 923, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 885, assets\less\common.less */
 footer .traveling {
   color: #939597;
   margin-right: 50px;
 }
-<<<<<<< HEAD
-/* line 885, assets/less/common.less */
+/* line 888, assets\less\common.less */
 footer .traveling span {
   display: block;
 }
-/* line 888, assets/less/common.less */
+/* line 891, assets\less\common.less */
 footer .traveling span:nth-child(1) {
   font-weight: bold;
 }
-/* line 892, assets/less/common.less */
+/* line 895, assets\less\common.less */
 footer .touch {
   color: #939597;
 }
-/* line 894, assets/less/common.less */
-=======
-/* line 926, assets\less\common.less */
-footer .traveling span {
-  display: block;
-}
-/* line 929, assets\less\common.less */
-footer .traveling span:nth-child(1) {
-  font-weight: bold;
-}
-/* line 933, assets\less\common.less */
-footer .touch {
-  color: #939597;
-}
-/* line 935, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 897, assets\less\common.less */
 footer .touch span:nth-child(1) {
   font-weight: bold;
   margin-left: -10px;
 }
-<<<<<<< HEAD
-/* line 898, assets/less/common.less */
-=======
-/* line 939, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 901, assets\less\common.less */
 footer .touch span:nth-child(2) {
   width: 235px;
   padding-left: 25px;
@@ -1755,11 +1067,7 @@ footer .touch span:nth-child(2) {
   background-size: 16px 22px;
   display: inline-block;
 }
-<<<<<<< HEAD
-/* line 907, assets/less/common.less */
-=======
-/* line 948, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 910, assets\less\common.less */
 footer .touch span:nth-child(3) {
   padding-left: 25px;
   background-image: url(../images/icon/phone.png);
@@ -1768,11 +1076,7 @@ footer .touch span:nth-child(3) {
   display: inline-block;
   background-position: left 0 center;
 }
-<<<<<<< HEAD
-/* line 915, assets/less/common.less */
-=======
-/* line 956, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 918, assets\less\common.less */
 footer .touch span:nth-child(4) {
   padding-left: 25px;
   background-image: url(../images/icon/contact.png);
@@ -1781,231 +1085,127 @@ footer .touch span:nth-child(4) {
   display: inline-block;
   background-position: left 0 center;
 }
-<<<<<<< HEAD
-/* line 923, assets/less/common.less */
-=======
-/* line 964, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 926, assets\less\common.less */
 footer .touch span {
   display: block !important;
   padding-left: 10px;
 }
 @media screen and (max-width: 1024px) {
-<<<<<<< HEAD
-  /* line 933, assets/less/common.less */
-=======
-  /* line 974, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 936, assets\less\common.less */
   header .top img {
     width: 230px;
     transition: 0.5s;
     margin-top: 12px;
     margin-left: 50px;
   }
-<<<<<<< HEAD
-  /* line 939, assets/less/common.less */
-=======
-  /* line 980, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 942, assets\less\common.less */
   header .top .logsign {
     font-size: 15px;
     margin-right: 25px;
   }
-<<<<<<< HEAD
-  /* line 946, assets/less/common.less */
+  /* line 949, assets\less\common.less */
   header .menubox .menubar div {
     width: 160px;
   }
-  /* line 948, assets/less/common.less */
+  /* line 951, assets\less\common.less */
   header .menubox .menubar div:nth-child(1) {
     margin-bottom: 2px;
   }
-  /* line 949, assets/less/common.less */
+  /* line 952, assets\less\common.less */
   header .menubox .menubar div:nth-child(2) {
     margin-bottom: 2px;
   }
-  /* line 954, assets/less/common.less */
-=======
-  /* line 987, assets\less\common.less */
-  header .menubox .menubar div {
-    width: 160px;
-  }
-  /* line 989, assets\less\common.less */
-  header .menubox .menubar div:nth-child(1) {
-    margin-bottom: 2px;
-  }
-  /* line 990, assets\less\common.less */
-  header .menubox .menubar div:nth-child(2) {
-    margin-bottom: 2px;
-  }
-  /* line 995, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 957, assets\less\common.less */
   .loginpop {
     width: 676px;
     height: 368px;
   }
-<<<<<<< HEAD
-  /* line 957, assets/less/common.less */
-=======
-  /* line 998, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 960, assets\less\common.less */
   .loginpop .inner {
     width: 626px;
     height: 318px;
   }
-<<<<<<< HEAD
-  /* line 960, assets/less/common.less */
+  /* line 963, assets\less\common.less */
   .loginpop .inner strong {
     padding: 35px 0 0;
   }
-  /* line 963, assets/less/common.less */
+  /* line 966, assets\less\common.less */
   .loginpop .inner .idpassword {
     width: 455px;
   }
-  /* line 965, assets/less/common.less */
+  /* line 968, assets\less\common.less */
   .loginpop .inner .idpassword small {
     margin-top: 20px;
   }
-  /* line 969, assets/less/common.less */
+  /* line 972, assets\less\common.less */
   .loginpop .inner .idpassword .logintxt label {
     width: 100px;
   }
-  /* line 972, assets/less/common.less */
-=======
-  /* line 1001, assets\less\common.less */
-  .loginpop .inner strong {
-    padding: 35px 0 0;
-  }
-  /* line 1004, assets\less\common.less */
-  .loginpop .inner .idpassword {
-    width: 455px;
-  }
-  /* line 1006, assets\less\common.less */
-  .loginpop .inner .idpassword small {
-    margin-top: 20px;
-  }
-  /* line 1010, assets\less\common.less */
-  .loginpop .inner .idpassword .logintxt label {
-    width: 100px;
-  }
-  /* line 1013, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 975, assets\less\common.less */
   .loginpop .inner .idpassword .logintxt input {
     width: 150px;
     height: 25px;
   }
-<<<<<<< HEAD
-  /* line 977, assets/less/common.less */
-=======
-  /* line 1018, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 980, assets\less\common.less */
   .loginpop .inner .idpassword .loginbutton {
     width: 130px;
     height: 42px;
     line-height: 42px;
   }
-<<<<<<< HEAD
-  /* line 985, assets/less/common.less */
-=======
-  /* line 1026, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 988, assets\less\common.less */
   .signuppop {
     width: 650px;
     height: 784px;
   }
-<<<<<<< HEAD
-  /* line 988, assets/less/common.less */
-=======
-  /* line 1029, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 991, assets\less\common.less */
   .signuppop .inner {
     width: 600px;
     height: 734px;
   }
-<<<<<<< HEAD
-  /* line 991, assets/less/common.less */
+  /* line 994, assets\less\common.less */
   .signuppop .inner .agreebox {
     width: 502px;
   }
-  /* line 993, assets/less/common.less */
-=======
-  /* line 1032, assets\less\common.less */
-  .signuppop .inner .agreebox {
-    width: 502px;
-  }
-  /* line 1034, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 996, assets\less\common.less */
   .signuppop .inner .agreebox .textarea {
     width: 500px;
     font-size: 15px;
   }
-<<<<<<< HEAD
-  /* line 998, assets/less/common.less */
-=======
-  /* line 1039, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1001, assets\less\common.less */
   .signuppop .inner .selftext {
     width: 500px;
     height: 225px;
   }
-<<<<<<< HEAD
-  /* line 1002, assets/less/common.less */
+  /* line 1005, assets\less\common.less */
   .signuppop .inner .selftext div:last-child {
     width: 53%;
   }
-  /* line 1003, assets/less/common.less */
+  /* line 1006, assets\less\common.less */
   .signuppop .inner .selftext div input {
     width: 100%;
   }
-  /* line 1006, assets/less/common.less */
-=======
-  /* line 1043, assets\less\common.less */
-  .signuppop .inner .selftext div:last-child {
-    width: 53%;
-  }
-  /* line 1044, assets\less\common.less */
-  .signuppop .inner .selftext div input {
-    width: 100%;
-  }
-  /* line 1047, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1009, assets\less\common.less */
   .signuppop .inner .selftext div .dd,
   .signuppop .inner .selftext div .mm {
     margin-right: 5px;
   }
-<<<<<<< HEAD
-  /* line 1009, assets/less/common.less */
+  /* line 1012, assets\less\common.less */
   .signuppop .inner .selftext div .yyyy {
     width: 90px;
   }
-  /* line 1014, assets/less/common.less */
-=======
-  /* line 1050, assets\less\common.less */
-  .signuppop .inner .selftext div .yyyy {
-    width: 90px;
-  }
-  /* line 1055, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1017, assets\less\common.less */
   .signuppop .inner .joinbutton {
     width: 150px;
     height: 42px;
     line-height: 42px;
   }
-<<<<<<< HEAD
-  /* line 1025, assets/less/common.less */
-=======
-  /* line 1066, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1028, assets\less\common.less */
   footer .bottom .lang div {
     width: 146px;
     height: 36px;
     line-height: 36px;
   }
-<<<<<<< HEAD
-  /* line 1029, assets/less/common.less */
-=======
-  /* line 1070, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1032, assets\less\common.less */
   footer .bottom .lang div strong {
     height: 36px;
     line-height: 36px;
@@ -2014,107 +1214,59 @@ footer .touch span {
   }
 }
 @media screen and (max-width: 800px) {
-<<<<<<< HEAD
-  /* line 1043, assets/less/common.less */
-=======
-  /* line 1084, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1046, assets\less\common.less */
   header .top img {
     transition: 0.5s;
     width: 210px;
     margin-top: 15px;
     margin-left: 50px;
   }
-<<<<<<< HEAD
-  /* line 1051, assets/less/common.less */
+  /* line 1054, assets\less\common.less */
   header .menubox .menubar {
     width: 425px;
   }
-  /* line 1053, assets/less/common.less */
+  /* line 1056, assets\less\common.less */
   header .menubox .menubar div {
     width: 206px;
   }
-  /* line 1057, assets/less/common.less */
-=======
-  /* line 1092, assets\less\common.less */
-  header .menubox .menubar {
-    width: 425px;
-  }
-  /* line 1094, assets\less\common.less */
-  header .menubox .menubar div {
-    width: 206px;
-  }
-  /* line 1098, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1060, assets\less\common.less */
   .loginpop {
     width: 416px;
     height: 388px;
   }
-<<<<<<< HEAD
-  /* line 1060, assets/less/common.less */
-=======
-  /* line 1101, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1063, assets\less\common.less */
   .loginpop .inner {
     position: relative;
     width: 366px;
     height: 338px;
   }
-<<<<<<< HEAD
-  /* line 1064, assets/less/common.less */
-=======
-  /* line 1105, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1067, assets\less\common.less */
   .loginpop .inner strong {
     padding: 30px 0 0;
     font-size: 25px;
   }
-<<<<<<< HEAD
-  /* line 1068, assets/less/common.less */
+  /* line 1071, assets\less\common.less */
   .loginpop .inner .idpassword {
     width: 275px;
   }
-  /* line 1070, assets/less/common.less */
+  /* line 1073, assets\less\common.less */
   .loginpop .inner .idpassword small {
     margin: 20px 0 5px;
   }
-  /* line 1073, assets/less/common.less */
+  /* line 1076, assets\less\common.less */
   .loginpop .inner .idpassword .logintxt {
     margin-bottom: 5px;
   }
-  /* line 1075, assets/less/common.less */
+  /* line 1078, assets\less\common.less */
   .loginpop .inner .idpassword .logintxt label {
     width: 100px;
   }
-  /* line 1078, assets/less/common.less */
-=======
-  /* line 1109, assets\less\common.less */
-  .loginpop .inner .idpassword {
-    width: 275px;
-  }
-  /* line 1111, assets\less\common.less */
-  .loginpop .inner .idpassword small {
-    margin: 20px 0 5px;
-  }
-  /* line 1114, assets\less\common.less */
-  .loginpop .inner .idpassword .logintxt {
-    margin-bottom: 5px;
-  }
-  /* line 1116, assets\less\common.less */
-  .loginpop .inner .idpassword .logintxt label {
-    width: 100px;
-  }
-  /* line 1119, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1081, assets\less\common.less */
   .loginpop .inner .idpassword .logintxt input {
     width: 150px;
     height: 25px;
   }
-<<<<<<< HEAD
-  /* line 1083, assets/less/common.less */
-=======
-  /* line 1124, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1086, assets\less\common.less */
   .loginpop .inner .idpassword .loginbutton {
     position: relative;
     top: 65px;
@@ -2124,78 +1276,42 @@ footer .touch span {
     display: block;
     margin: 0 auto;
   }
-<<<<<<< HEAD
-  /* line 1093, assets/less/common.less */
-=======
-  /* line 1134, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1096, assets\less\common.less */
   .loginpop .inner .findlist {
     position: relative;
     bottom: 95px;
   }
-<<<<<<< HEAD
-  /* line 1096, assets/less/common.less */
+  /* line 1099, assets\less\common.less */
   .loginpop .inner .findlist span {
     font-size: 13px;
   }
-  /* line 1097, assets/less/common.less */
+  /* line 1100, assets\less\common.less */
   .loginpop .inner .findlist a {
     font-size: 12px;
   }
-  /* line 1101, assets/less/common.less */
-=======
-  /* line 1137, assets\less\common.less */
-  .loginpop .inner .findlist span {
-    font-size: 13px;
-  }
-  /* line 1138, assets\less\common.less */
-  .loginpop .inner .findlist a {
-    font-size: 12px;
-  }
-  /* line 1142, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1104, assets\less\common.less */
   .passwordpop {
     width: 410px;
     height: 310px;
   }
-<<<<<<< HEAD
-  /* line 1104, assets/less/common.less */
-=======
-  /* line 1145, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1107, assets\less\common.less */
   .passwordpop .inner {
     width: 360px;
     height: 260px;
   }
-<<<<<<< HEAD
-  /* line 1107, assets/less/common.less */
+  /* line 1110, assets\less\common.less */
   .passwordpop .inner strong {
     font-size: 25px;
   }
-  /* line 1110, assets/less/common.less */
+  /* line 1113, assets\less\common.less */
   .passwordpop .inner .passwordfind {
     width: 325px;
   }
-  /* line 1112, assets/less/common.less */
+  /* line 1115, assets\less\common.less */
   .passwordpop .inner .passwordfind > span {
     margin-top: 20px;
   }
-  /* line 1116, assets/less/common.less */
-=======
-  /* line 1148, assets\less\common.less */
-  .passwordpop .inner strong {
-    font-size: 25px;
-  }
-  /* line 1151, assets\less\common.less */
-  .passwordpop .inner .passwordfind {
-    width: 325px;
-  }
-  /* line 1153, assets\less\common.less */
-  .passwordpop .inner .passwordfind > span {
-    margin-top: 20px;
-  }
-  /* line 1157, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1119, assets\less\common.less */
   .passwordpop .inner .sendbutton {
     width: 150px;
     height: 42px;
@@ -2204,142 +1320,78 @@ footer .touch span {
     bottom: 50px;
     margin-left: -75px;
   }
-<<<<<<< HEAD
-  /* line 1124, assets/less/common.less */
+  /* line 1127, assets\less\common.less */
   .passwordpop .inner .closebtn {
     background-size: 13px;
   }
-  /* line 1129, assets/less/common.less */
-=======
-  /* line 1165, assets\less\common.less */
-  .passwordpop .inner .closebtn {
-    background-size: 13px;
-  }
-  /* line 1170, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1132, assets\less\common.less */
   .signuppop {
     width: 440px;
     height: 710px;
   }
-<<<<<<< HEAD
-  /* line 1132, assets/less/common.less */
-=======
-  /* line 1173, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1135, assets\less\common.less */
   .signuppop .inner {
     top: 25px;
     left: 25px;
     width: 390px;
     height: 660px;
   }
-<<<<<<< HEAD
-  /* line 1137, assets/less/common.less */
-=======
-  /* line 1178, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1140, assets\less\common.less */
   .signuppop .inner strong {
     font-size: 25px;
     padding-top: 30px;
   }
-<<<<<<< HEAD
-  /* line 1141, assets/less/common.less */
-=======
-  /* line 1182, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1144, assets\less\common.less */
   .signuppop .inner .agreebox {
     width: 302px;
     margin-top: 40px;
   }
-<<<<<<< HEAD
-  /* line 1144, assets/less/common.less */
-=======
-  /* line 1185, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1147, assets\less\common.less */
   .signuppop .inner .agreebox .textarea {
     width: 300px;
     font-size: 15px;
   }
-<<<<<<< HEAD
-  /* line 1148, assets/less/common.less */
+  /* line 1151, assets\less\common.less */
   .signuppop .inner .agreebox label {
     font-size: 15px;
   }
-  /* line 1150, assets/less/common.less */
-=======
-  /* line 1189, assets\less\common.less */
-  .signuppop .inner .agreebox label {
-    font-size: 15px;
-  }
-  /* line 1191, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1153, assets\less\common.less */
   .signuppop .inner .selftext {
     width: 350px;
     height: 185px;
   }
-<<<<<<< HEAD
-  /* line 1154, assets/less/common.less */
+  /* line 1157, assets\less\common.less */
   .signuppop .inner .selftext div:last-child {
     width: 71%;
   }
-  /* line 1155, assets/less/common.less */
+  /* line 1158, assets\less\common.less */
   .signuppop .inner .selftext div label {
     font-size: 16px;
   }
-  /* line 1158, assets/less/common.less */
+  /* line 1161, assets\less\common.less */
   .signuppop .inner .selftext div input {
     height: 31px;
   }
-  /* line 1163, assets/less/common.less */
+  /* line 1166, assets\less\common.less */
   .signuppop .inner .joinbutton {
     margin-top: 40px;
   }
-  /* line 1169, assets/less/common.less */
+  /* line 1172, assets\less\common.less */
   footer .bottom {
     padding: 40px 0;
   }
-  /* line 1171, assets/less/common.less */
-=======
-  /* line 1195, assets\less\common.less */
-  .signuppop .inner .selftext div:last-child {
-    width: 71%;
-  }
-  /* line 1196, assets\less\common.less */
-  .signuppop .inner .selftext div label {
-    font-size: 16px;
-  }
-  /* line 1199, assets\less\common.less */
-  .signuppop .inner .selftext div input {
-    height: 31px;
-  }
-  /* line 1204, assets\less\common.less */
-  .signuppop .inner .joinbutton {
-    margin-top: 40px;
-  }
-  /* line 1210, assets\less\common.less */
-  footer .bottom {
-    padding: 40px 0;
-  }
-  /* line 1212, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1174, assets\less\common.less */
   footer .bottom .lang {
     float: none;
     width: 420px;
     margin: 0 auto !important;
   }
-<<<<<<< HEAD
-  /* line 1175, assets/less/common.less */
-=======
-  /* line 1216, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1178, assets\less\common.less */
   footer .bottom .lang div {
     display: inline-block;
     width: 200px;
   }
-<<<<<<< HEAD
-  /* line 1180, assets/less/common.less */
-=======
-  /* line 1221, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1183, assets\less\common.less */
   footer .bottom .notice {
     overflow: hidden;
     padding-top: 10px;
@@ -2347,57 +1399,33 @@ footer .touch span {
     width: 400px;
     margin: 0 auto;
   }
-<<<<<<< HEAD
-  /* line 1186, assets/less/common.less */
-=======
-  /* line 1227, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1189, assets\less\common.less */
   footer .bottom .notice .traveling {
     transition: none;
   }
 }
 @media screen and (max-width: 480px) {
-<<<<<<< HEAD
-  /* line 1196, assets/less/common.less */
+  /* line 1199, assets\less\common.less */
   html body {
     padding-top: 115px;
   }
-  /* line 1201, assets/less/common.less */
+  /* line 1204, assets\less\common.less */
   header .top {
     height: 60px;
   }
-  /* line 1203, assets/less/common.less */
-=======
-  /* line 1237, assets\less\common.less */
-  html body {
-    padding-top: 115px;
-  }
-  /* line 1242, assets\less\common.less */
-  header .top {
-    height: 60px;
-  }
-  /* line 1244, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1206, assets\less\common.less */
   header .top img {
     width: 160px;
     margin-top: 15px;
     margin-left: 10px;
     transition: 1s;
   }
-<<<<<<< HEAD
-  /* line 1209, assets/less/common.less */
-=======
-  /* line 1250, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1212, assets\less\common.less */
   header .top .logsign {
     margin-top: 22px;
     font-size: 13px;
   }
-<<<<<<< HEAD
-  /* line 1215, assets/less/common.less */
-=======
-  /* line 1256, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1218, assets\less\common.less */
   header .menuboxbtn {
     height: 50px;
     background-color: #fff;
@@ -2406,60 +1434,36 @@ footer .touch span {
     background-repeat: no-repeat;
     position: relative;
   }
-<<<<<<< HEAD
-  /* line 1222, assets/less/common.less */
-=======
-  /* line 1263, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1225, assets\less\common.less */
   header .menuboxbtn .menubox {
     position: relative;
     display: none;
     height: 190px;
     background-color: #fff;
   }
-<<<<<<< HEAD
-  /* line 1227, assets/less/common.less */
-=======
-  /* line 1268, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1230, assets\less\common.less */
   header .menuboxbtn .menubox .menubar {
     width: 226px;
     vertical-align: top;
   }
-<<<<<<< HEAD
-  /* line 1230, assets/less/common.less */
-=======
-  /* line 1271, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1233, assets\less\common.less */
   header .menuboxbtn .menubox .menubar div {
     width: 220px;
     height: 36px;
     font-size: 18px;
     display: block;
   }
-<<<<<<< HEAD
-  /* line 1235, assets/less/common.less */
+  /* line 1238, assets\less\common.less */
   header .menuboxbtn .menubox .menubar div span {
     line-height: 36px;
   }
-  /* line 1243, assets/less/common.less */
-=======
-  /* line 1276, assets\less\common.less */
-  header .menuboxbtn .menubox .menubar div span {
-    line-height: 36px;
-  }
-  /* line 1284, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1246, assets\less\common.less */
   .loginpop {
     margin: 18px auto 0;
     width: 320px;
     height: 360px;
   }
-<<<<<<< HEAD
-  /* line 1247, assets/less/common.less */
-=======
-  /* line 1288, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1250, assets\less\common.less */
   .loginpop .inner {
     position: relative;
     top: 20px;
@@ -2467,128 +1471,72 @@ footer .touch span {
     width: 280px;
     height: 320px;
   }
-<<<<<<< HEAD
-  /* line 1253, assets/less/common.less */
+  /* line 1256, assets\less\common.less */
   .loginpop .inner strong {
     font-size: 22px;
   }
-  /* line 1257, assets/less/common.less */
-=======
-  /* line 1294, assets\less\common.less */
-  .loginpop .inner strong {
-    font-size: 22px;
-  }
-  /* line 1298, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1260, assets\less\common.less */
   .loginpop .inner .idpassword small {
     font-size: 13px;
     margin-left: 25px;
   }
-<<<<<<< HEAD
-  /* line 1262, assets/less/common.less */
-=======
-  /* line 1303, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1265, assets\less\common.less */
   .loginpop .inner .idpassword .logintxt label {
     margin-left: 25px;
     font-size: 16px;
     width: 80px;
   }
-<<<<<<< HEAD
-  /* line 1267, assets/less/common.less */
+  /* line 1270, assets\less\common.less */
   .loginpop .inner .idpassword .logintxt input {
     width: 120px;
   }
-  /* line 1271, assets/less/common.less */
-=======
-  /* line 1308, assets\less\common.less */
-  .loginpop .inner .idpassword .logintxt input {
-    width: 120px;
-  }
-  /* line 1312, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1274, assets\less\common.less */
   .loginpop .inner .idpassword .loginbutton {
     width: 140px;
     height: 38px;
     line-height: 38px;
     top: 55px;
   }
-<<<<<<< HEAD
-  /* line 1278, assets/less/common.less */
+  /* line 1281, assets\less\common.less */
   .loginpop .inner .findlist {
     margin-left: 25px;
   }
-  /* line 1283, assets/less/common.less */
-=======
-  /* line 1319, assets\less\common.less */
-  .loginpop .inner .findlist {
-    margin-left: 25px;
-  }
-  /* line 1324, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1286, assets\less\common.less */
   .passwordpop {
     margin: 150px auto 0;
     width: 320px;
     height: 300px;
   }
-<<<<<<< HEAD
-  /* line 1287, assets/less/common.less */
-=======
-  /* line 1328, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1290, assets\less\common.less */
   .passwordpop .inner {
     width: 280px;
     height: 260px;
     top: 20px;
     left: 20px;
   }
-<<<<<<< HEAD
-  /* line 1292, assets/less/common.less */
+  /* line 1295, assets\less\common.less */
   .passwordpop .inner strong {
     font-size: 22px;
   }
-  /* line 1295, assets/less/common.less */
+  /* line 1298, assets\less\common.less */
   .passwordpop .inner .passwordfind {
     width: 256px;
   }
-  /* line 1297, assets/less/common.less */
-=======
-  /* line 1333, assets\less\common.less */
-  .passwordpop .inner strong {
-    font-size: 22px;
-  }
-  /* line 1336, assets\less\common.less */
-  .passwordpop .inner .passwordfind {
-    width: 256px;
-  }
-  /* line 1338, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1300, assets\less\common.less */
   .passwordpop .inner .passwordfind > span {
     margin-top: 20px;
     font-size: 14px;
   }
-<<<<<<< HEAD
-  /* line 1302, assets/less/common.less */
+  /* line 1305, assets\less\common.less */
   .passwordpop .inner .passwordfind .email label {
     display: none;
   }
-  /* line 1303, assets/less/common.less */
-=======
-  /* line 1343, assets\less\common.less */
-  .passwordpop .inner .passwordfind .email label {
-    display: none;
-  }
-  /* line 1344, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1306, assets\less\common.less */
   .passwordpop .inner .passwordfind .email input {
     display: block;
     margin: 15px auto 0;
   }
-<<<<<<< HEAD
-  /* line 1309, assets/less/common.less */
-=======
-  /* line 1350, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1312, assets\less\common.less */
   .passwordpop .inner .sendbutton {
     width: 140px;
     height: 38px;
@@ -2596,167 +1544,95 @@ footer .touch span {
     font-size: 18px;
     margin-left: -70px;
   }
-<<<<<<< HEAD
-  /* line 1318, assets/less/common.less */
-=======
-  /* line 1359, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1321, assets\less\common.less */
   .signuppop {
     top: 150px;
     bottom: 200px;
     width: 350px;
     height: 600px;
   }
-<<<<<<< HEAD
-  /* line 1323, assets/less/common.less */
-=======
-  /* line 1363, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1326, assets\less\common.less */
   .signuppop .inner {
     top: 20px;
     left: 20px;
     width: 310px;
     height: 560px;
   }
-<<<<<<< HEAD
-  /* line 1328, assets/less/common.less */
+  /* line 1331, assets\less\common.less */
   .signuppop .inner strong {
     font-size: 22px;
   }
-  /* line 1331, assets/less/common.less */
-=======
-  /* line 1368, assets\less\common.less */
-  .signuppop .inner strong {
-    font-size: 22px;
-  }
-  /* line 1371, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1334, assets\less\common.less */
   .signuppop .inner .agreebox {
     width: 222px;
     margin-top: 20px;
   }
-<<<<<<< HEAD
-  /* line 1334, assets/less/common.less */
-=======
-  /* line 1374, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1337, assets\less\common.less */
   .signuppop .inner .agreebox .textarea {
     width: 220px;
     height: 150px;
     font-size: 13px;
   }
-<<<<<<< HEAD
-  /* line 1339, assets/less/common.less */
+  /* line 1342, assets\less\common.less */
   .signuppop .inner .agreebox label {
     font-size: 13px;
   }
-  /* line 1343, assets/less/common.less */
-=======
-  /* line 1379, assets\less\common.less */
-  .signuppop .inner .agreebox label {
-    font-size: 13px;
-  }
-  /* line 1381, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1346, assets\less\common.less */
   .signuppop .inner .selftext {
     margin-top: 5px;
     width: 260px;
     height: 165px;
   }
-<<<<<<< HEAD
-  /* line 1347, assets/less/common.less */
-=======
-  /* line 1385, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1350, assets\less\common.less */
   .signuppop .inner .selftext div {
     margin-bottom: 3px;
   }
-<<<<<<< HEAD
-  /* line 1349, assets/less/common.less */
+  /* line 1352, assets\less\common.less */
   .signuppop .inner .selftext div:last-child {
     width: 100%;
   }
-  /* line 1351, assets/less/common.less */
+  /* line 1354, assets\less\common.less */
   .signuppop .inner .selftext .dd {
     margin-bottom: 3px;
   }
-  /* line 1353, assets/less/common.less */
+  /* line 1356, assets\less\common.less */
   .signuppop .inner .joinbutton {
     margin-top: 40px;
   }
-  /* line 1359, assets/less/common.less */
+  /* line 1362, assets\less\common.less */
   footer .empty {
     height: 50px !important;
   }
-  /* line 1362, assets/less/common.less */
-=======
-  /* line 1387, assets\less\common.less */
-  .signuppop .inner .selftext div:last-child {
-    width: 100%;
-  }
-  /* line 1390, assets\less\common.less */
-  .signuppop .inner .joinbutton {
-    margin-top: 40px;
-  }
-  /* line 1396, assets\less\common.less */
-  footer .empty {
-    height: 50px !important;
-  }
-  /* line 1399, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1365, assets\less\common.less */
   footer .bottom {
     transition: 0.5s;
     padding: 20px 0;
   }
-<<<<<<< HEAD
-  /* line 1365, assets/less/common.less */
-=======
-  /* line 1402, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1368, assets\less\common.less */
   footer .bottom .lang {
     width: 282px;
     margin: 0 auto;
   }
-<<<<<<< HEAD
-  /* line 1368, assets/less/common.less */
-=======
-  /* line 1405, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1371, assets\less\common.less */
   footer .bottom .lang div {
     width: 136px;
     height: 30px;
     line-height: 30px;
   }
-<<<<<<< HEAD
-  /* line 1372, assets/less/common.less */
-=======
-  /* line 1409, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1375, assets\less\common.less */
   footer .bottom .lang div strong {
     height: 30px;
     line-height: 30px;
   }
-<<<<<<< HEAD
-  /* line 1375, assets/less/common.less */
+  /* line 1378, assets\less\common.less */
   footer .bottom .lang div strong span {
     font-size: 13px;
   }
-  /* line 1379, assets/less/common.less */
+  /* line 1382, assets\less\common.less */
   footer .bottom .lang div ul {
     font-size: 13px;
   }
-  /* line 1382, assets/less/common.less */
-=======
-  /* line 1412, assets\less\common.less */
-  footer .bottom .lang div strong span {
-    font-size: 13px;
-  }
-  /* line 1416, assets\less\common.less */
-  footer .bottom .lang div ul {
-    font-size: 13px;
-  }
-  /* line 1419, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1385, assets\less\common.less */
   footer .bottom .notice {
     padding-top: 10px;
     font-size: 13px;
@@ -2765,20 +1641,12 @@ footer .touch span {
     margin: 0 auto;
     overflow: hidden;
   }
-<<<<<<< HEAD
-  /* line 1389, assets/less/common.less */
-=======
-  /* line 1426, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1392, assets\less\common.less */
   footer .bottom .notice .touch {
     float: left;
     width: 207px;
   }
-<<<<<<< HEAD
-  /* line 1390, assets/less/common.less */
-=======
-  /* line 1427, assets\less\common.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 1393, assets\less\common.less */
   footer .bottom .notice .traveling {
     float: left;
     margin-top: 10px;
@@ -2839,11 +1707,7 @@ footer .touch span {
   text-align: left;
   display: none;
 }
-<<<<<<< HEAD
-/* line 46, assets/less/style.less */
-=======
-/* line 47, assets\less\style.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 46, assets\less\style.less */
 .index .main_contents .searchbar div strong + ul li {
   height: 42px;
   line-height: 42px;
@@ -3007,130 +1871,130 @@ footer .touch span {
   .index .main_contents .searchbar {
     padding-top: 150px;
   }
-  /* line 215, assets/less/style.less */
+  /* line 215, assets\less\style.less */
   .index .main_contents .searchbar div {
     border-radius: 25px;
     width: 42px;
     margin-bottom: 0;
   }
-  /* line 222, assets/less/style.less */
+  /* line 222, assets\less\style.less */
   .index .main_contents .searchbar div strong span {
     display: none;
   }
-  /* line 224, assets/less/style.less */
+  /* line 224, assets\less\style.less */
   .index .main_contents .searchbar div strong + ul {
     width: 280px;
     border: 0px;
     font-size: 15px;
   }
-  /* line 228, assets/less/style.less */
+  /* line 228, assets\less\style.less */
   .index .main_contents .searchbar div strong + ul li {
     border: 1px #fff solid;
     width: 34.5%;
     float: left;
     padding: 0 10px;
   }
-  /* line 233, assets/less/style.less */
+  /* line 233, assets\less\style.less */
   .index .main_contents .searchbar div strong + ul li:nth-child(1) {
     border-bottom: 0;
     border-right: 0;
   }
-  /* line 237, assets/less/style.less */
+  /* line 237, assets\less\style.less */
   .index .main_contents .searchbar div strong + ul li:nth-child(2) {
     border-bottom: 0;
   }
-  /* line 240, assets/less/style.less */
+  /* line 240, assets\less\style.less */
   .index .main_contents .searchbar div strong + ul li:nth-child(3) {
     border-bottom: 0;
     border-right: 0;
   }
-  /* line 244, assets/less/style.less */
+  /* line 244, assets\less\style.less */
   .index .main_contents .searchbar div strong + ul li:nth-child(4) {
     border-bottom: 0;
   }
-  /* line 247, assets/less/style.less */
+  /* line 247, assets\less\style.less */
   .index .main_contents .searchbar div strong + ul li:nth-child(5) {
     border-right: 0;
   }
-  /* line 252, assets/less/style.less */
+  /* line 252, assets\less\style.less */
   .index .main_contents .searchbar div .table {
     border-radius: 0;
     width: 231px;
     height: 202px;
   }
-  /* line 256, assets/less/style.less */
+  /* line 256, assets\less\style.less */
   .index .main_contents .searchbar div .table table {
     width: 100%;
     heigt: 160px;
     font-size: 15px;
   }
-  /* line 263, assets/less/style.less */
+  /* line 263, assets\less\style.less */
   .index .main_contents .searchbar .searchbox {
     border-radius: 25px;
     width: 42px !important;
     height: 42px;
   }
-  /* line 269, assets/less/style.less */
+  /* line 269, assets\less\style.less */
   .index .main_contents .searchbar .locationbox strong {
     background-position: left 9px center;
     background-size: 45%;
   }
-  /* line 274, assets/less/style.less */
+  /* line 274, assets\less\style.less */
   .index .main_contents .searchbar .datebox .checkin {
     background-position: left 9.5px center;
     background-size: 40%;
   }
-  /* line 278, assets/less/style.less */
+  /* line 278, assets\less\style.less */
   .index .main_contents .searchbar .datebox .checkintable {
     position: relative;
     left: -114%;
   }
-  /* line 282, assets/less/style.less */
+  /* line 282, assets\less\style.less */
   .index .main_contents .searchbar .datebox .checkout {
     background-position: left 9.5px center;
     background-size: 40%;
   }
-  /* line 286, assets/less/style.less */
+  /* line 286, assets\less\style.less */
   .index .main_contents .searchbar .datebox .checkouttable {
     position: relative;
     left: -229%;
   }
-  /* line 291, assets/less/style.less */
+  /* line 291, assets\less\style.less */
   .index .main_contents .searchbar .guestbox strong {
     background-position: left 8px center;
     background-size: 50%;
   }
-  /* line 295, assets/less/style.less */
+  /* line 295, assets\less\style.less */
   .index .main_contents .searchbar .typebox strong {
     background-position: left 9px center;
     background-size: 43%;
   }
-  /* line 299, assets/less/style.less */
+  /* line 299, assets\less\style.less */
   .index .main_contents .searchbar .searchbox {
     width: 22px;
     padding: 0 10px;
     background-position: left 11px center;
     background-size: 50%;
   }
-  /* line 304, assets/less/style.less */
+  /* line 304, assets\less\style.less */
   .index .main_contents .searchbar .searchbox span {
     display: none;
   }
-  /* line 306, assets/less/style.less */
+  /* line 306, assets\less\style.less */
   .index .main_contents .searchbar .guestbox ul {
     position: relative;
     left: -347%;
   }
-  /* line 310, assets/less/style.less */
+  /* line 310, assets\less\style.less */
   .index .main_contents .searchbar .typebox ul {
     position: relative;
     left: -462%;
   }
-  /* line 314, assets/less/style.less */
+  /* line 314, assets\less\style.less */
   .index .main_contents .searchbar .typebox ul li:nth-child(3) {
     border-bottom: 1px #fff solid;
   }
-  /* line 317, assets/less/style.less */
+  /* line 317, assets\less\style.less */
   .index .main_contents .searchbar .typebox ul li:nth-child(4) {
     border-bottom: 1px #fff solid;
   }
@@ -3248,19 +2112,11 @@ footer .touch span {
   background-position: center;
   background-size: 30px;
 }
-<<<<<<< HEAD
-/* line 96, assets/less/guesthouse.less */
-=======
-/* line 93, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 96, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(1) .icon span:nth-child(1) {
   background-image: url(../images/icon/buildings.png);
 }
-<<<<<<< HEAD
-/* line 100, assets/less/guesthouse.less */
-=======
-/* line 98, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 100, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(1) .icon span:nth-child(2) {
   background-image: url(../images/icon/bathtub.png);
 }
@@ -3268,154 +2124,90 @@ footer .touch span {
 .guesthouse .listwrap li:nth-child(1) .icon span:nth-child(3) {
   background-image: url(../images/icon/air-conditioner.png);
 }
-<<<<<<< HEAD
-/* line 106, assets/less/guesthouse.less */
-=======
-/* line 108, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 106, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(1) .icon span:nth-child(4) {
   background-image: url(../images/icon/holidays.png);
 }
-<<<<<<< HEAD
-/* line 113, assets/less/guesthouse.less */
-=======
-/* line 117, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 113, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(2) .icon span {
   width: 30px;
   height: 30px;
   display: inline-block;
   padding: 5px;
 }
-<<<<<<< HEAD
-/* line 119, assets/less/guesthouse.less */
-=======
-/* line 123, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 119, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(2) .icon span:nth-child(1) {
   background-image: url(../images/icon/lift-sign.png);
   background-repeat: no-repeat;
   background-size: 30px;
 }
-<<<<<<< HEAD
-/* line 124, assets/less/guesthouse.less */
-=======
-/* line 128, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 124, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(2) .icon span:nth-child(2) {
   background-image: url(../images/icon/laundry.png);
   background-repeat: no-repeat;
   background-size: 30px;
 }
-<<<<<<< HEAD
-/* line 129, assets/less/guesthouse.less */
-=======
-/* line 133, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 129, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(2) .icon span:nth-child(3) {
   background-image: url(../images/icon/buildings.png);
   background-repeat: no-repeat;
   background-size: 30px;
 }
-<<<<<<< HEAD
-/* line 134, assets/less/guesthouse.less */
-=======
-/* line 138, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 134, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(2) .icon span:nth-child(4) {
   background-image: url(../images/icon/technology.png);
   background-repeat: no-repeat;
   background-size: 30px;
 }
-<<<<<<< HEAD
-/* line 143, assets/less/guesthouse.less */
-=======
-/* line 147, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 143, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(3) .icon span {
   width: 30px;
   height: 30px;
   display: inline-block;
   padding: 5px;
 }
-<<<<<<< HEAD
-/* line 149, assets/less/guesthouse.less */
-=======
-/* line 153, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 149, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(3) .icon span:nth-child(1) {
   background-image: url(../images/icon/buildings.png);
   background-repeat: no-repeat;
   background-size: 30px;
 }
-<<<<<<< HEAD
-/* line 154, assets/less/guesthouse.less */
-=======
-/* line 158, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 154, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(3) .icon span:nth-child(2) {
   background-image: url(../images/icon/bathtub.png);
   background-repeat: no-repeat;
   background-size: 30px;
 }
-<<<<<<< HEAD
-/* line 159, assets/less/guesthouse.less */
-=======
-/* line 163, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 159, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(3) .icon span:nth-child(3) {
   background-image: url(../images/icon/air-conditioner.png);
   background-repeat: no-repeat;
   background-size: 30px;
 }
-<<<<<<< HEAD
-/* line 164, assets/less/guesthouse.less */
-=======
-/* line 168, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 164, assets\less\guesthouse.less */
 .guesthouse .listwrap li:nth-child(3) .icon span:nth-child(4) {
   background-image: url(../images/icon/computer.png);
   background-repeat: no-repeat;
   background-size: 30px;
 }
 @media screen and (max-width: 1350px) {
-<<<<<<< HEAD
-  /* line 178, assets/less/guesthouse.less */
+  /* line 178, assets\less\guesthouse.less */
   .guesthouse .listwrap li {
     height: 260px;
   }
-  /* line 180, assets/less/guesthouse.less */
+  /* line 180, assets\less\guesthouse.less */
   .guesthouse .listwrap li img {
     width: 396px;
   }
-  /* line 183, assets/less/guesthouse.less */
+  /* line 183, assets\less\guesthouse.less */
   .guesthouse .listwrap li p {
     padding-top: 0;
-  }
-  /* line 184, assets/less/guesthouse.less */
-  .guesthouse .listwrap li .explanation {
-    margin-left: 450px;
-  }
-  /* line 187, assets/less/guesthouse.less */
-=======
-  /* line 182, assets\less\guesthouse.less */
-  .guesthouse .listwrap li {
-    height: 260px;
   }
   /* line 184, assets\less\guesthouse.less */
-  .guesthouse .listwrap li img {
-    width: 396px;
-  }
-  /* line 187, assets\less\guesthouse.less */
-  .guesthouse .listwrap li p {
-    padding-top: 0;
-  }
-  /* line 188, assets\less\guesthouse.less */
   .guesthouse .listwrap li .explanation {
     margin-left: 450px;
   }
-  /* line 191, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 187, assets\less\guesthouse.less */
   .guesthouse .listwrap li .detailsbtn {
     margin-left: 489px;
     bottom: 50px;
@@ -3426,85 +2218,49 @@ footer .touch span {
   }
 }
 @media screen and (max-width: 1024px) {
-<<<<<<< HEAD
-  /* line 202, assets/less/guesthouse.less */
+  /* line 202, assets\less\guesthouse.less */
   .guesthouse .listwrap li {
     height: 500px;
   }
-  /* line 204, assets/less/guesthouse.less */
-=======
-  /* line 206, assets\less\guesthouse.less */
-  .guesthouse .listwrap li {
-    height: 500px;
-  }
-  /* line 208, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 204, assets\less\guesthouse.less */
   .guesthouse .listwrap li img {
     float: none;
     margin: 0 auto;
     display: block;
   }
-<<<<<<< HEAD
-  /* line 209, assets/less/guesthouse.less */
-=======
-  /* line 213, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 209, assets\less\guesthouse.less */
   .guesthouse .listwrap li .explanation {
     margin: 20px auto 0;
     text-align: center;
     padding: 0;
   }
-<<<<<<< HEAD
-  /* line 213, assets/less/guesthouse.less */
-=======
-  /* line 217, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 213, assets\less\guesthouse.less */
   .guesthouse .listwrap li .explanation .icon {
     width: 263px;
     position: relative;
     left: 20px;
     text-align: left;
   }
-<<<<<<< HEAD
-  /* line 220, assets/less/guesthouse.less */
-=======
-  /* line 224, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 220, assets\less\guesthouse.less */
   .guesthouse .listwrap li .detailsbtn {
     bottom: 58px;
     right: 110px;
   }
 }
 @media screen and (max-width: 750px) {
-<<<<<<< HEAD
-  /* line 231, assets/less/guesthouse.less */
+  /* line 231, assets\less\guesthouse.less */
   .guesthouse .listwrap li {
     height: 435px;
   }
-  /* line 233, assets/less/guesthouse.less */
+  /* line 233, assets\less\guesthouse.less */
   .guesthouse .listwrap li img {
     width: 300px;
   }
-  /* line 234, assets/less/guesthouse.less */
+  /* line 234, assets\less\guesthouse.less */
   .guesthouse .listwrap li p {
     padding: 0 10px !important;
   }
-  /* line 235, assets/less/guesthouse.less */
-=======
   /* line 235, assets\less\guesthouse.less */
-  .guesthouse .listwrap li {
-    height: 435px;
-  }
-  /* line 237, assets\less\guesthouse.less */
-  .guesthouse .listwrap li img {
-    width: 300px;
-  }
-  /* line 238, assets\less\guesthouse.less */
-  .guesthouse .listwrap li p {
-    padding: 0 10px !important;
-  }
-  /* line 239, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
   .guesthouse .listwrap li .detailsbtn {
     width: 110px;
     bottom: 56px;
@@ -3512,100 +2268,60 @@ footer .touch span {
   }
 }
 @media screen and (max-width: 550px) {
-<<<<<<< HEAD
-  /* line 248, assets/less/guesthouse.less */
-=======
-  /* line 252, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 248, assets\less\guesthouse.less */
   .guesthouse .listwrap li .detailsbtn {
     right: 35px;
   }
 }
 @media screen and (max-width: 480px) {
-<<<<<<< HEAD
-  /* line 258, assets/less/guesthouse.less */
-=======
-  /* line 262, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 258, assets\less\guesthouse.less */
   .guesthouse .listwrap li {
     padding: 25px 0;
     height: 343px;
   }
-<<<<<<< HEAD
-  /* line 261, assets/less/guesthouse.less */
+  /* line 261, assets\less\guesthouse.less */
   .guesthouse .listwrap li img {
     width: 250px;
   }
-  /* line 262, assets/less/guesthouse.less */
+  /* line 262, assets\less\guesthouse.less */
   .guesthouse .listwrap li .explanation {
     margin-top: 10px;
   }
-  /* line 263, assets/less/guesthouse.less */
-=======
-  /* line 265, assets\less\guesthouse.less */
-  .guesthouse .listwrap li img {
-    width: 250px;
-  }
-  /* line 266, assets\less\guesthouse.less */
-  .guesthouse .listwrap li .explanation {
-    margin-top: 10px;
-  }
-  /* line 267, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 263, assets\less\guesthouse.less */
   .guesthouse .listwrap li p {
     padding: 0 10px;
     height: 128px;
     font-size: 15px;
   }
-<<<<<<< HEAD
-  /* line 264, assets/less/guesthouse.less */
+  /* line 264, assets\less\guesthouse.less */
   .guesthouse .listwrap li p strong {
     font-size: 18px;
   }
-  /* line 269, assets/less/guesthouse.less */
+  /* line 269, assets\less\guesthouse.less */
   .guesthouse .listwrap li .icon {
     margin-top: 3px;
   }
-  /* line 271, assets/less/guesthouse.less */
+  /* line 271, assets\less\guesthouse.less */
   .guesthouse .listwrap li .icon span {
     width: 25px !important;
     height: 25px !important;
     background-size: 25px !important;
     padding: 12px 3px 3px !important;
   }
-  /* line 278, assets/less/guesthouse.less */
-=======
-  /* line 268, assets\less\guesthouse.less */
-  .guesthouse .listwrap li p strong {
-    font-size: 18px;
-  }
-  /* line 273, assets\less\guesthouse.less */
-  .guesthouse .listwrap li .icon {
-    margin-top: 3px;
-  }
-  /* line 274, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 278, assets\less\guesthouse.less */
   .guesthouse .listwrap li .detailsbtn {
     width: 100px;
     height: 30px;
     line-height: 26px;
     font-size: 16px;
     bottom: 22px;
-    right: 35px;
-  }
-<<<<<<< HEAD
-  /* line 285, assets/less/guesthouse.less */
-  .guesthouse .listwrap li .detailsbtn span {
-    padding-left: 22px;
-  }
-  /* line 289, assets/less/guesthouse.less */
-=======
-  /* line 281, assets\less\guesthouse.less */
-  .guesthouse .listwrap li .detailsbtn span {
-    padding-left: 22px;
+    right: 20px;
   }
   /* line 285, assets\less\guesthouse.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  .guesthouse .listwrap li .detailsbtn span {
+    padding-left: 22px;
+  }
+  /* line 289, assets\less\guesthouse.less */
   .guesthouse .listwrap li .detailsbtn:hover span {
     padding-left: 22px;
   }
@@ -4602,7 +3318,7 @@ footer .touch span {
 /* line 13, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #edecec;
   width: 474px;
   height: 550px;
   float: right;
@@ -4619,12 +3335,13 @@ footer .touch span {
   height: 50px;
   position: relative;
   margin-bottom: 50px;
+  background-color: #f7f6f6;
 }
-/* line 30, assets\less\guesthouse_details.less */
+/* line 31, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox div:hover {
   cursor: pointer;
 }
-/* line 33, assets\less\guesthouse_details.less */
+/* line 34, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox div strong {
   padding: 0 10px;
   display: block;
@@ -4635,35 +3352,38 @@ footer .touch span {
   font-weight: normal;
   text-align: left;
 }
-/* line 43, assets\less\guesthouse_details.less */
+/* line 44, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox div strong span {
-  background-image: url(../images/g_arrow.png);
+  background-image: url(../images/g_arrow01.png);
   background-repeat: no-repeat;
   background-position: right 0 center;
   display: block;
 }
-/* line 50, assets\less\guesthouse_details.less */
+/* line 51, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox div strong + ul {
   border: 1px #aeaeae solid;
   margin-top: 2px;
   position: absolute;
+  left: -1px;
+  z-index: 100;
   width: 100%;
   text-align: left;
   display: none;
+  background-color: #f7f6f6;
 }
-/* line 57, assets\less\guesthouse_details.less */
+/* line 61, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox div strong + ul li {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
   color: #aeaeae;
 }
-/* line 62, assets\less\guesthouse_details.less */
+/* line 66, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox div strong + ul li:hover {
-  background-color: rgba(255, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-/* line 69, assets\less\guesthouse_details.less */
+/* line 73, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox .table {
   color: #aeaeae;
   border: 1px #aeaeae solid;
@@ -4672,14 +3392,16 @@ footer .touch span {
   height: 280px;
   position: relative;
   top: 2px;
+  left: -1px;
+  z-index: 100;
 }
-/* line 79, assets\less\guesthouse_details.less */
+/* line 85, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox .datebox table {
   margin: 0 auto;
   width: 270px;
   height: 240px;
 }
-/* line 84, assets\less\guesthouse_details.less */
+/* line 90, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox .datebox table li:nth-child(1) {
   float: left;
   margin-top: 10px;
@@ -4689,7 +3411,7 @@ footer .touch span {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 93, assets\less\guesthouse_details.less */
+/* line 99, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox .datebox table li:nth-child(2) {
   float: right;
   margin-top: 10px;
@@ -4699,21 +3421,21 @@ footer .touch span {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 103, assets\less\guesthouse_details.less */
+/* line 109, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox .datebox table caption {
   margin: 3px 0;
 }
-/* line 105, assets\less\guesthouse_details.less */
+/* line 111, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox .datebox table td:hover {
-  background-color: rgba(255, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-/* line 110, assets\less\guesthouse_details.less */
+/* line 116, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbox .datebox table .date {
   display: block;
   margin-top: 5px;
 }
-/* line 117, assets\less\guesthouse_details.less */
+/* line 123, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbutton {
   background-color: #aeaeae;
   border: 1px #aeaeae solid;
@@ -4723,24 +3445,24 @@ footer .touch span {
   width: 180px;
   height: 52px;
   font-size: 20px;
-  margin: 130px auto 0;
+  margin: 140px auto 0;
 }
-/* line 118, assets\less\guesthouse_details.less */
+/* line 124, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbutton a {
   color: #fff;
 }
-/* line 128, assets\less\guesthouse_details.less */
+/* line 134, assets\less\guesthouse_details.less */
 .guesthouse_details .bookbutton:hover {
   background-color: #a2a1a1;
 }
-/* line 131, assets\less\guesthouse_details.less */
+/* line 137, assets\less\guesthouse_details.less */
 .guesthouse_details .house {
   position: relative;
   width: 890px;
   height: auto;
   display: inline-block;
 }
-/* line 136, assets\less\guesthouse_details.less */
+/* line 142, assets\less\guesthouse_details.less */
 .guesthouse_details .house button {
   position: absolute;
   width: 30px;
@@ -4751,70 +3473,70 @@ footer .touch span {
   top: 50%;
   text-indent: -9999px;
 }
-/* line 146, assets\less\guesthouse_details.less */
+/* line 152, assets\less\guesthouse_details.less */
 .guesthouse_details .house button:nth-child(1) {
   background-image: url(../images/wg_arrowL.png);
   left: 0;
 }
-/* line 149, assets\less\guesthouse_details.less */
+/* line 155, assets\less\guesthouse_details.less */
 .guesthouse_details .house button:nth-child(1):hover {
   background-image: url(../images/g_arrowL.png);
 }
-/* line 154, assets\less\guesthouse_details.less */
+/* line 160, assets\less\guesthouse_details.less */
 .guesthouse_details .house button:nth-child(2) {
   background-image: url(../images/wg_arrowR.png);
   background-position: right 0px center;
   right: 0;
 }
-/* line 158, assets\less\guesthouse_details.less */
+/* line 164, assets\less\guesthouse_details.less */
 .guesthouse_details .house button:nth-child(2):hover {
   background-image: url(../images/g_arrowR.png);
 }
-/* line 164, assets\less\guesthouse_details.less */
+/* line 170, assets\less\guesthouse_details.less */
 .guesthouse_details .housepic img {
   display: block;
   margin: 0 auto;
 }
-/* line 172, assets\less\guesthouse_details.less */
+/* line 178, assets\less\guesthouse_details.less */
 .guesthouse_details .details {
   padding-top: 100px;
 }
-/* line 175, assets\less\guesthouse_details.less */
+/* line 181, assets\less\guesthouse_details.less */
 .guesthouse_details .explanation {
   width: 660px;
 }
-/* line 177, assets\less\guesthouse_details.less */
+/* line 183, assets\less\guesthouse_details.less */
 .guesthouse_details .explanation p {
   font-size: 16px;
   width: 100%;
 }
-/* line 182, assets\less\guesthouse_details.less */
+/* line 188, assets\less\guesthouse_details.less */
 .guesthouse_details .addlist01 {
   position: relative;
   height: auto;
   width: 852px;
 }
-/* line 186, assets\less\guesthouse_details.less */
+/* line 192, assets\less\guesthouse_details.less */
 .guesthouse_details .addlist01 ul {
   width: 100%;
 }
-/* line 187, assets\less\guesthouse_details.less */
+/* line 193, assets\less\guesthouse_details.less */
 .guesthouse_details .addlist01 li {
   margin-top: 40px;
   display: inline-block;
 }
-/* line 191, assets\less\guesthouse_details.less */
+/* line 197, assets\less\guesthouse_details.less */
 .guesthouse_details .addlist01 h2 {
   background-image: url(../images/check.png);
   background-repeat: no-repeat;
   padding-left: 35px;
   height: 28px;
 }
-/* line 197, assets\less\guesthouse_details.less */
+/* line 203, assets\less\guesthouse_details.less */
 .guesthouse_details .addlist01 p {
   padding-left: 35px;
 }
-/* line 201, assets\less\guesthouse_details.less */
+/* line 207, assets\less\guesthouse_details.less */
 .guesthouse_details .map-control {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -4825,26 +3547,26 @@ footer .touch span {
            before the map loads. */
   display: none;
 }
-/* line 212, assets\less\guesthouse_details.less */
+/* line 218, assets\less\guesthouse_details.less */
 .guesthouse_details .map .map-control {
   display: block;
   text-indent: -9999px;
 }
-/* line 216, assets\less\guesthouse_details.less */
+/* line 222, assets\less\guesthouse_details.less */
 .guesthouse_details .selector-control {
   positonfont-size: 14px;
   line-height: 30px;
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 223, assets\less\guesthouse_details.less */
+/* line 229, assets\less\guesthouse_details.less */
 .guesthouse_details .map {
   transition: .5s;
   width: 900px;
   height: 450px;
   margin-top: 100px;
 }
-/* line 229, assets\less\guesthouse_details.less */
+/* line 235, assets\less\guesthouse_details.less */
 .guesthouse_details .textbox {
   width: 765px;
   height: 163px;
@@ -4856,7 +3578,7 @@ footer .touch span {
   overflow-y: scroll;
   margin-bottom: 75px;
 }
-/* line 240, assets\less\guesthouse_details.less */
+/* line 246, assets\less\guesthouse_details.less */
 .guesthouse_details .namebox_w {
   width: 190px;
   height: 45px;
@@ -4866,26 +3588,31 @@ footer .touch span {
   text-align: center;
   background-color: #fff;
   position: absolute;
+}
+/* line 255, assets\less\guesthouse_details.less */
+.guesthouse_details .namebox_w a {
   color: #838384;
 }
-/* line 251, assets\less\guesthouse_details.less */
+/* line 257, assets\less\guesthouse_details.less */
 .guesthouse_details .namebox_g {
   width: 190px;
-  height: 45px;
+  height: 44px;
   border: 1px #838384 solid;
   background-color: #eaeaea;
   line-height: 45px;
   text-align: center;
   position: absolute;
-  z-index: -1;
+}
+/* line 265, assets\less\guesthouse_details.less */
+.guesthouse_details .namebox_g a {
   color: #838384;
 }
-/* line 262, assets\less\guesthouse_details.less */
+/* line 267, assets\less\guesthouse_details.less */
 .guesthouse_details .button {
   margin: 20px 0 0;
   float: right;
 }
-/* line 265, assets\less\guesthouse_details.less */
+/* line 270, assets\less\guesthouse_details.less */
 .guesthouse_details .button button {
   border: 1px #aeaeae solid;
   border-radius: 13px;
@@ -4896,11 +3623,11 @@ footer .touch span {
   background-color: #aeaeae;
   color: #fff;
 }
-/* line 274, assets\less\guesthouse_details.less */
+/* line 279, assets\less\guesthouse_details.less */
 .guesthouse_details .button button:first-child {
   margin-right: 5px;
 }
-/* line 277, assets\less\guesthouse_details.less */
+/* line 282, assets\less\guesthouse_details.less */
 .guesthouse_details .replybtn {
   border: 1px #aeaeae solid;
   border-radius: 13px;
@@ -4914,7 +3641,11 @@ footer .touch span {
   background-color: #aeaeae;
   color: #fff;
 }
-/* line 290, assets\less\guesthouse_details.less */
+/* line 295, assets\less\guesthouse_details.less */
+.guesthouse_details .writterbox {
+  position: relative;
+}
+/* line 296, assets\less\guesthouse_details.less */
 .guesthouse_details .comments {
   transition: .5s;
   position: relative;
@@ -4922,11 +3653,11 @@ footer .touch span {
   height: auto;
   padding-top: 100px;
 }
-/* line 296, assets\less\guesthouse_details.less */
+/* line 302, assets\less\guesthouse_details.less */
 .guesthouse_details .comments .reviewname02 {
   left: 200px;
 }
-/* line 300, assets\less\guesthouse_details.less */
+/* line 306, assets\less\guesthouse_details.less */
 .guesthouse_details .reviewbox {
   border: 1px #838384 solid;
   background-color: #fff;
@@ -4934,51 +3665,53 @@ footer .touch span {
   height: auto;
   margin-top: 45px;
 }
-/* line 306, assets\less\guesthouse_details.less */
+/* line 312, assets\less\guesthouse_details.less */
 .guesthouse_details .reviewbox li {
   position: relative;
   height: auto;
   padding: 30px 75px;
   overflow: hidden;
 }
-/* line 311, assets\less\guesthouse_details.less */
+/* line 317, assets\less\guesthouse_details.less */
 .guesthouse_details .reviewbox li:nth-child(1) {
   background-image: url(../images/reviewline.png);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
-/* line 316, assets\less\guesthouse_details.less */
+/* line 322, assets\less\guesthouse_details.less */
 .guesthouse_details .reviewbox li:last-child {
   padding: 0;
 }
-/* line 320, assets\less\guesthouse_details.less */
+/* line 326, assets\less\guesthouse_details.less */
 .guesthouse_details .reviewbox img {
   width: 100px;
   position: absolute;
 }
-/* line 325, assets\less\guesthouse_details.less */
+/* line 331, assets\less\guesthouse_details.less */
 .guesthouse_details .write {
   margin-left: 158px;
   height: 96px;
   overflow: hidden;
 }
-/* line 329, assets\less\guesthouse_details.less */
+/* line 335, assets\less\guesthouse_details.less */
 .guesthouse_details .write span {
   color: #838384;
 }
-/* line 331, assets\less\guesthouse_details.less */
+/* line 337, assets\less\guesthouse_details.less */
 .guesthouse_details .inqueries {
   transition: .5s;
-  position: relative;
+  position: absolute;
+  top: 0;
+  z-index: -50;
   width: 900px;
   height: auto;
   padding-top: 100px;
 }
-/* line 338, assets\less\guesthouse_details.less */
+/* line 346, assets\less\guesthouse_details.less */
 .guesthouse_details .inqname02 {
   left: 200px;
 }
-/* line 341, assets\less\guesthouse_details.less */
+/* line 349, assets\less\guesthouse_details.less */
 .guesthouse_details .inqbox {
   border: 1px #838384 solid;
   background-color: #fff;
@@ -4986,378 +3719,378 @@ footer .touch span {
   height: auto;
   margin-top: 45px;
 }
-/* line 347, assets\less\guesthouse_details.less */
+/* line 355, assets\less\guesthouse_details.less */
 .guesthouse_details .inqbox li {
   height: auto;
   position: relative;
   padding: 30px 75px;
   overflow: hidden;
 }
-/* line 352, assets\less\guesthouse_details.less */
+/* line 360, assets\less\guesthouse_details.less */
 .guesthouse_details .inqbox li:nth-child(1) {
   background-image: url(../images/reviewline.png);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
-/* line 357, assets\less\guesthouse_details.less */
+/* line 365, assets\less\guesthouse_details.less */
 .guesthouse_details .inqbox li:last-child {
   padding: 0;
 }
-/* line 361, assets\less\guesthouse_details.less */
+/* line 369, assets\less\guesthouse_details.less */
 .guesthouse_details .inqbox img {
   width: 100px;
   position: absolute;
 }
-/* line 366, assets\less\guesthouse_details.less */
+/* line 374, assets\less\guesthouse_details.less */
 .guesthouse_details .answeruser {
   margin-left: 80px;
 }
-/* line 367, assets\less\guesthouse_details.less */
+/* line 375, assets\less\guesthouse_details.less */
 .guesthouse_details .inqwrite {
   margin-left: 158px;
   height: 96px;
   overflow: hidden;
 }
-/* line 371, assets\less\guesthouse_details.less */
+/* line 379, assets\less\guesthouse_details.less */
 .guesthouse_details .inqwrite span {
   color: #838384;
 }
-/* line 373, assets\less\guesthouse_details.less */
+/* line 381, assets\less\guesthouse_details.less */
 .guesthouse_details .inqanswer {
   margin-left: 238px;
   height: 96px;
   overflow: hidden;
 }
-/* line 377, assets\less\guesthouse_details.less */
+/* line 385, assets\less\guesthouse_details.less */
 .guesthouse_details .inqanswer span {
   color: #838384;
 }
 @media screen and (max-width: 1700px) {
-  /* line 384, assets\less\guesthouse_details.less */
+  /* line 392, assets\less\guesthouse_details.less */
   body .contents .bookbox {
     width: 434px;
   }
-  /* line 387, assets\less\guesthouse_details.less */
+  /* line 395, assets\less\guesthouse_details.less */
   body .contents .house {
     width: 820px;
   }
-  /* line 391, assets\less\guesthouse_details.less */
+  /* line 399, assets\less\guesthouse_details.less */
   body .contents .housepic img {
     width: 700px;
   }
-  /* line 395, assets\less\guesthouse_details.less */
+  /* line 403, assets\less\guesthouse_details.less */
   body .contents .map {
     width: 820px;
     height: 400px;
   }
-  /* line 399, assets\less\guesthouse_details.less */
+  /* line 407, assets\less\guesthouse_details.less */
   body .contents .textbox {
     width: 687px;
   }
-  /* line 403, assets\less\guesthouse_details.less */
+  /* line 411, assets\less\guesthouse_details.less */
   body .contents .button div {
     left: 394px;
   }
-  /* line 407, assets\less\guesthouse_details.less */
+  /* line 415, assets\less\guesthouse_details.less */
   body .contents .comments {
     width: 820px;
   }
-  /* line 412, assets\less\guesthouse_details.less */
+  /* line 420, assets\less\guesthouse_details.less */
   body .contents .inqueries {
     width: 820px;
   }
 }
 @media screen and (max-width: 1550px) {
-  /* line 420, assets\less\guesthouse_details.less */
+  /* line 428, assets\less\guesthouse_details.less */
   .contents .bookbox {
     width: 424px;
   }
-  /* line 422, assets\less\guesthouse_details.less */
+  /* line 430, assets\less\guesthouse_details.less */
   .contents .bookbox div {
     width: 280px;
   }
-  /* line 424, assets\less\guesthouse_details.less */
+  /* line 432, assets\less\guesthouse_details.less */
   .contents .bookbox div .table {
     width: 280px;
     height: 270px;
   }
-  /* line 427, assets\less\guesthouse_details.less */
+  /* line 435, assets\less\guesthouse_details.less */
   .contents .bookbox div .table table {
     height: 233px;
   }
-  /* line 432, assets\less\guesthouse_details.less */
+  /* line 440, assets\less\guesthouse_details.less */
   .contents .detailswrap .house {
     width: 620px;
   }
-  /* line 436, assets\less\guesthouse_details.less */
+  /* line 444, assets\less\guesthouse_details.less */
   .contents .detailswrap .housepic img {
     width: 500px;
   }
-  /* line 441, assets\less\guesthouse_details.less */
+  /* line 449, assets\less\guesthouse_details.less */
   .contents .details {
     padding-top: 50px;
   }
-  /* line 443, assets\less\guesthouse_details.less */
+  /* line 451, assets\less\guesthouse_details.less */
   .contents .details .addlist01 {
     width: 50%;
   }
 }
 @media screen and (max-width: 1400px) {
-  /* line 451, assets\less\guesthouse_details.less */
+  /* line 459, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     width: 400px;
   }
-  /* line 454, assets\less\guesthouse_details.less */
+  /* line 462, assets\less\guesthouse_details.less */
   .contents .detailswrap .map {
     width: 670px;
     height: 350px;
     margin-top: 50px;
   }
-  /* line 459, assets\less\guesthouse_details.less */
+  /* line 467, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 550px;
     height: 100px;
     margin-bottom: 50px;
   }
-  /* line 464, assets\less\guesthouse_details.less */
+  /* line 472, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments {
     width: 670px;
     padding-top: 50px;
   }
-  /* line 467, assets\less\guesthouse_details.less */
+  /* line 475, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments li {
     padding: 30px 50px;
   }
-  /* line 469, assets\less\guesthouse_details.less */
+  /* line 477, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments li:last-child {
     padding: 0 0 20px;
   }
-  /* line 470, assets\less\guesthouse_details.less */
+  /* line 478, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments li img {
     width: 90px;
   }
-  /* line 472, assets\less\guesthouse_details.less */
+  /* line 480, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments .write {
     margin-left: 143px;
   }
-  /* line 474, assets\less\guesthouse_details.less */
+  /* line 482, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries {
     width: 670px;
   }
-  /* line 476, assets\less\guesthouse_details.less */
+  /* line 484, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries li {
     padding: 30px 50px;
   }
-  /* line 478, assets\less\guesthouse_details.less */
+  /* line 486, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries li:last-child {
     padding: 0 0 20px;
   }
-  /* line 479, assets\less\guesthouse_details.less */
+  /* line 487, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries li img {
     width: 90px;
   }
-  /* line 481, assets\less\guesthouse_details.less */
+  /* line 489, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries .inqwrite {
     margin-left: 143px;
   }
-  /* line 482, assets\less\guesthouse_details.less */
+  /* line 490, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries .inqanswer {
     margin-left: 223px;
   }
 }
 @media screen and (max-width: 1220px) {
-  /* line 490, assets\less\guesthouse_details.less */
+  /* line 498, assets\less\guesthouse_details.less */
   .contents .addlist01 {
     font-size: 14px;
   }
-  /* line 492, assets\less\guesthouse_details.less */
+  /* line 500, assets\less\guesthouse_details.less */
   .contents .addlist01 h2 {
     font-size: 16px;
     background-size: 25px;
     background-position-y: 2px;
     height: 30px;
   }
-  /* line 500, assets\less\guesthouse_details.less */
+  /* line 508, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     width: 350px;
     height: 520px;
     padding-top: 35px;
   }
-  /* line 504, assets\less\guesthouse_details.less */
+  /* line 512, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div {
     width: 260px;
     height: 40px;
   }
-  /* line 507, assets\less\guesthouse_details.less */
+  /* line 515, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div strong {
     font-size: 16px;
     height: 40px;
     line-height: 40px;
   }
-  /* line 512, assets\less\guesthouse_details.less */
+  /* line 520, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div .table {
     height: 250px;
   }
-  /* line 514, assets\less\guesthouse_details.less */
+  /* line 522, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div .table table {
     width: 240px;
     height: 215px;
   }
-  /* line 521, assets\less\guesthouse_details.less */
+  /* line 529, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbutton {
     width: 160px;
     height: 42px;
     line-height: 42px;
     font-size: 18px;
   }
-  /* line 527, assets\less\guesthouse_details.less */
+  /* line 535, assets\less\guesthouse_details.less */
   .contents .detailswrap .map {
     width: 630px;
   }
-  /* line 530, assets\less\guesthouse_details.less */
+  /* line 538, assets\less\guesthouse_details.less */
   .contents .detailswrap .namebox_w {
     width: 152px;
     height: 36px;
     line-height: 36px;
   }
-  /* line 535, assets\less\guesthouse_details.less */
+  /* line 543, assets\less\guesthouse_details.less */
   .contents .detailswrap .namebox_g {
     width: 152px;
     height: 36px;
     line-height: 36px;
   }
-  /* line 540, assets\less\guesthouse_details.less */
+  /* line 548, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 500px;
   }
-  /* line 543, assets\less\guesthouse_details.less */
+  /* line 551, assets\less\guesthouse_details.less */
   .contents .detailswrap .replybtn {
     right: 40px;
   }
-  /* line 546, assets\less\guesthouse_details.less */
+  /* line 554, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments {
     width: 620px;
     font-size: 14px;
   }
-  /* line 549, assets\less\guesthouse_details.less */
+  /* line 557, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments div:nth-child(2) {
     left: 160px;
   }
-  /* line 551, assets\less\guesthouse_details.less */
+  /* line 559, assets\less\guesthouse_details.less */
   .contents .detailswrap .reviewbox {
     margin-top: 36px;
   }
-  /* line 552, assets\less\guesthouse_details.less */
+  /* line 560, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries {
     width: 620px;
     font-size: 14px;
   }
-  /* line 555, assets\less\guesthouse_details.less */
+  /* line 563, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries div:nth-child(2) {
     left: 160px;
   }
-  /* line 557, assets\less\guesthouse_details.less */
+  /* line 565, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqbox {
     margin-top: 36px;
   }
 }
 @media screen and (max-width: 1150px) {
-  /* line 563, assets\less\guesthouse_details.less */
+  /* line 571, assets\less\guesthouse_details.less */
   .contents .detailswrap {
     padding: 50px 0;
   }
-  /* line 565, assets\less\guesthouse_details.less */
+  /* line 573, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     width: 310px;
     height: 485px;
   }
-  /* line 566, assets\less\guesthouse_details.less */
+  /* line 574, assets\less\guesthouse_details.less */
   .contents .detailswrap .map {
     width: 530px;
   }
-  /* line 567, assets\less\guesthouse_details.less */
+  /* line 575, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 430px;
   }
-  /* line 570, assets\less\guesthouse_details.less */
+  /* line 578, assets\less\guesthouse_details.less */
   .contents .detailswrap .replybtn {
     right: 30px;
   }
-  /* line 571, assets\less\guesthouse_details.less */
+  /* line 579, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments {
     width: 530px;
   }
-  /* line 573, assets\less\guesthouse_details.less */
+  /* line 581, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments li {
     padding: 20px 30px;
   }
-  /* line 574, assets\less\guesthouse_details.less */
+  /* line 582, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments .write {
     margin-left: 123px;
   }
-  /* line 576, assets\less\guesthouse_details.less */
+  /* line 584, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries {
     width: 530px;
   }
-  /* line 578, assets\less\guesthouse_details.less */
+  /* line 586, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries li {
     padding: 20px 30px;
   }
-  /* line 579, assets\less\guesthouse_details.less */
+  /* line 587, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries .inqwrite {
     margin-left: 123px;
   }
-  /* line 580, assets\less\guesthouse_details.less */
+  /* line 588, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries .inqanswer {
     margin-left: 163px;
   }
-  /* line 582, assets\less\guesthouse_details.less */
+  /* line 590, assets\less\guesthouse_details.less */
   .contents .detailswrap .answeruser {
     margin-left: 50px;
   }
-  /* line 585, assets\less\guesthouse_details.less */
+  /* line 593, assets\less\guesthouse_details.less */
   .contents .detailswrap .house {
     width: 530px;
   }
-  /* line 588, assets\less\guesthouse_details.less */
+  /* line 596, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .housepic img {
     width: 450px;
   }
-  /* line 595, assets\less\guesthouse_details.less */
+  /* line 603, assets\less\guesthouse_details.less */
   .contents .arrow span {
     width: 38px;
   }
-  /* line 597, assets\less\guesthouse_details.less */
+  /* line 605, assets\less\guesthouse_details.less */
   .contents .explanation {
     width: 530px;
   }
-  /* line 599, assets\less\guesthouse_details.less */
+  /* line 607, assets\less\guesthouse_details.less */
   .contents .explanation p {
     width: 100%;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 606, assets\less\guesthouse_details.less */
+  /* line 614, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     transition: none;
   }
-  /* line 608, assets\less\guesthouse_details.less */
+  /* line 616, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div {
     transition: none;
   }
 }
 @media screen and (max-width: 950px) {
-  /* line 616, assets\less\guesthouse_details.less */
+  /* line 624, assets\less\guesthouse_details.less */
   .contents .detailswrap .house {
     width: 670px;
     display: block;
     margin: 0 auto ;
   }
-  /* line 621, assets\less\guesthouse_details.less */
+  /* line 629, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .housepic img {
     width: 590px;
   }
-  /* line 624, assets\less\guesthouse_details.less */
+  /* line 632, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     float: none;
     width: 670px;
@@ -5366,7 +4099,7 @@ footer .touch span {
     padding: 20px 0;
     transition: none;
   }
-  /* line 631, assets\less\guesthouse_details.less */
+  /* line 639, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div {
     transition: none;
     width: 42px;
@@ -5374,26 +4107,26 @@ footer .touch span {
     margin-bottom: 0;
     margin-right: 40.5px;
   }
-  /* line 637, assets\less\guesthouse_details.less */
+  /* line 645, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div span {
     display: none;
   }
-  /* line 640, assets\less\guesthouse_details.less */
+  /* line 648, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div .table {
     border-radius: 0;
     width: 219px;
     height: 210px;
   }
-  /* line 644, assets\less\guesthouse_details.less */
+  /* line 652, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div .table table {
     width: 200px;
     height: 176px;
   }
-  /* line 650, assets\less\guesthouse_details.less */
+  /* line 658, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .checkouttable {
     left: -88px;
   }
-  /* line 651, assets\less\guesthouse_details.less */
+  /* line 659, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .datein {
     background-image: none;
     background-image: url(../images/icon/g_checkinicon.png);
@@ -5401,14 +4134,14 @@ footer .touch span {
     background-position: center;
     background-size: 60%;
   }
-  /* line 658, assets\less\guesthouse_details.less */
+  /* line 666, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .dateout {
     background-image: url(../images/icon/g_checkouticon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
   }
-  /* line 664, assets\less\guesthouse_details.less */
+  /* line 672, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .guestbox {
     background-image: url(../images/icon/g_usersicon.png);
     background-repeat: no-repeat;
@@ -5416,165 +4149,167 @@ footer .touch span {
     background-size: 60%;
     margin-right: 40px;
   }
-  /* line 670, assets\less\guesthouse_details.less */
+  /* line 678, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .guestbox ul {
     width: 219px;
     right: -1px;
   }
-  /* line 672, assets\less\guesthouse_details.less */
+  /* line 680, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .guestbox ul li {
     height: 40px;
     line-height: 40px;
     font-size: 14px;
   }
-  /* line 679, assets\less\guesthouse_details.less */
+  /* line 687, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .bookbutton {
     margin: 0;
     width: 140px;
     vertical-align: top;
   }
-  /* line 685, assets\less\guesthouse_details.less */
+  /* line 693, assets\less\guesthouse_details.less */
   .contents .detailswrap .explanation {
     margin: 0 auto;
     width: 670px;
   }
-  /* line 689, assets\less\guesthouse_details.less */
+  /* line 697, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 {
     margin: 0 auto;
     width: 770px;
   }
-  /* line 692, assets\less\guesthouse_details.less */
+  /* line 700, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 li:nth-child(2) {
     margin-left: 10px;
   }
-  /* line 693, assets\less\guesthouse_details.less */
+  /* line 701, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 li:nth-child(4) {
     margin-left: 10px;
   }
-  /* line 695, assets\less\guesthouse_details.less */
+  /* line 703, assets\less\guesthouse_details.less */
   .contents .detailswrap #map {
     width: 670px;
     margin: 50px auto 0;
   }
-  /* line 699, assets\less\guesthouse_details.less */
+  /* line 707, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 590px;
   }
-  /* line 702, assets\less\guesthouse_details.less */
+  /* line 710, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments {
     margin: 0 auto;
     width: 670px;
   }
-  /* line 706, assets\less\guesthouse_details.less */
+  /* line 714, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries {
     margin: 0 auto;
     width: 670px;
+    top: -50px;
+    display: block;
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 717, assets\less\guesthouse_details.less */
+  /* line 729, assets\less\guesthouse_details.less */
   .contents .detailswrap .house {
     width: 520px;
   }
-  /* line 720, assets\less\guesthouse_details.less */
+  /* line 732, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .housepic img {
     width: 440px;
   }
-  /* line 723, assets\less\guesthouse_details.less */
+  /* line 735, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     width: 520px;
     margin: 30px auto 0;
     padding: 20px 0;
   }
-  /* line 729, assets\less\guesthouse_details.less */
+  /* line 741, assets\less\guesthouse_details.less */
   .contents .detailswrap .details {
     margin: 0 auto;
   }
-  /* line 730, assets\less\guesthouse_details.less */
+  /* line 742, assets\less\guesthouse_details.less */
   .contents .detailswrap .explanation {
     width: 520px;
   }
-  /* line 732, assets\less\guesthouse_details.less */
+  /* line 744, assets\less\guesthouse_details.less */
   .contents .detailswrap .explanation h2 {
     font-size: 16px;
   }
-  /* line 733, assets\less\guesthouse_details.less */
+  /* line 745, assets\less\guesthouse_details.less */
   .contents .detailswrap .explanation p {
     font-size: 14px;
   }
-  /* line 735, assets\less\guesthouse_details.less */
+  /* line 747, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 {
     width: 520px;
   }
-  /* line 737, assets\less\guesthouse_details.less */
+  /* line 749, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 li:nth-child(2) {
     margin-left: 0;
   }
-  /* line 738, assets\less\guesthouse_details.less */
+  /* line 750, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 li:nth-child(4) {
     margin-left: 0;
   }
-  /* line 740, assets\less\guesthouse_details.less */
+  /* line 752, assets\less\guesthouse_details.less */
   .contents .detailswrap #map {
     width: 520px;
     margin: 50px auto 0;
   }
-  /* line 744, assets\less\guesthouse_details.less */
+  /* line 756, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 440px;
   }
-  /* line 748, assets\less\guesthouse_details.less */
+  /* line 760, assets\less\guesthouse_details.less */
   .contents .detailswrap .button .modify {
     width: 115px;
   }
-  /* line 749, assets\less\guesthouse_details.less */
+  /* line 761, assets\less\guesthouse_details.less */
   .contents .detailswrap .button .delete {
     width: 115px;
   }
-  /* line 751, assets\less\guesthouse_details.less */
+  /* line 763, assets\less\guesthouse_details.less */
   .contents .detailswrap .replybtn {
     width: 115px;
   }
-  /* line 754, assets\less\guesthouse_details.less */
+  /* line 766, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments {
     width: 520px;
   }
-  /* line 757, assets\less\guesthouse_details.less */
+  /* line 769, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries {
     width: 520px;
   }
 }
 @media screen and (max-width: 570px) {
-  /* line 767, assets\less\guesthouse_details.less */
+  /* line 779, assets\less\guesthouse_details.less */
   .contents .detailswrap .house {
     width: 400px;
   }
-  /* line 770, assets\less\guesthouse_details.less */
+  /* line 782, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .arrow button {
     width: 25px;
     height: 35px;
   }
-  /* line 773, assets\less\guesthouse_details.less */
+  /* line 785, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .arrow button:nth-child(1) {
     background-size: 25px 35px;
     margin-top: -17.5px;
   }
-  /* line 777, assets\less\guesthouse_details.less */
+  /* line 789, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .arrow button:nth-child(2) {
     background-size: 25px 35px;
     margin-top: -17.5px;
   }
-  /* line 784, assets\less\guesthouse_details.less */
+  /* line 796, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .housepic img {
     width: 320px;
   }
-  /* line 787, assets\less\guesthouse_details.less */
+  /* line 799, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     width: 400px;
     margin: 30px auto 0;
     padding: 20px 0;
   }
-  /* line 791, assets\less\guesthouse_details.less */
+  /* line 803, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .bookbutton {
     width: 42px;
     border-radius: 25px;
@@ -5584,79 +4319,79 @@ footer .touch span {
     background-size: 22px;
     color: #fff;
   }
-  /* line 799, assets\less\guesthouse_details.less */
+  /* line 811, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .bookbutton span {
     display: none;
   }
-  /* line 800, assets\less\guesthouse_details.less */
+  /* line 812, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .bookbutton:hover {
     background-color: #a2a1a1;
   }
-  /* line 803, assets\less\guesthouse_details.less */
+  /* line 815, assets\less\guesthouse_details.less */
   .contents .detailswrap .details {
     padding-top: 20px;
   }
-  /* line 804, assets\less\guesthouse_details.less */
+  /* line 816, assets\less\guesthouse_details.less */
   .contents .detailswrap .explanation {
     width: 400px;
   }
-  /* line 807, assets\less\guesthouse_details.less */
+  /* line 819, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 {
     width: 400px;
   }
-  /* line 810, assets\less\guesthouse_details.less */
+  /* line 822, assets\less\guesthouse_details.less */
   .contents .detailswrap #map {
     width: 400px;
     height: 300px;
     margin: 50px auto 0;
   }
-  /* line 815, assets\less\guesthouse_details.less */
+  /* line 827, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 320px;
   }
-  /* line 819, assets\less\guesthouse_details.less */
+  /* line 831, assets\less\guesthouse_details.less */
   .contents .detailswrap .button .modify {
     width: 95px;
     height: 32px;
     line-height: 32px;
   }
-  /* line 820, assets\less\guesthouse_details.less */
+  /* line 832, assets\less\guesthouse_details.less */
   .contents .detailswrap .button .delete {
     width: 95px;
     height: 32px;
     line-height: 32px;
   }
-  /* line 822, assets\less\guesthouse_details.less */
+  /* line 834, assets\less\guesthouse_details.less */
   .contents .detailswrap .replybtn {
     width: 95px;
     height: 32px;
     line-height: 32px;
   }
-  /* line 827, assets\less\guesthouse_details.less */
+  /* line 839, assets\less\guesthouse_details.less */
   .contents .detailswrap .namebox_w {
     width: 134px;
   }
-  /* line 828, assets\less\guesthouse_details.less */
+  /* line 840, assets\less\guesthouse_details.less */
   .contents .detailswrap .namebox_g {
     width: 134px;
   }
-  /* line 830, assets\less\guesthouse_details.less */
+  /* line 842, assets\less\guesthouse_details.less */
   .contents .detailswrap .details .comments {
     width: 400px;
   }
-  /* line 832, assets\less\guesthouse_details.less */
+  /* line 844, assets\less\guesthouse_details.less */
   .contents .detailswrap .details .comments .reviewname02 {
     left: 140px;
   }
-  /* line 834, assets\less\guesthouse_details.less */
+  /* line 846, assets\less\guesthouse_details.less */
   .contents .detailswrap .details .comments .reviewbox li:nth-child(3) {
     padding-bottom: 0;
   }
-  /* line 837, assets\less\guesthouse_details.less */
+  /* line 849, assets\less\guesthouse_details.less */
   .contents .detailswrap .details .inqueries {
     width: 400px;
   }
-  /* line 839, assets\less\guesthouse_details.less */
+  /* line 851, assets\less\guesthouse_details.less */
   .contents .detailswrap .details .inqueries .inqname02 {
     left: 140px;
   }
@@ -9106,645 +7841,496 @@ footer .touch span {
   text-align: center;
   cursor: pointer;
 }
-<<<<<<< HEAD
-/* line 187, assets/less/orderpage.less */
-=======
-/* line 186, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 187, assets\less\orderpage.less */
 .orderpage .orderpop {
   position: absolute;
-  width: 900px;
-  height: 870px;
-  border: 1px #f00 solid;
-  left: 26%;
+  width: 850px;
+  height: 820px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   top: 30%;
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.7);
-  z-index: 1;
+  z-index: 150;
   display: none;
 }
-<<<<<<< HEAD
-/* line 197, assets/less/orderpage.less */
-=======
-/* line 196, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 199, assets\less\orderpage.less */
 .orderpage .orderpop .inner {
   width: 800px;
   height: 770px;
   background-color: #f2f1f0;
-  margin: 50px;
   position: relative;
+  top: 25px;
+  left: 25px;
 }
-<<<<<<< HEAD
-/* line 203, assets/less/orderpage.less */
-=======
-/* line 202, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 206, assets\less\orderpage.less */
 .orderpage .orderpop .inner strong {
   font-size: 18px;
   display: block;
   padding: 50px 0;
   text-align: center;
 }
-<<<<<<< HEAD
-/* line 209, assets/less/orderpage.less */
-=======
-/* line 208, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 212, assets\less\orderpage.less */
 .orderpage .orderpop .inner .innerwrite {
   width: 600px;
   margin: 0 auto;
 }
-<<<<<<< HEAD
-/* line 213, assets/less/orderpage.less */
-=======
-/* line 212, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 216, assets\less\orderpage.less */
 .orderpage .orderpop .inner .orderlist01 {
   padding: 50px 0;
   border-bottom: 1px #838384 solid;
 }
-<<<<<<< HEAD
-/* line 216, assets/less/orderpage.less */
+/* line 219, assets\less\orderpage.less */
 .orderpage .orderpop .inner .orderlist01 ul {
   border-bottom: 1px #838384 solid;
 }
-/* line 217, assets/less/orderpage.less */
-=======
-/* line 215, assets\less\orderpage.less */
-.orderpage .orderpop .inner .orderlist01 ul {
-  border-bottom: 1px #838384 solid;
-}
-/* line 216, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 220, assets\less\orderpage.less */
 .orderpage .orderpop .inner .orderlist01 li {
   display: inline-block;
   width: 49%;
   line-height: 50px;
 }
-<<<<<<< HEAD
-/* line 221, assets/less/orderpage.less */
-.orderpage .orderpop .inner .orderlist01 li:nth-child(2) {
-  text-align: right;
-}
-/* line 225, assets/less/orderpage.less */
-.orderpage .orderpop .inner .orderlist02 {
-  margin-top: 50px;
-}
-/* line 227, assets/less/orderpage.less */
-.orderpage .orderpop .inner .orderlist02 ul {
-  border-bottom: 1px #838384 solid;
-}
-/* line 228, assets/less/orderpage.less */
-=======
-/* line 220, assets\less\orderpage.less */
-.orderpage .orderpop .inner .orderlist01 li:nth-child(2) {
-  text-align: right;
-}
 /* line 224, assets\less\orderpage.less */
+.orderpage .orderpop .inner .orderlist01 li:nth-child(2) {
+  text-align: right;
+}
+/* line 228, assets\less\orderpage.less */
 .orderpage .orderpop .inner .orderlist02 {
   margin-top: 50px;
 }
-/* line 226, assets\less\orderpage.less */
+/* line 230, assets\less\orderpage.less */
 .orderpage .orderpop .inner .orderlist02 ul {
   border-bottom: 1px #838384 solid;
 }
-/* line 227, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 231, assets\less\orderpage.less */
 .orderpage .orderpop .inner .orderlist02 li {
   display: inline-block;
   width: 49%;
   line-height: 50px;
 }
-<<<<<<< HEAD
-/* line 232, assets/less/orderpage.less */
-=======
-/* line 231, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 235, assets\less\orderpage.less */
 .orderpage .orderpop .inner .orderlist02 li:nth-child(2) {
   text-align: right;
   border-bottom: none;
 }
-<<<<<<< HEAD
-/* line 239, assets/less/orderpage.less */
-=======
-/* line 238, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+/* line 241, assets\less\orderpage.less */
 .orderpage .orderpop .inner .donebutton {
   background-color: #ef5050;
   border: 1px #ef5050 solid;
   border-radius: 15px;
   width: 168px;
   height: 52px;
-  margin: 50px auto 0;
   text-transform: uppercase;
   font-size: 18px;
   color: #fff;
-  font-weight: bold;
   line-height: 52px;
-  text-align: center;
+  position: relative;
+  top: 50px;
+  left: 50%;
+  margin-left: -84px;
 }
 @media screen and (max-width: 1300px) {
-<<<<<<< HEAD
-  /* line 259, assets/less/orderpage.less */
+  /* line 262, assets\less\orderpage.less */
   .orderpage .order {
     width: 840px;
   }
-  /* line 261, assets/less/orderpage.less */
+  /* line 264, assets\less\orderpage.less */
   .orderpage .order ul {
     width: 840px;
-  }
-  /* line 264, assets/less/orderpage.less */
-  .orderpage .order .textbox {
-    width: 810px;
-  }
-  /* line 268, assets/less/orderpage.less */
-=======
-  /* line 258, assets\less\orderpage.less */
-  .orderpage .order {
-    width: 840px;
-  }
-  /* line 260, assets\less\orderpage.less */
-  .orderpage .order ul {
-    width: 840px;
-  }
-  /* line 263, assets\less\orderpage.less */
-  .orderpage .order .textbox {
-    width: 810px;
   }
   /* line 267, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  .orderpage .order .textbox {
+    width: 810px;
+  }
+  /* line 271, assets\less\orderpage.less */
   .orderpage .payment {
     width: 840px;
     height: auto;
   }
 }
 @media screen and (max-width: 1024px) {
-<<<<<<< HEAD
-  /* line 276, assets/less/orderpage.less */
-=======
-  /* line 275, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 279, assets\less\orderpage.less */
   .orderpage .order {
     padding: 40px 0;
     width: 540px;
     height: 650px;
   }
-<<<<<<< HEAD
-  /* line 280, assets/less/orderpage.less */
-=======
-  /* line 279, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 283, assets\less\orderpage.less */
   .orderpage .order ul {
     width: 100%;
     font-size: 18px;
     height: 65px;
   }
-<<<<<<< HEAD
-  /* line 284, assets/less/orderpage.less */
+  /* line 287, assets\less\orderpage.less */
   .orderpage .order ul li {
     width: 49%;
   }
-  /* line 286, assets/less/orderpage.less */
-=======
-  /* line 283, assets\less\orderpage.less */
-  .orderpage .order ul li {
-    width: 49%;
-  }
-  /* line 285, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 289, assets\less\orderpage.less */
   .orderpage .order .textbox {
     width: 530px;
     margin: 50px auto 0;
   }
-<<<<<<< HEAD
-  /* line 291, assets/less/orderpage.less */
+  /* line 294, assets\less\orderpage.less */
   .orderpage .order .product li {
     font-size: 18px;
   }
-  /* line 294, assets/less/orderpage.less */
-=======
-  /* line 290, assets\less\orderpage.less */
-  .orderpage .order .product li {
-    font-size: 18px;
-  }
-  /* line 293, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 297, assets\less\orderpage.less */
   .orderpage .ordername {
     font-size: 28px;
     margin-bottom: 40px;
   }
-<<<<<<< HEAD
-  /* line 298, assets/less/orderpage.less */
-=======
-  /* line 297, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 301, assets\less\orderpage.less */
   .orderpage .payment {
     width: 540px;
     padding: 40px 0 80px;
   }
-<<<<<<< HEAD
-  /* line 301, assets/less/orderpage.less */
-=======
-  /* line 300, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 304, assets\less\orderpage.less */
   .orderpage .payment .payname {
     font-size: 28px;
     margin-bottom: 40px;
   }
-<<<<<<< HEAD
-  /* line 305, assets/less/orderpage.less */
-=======
-  /* line 304, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 308, assets\less\orderpage.less */
   .orderpage .payment .paytext01 {
     width: 540px;
     margin: 0 auto 80px;
   }
-<<<<<<< HEAD
-  /* line 309, assets/less/orderpage.less */
-  .orderpage .payment input {
-    width: 100%;
-  }
-  /* line 313, assets/less/orderpage.less */
-  .orderpage .payment .textlist01 li {
-    width: 48%;
-  }
-  /* line 316, assets/less/orderpage.less */
-  .orderpage .payment .textlist01 li + li {
-    margin-left: 5px;
-  }
-  /* line 318, assets/less/orderpage.less */
-  .orderpage .payment .paytext02 {
-    width: 540px;
-  }
-  /* line 320, assets/less/orderpage.less */
-  .orderpage .payment .paytext02 .textlist02 {
-    margin-left: 275px;
-  }
-  /* line 322, assets/less/orderpage.less */
-  .orderpage .payment .paytext02 .textlist02 li {
-    width: 98%;
-  }
-  /* line 325, assets/less/orderpage.less */
-=======
-  /* line 308, assets\less\orderpage.less */
-  .orderpage .payment input {
-    width: 100%;
-  }
   /* line 312, assets\less\orderpage.less */
+  .orderpage .payment input {
+    width: 100%;
+  }
+  /* line 316, assets\less\orderpage.less */
   .orderpage .payment .textlist01 li {
     width: 48%;
-  }
-  /* line 315, assets\less\orderpage.less */
-  .orderpage .payment .textlist01 li + li {
-    margin-left: 5px;
-  }
-  /* line 317, assets\less\orderpage.less */
-  .orderpage .payment .paytext02 {
-    width: 540px;
   }
   /* line 319, assets\less\orderpage.less */
+  .orderpage .payment .textlist01 li + li {
+    margin-left: 5px;
+  }
+  /* line 321, assets\less\orderpage.less */
+  .orderpage .payment .paytext02 {
+    width: 540px;
+  }
+  /* line 323, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .textlist02 {
     margin-left: 275px;
   }
-  /* line 321, assets\less\orderpage.less */
+  /* line 325, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .textlist02 li {
     width: 98%;
   }
-  /* line 324, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 328, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .textlist02 li:nth-child(2) input {
     width: 20.5%;
     display: inline-block;
     padding: 0 10px;
   }
-<<<<<<< HEAD
-  /* line 331, assets/less/orderpage.less */
-=======
-  /* line 330, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 334, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .textlist02 li .mm {
     width: 22%;
     padding: 0 15px;
   }
-<<<<<<< HEAD
-  /* line 335, assets/less/orderpage.less */
-=======
-  /* line 334, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 338, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .textlist02 li .yyyy {
     width: 27%;
     padding: 0 15px;
   }
-<<<<<<< HEAD
-  /* line 342, assets/less/orderpage.less */
-=======
-  /* line 341, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 345, assets\less\orderpage.less */
   .orderpage .payment .orderbutton {
     width: 158px;
     height: 47px;
     line-height: 47px;
   }
 }
+@media screen and (max-width: 950px) {
+  /* line 355, assets\less\orderpage.less */
+  .orderpage .orderpop {
+    width: 620px;
+    height: 670px;
+  }
+  /* line 358, assets\less\orderpage.less */
+  .orderpage .orderpop .inner {
+    width: 570px;
+    height: 620px;
+  }
+  /* line 361, assets\less\orderpage.less */
+  .orderpage .orderpop .inner strong {
+    padding: 30px 0;
+  }
+  /* line 364, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .innerwrite {
+    width: 400px;
+  }
+  /* line 367, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist01 {
+    padding: 30px 0;
+    border-bottom: none;
+  }
+  /* line 370, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist01 li {
+    line-height: 40px;
+    font-size: 15px;
+  }
+  /* line 375, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist02 {
+    margin-top: 30px;
+  }
+  /* line 377, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist02 li {
+    line-height: 40px;
+    font-size: 15px;
+  }
+  /* line 383, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .donebutton {
+    width: 150px;
+    height: 42px;
+    line-height: 42px;
+    margin-left: -75px;
+  }
+}
 @media screen and (max-width: 650px) {
-<<<<<<< HEAD
-  /* line 352, assets/less/orderpage.less */
-=======
-  /* line 351, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 396, assets\less\orderpage.less */
   .orderpage .order {
     padding: 30px 0 80px;
     width: 350px;
     height: 550px;
   }
-<<<<<<< HEAD
-  /* line 356, assets/less/orderpage.less */
+  /* line 400, assets\less\orderpage.less */
   .orderpage .order ul {
     height: 55px;
   }
-  /* line 359, assets/less/orderpage.less */
+  /* line 403, assets\less\orderpage.less */
   .orderpage .order .textbox {
     width: 340px;
   }
-  /* line 363, assets/less/orderpage.less */
+  /* line 407, assets\less\orderpage.less */
   .orderpage .ordername {
     margin-bottom: 30px;
   }
-  /* line 366, assets/less/orderpage.less */
-=======
-  /* line 355, assets\less\orderpage.less */
-  .orderpage .order ul {
-    height: 55px;
-  }
-  /* line 358, assets\less\orderpage.less */
-  .orderpage .order .textbox {
-    width: 340px;
-  }
-  /* line 362, assets\less\orderpage.less */
-  .orderpage .ordername {
-    margin-bottom: 30px;
-  }
-  /* line 365, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 410, assets\less\orderpage.less */
   .orderpage .payment {
     padding: 30px 0 70px;
     width: 350px;
   }
-<<<<<<< HEAD
-  /* line 369, assets/less/orderpage.less */
+  /* line 413, assets\less\orderpage.less */
   .orderpage .payment .payname {
     margin-bottom: 30px;
   }
-  /* line 372, assets/less/orderpage.less */
-=======
-  /* line 368, assets\less\orderpage.less */
-  .orderpage .payment .payname {
-    margin-bottom: 30px;
-  }
-  /* line 371, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 416, assets\less\orderpage.less */
   .orderpage .payment .paytext01 {
     width: 100%;
     margin: 0 auto 50px;
   }
-<<<<<<< HEAD
-  /* line 376, assets/less/orderpage.less */
+  /* line 420, assets\less\orderpage.less */
   .orderpage .payment label {
     font-size: 16px;
   }
-  /* line 379, assets/less/orderpage.less */
+  /* line 423, assets\less\orderpage.less */
   .orderpage .payment input {
     height: 35px;
   }
-  /* line 382, assets/less/orderpage.less */
+  /* line 426, assets\less\orderpage.less */
   .orderpage .payment .paytext02 {
     width: 350px;
   }
-  /* line 384, assets/less/orderpage.less */
-=======
-  /* line 375, assets\less\orderpage.less */
-  .orderpage .payment label {
-    font-size: 16px;
-  }
-  /* line 378, assets\less\orderpage.less */
-  .orderpage .payment input {
-    height: 35px;
-  }
-  /* line 381, assets\less\orderpage.less */
-  .orderpage .payment .paytext02 {
-    width: 350px;
-  }
-  /* line 383, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 428, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .payopt {
     float: none;
     text-align: left;
     width: 210px;
     margin: 0 auto;
   }
-<<<<<<< HEAD
-  /* line 389, assets/less/orderpage.less */
+  /* line 433, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .payopt span {
     font-size: 16px;
   }
-  /* line 392, assets/less/orderpage.less */
-=======
-  /* line 388, assets\less\orderpage.less */
-  .orderpage .payment .paytext02 .payopt span {
-    font-size: 16px;
-  }
-  /* line 391, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 436, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .payopt .creditopt {
     height: 35px;
     line-height: 35px;
     font-size: 15px;
   }
-<<<<<<< HEAD
-  /* line 398, assets/less/orderpage.less */
-=======
-  /* line 397, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 442, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .payopt .creditlist li {
     height: 35px;
     line-height: 35px;
     font-size: 15px;
   }
-<<<<<<< HEAD
-  /* line 405, assets/less/orderpage.less */
-=======
-  /* line 404, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 449, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .textlist02 {
     margin: 30px auto 0;
     display: block;
     width: 270px;
   }
-<<<<<<< HEAD
-  /* line 409, assets/less/orderpage.less */
+  /* line 453, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .textlist02 li {
     width: 100%;
   }
-  /* line 411, assets/less/orderpage.less */
-=======
-  /* line 408, assets\less\orderpage.less */
-  .orderpage .payment .paytext02 .textlist02 li {
-    width: 100%;
-  }
-  /* line 410, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 455, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .textlist02 li .yyyy {
     width: 29%;
   }
+  /* line 462, assets\less\orderpage.less */
+  .orderpage .orderpop {
+    width: 450px;
+    height: 630px;
+  }
+  /* line 465, assets\less\orderpage.less */
+  .orderpage .orderpop .inner {
+    width: 400px;
+    height: 580px;
+  }
+  /* line 468, assets\less\orderpage.less */
+  .orderpage .orderpop .inner strong {
+    padding: 30px 0;
+  }
+  /* line 471, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .innerwrite {
+    width: 320px;
+  }
+  /* line 474, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist01 {
+    padding: 20px 0;
+  }
+  /* line 476, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist01 li {
+    line-height: 40px;
+    font-size: 15px;
+  }
+  /* line 481, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist02 {
+    margin-top: 20px;
+  }
+  /* line 483, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist02 li {
+    line-height: 40px;
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 480px) {
-<<<<<<< HEAD
-  /* line 422, assets/less/orderpage.less */
-=======
-  /* line 421, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 496, assets\less\orderpage.less */
   .orderpage .order {
     padding: 20px 0 70px;
     width: 300px;
     height: 500px;
   }
-<<<<<<< HEAD
-  /* line 426, assets/less/orderpage.less */
-=======
-  /* line 425, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 500, assets\less\orderpage.less */
   .orderpage .order ul {
     height: 45px;
     font-size: 15px;
   }
-<<<<<<< HEAD
-  /* line 430, assets/less/orderpage.less */
-=======
-  /* line 429, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 504, assets\less\orderpage.less */
   .orderpage .order .textbox {
     width: 290px;
     height: 100px;
   }
-<<<<<<< HEAD
-  /* line 433, assets/less/orderpage.less */
+  /* line 507, assets\less\orderpage.less */
   .orderpage .order .textbox span {
     font-size: 13px;
   }
-  /* line 436, assets/less/orderpage.less */
+  /* line 510, assets\less\orderpage.less */
   .orderpage .order .product li {
     font-size: 15px;
   }
-  /* line 439, assets/less/orderpage.less */
+  /* line 513, assets\less\orderpage.less */
   .orderpage .ordername {
     margin-bottom: 20px;
   }
-  /* line 442, assets/less/orderpage.less */
-=======
-  /* line 432, assets\less\orderpage.less */
-  .orderpage .order .textbox span {
-    font-size: 13px;
-  }
-  /* line 435, assets\less\orderpage.less */
-  .orderpage .order .product li {
-    font-size: 15px;
-  }
-  /* line 438, assets\less\orderpage.less */
-  .orderpage .ordername {
-    margin-bottom: 20px;
-  }
-  /* line 441, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 516, assets\less\orderpage.less */
   .orderpage .payment {
     padding: 20px 0 60px;
     width: 300px;
   }
-<<<<<<< HEAD
-  /* line 445, assets/less/orderpage.less */
+  /* line 519, assets\less\orderpage.less */
   .orderpage .payment .payname {
     margin-bottom: 20px;
   }
-  /* line 448, assets/less/orderpage.less */
-=======
-  /* line 444, assets\less\orderpage.less */
-  .orderpage .payment .payname {
-    margin-bottom: 20px;
-  }
-  /* line 447, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 522, assets\less\orderpage.less */
   .orderpage .payment .paytext01 {
     width: 100%;
     margin: 0 auto 30px;
   }
-<<<<<<< HEAD
-  /* line 452, assets/less/orderpage.less */
+  /* line 526, assets\less\orderpage.less */
   .orderpage .payment label {
     font-size: 15px;
   }
-  /* line 455, assets/less/orderpage.less */
+  /* line 529, assets\less\orderpage.less */
   .orderpage .payment input {
     height: 30px;
   }
-  /* line 458, assets/less/orderpage.less */
+  /* line 532, assets\less\orderpage.less */
   .orderpage .payment .paytext02 {
     width: 300px;
   }
-  /* line 461, assets/less/orderpage.less */
+  /* line 535, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .payopt span {
     font-size: 15px;
   }
-  /* line 464, assets/less/orderpage.less */
-=======
-  /* line 451, assets\less\orderpage.less */
-  .orderpage .payment label {
-    font-size: 15px;
-  }
-  /* line 454, assets\less\orderpage.less */
-  .orderpage .payment input {
-    height: 30px;
-  }
-  /* line 457, assets\less\orderpage.less */
-  .orderpage .payment .paytext02 {
-    width: 300px;
-  }
-  /* line 460, assets\less\orderpage.less */
-  .orderpage .payment .paytext02 .payopt span {
-    font-size: 15px;
-  }
-  /* line 463, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 538, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .payopt .creditopt {
     height: 30px;
     line-height: 30px;
     font-size: 14px;
   }
-<<<<<<< HEAD
-  /* line 470, assets/less/orderpage.less */
-=======
-  /* line 469, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 544, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .payopt .creditlist li {
     height: 30px;
     line-height: 30px;
     font-size: 14px;
   }
-<<<<<<< HEAD
-  /* line 477, assets/less/orderpage.less */
+  /* line 551, assets\less\orderpage.less */
   .orderpage .payment .paytext02 .textlist02 {
     margin: 20px auto 0;
   }
-  /* line 481, assets/less/orderpage.less */
-=======
-  /* line 476, assets\less\orderpage.less */
-  .orderpage .payment .paytext02 .textlist02 {
-    margin: 20px auto 0;
-  }
-  /* line 480, assets\less\orderpage.less */
->>>>>>> 80ed98eb404954e9cdef4d5c3c248ddf9b723728
+  /* line 555, assets\less\orderpage.less */
   .orderpage .payment .orderbutton {
     width: 148px;
     height: 43px;
     line-height: 43px;
+  }
+  /* line 561, assets\less\orderpage.less */
+  .orderpage .orderpop {
+    width: 350px;
+    height: 590px;
+  }
+  /* line 564, assets\less\orderpage.less */
+  .orderpage .orderpop .inner {
+    width: 300px;
+    height: 540px;
+  }
+  /* line 567, assets\less\orderpage.less */
+  .orderpage .orderpop .inner strong {
+    padding: 30px 0;
+  }
+  /* line 570, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .innerwrite {
+    width: 250px;
+    font-size: 13px;
+  }
+  /* line 574, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist01 {
+    padding: 20px 0;
+  }
+  /* line 576, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist01 li {
+    line-height: 35px;
+    font-size: 13px;
+  }
+  /* line 581, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist02 {
+    margin-top: 20px;
+  }
+  /* line 583, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .orderlist02 li {
+    line-height: 35px;
+    font-size: 13px;
+  }
+  /* line 588, assets\less\orderpage.less */
+  .orderpage .orderpop .inner .donebutton {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: -50px;
+    font-size: 15px;
   }
 }
