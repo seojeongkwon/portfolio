@@ -3596,23 +3596,24 @@ footer .touch span {
 /* line 257, assets\less\guesthouse_details.less */
 .guesthouse_details .namebox_g {
   width: 190px;
-  height: 44px;
+  height: 45px;
   border: 1px #838384 solid;
   background-color: #eaeaea;
   line-height: 45px;
   text-align: center;
   position: absolute;
+  z-index: -1;
 }
-/* line 265, assets\less\guesthouse_details.less */
+/* line 266, assets\less\guesthouse_details.less */
 .guesthouse_details .namebox_g a {
   color: #838384;
 }
-/* line 267, assets\less\guesthouse_details.less */
+/* line 268, assets\less\guesthouse_details.less */
 .guesthouse_details .button {
   margin: 20px 0 0;
   float: right;
 }
-/* line 270, assets\less\guesthouse_details.less */
+/* line 271, assets\less\guesthouse_details.less */
 .guesthouse_details .button button {
   border: 1px #aeaeae solid;
   border-radius: 13px;
@@ -3623,11 +3624,11 @@ footer .touch span {
   background-color: #aeaeae;
   color: #fff;
 }
-/* line 279, assets\less\guesthouse_details.less */
+/* line 280, assets\less\guesthouse_details.less */
 .guesthouse_details .button button:first-child {
   margin-right: 5px;
 }
-/* line 282, assets\less\guesthouse_details.less */
+/* line 283, assets\less\guesthouse_details.less */
 .guesthouse_details .replybtn {
   border: 1px #aeaeae solid;
   border-radius: 13px;
@@ -3641,11 +3642,11 @@ footer .touch span {
   background-color: #aeaeae;
   color: #fff;
 }
-/* line 295, assets\less\guesthouse_details.less */
+/* line 296, assets\less\guesthouse_details.less */
 .guesthouse_details .writterbox {
   position: relative;
 }
-/* line 296, assets\less\guesthouse_details.less */
+/* line 297, assets\less\guesthouse_details.less */
 .guesthouse_details .comments {
   transition: .5s;
   position: relative;
@@ -3653,11 +3654,11 @@ footer .touch span {
   height: auto;
   padding-top: 100px;
 }
-/* line 302, assets\less\guesthouse_details.less */
+/* line 303, assets\less\guesthouse_details.less */
 .guesthouse_details .comments .reviewname02 {
   left: 200px;
 }
-/* line 306, assets\less\guesthouse_details.less */
+/* line 307, assets\less\guesthouse_details.less */
 .guesthouse_details .reviewbox {
   border: 1px #838384 solid;
   background-color: #fff;
@@ -3665,53 +3666,53 @@ footer .touch span {
   height: auto;
   margin-top: 45px;
 }
-/* line 312, assets\less\guesthouse_details.less */
+/* line 313, assets\less\guesthouse_details.less */
 .guesthouse_details .reviewbox li {
   position: relative;
   height: auto;
   padding: 30px 75px;
   overflow: hidden;
 }
-/* line 317, assets\less\guesthouse_details.less */
+/* line 318, assets\less\guesthouse_details.less */
 .guesthouse_details .reviewbox li:nth-child(1) {
   background-image: url(../images/reviewline.png);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
-/* line 322, assets\less\guesthouse_details.less */
+/* line 323, assets\less\guesthouse_details.less */
 .guesthouse_details .reviewbox li:last-child {
   padding: 0;
 }
-/* line 326, assets\less\guesthouse_details.less */
+/* line 327, assets\less\guesthouse_details.less */
 .guesthouse_details .reviewbox img {
   width: 100px;
   position: absolute;
 }
-/* line 331, assets\less\guesthouse_details.less */
+/* line 332, assets\less\guesthouse_details.less */
 .guesthouse_details .write {
   margin-left: 158px;
   height: 96px;
   overflow: hidden;
 }
-/* line 335, assets\less\guesthouse_details.less */
+/* line 336, assets\less\guesthouse_details.less */
 .guesthouse_details .write span {
   color: #838384;
 }
-/* line 337, assets\less\guesthouse_details.less */
+/* line 338, assets\less\guesthouse_details.less */
 .guesthouse_details .inqueries {
   transition: .5s;
   position: absolute;
   top: 0;
-  z-index: -50;
+  display: none;
   width: 900px;
   height: auto;
   padding-top: 100px;
 }
-/* line 346, assets\less\guesthouse_details.less */
+/* line 347, assets\less\guesthouse_details.less */
 .guesthouse_details .inqname02 {
   left: 200px;
 }
-/* line 349, assets\less\guesthouse_details.less */
+/* line 350, assets\less\guesthouse_details.less */
 .guesthouse_details .inqbox {
   border: 1px #838384 solid;
   background-color: #fff;
@@ -3719,378 +3720,378 @@ footer .touch span {
   height: auto;
   margin-top: 45px;
 }
-/* line 355, assets\less\guesthouse_details.less */
+/* line 356, assets\less\guesthouse_details.less */
 .guesthouse_details .inqbox li {
   height: auto;
   position: relative;
   padding: 30px 75px;
   overflow: hidden;
 }
-/* line 360, assets\less\guesthouse_details.less */
+/* line 361, assets\less\guesthouse_details.less */
 .guesthouse_details .inqbox li:nth-child(1) {
   background-image: url(../images/reviewline.png);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
-/* line 365, assets\less\guesthouse_details.less */
+/* line 366, assets\less\guesthouse_details.less */
 .guesthouse_details .inqbox li:last-child {
   padding: 0;
 }
-/* line 369, assets\less\guesthouse_details.less */
+/* line 370, assets\less\guesthouse_details.less */
 .guesthouse_details .inqbox img {
   width: 100px;
   position: absolute;
 }
-/* line 374, assets\less\guesthouse_details.less */
+/* line 375, assets\less\guesthouse_details.less */
 .guesthouse_details .answeruser {
   margin-left: 80px;
 }
-/* line 375, assets\less\guesthouse_details.less */
+/* line 376, assets\less\guesthouse_details.less */
 .guesthouse_details .inqwrite {
   margin-left: 158px;
   height: 96px;
   overflow: hidden;
 }
-/* line 379, assets\less\guesthouse_details.less */
+/* line 380, assets\less\guesthouse_details.less */
 .guesthouse_details .inqwrite span {
   color: #838384;
 }
-/* line 381, assets\less\guesthouse_details.less */
+/* line 382, assets\less\guesthouse_details.less */
 .guesthouse_details .inqanswer {
   margin-left: 238px;
   height: 96px;
   overflow: hidden;
 }
-/* line 385, assets\less\guesthouse_details.less */
+/* line 386, assets\less\guesthouse_details.less */
 .guesthouse_details .inqanswer span {
   color: #838384;
 }
 @media screen and (max-width: 1700px) {
-  /* line 392, assets\less\guesthouse_details.less */
+  /* line 393, assets\less\guesthouse_details.less */
   body .contents .bookbox {
     width: 434px;
   }
-  /* line 395, assets\less\guesthouse_details.less */
+  /* line 396, assets\less\guesthouse_details.less */
   body .contents .house {
     width: 820px;
   }
-  /* line 399, assets\less\guesthouse_details.less */
+  /* line 400, assets\less\guesthouse_details.less */
   body .contents .housepic img {
     width: 700px;
   }
-  /* line 403, assets\less\guesthouse_details.less */
+  /* line 404, assets\less\guesthouse_details.less */
   body .contents .map {
     width: 820px;
     height: 400px;
   }
-  /* line 407, assets\less\guesthouse_details.less */
+  /* line 408, assets\less\guesthouse_details.less */
   body .contents .textbox {
     width: 687px;
   }
-  /* line 411, assets\less\guesthouse_details.less */
+  /* line 412, assets\less\guesthouse_details.less */
   body .contents .button div {
     left: 394px;
   }
-  /* line 415, assets\less\guesthouse_details.less */
+  /* line 416, assets\less\guesthouse_details.less */
   body .contents .comments {
     width: 820px;
   }
-  /* line 420, assets\less\guesthouse_details.less */
+  /* line 421, assets\less\guesthouse_details.less */
   body .contents .inqueries {
     width: 820px;
   }
 }
 @media screen and (max-width: 1550px) {
-  /* line 428, assets\less\guesthouse_details.less */
+  /* line 429, assets\less\guesthouse_details.less */
   .contents .bookbox {
     width: 424px;
   }
-  /* line 430, assets\less\guesthouse_details.less */
+  /* line 431, assets\less\guesthouse_details.less */
   .contents .bookbox div {
     width: 280px;
   }
-  /* line 432, assets\less\guesthouse_details.less */
+  /* line 433, assets\less\guesthouse_details.less */
   .contents .bookbox div .table {
     width: 280px;
     height: 270px;
   }
-  /* line 435, assets\less\guesthouse_details.less */
+  /* line 436, assets\less\guesthouse_details.less */
   .contents .bookbox div .table table {
     height: 233px;
   }
-  /* line 440, assets\less\guesthouse_details.less */
+  /* line 441, assets\less\guesthouse_details.less */
   .contents .detailswrap .house {
     width: 620px;
   }
-  /* line 444, assets\less\guesthouse_details.less */
+  /* line 445, assets\less\guesthouse_details.less */
   .contents .detailswrap .housepic img {
     width: 500px;
   }
-  /* line 449, assets\less\guesthouse_details.less */
+  /* line 450, assets\less\guesthouse_details.less */
   .contents .details {
     padding-top: 50px;
   }
-  /* line 451, assets\less\guesthouse_details.less */
+  /* line 452, assets\less\guesthouse_details.less */
   .contents .details .addlist01 {
     width: 50%;
   }
 }
 @media screen and (max-width: 1400px) {
-  /* line 459, assets\less\guesthouse_details.less */
+  /* line 460, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     width: 400px;
   }
-  /* line 462, assets\less\guesthouse_details.less */
+  /* line 463, assets\less\guesthouse_details.less */
   .contents .detailswrap .map {
     width: 670px;
     height: 350px;
     margin-top: 50px;
   }
-  /* line 467, assets\less\guesthouse_details.less */
+  /* line 468, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 550px;
     height: 100px;
     margin-bottom: 50px;
   }
-  /* line 472, assets\less\guesthouse_details.less */
+  /* line 473, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments {
     width: 670px;
     padding-top: 50px;
   }
-  /* line 475, assets\less\guesthouse_details.less */
+  /* line 476, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments li {
     padding: 30px 50px;
   }
-  /* line 477, assets\less\guesthouse_details.less */
+  /* line 478, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments li:last-child {
     padding: 0 0 20px;
   }
-  /* line 478, assets\less\guesthouse_details.less */
+  /* line 479, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments li img {
     width: 90px;
   }
-  /* line 480, assets\less\guesthouse_details.less */
+  /* line 481, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments .write {
     margin-left: 143px;
   }
-  /* line 482, assets\less\guesthouse_details.less */
+  /* line 483, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries {
     width: 670px;
   }
-  /* line 484, assets\less\guesthouse_details.less */
+  /* line 485, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries li {
     padding: 30px 50px;
   }
-  /* line 486, assets\less\guesthouse_details.less */
+  /* line 487, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries li:last-child {
     padding: 0 0 20px;
   }
-  /* line 487, assets\less\guesthouse_details.less */
+  /* line 488, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries li img {
     width: 90px;
   }
-  /* line 489, assets\less\guesthouse_details.less */
+  /* line 490, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries .inqwrite {
     margin-left: 143px;
   }
-  /* line 490, assets\less\guesthouse_details.less */
+  /* line 491, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries .inqanswer {
     margin-left: 223px;
   }
 }
 @media screen and (max-width: 1220px) {
-  /* line 498, assets\less\guesthouse_details.less */
+  /* line 499, assets\less\guesthouse_details.less */
   .contents .addlist01 {
     font-size: 14px;
   }
-  /* line 500, assets\less\guesthouse_details.less */
+  /* line 501, assets\less\guesthouse_details.less */
   .contents .addlist01 h2 {
     font-size: 16px;
     background-size: 25px;
     background-position-y: 2px;
     height: 30px;
   }
-  /* line 508, assets\less\guesthouse_details.less */
+  /* line 509, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     width: 350px;
     height: 520px;
     padding-top: 35px;
   }
-  /* line 512, assets\less\guesthouse_details.less */
+  /* line 513, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div {
     width: 260px;
     height: 40px;
   }
-  /* line 515, assets\less\guesthouse_details.less */
+  /* line 516, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div strong {
     font-size: 16px;
     height: 40px;
     line-height: 40px;
   }
-  /* line 520, assets\less\guesthouse_details.less */
+  /* line 521, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div .table {
     height: 250px;
   }
-  /* line 522, assets\less\guesthouse_details.less */
+  /* line 523, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div .table table {
     width: 240px;
     height: 215px;
   }
-  /* line 529, assets\less\guesthouse_details.less */
+  /* line 530, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbutton {
     width: 160px;
     height: 42px;
     line-height: 42px;
     font-size: 18px;
   }
-  /* line 535, assets\less\guesthouse_details.less */
+  /* line 536, assets\less\guesthouse_details.less */
   .contents .detailswrap .map {
     width: 630px;
   }
-  /* line 538, assets\less\guesthouse_details.less */
+  /* line 539, assets\less\guesthouse_details.less */
   .contents .detailswrap .namebox_w {
     width: 152px;
     height: 36px;
     line-height: 36px;
   }
-  /* line 543, assets\less\guesthouse_details.less */
+  /* line 544, assets\less\guesthouse_details.less */
   .contents .detailswrap .namebox_g {
     width: 152px;
     height: 36px;
     line-height: 36px;
   }
-  /* line 548, assets\less\guesthouse_details.less */
+  /* line 549, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 500px;
   }
-  /* line 551, assets\less\guesthouse_details.less */
+  /* line 552, assets\less\guesthouse_details.less */
   .contents .detailswrap .replybtn {
     right: 40px;
   }
-  /* line 554, assets\less\guesthouse_details.less */
+  /* line 555, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments {
     width: 620px;
     font-size: 14px;
   }
-  /* line 557, assets\less\guesthouse_details.less */
+  /* line 558, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments div:nth-child(2) {
     left: 160px;
   }
-  /* line 559, assets\less\guesthouse_details.less */
+  /* line 560, assets\less\guesthouse_details.less */
   .contents .detailswrap .reviewbox {
     margin-top: 36px;
   }
-  /* line 560, assets\less\guesthouse_details.less */
+  /* line 561, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries {
     width: 620px;
     font-size: 14px;
   }
-  /* line 563, assets\less\guesthouse_details.less */
+  /* line 564, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries div:nth-child(2) {
     left: 160px;
   }
-  /* line 565, assets\less\guesthouse_details.less */
+  /* line 566, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqbox {
     margin-top: 36px;
   }
 }
 @media screen and (max-width: 1150px) {
-  /* line 571, assets\less\guesthouse_details.less */
+  /* line 572, assets\less\guesthouse_details.less */
   .contents .detailswrap {
     padding: 50px 0;
   }
-  /* line 573, assets\less\guesthouse_details.less */
+  /* line 574, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     width: 310px;
     height: 485px;
   }
-  /* line 574, assets\less\guesthouse_details.less */
+  /* line 575, assets\less\guesthouse_details.less */
   .contents .detailswrap .map {
     width: 530px;
   }
-  /* line 575, assets\less\guesthouse_details.less */
+  /* line 576, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 430px;
   }
-  /* line 578, assets\less\guesthouse_details.less */
+  /* line 579, assets\less\guesthouse_details.less */
   .contents .detailswrap .replybtn {
     right: 30px;
   }
-  /* line 579, assets\less\guesthouse_details.less */
+  /* line 580, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments {
     width: 530px;
   }
-  /* line 581, assets\less\guesthouse_details.less */
+  /* line 582, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments li {
     padding: 20px 30px;
   }
-  /* line 582, assets\less\guesthouse_details.less */
+  /* line 583, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments .write {
     margin-left: 123px;
   }
-  /* line 584, assets\less\guesthouse_details.less */
+  /* line 585, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries {
     width: 530px;
   }
-  /* line 586, assets\less\guesthouse_details.less */
+  /* line 587, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries li {
     padding: 20px 30px;
   }
-  /* line 587, assets\less\guesthouse_details.less */
+  /* line 588, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries .inqwrite {
     margin-left: 123px;
   }
-  /* line 588, assets\less\guesthouse_details.less */
+  /* line 589, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries .inqanswer {
     margin-left: 163px;
   }
-  /* line 590, assets\less\guesthouse_details.less */
+  /* line 591, assets\less\guesthouse_details.less */
   .contents .detailswrap .answeruser {
     margin-left: 50px;
   }
-  /* line 593, assets\less\guesthouse_details.less */
+  /* line 594, assets\less\guesthouse_details.less */
   .contents .detailswrap .house {
     width: 530px;
   }
-  /* line 596, assets\less\guesthouse_details.less */
+  /* line 597, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .housepic img {
     width: 450px;
   }
-  /* line 603, assets\less\guesthouse_details.less */
+  /* line 604, assets\less\guesthouse_details.less */
   .contents .arrow span {
     width: 38px;
   }
-  /* line 605, assets\less\guesthouse_details.less */
+  /* line 606, assets\less\guesthouse_details.less */
   .contents .explanation {
     width: 530px;
   }
-  /* line 607, assets\less\guesthouse_details.less */
+  /* line 608, assets\less\guesthouse_details.less */
   .contents .explanation p {
     width: 100%;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 614, assets\less\guesthouse_details.less */
+  /* line 615, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     transition: none;
   }
-  /* line 616, assets\less\guesthouse_details.less */
+  /* line 617, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div {
     transition: none;
   }
 }
 @media screen and (max-width: 950px) {
-  /* line 624, assets\less\guesthouse_details.less */
+  /* line 625, assets\less\guesthouse_details.less */
   .contents .detailswrap .house {
     width: 670px;
     display: block;
     margin: 0 auto ;
   }
-  /* line 629, assets\less\guesthouse_details.less */
+  /* line 630, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .housepic img {
     width: 590px;
   }
-  /* line 632, assets\less\guesthouse_details.less */
+  /* line 633, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     float: none;
     width: 670px;
@@ -4099,7 +4100,7 @@ footer .touch span {
     padding: 20px 0;
     transition: none;
   }
-  /* line 639, assets\less\guesthouse_details.less */
+  /* line 640, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div {
     transition: none;
     width: 42px;
@@ -4107,26 +4108,26 @@ footer .touch span {
     margin-bottom: 0;
     margin-right: 40.5px;
   }
-  /* line 645, assets\less\guesthouse_details.less */
+  /* line 646, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div span {
     display: none;
   }
-  /* line 648, assets\less\guesthouse_details.less */
+  /* line 649, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div .table {
     border-radius: 0;
     width: 219px;
     height: 210px;
   }
-  /* line 652, assets\less\guesthouse_details.less */
+  /* line 653, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox div .table table {
     width: 200px;
     height: 176px;
   }
-  /* line 658, assets\less\guesthouse_details.less */
+  /* line 659, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .checkouttable {
     left: -88px;
   }
-  /* line 659, assets\less\guesthouse_details.less */
+  /* line 660, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .datein {
     background-image: none;
     background-image: url(../images/icon/g_checkinicon.png);
@@ -4134,14 +4135,14 @@ footer .touch span {
     background-position: center;
     background-size: 60%;
   }
-  /* line 666, assets\less\guesthouse_details.less */
+  /* line 667, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .dateout {
     background-image: url(../images/icon/g_checkouticon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
   }
-  /* line 672, assets\less\guesthouse_details.less */
+  /* line 673, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .guestbox {
     background-image: url(../images/icon/g_usersicon.png);
     background-repeat: no-repeat;
@@ -4149,56 +4150,56 @@ footer .touch span {
     background-size: 60%;
     margin-right: 40px;
   }
-  /* line 678, assets\less\guesthouse_details.less */
+  /* line 679, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .guestbox ul {
     width: 219px;
     right: -1px;
   }
-  /* line 680, assets\less\guesthouse_details.less */
+  /* line 681, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .guestbox ul li {
     height: 40px;
     line-height: 40px;
     font-size: 14px;
   }
-  /* line 687, assets\less\guesthouse_details.less */
+  /* line 688, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .bookbutton {
     margin: 0;
     width: 140px;
     vertical-align: top;
   }
-  /* line 693, assets\less\guesthouse_details.less */
+  /* line 694, assets\less\guesthouse_details.less */
   .contents .detailswrap .explanation {
     margin: 0 auto;
     width: 670px;
   }
-  /* line 697, assets\less\guesthouse_details.less */
+  /* line 698, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 {
     margin: 0 auto;
     width: 770px;
   }
-  /* line 700, assets\less\guesthouse_details.less */
+  /* line 701, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 li:nth-child(2) {
     margin-left: 10px;
   }
-  /* line 701, assets\less\guesthouse_details.less */
+  /* line 702, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 li:nth-child(4) {
     margin-left: 10px;
   }
-  /* line 703, assets\less\guesthouse_details.less */
+  /* line 704, assets\less\guesthouse_details.less */
   .contents .detailswrap #map {
     width: 670px;
     margin: 50px auto 0;
   }
-  /* line 707, assets\less\guesthouse_details.less */
+  /* line 708, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 590px;
   }
-  /* line 710, assets\less\guesthouse_details.less */
+  /* line 711, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments {
     margin: 0 auto;
     width: 670px;
   }
-  /* line 714, assets\less\guesthouse_details.less */
+  /* line 715, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries {
     margin: 0 auto;
     width: 670px;
@@ -4207,109 +4208,109 @@ footer .touch span {
   }
 }
 @media screen and (max-width: 750px) {
-  /* line 729, assets\less\guesthouse_details.less */
+  /* line 730, assets\less\guesthouse_details.less */
   .contents .detailswrap .house {
     width: 520px;
   }
-  /* line 732, assets\less\guesthouse_details.less */
+  /* line 733, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .housepic img {
     width: 440px;
   }
-  /* line 735, assets\less\guesthouse_details.less */
+  /* line 736, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     width: 520px;
     margin: 30px auto 0;
     padding: 20px 0;
   }
-  /* line 741, assets\less\guesthouse_details.less */
+  /* line 742, assets\less\guesthouse_details.less */
   .contents .detailswrap .details {
     margin: 0 auto;
   }
-  /* line 742, assets\less\guesthouse_details.less */
+  /* line 743, assets\less\guesthouse_details.less */
   .contents .detailswrap .explanation {
     width: 520px;
   }
-  /* line 744, assets\less\guesthouse_details.less */
+  /* line 745, assets\less\guesthouse_details.less */
   .contents .detailswrap .explanation h2 {
     font-size: 16px;
   }
-  /* line 745, assets\less\guesthouse_details.less */
+  /* line 746, assets\less\guesthouse_details.less */
   .contents .detailswrap .explanation p {
     font-size: 14px;
   }
-  /* line 747, assets\less\guesthouse_details.less */
+  /* line 748, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 {
     width: 520px;
   }
-  /* line 749, assets\less\guesthouse_details.less */
+  /* line 750, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 li:nth-child(2) {
     margin-left: 0;
   }
-  /* line 750, assets\less\guesthouse_details.less */
+  /* line 751, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 li:nth-child(4) {
     margin-left: 0;
   }
-  /* line 752, assets\less\guesthouse_details.less */
+  /* line 753, assets\less\guesthouse_details.less */
   .contents .detailswrap #map {
     width: 520px;
     margin: 50px auto 0;
   }
-  /* line 756, assets\less\guesthouse_details.less */
+  /* line 757, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 440px;
   }
-  /* line 760, assets\less\guesthouse_details.less */
+  /* line 761, assets\less\guesthouse_details.less */
   .contents .detailswrap .button .modify {
     width: 115px;
   }
-  /* line 761, assets\less\guesthouse_details.less */
+  /* line 762, assets\less\guesthouse_details.less */
   .contents .detailswrap .button .delete {
     width: 115px;
   }
-  /* line 763, assets\less\guesthouse_details.less */
+  /* line 764, assets\less\guesthouse_details.less */
   .contents .detailswrap .replybtn {
     width: 115px;
   }
-  /* line 766, assets\less\guesthouse_details.less */
+  /* line 767, assets\less\guesthouse_details.less */
   .contents .detailswrap .comments {
     width: 520px;
   }
-  /* line 769, assets\less\guesthouse_details.less */
+  /* line 770, assets\less\guesthouse_details.less */
   .contents .detailswrap .inqueries {
     width: 520px;
   }
 }
 @media screen and (max-width: 570px) {
-  /* line 779, assets\less\guesthouse_details.less */
+  /* line 780, assets\less\guesthouse_details.less */
   .contents .detailswrap .house {
     width: 400px;
   }
-  /* line 782, assets\less\guesthouse_details.less */
+  /* line 783, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .arrow button {
     width: 25px;
     height: 35px;
   }
-  /* line 785, assets\less\guesthouse_details.less */
+  /* line 786, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .arrow button:nth-child(1) {
     background-size: 25px 35px;
     margin-top: -17.5px;
   }
-  /* line 789, assets\less\guesthouse_details.less */
+  /* line 790, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .arrow button:nth-child(2) {
     background-size: 25px 35px;
     margin-top: -17.5px;
   }
-  /* line 796, assets\less\guesthouse_details.less */
+  /* line 797, assets\less\guesthouse_details.less */
   .contents .detailswrap .house .housepic img {
     width: 320px;
   }
-  /* line 799, assets\less\guesthouse_details.less */
+  /* line 800, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox {
     width: 400px;
     margin: 30px auto 0;
     padding: 20px 0;
   }
-  /* line 803, assets\less\guesthouse_details.less */
+  /* line 804, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .bookbutton {
     width: 42px;
     border-radius: 25px;
@@ -4319,79 +4320,79 @@ footer .touch span {
     background-size: 22px;
     color: #fff;
   }
-  /* line 811, assets\less\guesthouse_details.less */
+  /* line 812, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .bookbutton span {
     display: none;
   }
-  /* line 812, assets\less\guesthouse_details.less */
+  /* line 813, assets\less\guesthouse_details.less */
   .contents .detailswrap .bookbox .bookbutton:hover {
     background-color: #a2a1a1;
   }
-  /* line 815, assets\less\guesthouse_details.less */
+  /* line 816, assets\less\guesthouse_details.less */
   .contents .detailswrap .details {
     padding-top: 20px;
   }
-  /* line 816, assets\less\guesthouse_details.less */
+  /* line 817, assets\less\guesthouse_details.less */
   .contents .detailswrap .explanation {
     width: 400px;
   }
-  /* line 819, assets\less\guesthouse_details.less */
+  /* line 820, assets\less\guesthouse_details.less */
   .contents .detailswrap .addlist01 {
     width: 400px;
   }
-  /* line 822, assets\less\guesthouse_details.less */
+  /* line 823, assets\less\guesthouse_details.less */
   .contents .detailswrap #map {
     width: 400px;
     height: 300px;
     margin: 50px auto 0;
   }
-  /* line 827, assets\less\guesthouse_details.less */
+  /* line 828, assets\less\guesthouse_details.less */
   .contents .detailswrap .textbox {
     width: 320px;
   }
-  /* line 831, assets\less\guesthouse_details.less */
+  /* line 832, assets\less\guesthouse_details.less */
   .contents .detailswrap .button .modify {
     width: 95px;
     height: 32px;
     line-height: 32px;
   }
-  /* line 832, assets\less\guesthouse_details.less */
+  /* line 833, assets\less\guesthouse_details.less */
   .contents .detailswrap .button .delete {
     width: 95px;
     height: 32px;
     line-height: 32px;
   }
-  /* line 834, assets\less\guesthouse_details.less */
+  /* line 835, assets\less\guesthouse_details.less */
   .contents .detailswrap .replybtn {
     width: 95px;
     height: 32px;
     line-height: 32px;
   }
-  /* line 839, assets\less\guesthouse_details.less */
+  /* line 840, assets\less\guesthouse_details.less */
   .contents .detailswrap .namebox_w {
     width: 134px;
   }
-  /* line 840, assets\less\guesthouse_details.less */
+  /* line 841, assets\less\guesthouse_details.less */
   .contents .detailswrap .namebox_g {
     width: 134px;
   }
-  /* line 842, assets\less\guesthouse_details.less */
+  /* line 843, assets\less\guesthouse_details.less */
   .contents .detailswrap .details .comments {
     width: 400px;
   }
-  /* line 844, assets\less\guesthouse_details.less */
+  /* line 845, assets\less\guesthouse_details.less */
   .contents .detailswrap .details .comments .reviewname02 {
     left: 140px;
   }
-  /* line 846, assets\less\guesthouse_details.less */
+  /* line 847, assets\less\guesthouse_details.less */
   .contents .detailswrap .details .comments .reviewbox li:nth-child(3) {
     padding-bottom: 0;
   }
-  /* line 849, assets\less\guesthouse_details.less */
+  /* line 850, assets\less\guesthouse_details.less */
   .contents .detailswrap .details .inqueries {
     width: 400px;
   }
-  /* line 851, assets\less\guesthouse_details.less */
+  /* line 852, assets\less\guesthouse_details.less */
   .contents .detailswrap .details .inqueries .inqname02 {
     left: 140px;
   }

@@ -291,20 +291,6 @@ if($('body').is('.index')){
 $(window).trigger("resize");
 
 
-$('#writterbox').load('comments.html #comments_box');
-
-// $('.comments .reviewname02').click(function(e){
-//   e.preventDefault();
-//   $('#writterbox').children('#comments_box').remove();
-//   $('#writterbox').load('inqueries.html #inqueries_box');
-// });
-// $('.inqueries .inqname01').click(function(e){
-//   e.preventDefault();
-//   $('#writterbox').children('#inqueries_box').remove();
-//   $('#writterbox').load('inqueries.html #inqueries_box');
-// });
-
-
 });
 
 var map;
