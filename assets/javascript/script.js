@@ -5,7 +5,6 @@ function blind(){
   $('.blind').fadeTo(500,1);
 };
 
-
 $('.loginbtn').click(function(e){
   e.preventDefault();
   blind();
@@ -99,34 +98,6 @@ $(this).siblings('div').find('.table').hide();
 });
 
 
-//부킹 메뉴바
-$('.bookbox div').click(function(){
-$(this).children('ul').toggle();
-
-$(this).find('li').click(function(){
-  txt = $(this).text();
-  $(this).parent('ul').parent('div').find('span').text(txt).css('color','#fff');
-  $(this).parent('ul').parent('div').find('strong').css('background-color','rgba(0,0,0,.15)');
-});
-
-$(this).siblings('div').find('ul').hide();
-$(this).siblings('div').find('.table').hide();
-});
-
-$('.bookbox div').click(function(){
-$(this).children('.table').toggle();
-
-$(this).find('td').click(function(){
-  txt = $(this).text();
-  $(this).parents('.table').parent('div').find('strong').find('span').text(txt).css('color','#fff');
-  $(this).parents('.table').parent('div').find('strong').css('background-color','rgba(0,0,0,.15)');
-});
-
-$(this).siblings('div').find('ul').hide();
-$(this).siblings('div').find('.table').hide();
-});
-
-
 
 //푸터 메뉴바
 $('.lang').find('div').click(function(){
@@ -137,7 +108,7 @@ $(this).find('span').toggleClass('menu_g_uparrow');
 $(this).find('li').click(function(){
   txt = $(this).text();
   $(this).parent('ul').parent('div').find('span').text(txt);
-  $(this).parent('ul').parent('div').find('strong').css('background-color','rgba(0,200,100,0.1)');
+  $(this).parent('ul').parent('div').find('strong').css('background-color','rgba(255,200,100,0.1)');
 });
 
 $(this).siblings('div').find('ul').hide();
@@ -286,149 +257,14 @@ if($('body').is('.index')){
 };
 
 
+
+
 });
 
 $(window).trigger("resize");
 
 
+
+
+
 });
-
-var map;
-function initMap() {
-  // Create the map with no initial style specified.
-  // It therefore has default styling.
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -33.86, lng: 151.209},
-    zoom: 13,
-    mapTypeControl: false
-  });
-
-  // Add a style-selector control to the map.
-  var styleControl = document.getElementById('style-selector-control');
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(styleControl);
-
-  // Set the map's style to the initial value of the selector.
-  var styleSelector = document.getElementById('style-selector');
-  map.setOptions({styles: styles[styleSelector.value]});
-
-  // Apply new JSON when the user selects a different style.
-  styleSelector.addEventListener('change', function() {
-    map.setOptions({styles: styles[styleSelector.value]});
-  });
-};
-
-var styles = {
-  default: null,
-
-  retro: [
-    {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
-    {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
-    {elementType: 'labels.text.stroke', stylers: [{color: '#f5f1e6'}]},
-    {
-      featureType: 'administrative',
-      elementType: 'geometry.stroke',
-      stylers: [{color: '#c9b2a6'}]
-    },
-    {
-      featureType: 'administrative.land_parcel',
-      elementType: 'geometry.stroke',
-      stylers: [{color: '#dcd2be'}]
-    },
-    {
-      featureType: 'administrative.land_parcel',
-      elementType: 'labels.text.fill',
-      stylers: [{color: '#ae9e90'}]
-    },
-    {
-      featureType: 'landscape.natural',
-      elementType: 'geometry',
-      stylers: [{color: '#dfd2ae'}]
-    },
-    {
-      featureType: 'poi',
-      elementType: 'geometry',
-      stylers: [{color: '#dfd2ae'}]
-    },
-    {
-      featureType: 'poi',
-      elementType: 'labels.text.fill',
-      stylers: [{color: '#93817c'}]
-    },
-    {
-      featureType: 'poi.park',
-      elementType: 'geometry.fill',
-      stylers: [{color: '#a5b076'}]
-    },
-    {
-      featureType: 'poi.park',
-      elementType: 'labels.text.fill',
-      stylers: [{color: '#447530'}]
-    },
-    {
-      featureType: 'road',
-      elementType: 'geometry',
-      stylers: [{color: '#f5f1e6'}]
-    },
-    {
-      featureType: 'road.arterial',
-      elementType: 'geometry',
-      stylers: [{color: '#fdfcf8'}]
-    },
-    {
-      featureType: 'road.highway',
-      elementType: 'geometry',
-      stylers: [{color: '#f8c967'}]
-    },
-    {
-      featureType: 'road.highway',
-      elementType: 'geometry.stroke',
-      stylers: [{color: '#e9bc62'}]
-    },
-    {
-      featureType: 'road.highway.controlled_access',
-      elementType: 'geometry',
-      stylers: [{color: '#e98d58'}]
-    },
-    {
-      featureType: 'road.highway.controlled_access',
-      elementType: 'geometry.stroke',
-      stylers: [{color: '#db8555'}]
-    },
-    {
-      featureType: 'road.local',
-      elementType: 'labels.text.fill',
-      stylers: [{color: '#806b63'}]
-    },
-    {
-      featureType: 'transit.line',
-      elementType: 'geometry',
-      stylers: [{color: '#dfd2ae'}]
-    },
-    {
-      featureType: 'transit.line',
-      elementType: 'labels.text.fill',
-      stylers: [{color: '#8f7d77'}]
-    },
-    {
-      featureType: 'transit.line',
-      elementType: 'labels.text.stroke',
-      stylers: [{color: '#ebe3cd'}]
-    },
-    {
-      featureType: 'transit.station',
-      elementType: 'geometry',
-      stylers: [{color: '#dfd2ae'}]
-    },
-    {
-      featureType: 'water',
-      elementType: 'geometry.fill',
-      stylers: [{color: '#b9d3c2'}]
-    },
-    {
-      featureType: 'water',
-      elementType: 'labels.text.fill',
-      stylers: [{color: '#92998d'}]
-    }
-  ],
-
-};

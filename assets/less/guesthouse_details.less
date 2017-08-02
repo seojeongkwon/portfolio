@@ -232,6 +232,10 @@
         height: 450px;
         margin-top:100px;
       }
+      .writterbox{
+        position:relative;
+        width: 909px;
+      }
       .textbox{
         width: 765px;
         height: 163px;
@@ -293,11 +297,10 @@
         background-color: #aeaeae;
         color:#fff;
       }
-      .writterbox{position: relative;}
       .comments{
         transition: .5s;
         position:relative;
-        width:900px;
+        width:100%;
         height:auto;
         padding-top:100px;
         .reviewname02{
@@ -340,7 +343,7 @@
         position:absolute;
         top:0;
         display: none;
-        width:900px;
+        width:100%;
         height:auto;
         padding-top:100px;
       }
@@ -413,14 +416,7 @@ body{
             left:394px;
           }
         }
-        .comments{
-          width:820px;
-          .reviewbox{
-          }
-        }
-        .inqueries{
-          width:820px;
-        }
+        .writterbox{width: 820px;}
     }
   }
 }
@@ -465,13 +461,14 @@ body{
        height: 350px;
        margin-top:50px;
      }
+     .inqueries{top:-50px;}
      .textbox{
        width: 550px;
        height:100px;
        margin-bottom: 50px;
      }
+     .writterbox{width: 670px;}
      .comments{
-       width:670px;
        padding-top: 50px;
        li{
          padding:30px 50px;
@@ -481,7 +478,6 @@ body{
        .write{margin-left:143px;}
      }
      .inqueries{
-       width:670px;
        li{
          padding:30px 50px;
          &:last-child{padding:0 0 20px;}
@@ -552,14 +548,13 @@ body{
       .replybtn{
         right:40px;
       }
+      .writterbox{width: 620px;}
       .comments{
-        width: 620px;
         font-size: 14px;
         div:nth-child(2){left:160px;}
       }
       .reviewbox{margin-top:36px}
       .inqueries{
-        width: 620px;
         font-size: 14px;
         div:nth-child(2){left:160px;}
       }
@@ -708,17 +703,9 @@ body{
       .textbox{
         width: 590px;
       }
-      .comments{
-        margin:0 auto;
+      .writterbox{
         width: 670px;
-      }
-      .inqueries{
         margin:0 auto;
-        width: 670px;
-        top:-50px;
-        //left:84px;
-        display: block;
-
       }
     }
 
@@ -764,12 +751,7 @@ body{
       .replybtn{
         width: 115px;
       }
-      .comments{
-        width: 520px;
-      }
-      .inqueries{
-        width: 520px;
-      }
+      .writterbox{width: 520px;}
     }
 
   }
@@ -835,20 +817,23 @@ body{
       .replybtn{
         width: 95px;
         height:32px;
+
         line-height: 32px;
       }
       .namebox_w{width:134px;}
       .namebox_g{width: 134px;}
       .details{
+        .writterbox{width: 400px;}
         .comments{
-          width: 400px;
           .reviewname02{left:140px;}
           .reviewbox{
-            li:nth-child(3){padding-bottom:0;}
+            li:nth-child(3){
+              padding-bottom:0;
+              height:190px;
+            }
           }
         }
         .inqueries{
-          width: 400px;
           .inqname02{left:140px;}
         }
 
